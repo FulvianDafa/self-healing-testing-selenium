@@ -1,4 +1,6 @@
-package com.fulvian;
+package com.fulvian.tests;
+
+import com.fulvian.base.BaseTest;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;

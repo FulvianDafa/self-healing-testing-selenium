@@ -1,5 +1,8 @@
-package com.fulvian;
+package com.fulvian.tests;
 
+import com.fulvian.base.BaseTest;
+import com.fulvian.healing.ElementProfile;
+import com.fulvian.healing.HealingDriver;
 import com.fulvian.healing.ElementProfile;
 import com.fulvian.healing.HealingDriver;
 import org.junit.jupiter.api.*;

@@ -1,4 +1,5 @@
-package com.fulvian;
+package com.fulvian.tests;
+
 
 import com.fulvian.healing.HealingDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
