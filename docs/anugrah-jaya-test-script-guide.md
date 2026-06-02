@@ -37,9 +37,16 @@ mvn test -DbaseUrl=http://anugrah_jaya.test/app/index.html -Dheadless=true
 ```
 
 
+untuk suite self healing
 ```
 mvn clean test -Dtest=TestAnugrahJayaHealing -DbaseUrl=http://anugrah_jaya.test/app/index.html
 ```
+
+untuk suite baseline 
+```
+mvn clean test -Dtest=TestAnugrahJayaBaseline -DbaseUrl=http://anugrah_jaya.test/app/index.html
+```
+
 
 ## Output eksperimen
 
