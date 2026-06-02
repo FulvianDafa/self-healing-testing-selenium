@@ -1,0 +1,9 @@
+timestamp,test_case_id,page,scenario_type,locator,status,error_message
+"2026-06-02 07:27:54.249","BL-001","index.html","id_change","By.id: inputProductBtn","EXPECTED_FAIL","NoSuchElementException"
+"2026-06-02 07:27:54.731","BL-004","index.html","id_change","By.id: namaBarang","EXPECTED_FAIL","NoSuchElementException"
+"2026-06-02 07:27:55.154","BL-010","index.html","id_change","By.id: saveBtn","EXPECTED_FAIL","NoSuchElementException"
+"2026-06-02 07:27:55.930","BL-020","transaction_page.html","id_change","By.id: searchInput","EXPECTED_FAIL","NoSuchElementException"
+"2026-06-02 07:27:56.689","BL-021","transaction_page.html","id_change","By.id: simpanTransactionBtn","EXPECTED_FAIL","NoSuchElementException"
+"2026-06-02 07:27:57.280","BL-030","debt_page.html","id_change","By.id: addDebtorBtn","EXPECTED_FAIL","NoSuchElementException"
+"2026-06-02 07:27:57.878","BL-040","dashboard.html","id_change","By.id: tab-debt","EXPECTED_FAIL","NoSuchElementException"
+"2026-06-02 07:27:58.607","BL-050","print_daftar_barang.html","id_change","By.id: searchInput","EXPECTED_FAIL","NoSuchElementException"

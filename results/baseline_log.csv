@@ -1,9 +1,3 @@
 timestamp,test_case_id,scenario_type,locator,status,error_message
-"2026-05-12 21:47:39.339","TC-B01","id_change","By.id('inputProductBtn')","FAIL","NoSuchElementException: no such element: Unable to locate element: {'method':'css selector','selector':'..."
-"2026-05-12 21:47:44.636","TC-B02","id_change","By.id('inputProductBtn')","FAIL","NoSuchElementException"
-"2026-05-12 21:47:49.936","TC-B03","id_change","By.id('editBtn-1')","FAIL","NoSuchElementException"
-"2026-05-12 21:47:52.207","TC-B04","class_change","By.className('bg-blue-600')","SUCCESS","-"
-"2026-05-12 21:48:02.729","TC-B06","class_change","By.className('btn-danger')","FAIL","NoSuchElementException"
-"2026-05-12 21:48:08.349","TC-B07","xpath_change","By.xpath(oldXPath)","FAIL","NoSuchElementException"
-"2026-05-12 21:48:18.878","TC-B09","xpath_change","By.xpath(oldXPath)","FAIL","NoSuchElementException"
-"2026-05-12 21:48:21.408","TC-B10","css_change",".bg-blue-600.text-white","SUCCESS","-"
+"2026-05-23 23:15:51.786","TC-B06","class_change","By.className('btn-danger')","FAIL","NoSuchElementException"
+"2026-05-23 23:15:52.594","TC-B09","xpath_change","By.xpath(oldXPath)","FAIL","NoSuchElementException"

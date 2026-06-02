@@ -8,107 +8,254 @@ import org.openqa.selenium.WebElement;
  * SimilarityEngine — Inti algoritma penelitian skripsi ini
  * ============================================================
  *
- * Menghitung skor kemiripan GABUNGAN antara elemen target
- * dan kandidat elemen di DOM, menggunakan tiga atribut:
+ * Menghitung skor kemiripan gabungan antara elemen target
+ * dan kandidat elemen di DOM menggunakan tiga atribut utama:
  *
- *   1. Kemiripan TEKS     → Levenshtein Distance   (bobot 50%)
- *   2. Kemiripan ID/CLASS → Levenshtein Distance   (bobot 30%)
- *   3. Kemiripan POSISI   → Euclidean Distance      (bobot 20%)
+ * 1. Kemiripan teks/atribut terbaca
+ * 2. Kemiripan locator
+ * 3. Kemiripan posisi
  *
- * Diadaptasi dari pendekatan Similo (Nass et al., 2023) yang
- * menggunakan kombinasi atribut dengan bobot tertimbang.
+ * Pendekatan similarity menggunakan kombinasi:
+ * - Levenshtein Similarity
+ * - Substring Matching
+ * - Token Coverage Similarity
  *
- * Referensi:
- *   Nass et al. (2023). Similarity-based Web Element Localization
- *   for Robust Test Automation. ACM TOSEM, 32(3).
+ * Tujuannya agar engine tetap kuat terhadap perubahan locator seperti:
+ * searchInput -> productSearchInputRefactor
+ * searchInput -> transactionSearchInputRefactor
+ * inputDebtorName -> inputDebtorNameRefactor
+ * product-search-input -> productSearchDashboardRefactor
  */
 public class SimilarityEngine {
 
     // -------------------------------------------------------
-    // BOBOT PER ATRIBUT — total harus = 1.0
-    // Nilai ini hasil kalibrasi eksperimen (lihat Bab 4 skripsi).
-    // Bobot teks paling besar karena paling stabil saat DOM berubah.
+    // BOBOT PER ATRIBUT
     // -------------------------------------------------------
-    public static final double WEIGHT_TEXT     = 0.50;
-    public static final double WEIGHT_LOCATOR  = 0.30;
+    public static final double WEIGHT_TEXT = 0.50;
+    public static final double WEIGHT_LOCATOR = 0.30;
     public static final double WEIGHT_POSITION = 0.20;
 
-    // Threshold default — elemen diterima jika skor >= nilai ini
     public static final double DEFAULT_THRESHOLD = 0.50;
 
-    // Faktor normalisasi Euclidean Distance (piksel)
-    // Makin besar = toleransi posisi makin longgar
     private static final double POSITION_NORMALIZATION = 150.0;
 
     // -------------------------------------------------------
-    // METHOD UTAMA: hitung skor gabungan
+    // METHOD UTAMA: HITUNG SKOR GABUNGAN
     // -------------------------------------------------------
 
-    /**
-     * Hitung skor similarity gabungan antara profil target dan kandidat elemen.
-     *
-     * @param profile   profil elemen yang dicari (dari sebelum locator gagal)
-     * @param candidate elemen kandidat dari DOM terkini
-     * @return skor antara 0.0 (tidak mirip) sampai 1.0 (identik)
-     */
     public static double calculateCombinedScore(ElementProfile profile,
                                                 WebElement candidate) {
-        // --- Komponen 1: kemiripan teks ---
-        String candidateText = safeGetText(candidate);
-        double textScore = calculateLevenshteinSimilarity(
-                normalizeText(profile.expectedText),
-                normalizeText(candidateText)
-        );
-
-        // --- Komponen 2: kemiripan locator (id atau class) ---
-        String candidateLocatorValue = getLocatorValue(candidate, profile.locatorType);
-        double locatorScore = calculateLevenshteinSimilarity(
-                normalizeText(profile.originalLocatorValue),
-                normalizeText(candidateLocatorValue)
-        );
-
-        // --- Komponen 3: kemiripan posisi (Euclidean Distance) ---
-        double positionScore = 0.0;
-        if (profile.lastKnownLocation != null) {
-            positionScore = calculatePositionSimilarity(
-                    profile.lastKnownLocation,
-                    safeGetLocation(candidate)
-            );
-        } else {
-            // Kalau tidak ada posisi referensi, netralkan bobot teks dan locator
-            // agar total tetap 1.0 — redistribusi bobot secara proporsional
-            double totalWeight = WEIGHT_TEXT + WEIGHT_LOCATOR;
-            return (textScore * (WEIGHT_TEXT / totalWeight))
-                 + (locatorScore * (WEIGHT_LOCATOR / totalWeight));
+        if (profile == null || candidate == null) {
+            return 0.0;
         }
 
-        // --- Gabungkan dengan bobot tertimbang ---
-        return (WEIGHT_TEXT     * textScore)
-             + (WEIGHT_LOCATOR  * locatorScore)
-             + (WEIGHT_POSITION * positionScore);
+        /*
+         * Untuk elemen input, expectedText kadang kosong atau tidak sama
+         * dengan visible text, karena input biasanya tidak punya getText().
+         *
+         * Maka expectedText fallback ke originalLocatorValue.
+         */
+        String expectedText = firstNonBlank(
+                profile.expectedText,
+                profile.originalLocatorValue
+        );
+
+        // 1. Skor kemiripan teks/atribut terbaca
+        double textScore = calculateBestReadableTextSimilarity(
+                expectedText,
+                candidate
+        );
+
+        // 2. Skor kemiripan locator
+        String candidateLocatorValue = getLocatorValue(candidate, profile.locatorType);
+
+        double locatorScore = calculateSmartSimilarity(
+                profile.originalLocatorValue,
+                candidateLocatorValue
+        );
+
+        // 3. Skor kemiripan posisi
+        if (profile.lastKnownLocation == null) {
+            /*
+             * Kalau tidak ada posisi referensi, bobot position tidak dipakai.
+             * Bobot text dan locator dinormalisasi ulang supaya total tetap 1.0.
+             */
+            double totalWeight = WEIGHT_TEXT + WEIGHT_LOCATOR;
+
+            return (textScore * (WEIGHT_TEXT / totalWeight))
+                    + (locatorScore * (WEIGHT_LOCATOR / totalWeight));
+        }
+
+        double positionScore = calculatePositionSimilarity(
+                profile.lastKnownLocation,
+                safeGetLocation(candidate)
+        );
+
+        return (WEIGHT_TEXT * textScore)
+                + (WEIGHT_LOCATOR * locatorScore)
+                + (WEIGHT_POSITION * positionScore);
     }
 
     // -------------------------------------------------------
-    // LEVENSHTEIN DISTANCE — untuk teks dan locator
+    // SMART SIMILARITY
     // -------------------------------------------------------
 
     /**
-     * Hitung similarity berbasis Levenshtein Distance.
-     * Hasil: 1.0 = identik, 0.0 = sama sekali tidak mirip.
+     * Menghitung similarity terbaik dari atribut-atribut yang bisa dibaca.
      *
-     * Formula normalisasi: 1 - (distance / maxLength)
-     * Sama dengan yang digunakan Nass et al. (2023).
+     * Ini penting untuk input karena input biasanya tidak punya visible text.
+     * Maka kandidat dibaca dari:
+     * - text
+     * - placeholder
+     * - aria-label
+     * - name
+     * - id
+     * - value
      */
-    public static double calculateLevenshteinSimilarity(String s1, String s2) {
-        if (s1 == null) s1 = "";
-        if (s2 == null) s2 = "";
+    private static double calculateBestReadableTextSimilarity(String expected,
+                                                              WebElement candidate) {
+        String[] candidateValues = {
+                safeGetText(candidate),
+                safeGetAttribute(candidate, "placeholder"),
+                safeGetAttribute(candidate, "aria-label"),
+                safeGetAttribute(candidate, "name"),
+                safeGetAttribute(candidate, "id"),
+                safeGetAttribute(candidate, "value")
+        };
 
-        // Edge case: keduanya kosong = identik
-        if (s1.isEmpty() && s2.isEmpty()) return 1.0;
-        // Edge case: salah satu kosong
-        if (s1.isEmpty() || s2.isEmpty()) return 0.0;
-        // Edge case: identik
-        if (s1.equals(s2)) return 1.0;
+        double bestScore = 0.0;
+
+        for (String value : candidateValues) {
+            if (isBlank(value)) {
+                continue;
+            }
+
+            double score = calculateSmartSimilarity(expected, value);
+
+            if (score > bestScore) {
+                bestScore = score;
+            }
+        }
+
+        return bestScore;
+    }
+
+    /**
+     * Similarity gabungan:
+     * 1. Levenshtein similarity
+     * 2. Substring similarity
+     * 3. Token coverage similarity
+     *
+     * Ini membuat kasus locator panjang tetap terbaca mirip.
+     */
+    private static double calculateSmartSimilarity(String expected, String actual) {
+        String normalizedExpected = normalizeText(expected);
+        String normalizedActual = normalizeText(actual);
+
+        if (isBlank(normalizedExpected) && isBlank(normalizedActual)) {
+            return 1.0;
+        }
+
+        if (isBlank(normalizedExpected) || isBlank(normalizedActual)) {
+            return 0.0;
+        }
+
+        double levenshteinScore = calculateLevenshteinSimilarity(
+                normalizedExpected,
+                normalizedActual
+        );
+
+        double tokenScore = calculateTokenCoverageSimilarity(
+                normalizedExpected,
+                normalizedActual
+        );
+
+        double substringScore = 0.0;
+
+        /*
+         * Contoh:
+         * search input ada di product search input refactor
+         * input debtor name ada di input debtor name refactor
+         */
+        if (normalizedActual.contains(normalizedExpected)
+                || normalizedExpected.contains(normalizedActual)) {
+            substringScore = 0.85;
+        }
+
+        return Math.max(
+                levenshteinScore,
+                Math.max(tokenScore, substringScore)
+        );
+    }
+
+    /**
+     * Menghitung berapa banyak token expected yang muncul di actual.
+     *
+     * Contoh:
+     * expected: product search input
+     * actual  : product search dashboard refactor
+     *
+     * token cocok: product, search
+     * score: 2 / 3 = 0.6667
+     */
+    private static double calculateTokenCoverageSimilarity(String expected,
+                                                           String actual) {
+        String[] expectedTokens = expected.split("\\s+");
+        String[] actualTokens = actual.split("\\s+");
+
+        if (expectedTokens.length == 0 || actualTokens.length == 0) {
+            return 0.0;
+        }
+
+        int validExpectedTokens = 0;
+        int matchedTokens = 0;
+
+        for (String expectedToken : expectedTokens) {
+            if (isBlank(expectedToken)) {
+                continue;
+            }
+
+            validExpectedTokens++;
+
+            for (String actualToken : actualTokens) {
+                if (expectedToken.equals(actualToken)) {
+                    matchedTokens++;
+                    break;
+                }
+            }
+        }
+
+        if (validExpectedTokens == 0) {
+            return 0.0;
+        }
+
+        return (double) matchedTokens / validExpectedTokens;
+    }
+
+    // -------------------------------------------------------
+    // LEVENSHTEIN DISTANCE
+    // -------------------------------------------------------
+
+    public static double calculateLevenshteinSimilarity(String s1, String s2) {
+        if (s1 == null) {
+            s1 = "";
+        }
+
+        if (s2 == null) {
+            s2 = "";
+        }
+
+        if (s1.isEmpty() && s2.isEmpty()) {
+            return 1.0;
+        }
+
+        if (s1.isEmpty() || s2.isEmpty()) {
+            return 0.0;
+        }
+
+        if (s1.equals(s2)) {
+            return 1.0;
+        }
 
         int distance = levenshteinDistance(s1, s2);
         int maxLength = Math.max(s1.length(), s2.length());
@@ -116,28 +263,30 @@ public class SimilarityEngine {
         return 1.0 - ((double) distance / maxLength);
     }
 
-    /**
-     * Algoritma Levenshtein Distance dengan dynamic programming.
-     * Menghitung jumlah minimum operasi (insert, delete, replace)
-     * untuk mengubah s1 menjadi s2.
-     */
     private static int levenshteinDistance(String s1, String s2) {
         int m = s1.length();
         int n = s2.length();
+
         int[][] dp = new int[m + 1][n + 1];
 
-        // Inisialisasi: transformasi string kosong ke s1/s2
-        for (int i = 0; i <= m; i++) dp[i][0] = i;
-        for (int j = 0; j <= n; j++) dp[0][j] = j;
+        for (int i = 0; i <= m; i++) {
+            dp[i][0] = i;
+        }
 
-        // Isi tabel DP
+        for (int j = 0; j <= n; j++) {
+            dp[0][j] = j;
+        }
+
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
-                int cost = (s1.charAt(i - 1) == s2.charAt(j - 1)) ? 0 : 1;
+                int cost = s1.charAt(i - 1) == s2.charAt(j - 1) ? 0 : 1;
+
                 dp[i][j] = Math.min(
-                        Math.min(dp[i - 1][j] + 1,    // delete
-                                 dp[i][j - 1] + 1),   // insert
-                        dp[i - 1][j - 1] + cost        // replace
+                        Math.min(
+                                dp[i - 1][j] + 1,
+                                dp[i][j - 1] + 1
+                        ),
+                        dp[i - 1][j - 1] + cost
                 );
             }
         }
@@ -146,25 +295,20 @@ public class SimilarityEngine {
     }
 
     // -------------------------------------------------------
-    // EUCLIDEAN DISTANCE — untuk posisi elemen di layar
+    // POSITION SIMILARITY
     // -------------------------------------------------------
 
-    /**
-     * Hitung similarity posisi menggunakan Euclidean Distance.
-     * Normalisasi: fungsi eksponensial terbalik sehingga
-     *   - jarak 0 piksel   → skor 1.0 (sama persis)
-     *   - jarak 150 piksel → skor ~0.5
-     *   - jarak 500+ piksel → skor mendekati 0.0
-     */
     public static double calculatePositionSimilarity(Point target, Point candidate) {
-        if (target == null || candidate == null) return 0.0;
+        if (target == null || candidate == null) {
+            return 0.0;
+        }
 
         double dx = target.getX() - candidate.getX();
         double dy = target.getY() - candidate.getY();
-        double euclideanDist = Math.sqrt(dx * dx + dy * dy);
 
-        // Normalisasi ke [0, 1] menggunakan fungsi eksponensial
-        return Math.exp(-euclideanDist / POSITION_NORMALIZATION);
+        double euclideanDistance = Math.sqrt((dx * dx) + (dy * dy));
+
+        return Math.exp(-euclideanDistance / POSITION_NORMALIZATION);
     }
 
     // -------------------------------------------------------
@@ -172,28 +316,47 @@ public class SimilarityEngine {
     // -------------------------------------------------------
 
     /**
-     * Normalisasi teks: lowercase, trim, hapus simbol non-alfanumerik.
-     * Penting agar "+ Tambah Produk" dan "Tambah Produk" mendapat skor tinggi.
+     * Normalisasi teks.
+     *
+     * Penting:
+     * CamelCase dipecah sebelum lowercase.
+     *
+     * Contoh:
+     * productSearchInputRefactor
+     * menjadi:
+     * product search input refactor
      */
     public static String normalizeText(String text) {
-        if (text == null) return "";
-        // Hapus simbol di depan/belakang, lowercase, trim spasi
-        return text.toLowerCase()
-                   .replaceAll("[^a-z0-9\\s]", "") // hapus simbol
-                   .replaceAll("\\s+", " ")         // normalisasi spasi
-                   .trim();
+        if (text == null) {
+            return "";
+        }
+
+        return text
+                .replaceAll("([a-z])([A-Z])", "$1 $2")
+                .replaceAll("[^a-zA-Z0-9\\s]", " ")
+                .toLowerCase()
+                .replaceAll("\\s+", " ")
+                .trim();
     }
 
-    /** Ambil teks elemen dengan aman (tidak throw exception). */
     private static String safeGetText(WebElement el) {
         try {
-            return el.getText();
+            String text = el.getText();
+            return text == null ? "" : text.trim();
         } catch (Exception e) {
             return "";
         }
     }
 
-    /** Ambil posisi elemen dengan aman. */
+    private static String safeGetAttribute(WebElement el, String attributeName) {
+        try {
+            String value = el.getAttribute(attributeName);
+            return value == null ? "" : value.trim();
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
     private static Point safeGetLocation(WebElement el) {
         try {
             return el.getLocation();
@@ -202,30 +365,61 @@ public class SimilarityEngine {
         }
     }
 
-    /** Ambil nilai atribut sesuai tipe locator (id, class, name, dll). */
     private static String getLocatorValue(WebElement el, String locatorType) {
-        try {
-            switch (locatorType.toLowerCase()) {
-                case "id":    return el.getAttribute("id");
-                case "class": return el.getAttribute("class");
-                case "name":  return el.getAttribute("name");
-                default:      return el.getAttribute(locatorType);
-            }
-        } catch (Exception e) {
+        if (isBlank(locatorType)) {
             return "";
+        }
+
+        String normalizedLocatorType = locatorType.toLowerCase().trim();
+
+        switch (normalizedLocatorType) {
+            case "id":
+                return safeGetAttribute(el, "id");
+
+            case "class":
+            case "classname":
+            case "class_name":
+                return safeGetAttribute(el, "class");
+
+            case "name":
+                return safeGetAttribute(el, "name");
+
+            case "placeholder":
+                return safeGetAttribute(el, "placeholder");
+
+            case "aria-label":
+                return safeGetAttribute(el, "aria-label");
+
+            default:
+                return safeGetAttribute(el, locatorType);
         }
     }
 
+    private static String firstNonBlank(String first, String second) {
+        if (!isBlank(first)) {
+            return first;
+        }
+
+        if (!isBlank(second)) {
+            return second;
+        }
+
+        return "";
+    }
+
+    private static boolean isBlank(String value) {
+        return value == null || value.trim().isEmpty();
+    }
+
     // -------------------------------------------------------
-    // METHOD UNTUK BACKWARD COMPATIBILITY
-    // (agar kode lama yang pakai calculateSimilarity() tetap bisa jalan)
+    // BACKWARD COMPATIBILITY
     // -------------------------------------------------------
 
     /**
-     * @deprecated Gunakan calculateCombinedScore() untuk hasil yang lebih akurat.
+     * @deprecated Gunakan calculateCombinedScore() untuk perhitungan utama.
      */
     @Deprecated
     public static double calculateSimilarity(String oldValue, String newValue) {
-        return calculateLevenshteinSimilarity(oldValue, newValue);
+        return calculateSmartSimilarity(oldValue, newValue);
     }
 }

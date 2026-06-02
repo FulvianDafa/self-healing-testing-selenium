@@ -1,12 +1,17 @@
 package com.fulvian.base;
 
+import com.fulvian.healing.HealingLogger;
+import com.fulvian.utils.DomMutationHelper;
+import com.fulvian.utils.WaitHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,21 +19,28 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 /**
- * BaseTest — Setup dan teardown yang diwarisi semua test class.
+ * BaseTest untuk semua test Selenium.
  *
- * Semua test class (TestInventoryHealing, TestInventoryBaseline)
- * extends class ini agar tidak perlu setup WebDriver berulang.
+ * Catatan penting:
+ * - Jangan menunggu id tertentu di @BeforeEach, karena penelitian self-healing
+ *   memang sengaja menguji kondisi locator berubah/rusak.
+ * - baseUrl bisa diganti dari command line:
+ *   mvn test -DbaseUrl=http://anugrah_jaya.test/app/index.html
  */
 public abstract class BaseTest {
 
-    protected static WebDriver     driver;
+    protected static WebDriver driver;
     protected static WebDriverWait wait;
     protected static JavascriptExecutor js;
 
-    // URL aplikasi web yang diuji — sesuaikan dengan environment Anda
-    protected static final String BASE_URL = "http://anugrah_jaya.test/app/index.html";
+    protected DomMutationHelper domMutation;
+    protected WaitHelper waitHelper;
 
-    // Timeout WebDriverWait dalam detik
+    protected static final String BASE_URL = System.getProperty(
+            "baseUrl",
+            "http://anugrah_jaya.test/app/index.html"
+    );
+
     protected static final int WAIT_TIMEOUT = 10;
 
     @BeforeAll
@@ -36,38 +48,44 @@ public abstract class BaseTest {
         WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
-        // Hilangkan comment di bawah jika ingin headless (tanpa tampilan browser):
-        // options.addArguments("--headless=new");
+        if (Boolean.parseBoolean(System.getProperty("headless", "false"))) {
+            options.addArguments("--headless=new");
+        }
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--disable-notifications");
+        options.addArguments("--disable-popup-blocking");
 
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+
+        // Implicit wait dimatikan agar waktu healing tidak bias.
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
-        js   = (JavascriptExecutor) driver;
+        js = (JavascriptExecutor) driver;
 
         System.out.println("[BaseTest] WebDriver siap.");
     }
 
     @BeforeEach
-    void navigateToApp() throws InterruptedException {
+    void navigateToApp() {
         driver.get(BASE_URL);
-        // Tunggu halaman stabil sebelum test dimulai
-        Thread.sleep(1500);
+
+        domMutation = new DomMutationHelper(driver);
+        waitHelper = new WaitHelper(wait);
+
+        waitHelper.waitUntilPresent(By.tagName("body"));
+        System.out.println("[BaseTest] Halaman SUT dimuat: " + BASE_URL);
     }
 
     @AfterEach
-    void takeBreath() throws InterruptedException {
-        // Jeda singkat antar test agar DOM stabil
-        Thread.sleep(500);
+    void afterEachTest() {
+        System.out.println("[BaseTest] Test selesai, halaman akan di-reset pada test berikutnya.");
     }
 
     @AfterAll
     static void tearDown() {
-        // Cetak ringkasan metrik healing setelah semua test selesai
-        com.fulvian.healing.HealingLogger.printSummary();
+        HealingLogger.printSummary();
 
         if (driver != null) {
             driver.quit();
@@ -76,74 +94,91 @@ public abstract class BaseTest {
     }
 
     // -------------------------------------------------------
-    // UTILITY METHODS — tersedia untuk semua subclass
+    // PAGE HELPERS
     // -------------------------------------------------------
 
-    /** Klik elemen via JavaScript — lebih andal dari .click() langsung. */
-    protected void jsClick(org.openqa.selenium.WebElement el) {
-        js.executeScript("arguments[0].click();", el);
+    protected void openIndexPage() {
+        driver.get(BASE_URL);
+        waitHelper.waitUntilPresent(By.tagName("body"));
     }
 
-    /** Scroll ke elemen agar terlihat di viewport. */
-    protected void scrollTo(org.openqa.selenium.WebElement el) {
-        js.executeScript("arguments[0].scrollIntoView({block:'center'});", el);
+    protected void openPage(String pageFileName) {
+        driver.get(resolvePageUrl(pageFileName));
+        waitHelper.waitUntilPresent(By.tagName("body"));
+        System.out.println("[BaseTest] Pindah halaman: " + pageFileName);
     }
 
-    /**
-     * Simulasikan perubahan DOM via JavaScript.
-     * Dipakai untuk mengubah atribut elemen SEBELUM locator asli dicari.
-     *
-     * Contoh:
-     *   simulateDomChange("inputProductBtn", "id", "inputProduct--Button");
-     *
-     * @param elementId   id elemen yang akan diubah atributnya
-     * @param attribute   nama atribut yang diubah ("id", "class", dll)
-     * @param newValue    nilai baru atribut tersebut
-     */
-    protected void simulateDomChange(String elementId,
-                                     String attribute,
-                                     String newValue) {
-        String script = String.format(
-                "var el = document.getElementById('%s'); " +
-                "if(el) { el.setAttribute('%s', '%s'); " +
-                "  console.log('DOM diubah: %s.%s → %s'); }",
-                elementId, attribute, newValue,
-                elementId, attribute, newValue
+    protected String resolvePageUrl(String pageFileName) {
+        int lastSlash = BASE_URL.lastIndexOf('/');
+        if (lastSlash < 0) {
+            return pageFileName;
+        }
+        return BASE_URL.substring(0, lastSlash + 1) + pageFileName;
+    }
+
+    protected boolean isDisplayed(By locator) {
+        try {
+            return driver.findElement(locator).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    protected boolean hasClass(WebElement element, String className) {
+        String classes = element.getAttribute("class");
+        return classes != null && classes.contains(className);
+    }
+
+    // -------------------------------------------------------
+    // COMMON SELENIUM HELPERS
+    // -------------------------------------------------------
+
+    protected void jsClick(WebElement element) {
+        js.executeScript("arguments[0].click();", element);
+    }
+
+    protected void scrollTo(WebElement element) {
+        js.executeScript(
+                "arguments[0].scrollIntoView({block:'center', inline:'nearest'});",
+                element
         );
-        js.executeScript(script);
-        System.out.printf("[BaseTest] DOM diubah: id='%s' → %s='%s'%n",
-                elementId, attribute, newValue);
     }
 
-    /**
-     * Simulasikan perubahan class elemen.
-     *
-     * @param elementId   id elemen yang akan diubah classnya
-     * @param newClass    nilai class baru (menggantikan seluruh class lama)
-     */
+    protected void reloadApp() {
+        driver.get(driver.getCurrentUrl());
+        waitHelper.waitUntilPresent(By.tagName("body"));
+        System.out.println("[BaseTest] Halaman SUT di-reload manual.");
+    }
+
+    protected WebElement ensureElementPresent(By locator) {
+        return waitHelper.waitUntilPresent(locator);
+    }
+
+    protected WebElement ensureElementClickable(By locator) {
+        return waitHelper.waitUntilClickable(locator);
+    }
+
+    // -------------------------------------------------------
+    // DOM MUTATION HELPERS
+    // -------------------------------------------------------
+
+    protected void simulateDomChange(String elementId, String attribute, String newValue) {
+        domMutation.changeAttributeById(elementId, attribute, newValue);
+    }
+
+    protected void simulateIdChange(String oldId, String newId) {
+        domMutation.changeId(oldId, newId);
+    }
+
     protected void simulateClassChange(String elementId, String newClass) {
-        simulateDomChange(elementId, "class", newClass);
+        domMutation.changeClassById(elementId, newClass);
     }
 
-    /**
-     * Simulasikan penambahan wrapper div — menggeser XPath elemen.
-     *
-     * @param elementId   id elemen yang akan dibungkus wrapper baru
-     */
     protected void simulateXPathChange(String elementId) {
-        String script = String.format(
-                "var el = document.getElementById('%s');" +
-                "if(el) {" +
-                "  var wrapper = document.createElement('div');" +
-                "  wrapper.className = 'xpath-wrapper-injected';" +
-                "  el.parentNode.insertBefore(wrapper, el);" +
-                "  wrapper.appendChild(el);" +
-                "  console.log('XPath diubah untuk: %s');" +
-                "}",
-                elementId, elementId
-        );
-        js.executeScript(script);
-        System.out.printf("[BaseTest] XPath diubah: wrapper div ditambahkan di atas '%s'%n",
-                elementId);
+        domMutation.wrapElementById(elementId, "xpath-wrapper-injected");
+    }
+
+    protected void simulateRemoveAttribute(String elementId, String attributeName) {
+        domMutation.removeAttributeById(elementId, attributeName);
     }
 }

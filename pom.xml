@@ -73,10 +73,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <!-- Jalankan healing dulu, baru baseline -->
+                    <!-- Default: jalankan suite ANUGRAH_JAYA yang sudah disesuaikan dengan DOM project -->
                     <includes>
-                        <include>**/TestInventoryHealing.java</include>
-                        <include>**/TestInventoryBaseline.java</include>
+                        <include>**/TestAnugrahJayaHealing.java</include>
+                        <include>**/TestAnugrahJayaBaseline.java</include>
                     </includes>
                 </configuration>
             </plugin>
