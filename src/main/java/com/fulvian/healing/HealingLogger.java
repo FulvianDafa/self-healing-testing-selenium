@@ -24,11 +24,16 @@ import java.nio.file.*;
 public class HealingLogger {
 
     // Lokasi file output — relatif dari root project
-    private static final String LOG_FILE    = "results/healing_log.csv";
+    private static final String DEFAULT_LOG_FILE = "results/healing_log.csv";
     private static final String STDOUT_SEP  = "─".repeat(70);
 
     // Flag: apakah header CSV sudah ditulis di sesi ini?
     private static boolean headerWritten = false;
+    private static String activeLogFile = null;
+
+    private static String logFile() {
+        return System.getProperty("healing.log.file", DEFAULT_LOG_FILE);
+    }
 
     // -------------------------------------------------------
     // METHOD UTAMA: catat satu event healing
@@ -44,7 +49,13 @@ public class HealingLogger {
         ensureDirectoryExists();
 
         // 2. Tulis header kalau file baru / pertama kali di sesi ini
-        if (!headerWritten || !Files.exists(Paths.get(LOG_FILE))) {
+        String currentLogFile = logFile();
+        if (!currentLogFile.equals(activeLogFile)) {
+            headerWritten = false;
+            activeLogFile = currentLogFile;
+        }
+
+        if (!headerWritten || !Files.exists(Paths.get(currentLogFile))) {
             writeToFile(HealingResult.csvHeader() + "\n", false);
             headerWritten = true;
         }
@@ -66,7 +77,7 @@ public class HealingLogger {
      * Rumus: (jumlah SUCCESS / total baris) × 100%
      */
     public static HealingMetrics calculateMetrics() {
-        Path path = Paths.get(LOG_FILE);
+        Path path = Paths.get(logFile());
         if (!Files.exists(path)) return new HealingMetrics(0, 0, 0, 0, 0);
 
         int total = 0, success = 0, falsePositive = 0;
@@ -112,7 +123,7 @@ public class HealingLogger {
         System.out.printf("  False Positive Rate         : %.2f%%%n", m.falsePositiveRate);
         System.out.printf("  Rata-rata waktu healing     : %.2f ms%n", m.avgHealingTimeMs);
         System.out.println(STDOUT_SEP);
-        System.out.println("  Data lengkap: " + Paths.get(LOG_FILE).toAbsolutePath());
+        System.out.println("  Data lengkap: " + Paths.get(logFile()).toAbsolutePath());
         System.out.println(STDOUT_SEP + "\n");
     }
 
@@ -133,7 +144,7 @@ public class HealingLogger {
             StandardOpenOption mode = append
                     ? StandardOpenOption.APPEND
                     : StandardOpenOption.TRUNCATE_EXISTING;
-            Files.write(Paths.get(LOG_FILE), content.getBytes(StandardCharsets.UTF_8),
+            Files.write(Paths.get(logFile()), content.getBytes(StandardCharsets.UTF_8),
                     StandardOpenOption.CREATE, mode);
         } catch (IOException e) {
             System.err.println("[HealingLogger] Gagal menulis ke CSV: " + e.getMessage());

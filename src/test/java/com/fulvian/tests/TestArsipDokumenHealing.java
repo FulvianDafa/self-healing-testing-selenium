@@ -1,5 +1,8 @@
 package com.fulvian.tests;
 
+import com.fulvian.healing.ElementProfile;
+import com.fulvian.healing.HealingDriver;
+import com.fulvian.healing.HealingLogger;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
@@ -11,54 +14,44 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.Duration;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Locale;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Self-healing test untuk SUT Arsip Dokumen (Laravel sistembagluri).
  *
- * Catatan integrasi:
- * - File ini membawa helper healing lokal berbasis similarity agar bisa langsung dipahami dan dijalankan.
- * - Jika project kamu sudah punya HealingDriver/SimilarityEngine sendiri, bagian findHealedElement(...)
- *   bisa diganti menjadi pemanggilan HealingDriver kamu agar metriknya masuk ke logger utama penelitian.
+ * Refactor penting:
+ * - Tidak lagi memakai helper similarity lokal di dalam file test.
+ * - Semua proses healing sekarang memakai engine utama penelitian:
+ *   HealingDriver, SimilarityEngine, ElementProfile, dan HealingLogger.
+ * - Log healing Arsip dipisahkan melalui system property:
+ *   results/arsip_healing_log.csv
  *
  * Jalankan:
  * mvn clean test -Dtest=TestArsipDokumenHealing -DbaseUrl=http://127.0.0.1:8000
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@DisplayName("SISTEMBAGLURI - Self-Healing Locator Test")
 public class TestArsipDokumenHealing {
 
     private static final double THRESHOLD = 0.50;
-    private static final Path RESULT_FILE = Paths.get("results", "arsip_healing_log.csv");
-    private static final List<String[]> HEALING_LOGS = new ArrayList<>();
+    private static final String SUT_LOG_FILE = "results/arsip_healing_log.csv";
 
     private WebDriver driver;
     private WebDriverWait wait;
+    private JavascriptExecutor js;
     private String baseUrl;
 
     @BeforeAll
-    static void prepareResultFile() throws IOException {
-        Files.createDirectories(RESULT_FILE.getParent());
-        HEALING_LOGS.clear();
-        HEALING_LOGS.add(new String[]{
-                "timestamp",
-                "test_case_id",
-                "sut",
-                "original_locator",
-                "mutated_locator",
-                "selected_element",
-                "similarity_score",
-                "healing_time_ms",
-                "status",
-                "message"
-        });
+    static void prepareHealingLog() throws IOException {
+        System.setProperty("healing.log.file", SUT_LOG_FILE);
+        Files.createDirectories(Paths.get("results"));
+        Files.deleteIfExists(Paths.get(SUT_LOG_FILE));
     }
 
     @BeforeEach
@@ -68,8 +61,14 @@ public class TestArsipDokumenHealing {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
+        if (Boolean.parseBoolean(System.getProperty("headless", "false"))) {
+            options.addArguments("--headless=new");
+        }
+
         driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        js = (JavascriptExecutor) driver;
     }
 
     @AfterEach
@@ -80,63 +79,60 @@ public class TestArsipDokumenHealing {
     }
 
     @AfterAll
-    static void writeResultFile() throws IOException {
-        List<String> lines = new ArrayList<>();
-        for (String[] row : HEALING_LOGS) {
-            lines.add(toCsv(row));
-        }
-        Files.write(RESULT_FILE, lines, StandardCharsets.UTF_8);
-        System.out.println("\n[HEALING] Log tersimpan di: " + RESULT_FILE.toAbsolutePath());
+    static void printHealingSummary() {
+        System.setProperty("healing.log.file", SUT_LOG_FILE);
+        HealingLogger.printSummary();
     }
 
     @Test
     @Order(1)
     @DisplayName("ARS-SH-001 Login: input email dipulihkan saat id berubah")
     void arsSh001_loginEmailChangedId() {
-        driver.get(baseUrl + "/login");
+        openLoginPage();
         waitVisible(By.id("loginEmailInput"));
 
         mutateId("loginEmailInput", "loginEmailInputRefactor");
 
-        WebElement email = findHealedElement(
+        WebElement email = heal(
                 "ARS-SH-001",
                 By.id("loginEmailInput"),
-                "loginEmailInput",
-                "loginEmailInputRefactor",
-                ExpectedElement.input("loginEmailInput", "email", "email", "Email address")
+                new ElementProfile("Email", "loginEmailInput", "id")
         );
 
-        email.sendKeys("admin@example.com");
-        driver.findElement(By.id("loginPasswordInput")).sendKeys("password");
-        driver.findElement(By.id("loginSubmitButton")).click();
+        assertEquals("loginEmailInputRefactor", email.getAttribute("id"));
+        assertEquals("email", email.getAttribute("name"));
 
-        wait.until(d -> d.getCurrentUrl().contains("/dashboard")
-                || d.getPageSource().contains("Dashboard"));
+        email.clear();
+        email.sendKeys("admin@example.com");
+        waitVisible(By.id("loginPasswordInput")).sendKeys("password");
+        waitClickable(By.id("loginSubmitButton")).click();
+
+        waitUntilDashboardLoaded();
     }
 
     @Test
     @Order(2)
     @DisplayName("ARS-SH-002 Login: tombol login dipulihkan saat id berubah")
     void arsSh002_loginButtonChangedId() {
-        driver.get(baseUrl + "/login");
+        openLoginPage();
         waitVisible(By.id("loginSubmitButton"));
 
-        driver.findElement(By.id("loginEmailInput")).sendKeys("admin@example.com");
-        driver.findElement(By.id("loginPasswordInput")).sendKeys("password");
+        waitVisible(By.id("loginEmailInput")).sendKeys("admin@example.com");
+        waitVisible(By.id("loginPasswordInput")).sendKeys("password");
 
         mutateId("loginSubmitButton", "loginSubmitButtonRefactor");
 
-        WebElement button = findHealedElement(
+        WebElement button = heal(
                 "ARS-SH-002",
                 By.id("loginSubmitButton"),
-                "loginSubmitButton",
-                "loginSubmitButtonRefactor",
-                ExpectedElement.button("loginSubmitButton", "Log In")
+                new ElementProfile("Log In", "loginSubmitButton", "id")
         );
 
+        assertEquals("loginSubmitButtonRefactor", button.getAttribute("id"));
+        assertEquals("button", button.getTagName().toLowerCase());
+
         button.click();
-        wait.until(d -> d.getCurrentUrl().contains("/dashboard")
-                || d.getPageSource().contains("Dashboard"));
+        waitUntilDashboardLoaded();
     }
 
     @Test
@@ -149,15 +145,16 @@ public class TestArsipDokumenHealing {
 
         mutateId("masterApbnCard", "masterApbnCardRefactor");
 
-        WebElement card = findHealedElement(
+        WebElement card = heal(
                 "ARS-SH-003",
                 By.id("masterApbnCard"),
-                "masterApbnCard",
-                "masterApbnCardRefactor",
-                ExpectedElement.link("masterApbnCard", "Dokumen APBN")
+                new ElementProfile("Dokumen APBN", "masterApbnCard", "id")
         );
 
-        card.click();
+        assertEquals("masterApbnCardRefactor", card.getAttribute("id"));
+        assertTrue(card.getText().toLowerCase().contains("apbn"));
+
+        jsClick(card);
         wait.until(d -> d.getCurrentUrl().contains("/apbn"));
     }
 
@@ -172,17 +169,18 @@ public class TestArsipDokumenHealing {
         String year = uniqueYear();
         mutateId("apbnYearInput", "apbnYearInputRefactor");
 
-        WebElement yearInput = findHealedElement(
+        WebElement yearInput = heal(
                 "ARS-SH-004",
                 By.id("apbnYearInput"),
-                "apbnYearInput",
-                "apbnYearInputRefactor",
-                ExpectedElement.input("apbnYearInput", "year", "text", "Masukkan tahun")
+                new ElementProfile("Tahun APBN", "apbnYearInput", "id")
         );
+
+        assertEquals("apbnYearInputRefactor", yearInput.getAttribute("id"));
+        assertEquals("year", yearInput.getAttribute("name"));
 
         yearInput.clear();
         yearInput.sendKeys(year);
-        driver.findElement(By.id("addApbnYearButton")).click();
+        waitClickable(By.id("addApbnYearButton")).click();
         wait.until(d -> d.getPageSource().contains(year));
     }
 
@@ -192,23 +190,24 @@ public class TestArsipDokumenHealing {
     void arsSh005_apbnPackageNameInputChangedId() {
         loginAsAdmin();
         String year = createApbnYear();
-        driver.get(baseUrl + "/apbn/" + year);
+        openApbnYearPage(year);
         waitVisible(By.id("apbnPackageNameInput"));
 
         String packageName = "Paket Healing APBN " + System.currentTimeMillis();
         mutateId("apbnPackageNameInput", "apbnPackageNameInputRefactor");
 
-        WebElement input = findHealedElement(
+        WebElement input = heal(
                 "ARS-SH-005",
                 By.id("apbnPackageNameInput"),
-                "apbnPackageNameInput",
-                "apbnPackageNameInputRefactor",
-                ExpectedElement.input("apbnPackageNameInput", "nama_paket", "text", "Nama Paket")
+                new ElementProfile("Nama Paket", "apbnPackageNameInput", "id")
         );
+
+        assertEquals("apbnPackageNameInputRefactor", input.getAttribute("id"));
+        assertEquals("nama_paket", input.getAttribute("name"));
 
         input.clear();
         input.sendKeys(packageName);
-        driver.findElement(By.xpath("//button[normalize-space()='Tambah Paket']")).click();
+        clickTambahPaketButton();
         wait.until(d -> d.getPageSource().contains(packageName));
     }
 
@@ -225,16 +224,17 @@ public class TestArsipDokumenHealing {
         fillApbnUploadForm(nomorSurat);
         mutateId("uploadApbnDocumentButton", "uploadApbnDocumentButtonRefactor");
 
-        WebElement uploadButton = findHealedElement(
+        WebElement uploadButton = heal(
                 "ARS-SH-006",
                 By.id("uploadApbnDocumentButton"),
-                "uploadApbnDocumentButton",
-                "uploadApbnDocumentButtonRefactor",
-                ExpectedElement.button("uploadApbnDocumentButton", "Upload")
+                new ElementProfile("Upload", "uploadApbnDocumentButton", "id")
         );
 
+        assertEquals("uploadApbnDocumentButtonRefactor", uploadButton.getAttribute("id"));
+        assertEquals("button", uploadButton.getTagName().toLowerCase());
+
         uploadButton.click();
-        wait.until(d -> d.getPageSource().contains("berhasil")
+        wait.until(d -> d.getPageSource().toLowerCase().contains("berhasil")
                 || d.getPageSource().contains(nomorSurat));
     }
 
@@ -248,13 +248,14 @@ public class TestArsipDokumenHealing {
 
         mutateId("plnPackageNameInput", "plnPackageNameInputRefactor");
 
-        WebElement input = findHealedElement(
+        WebElement input = heal(
                 "ARS-SH-007",
                 By.id("plnPackageNameInput"),
-                "plnPackageNameInput",
-                "plnPackageNameInputRefactor",
-                ExpectedElement.input("plnPackageNameInput", "nama_paket", "text", "Nama Paket Pengadaan")
+                new ElementProfile("Nama Paket", "plnPackageNameInput", "id")
         );
+
+        assertEquals("plnPackageNameInputRefactor", input.getAttribute("id"));
+        assertEquals("nama_paket", input.getAttribute("name"));
 
         input.clear();
         input.sendKeys("Paket Healing PLN " + System.currentTimeMillis());
@@ -273,74 +274,147 @@ public class TestArsipDokumenHealing {
         fillPlnUploadForm(nomorSurat);
         mutateId("uploadPlnDocumentButton", "uploadPlnDocumentButtonRefactor");
 
-        WebElement uploadButton = findHealedElement(
+        WebElement uploadButton = heal(
                 "ARS-SH-008",
                 By.id("uploadPlnDocumentButton"),
-                "uploadPlnDocumentButton",
-                "uploadPlnDocumentButtonRefactor",
-                ExpectedElement.button("uploadPlnDocumentButton", "Upload Dokumen")
+                new ElementProfile("Upload Dokumen", "uploadPlnDocumentButton", "id")
         );
+
+        assertEquals("uploadPlnDocumentButtonRefactor", uploadButton.getAttribute("id"));
+        assertEquals("button", uploadButton.getTagName().toLowerCase());
 
         uploadButton.click();
         wait.until(d -> d.getCurrentUrl().contains("/pln")
-                && (d.getPageSource().contains("berhasil") || d.getPageSource().contains(nomorSurat)));
+                && (d.getPageSource().toLowerCase().contains("berhasil")
+                || d.getPageSource().contains(nomorSurat)));
+    }
+
+    // =========================================================
+    // SELF-HEALING ADAPTER
+    // =========================================================
+
+    private WebElement heal(String testCaseId, By originalLocator, ElementProfile profile) {
+        HealingDriver healing = new HealingDriver(driver, testCaseId, "sistembagluri_id_change", THRESHOLD);
+        return healing.findElement(originalLocator, profile);
+    }
+
+    // =========================================================
+    // PAGE HELPERS
+    // =========================================================
+
+    private void openLoginPage() {
+        driver.get(baseUrl + "/login");
+        waitVisible(By.id("loginEmailInput"));
     }
 
     private void loginAsAdmin() {
-        driver.get(baseUrl + "/login");
+        openLoginPage();
         waitVisible(By.id("loginEmailInput")).sendKeys("admin@example.com");
-        driver.findElement(By.id("loginPasswordInput")).sendKeys("password");
-        driver.findElement(By.id("loginSubmitButton")).click();
+        waitVisible(By.id("loginPasswordInput")).sendKeys("password");
+        waitClickable(By.id("loginSubmitButton")).click();
+        waitUntilDashboardLoaded();
+    }
 
+    private void waitUntilDashboardLoaded() {
         wait.until(d -> d.getCurrentUrl().contains("/dashboard")
-                || d.getPageSource().contains("Dashboard"));
+                || d.getPageSource().contains("Dashboard")
+                || d.getPageSource().contains("Master Data"));
     }
 
     private String createApbnYear() {
         String year = uniqueYear();
         driver.get(baseUrl + "/apbn");
+
         WebElement input = waitVisible(By.id("apbnYearInput"));
         input.clear();
         input.sendKeys(year);
-        driver.findElement(By.id("addApbnYearButton")).click();
-        wait.until(d -> d.getPageSource().contains(year));
+        waitClickable(By.id("addApbnYearButton")).click();
+
+        wait.until(d -> d.getPageSource().contains(year)
+                || d.getCurrentUrl().contains("/apbn"));
         return year;
+    }
+
+    /**
+     * Membuka halaman detail tahun APBN secara defensif.
+     *
+     * Pada project Laravel ini route detail tahun biasanya memakai id database,
+     * bukan nilai tahun. Jadi test tidak boleh langsung driver.get("/apbn/" + year).
+     * Lebih aman: setelah tahun dibuat, klik link/card yang berisi teks tahun tersebut.
+     */
+    private void openApbnYearPage(String year) {
+        if (isPresent(By.id("apbnPackageNameInput"))) {
+            return;
+        }
+
+        driver.get(baseUrl + "/apbn");
+        waitVisible(By.id("apbnYearInput"));
+        wait.until(d -> d.getPageSource().contains(year));
+
+        By yearEntry = By.xpath(
+                "//*[self::a or self::button][contains(normalize-space(.), '" + year + "')]"
+        );
+
+        List<WebElement> entries = driver.findElements(yearEntry);
+        if (!entries.isEmpty()) {
+            jsClick(entries.get(0));
+        }
+
+        waitVisible(By.id("apbnPackageNameInput"));
     }
 
     private String createApbnPackage(String year) {
         String packageName = "Paket Upload APBN " + System.currentTimeMillis();
-        driver.get(baseUrl + "/apbn/" + year);
+        openApbnYearPage(year);
+
         WebElement input = waitVisible(By.id("apbnPackageNameInput"));
         input.clear();
         input.sendKeys(packageName);
-        driver.findElement(By.xpath("//button[normalize-space()='Tambah Paket']")).click();
+        clickTambahPaketButton();
+
         wait.until(d -> d.getPageSource().contains(packageName));
         return packageName;
     }
 
+    private void clickTambahPaketButton() {
+        By button = By.xpath("//button[contains(normalize-space(.), 'Tambah Paket')]");
+        waitClickable(button).click();
+    }
+
     private void openApbnPackage(String packageName) {
-        waitVisible(By.linkText(packageName)).click();
+        By packageEntry = By.xpath(
+                "//*[self::a or self::button][contains(normalize-space(.), '" + packageName + "')]"
+        );
+        waitClickable(packageEntry).click();
         waitVisible(By.id("apbnNomorSuratInput"));
     }
 
     private void fillApbnUploadForm(String nomorSurat) throws IOException {
-        driver.findElement(By.name("tanggal_diterima")).sendKeys("2026-06-05");
-        driver.findElement(By.name("surat_dari")).sendKeys("Bagian Pengadaan");
-        driver.findElement(By.id("apbnNomorSuratInput")).sendKeys(nomorSurat);
-        driver.findElement(By.name("tanggal_surat")).sendKeys("2026-06-05");
-        driver.findElement(By.id("apbnPerihalInput")).sendKeys("Dokumen APBN untuk pengujian self-healing Selenium");
-        driver.findElement(By.id("apbnFileDokumenInput")).sendKeys(createTempPdf().toString());
+        setValue(By.name("tanggal_diterima"), "2026-06-05");
+        setValue(By.name("surat_dari"), "Bagian Pengadaan");
+        setValue(By.id("apbnNomorSuratInput"), nomorSurat);
+        setValue(By.name("tanggal_surat"), "2026-06-05");
+        setValue(By.id("apbnPerihalInput"), "Dokumen APBN untuk pengujian self-healing Selenium");
+        waitVisible(By.id("apbnFileDokumenInput")).sendKeys(createTempPdf().toString());
     }
 
     private void fillPlnUploadForm(String nomorSurat) throws IOException {
-        new Select(driver.findElement(By.name("tahun_anggaran"))).selectByValue("2026");
-        driver.findElement(By.id("plnPackageNameInput")).sendKeys("Paket Upload PLN " + System.currentTimeMillis());
-        driver.findElement(By.name("tanggal_diterima")).sendKeys("2026-06-05");
-        driver.findElement(By.name("surat_dari")).sendKeys("Unit PLN Testing");
-        driver.findElement(By.id("plnNomorSuratInput")).sendKeys(nomorSurat);
-        driver.findElement(By.name("tanggal_surat")).sendKeys("2026-06-05");
-        driver.findElement(By.id("plnPerihalInput")).sendKeys("Dokumen PLN untuk pengujian self-healing Selenium");
-        driver.findElement(By.id("plnFileDokumenInput")).sendKeys(createTempPdf().toString());
+        Select yearSelect = new Select(waitVisible(By.name("tahun_anggaran")));
+        yearSelect.selectByValue("2026");
+
+        setValue(By.id("plnPackageNameInput"), "Paket Upload PLN " + System.currentTimeMillis());
+        setValue(By.name("tanggal_diterima"), "2026-06-05");
+        setValue(By.name("surat_dari"), "Unit PLN Testing");
+        setValue(By.id("plnNomorSuratInput"), nomorSurat);
+        setValue(By.name("tanggal_surat"), "2026-06-05");
+        setValue(By.id("plnPerihalInput"), "Dokumen PLN untuk pengujian self-healing Selenium");
+        waitVisible(By.id("plnFileDokumenInput")).sendKeys(createTempPdf().toString());
+    }
+
+    private void setValue(By locator, String value) {
+        WebElement element = waitVisible(locator);
+        element.clear();
+        element.sendKeys(value);
     }
 
     private Path createTempPdf() throws IOException {
@@ -348,7 +422,6 @@ public class TestArsipDokumenHealing {
         Files.createDirectories(dir);
         Path pdf = dir.resolve("sample-dokumen.pdf").toAbsolutePath();
 
-        // PDF minimal yang cukup untuk kebutuhan upload file test.
         String content = "%PDF-1.4\n" +
                 "1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj\n" +
                 "2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj\n" +
@@ -360,12 +433,27 @@ public class TestArsipDokumenHealing {
         return pdf;
     }
 
+    // =========================================================
+    // DOM / WAIT HELPERS
+    // =========================================================
+
     private WebElement waitVisible(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
+    private WebElement waitClickable(By locator) {
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    private boolean isPresent(By locator) {
+        try {
+            return !driver.findElements(locator).isEmpty();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
     private void mutateId(String oldId, String newId) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         Object result = js.executeScript(
                 "const el = document.getElementById(arguments[0]);" +
                         "if (!el) return 0;" +
@@ -374,215 +462,16 @@ public class TestArsipDokumenHealing {
                 oldId,
                 newId
         );
-        assertEquals(1L, ((Number) result).longValue(), "Elemen yang akan dimutasi tidak ditemukan: " + oldId);
+        assertEquals(1L, ((Number) result).longValue(),
+                "Elemen yang akan dimutasi tidak ditemukan: " + oldId);
     }
 
-    private WebElement findHealedElement(String testCaseId,
-                                         By originalLocator,
-                                         String originalId,
-                                         String mutatedLocatorDescription,
-                                         ExpectedElement expected) {
-        long start = System.nanoTime();
-
-        try {
-            WebElement original = driver.findElement(originalLocator);
-            long elapsed = elapsedMs(start);
-            log(testCaseId, originalLocator.toString(), mutatedLocatorDescription, describe(original), 1.0, elapsed,
-                    "NOT_HEALED", "Locator lama masih ditemukan, healing tidak aktif");
-            return original;
-        } catch (NoSuchElementException ignored) {
-            // lanjut ke proses healing
-        }
-
-        List<WebElement> candidates = driver.findElements(By.cssSelector("input, textarea, button, a, select"));
-
-        CandidateScore best = candidates.stream()
-                .filter(WebElement::isDisplayed)
-                .map(candidate -> new CandidateScore(candidate, calculateScore(originalId, expected, candidate)))
-                .max(Comparator.comparingDouble(c -> c.score))
-                .orElseThrow(() -> new NoSuchElementException("Tidak ada kandidat elemen untuk healing"));
-
-        long elapsed = elapsedMs(start);
-
-        if (best.score < THRESHOLD) {
-            log(testCaseId, originalLocator.toString(), mutatedLocatorDescription, describe(best.element), best.score, elapsed,
-                    "FAILED", "Skor terbaik di bawah threshold " + THRESHOLD);
-            throw new NoSuchElementException("Healing gagal. Skor terbaik " + best.score + " di bawah threshold " + THRESHOLD);
-        }
-
-        log(testCaseId, originalLocator.toString(), mutatedLocatorDescription, describe(best.element), best.score, elapsed,
-                "SUCCESS", "Elemen berhasil dipulihkan");
-        return best.element;
-    }
-
-    private double calculateScore(String originalId, ExpectedElement expected, WebElement candidate) {
-        String candidateId = attr(candidate, "id");
-        String candidateName = attr(candidate, "name");
-        String candidateType = normalizedType(candidate);
-        String candidateTag = candidate.getTagName().toLowerCase(Locale.ROOT);
-        String candidateText = visibleText(candidate);
-        String candidatePlaceholder = attr(candidate, "placeholder");
-
-        double locatorScore = similarity(originalId, candidateId);
-        double nameScore = similarity(expected.name, candidateName);
-        double textScore = Math.max(similarity(expected.textHint, candidateText), similarity(expected.textHint, candidatePlaceholder));
-        double tagScore = expected.tag.equals(candidateTag) ? 1.0 : 0.0;
-        double typeScore = expected.type.isBlank() || expected.type.equals(candidateType) ? 1.0 : 0.0;
-
-        // Bobot sengaja dibuat mirip pendekatan penelitian: locator/text dominan, lalu kompatibilitas tag/type.
-        return (locatorScore * 0.40)
-                + (nameScore * 0.20)
-                + (textScore * 0.20)
-                + (tagScore * 0.10)
-                + (typeScore * 0.10);
-    }
-
-    private String normalizedType(WebElement element) {
-        if (!"input".equalsIgnoreCase(element.getTagName())) {
-            return "";
-        }
-        String type = attr(element, "type");
-        return type.isBlank() ? "text" : type.toLowerCase(Locale.ROOT);
-    }
-
-    private String visibleText(WebElement element) {
-        String text = element.getText();
-        return text == null ? "" : text.trim();
-    }
-
-    private String attr(WebElement element, String name) {
-        String value = element.getAttribute(name);
-        return value == null ? "" : value.trim();
-    }
-
-    private double similarity(String a, String b) {
-        a = normalize(a);
-        b = normalize(b);
-
-        if (a.isBlank() && b.isBlank()) return 1.0;
-        if (a.isBlank() || b.isBlank()) return 0.0;
-        if (a.equals(b)) return 1.0;
-
-        int max = Math.max(a.length(), b.length());
-        int distance = levenshtein(a, b);
-        return Math.max(0.0, 1.0 - ((double) distance / max));
-    }
-
-    private String normalize(String value) {
-        if (value == null) return "";
-        return value.toLowerCase(Locale.ROOT)
-                .replace("refactor", "")
-                .replaceAll("[^a-z0-9]", "")
-                .trim();
-    }
-
-    private int levenshtein(String a, String b) {
-        int[][] dp = new int[a.length() + 1][b.length() + 1];
-
-        for (int i = 0; i <= a.length(); i++) dp[i][0] = i;
-        for (int j = 0; j <= b.length(); j++) dp[0][j] = j;
-
-        for (int i = 1; i <= a.length(); i++) {
-            for (int j = 1; j <= b.length(); j++) {
-                int cost = a.charAt(i - 1) == b.charAt(j - 1) ? 0 : 1;
-                dp[i][j] = Math.min(
-                        Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1),
-                        dp[i - 1][j - 1] + cost
-                );
-            }
-        }
-        return dp[a.length()][b.length()];
-    }
-
-    private long elapsedMs(long startNano) {
-        return Duration.ofNanos(System.nanoTime() - startNano).toMillis();
-    }
-
-    private void log(String testCaseId,
-                     String originalLocator,
-                     String mutatedLocator,
-                     String selectedElement,
-                     double score,
-                     long healingTimeMs,
-                     String status,
-                     String message) {
-        HEALING_LOGS.add(new String[]{
-                LocalDateTime.now().toString(),
-                testCaseId,
-                "sistembagluri",
-                originalLocator,
-                mutatedLocator,
-                selectedElement,
-                String.format(Locale.US, "%.4f", score),
-                String.valueOf(healingTimeMs),
-                status,
-                message
-        });
-    }
-
-    private String describe(WebElement element) {
-        String tag = element.getTagName();
-        String id = attr(element, "id");
-        String name = attr(element, "name");
-        String type = attr(element, "type");
-        String text = visibleText(element);
-        return "<" + tag
-                + (id.isBlank() ? "" : " id='" + id + "'")
-                + (name.isBlank() ? "" : " name='" + name + "'")
-                + (type.isBlank() ? "" : " type='" + type + "'")
-                + (text.isBlank() ? "" : " text='" + text + "'")
-                + ">";
+    private void jsClick(WebElement element) {
+        js.executeScript("arguments[0].click();", element);
     }
 
     private String uniqueYear() {
-        long value = Math.abs(System.nanoTime() % 7000L);
-        return String.valueOf(2000L + value);
-    }
-
-    private static String toCsv(String[] row) {
-        List<String> escaped = new ArrayList<>();
-        for (String value : row) {
-            String safe = value == null ? "" : value.replace("\"", "\"\"");
-            escaped.add("\"" + safe + "\"");
-        }
-        return String.join(",", escaped);
-    }
-
-    private static class ExpectedElement {
-        final String id;
-        final String name;
-        final String tag;
-        final String type;
-        final String textHint;
-
-        private ExpectedElement(String id, String name, String tag, String type, String textHint) {
-            this.id = id == null ? "" : id;
-            this.name = name == null ? "" : name;
-            this.tag = tag == null ? "" : tag.toLowerCase(Locale.ROOT);
-            this.type = type == null ? "" : type.toLowerCase(Locale.ROOT);
-            this.textHint = textHint == null ? "" : textHint;
-        }
-
-        static ExpectedElement input(String id, String name, String type, String placeholderOrLabel) {
-            return new ExpectedElement(id, name, "input", type, placeholderOrLabel);
-        }
-
-        static ExpectedElement button(String id, String textHint) {
-            return new ExpectedElement(id, "", "button", "", textHint);
-        }
-
-        static ExpectedElement link(String id, String textHint) {
-            return new ExpectedElement(id, "", "a", "", textHint);
-        }
-    }
-
-    private static class CandidateScore {
-        final WebElement element;
-        final double score;
-
-        CandidateScore(WebElement element, double score) {
-            this.element = element;
-            this.score = score;
-        }
+        long offset = Math.abs(System.nanoTime() % 120L);
+        return String.valueOf(2030L + offset);
     }
 }

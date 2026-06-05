@@ -428,42 +428,51 @@ public class HealingDriver {
 
     private String inferExpectedTag(ElementProfile profile) {
         String signature = buildTargetSignature(profile);
-
-        // Button/action
-        if (containsAny(signature,
-                "btn", "button", "simpan", "save", "tambah", "add",
-                "hapus", "delete", "edit", "update", "submit", "bayar",
-                "checkout", "login", "logout")) {
-            return "button";
-        }
-
-        // Select/dropdown
-        if (containsAny(signature,
-                "select", "dropdown", "kategori", "category", "supplier",
-                "status", "jenis", "role")) {
-            return "select";
-        }
-
+    
+        /*
+         * Urutan pengecekan penting:
+         * Input dicek lebih dulu karena locator seperti "loginEmailInput"
+         * mengandung kata "login", tetapi target sebenarnya adalah input,
+         * bukan button.
+         */
+    
         // Textarea
         if (containsAny(signature,
                 "textarea", "alamat", "address", "deskripsi", "description",
-                "keterangan", "catatan", "note", "notes")) {
+                "keterangan", "catatan", "note", "notes", "perihal")) {
             return "textarea";
         }
-
+    
+        // Select/dropdown
+        if (containsAny(signature,
+                "select", "dropdown", "kategori", "category", "supplier",
+                "status", "jenis", "role", "tahun_anggaran")) {
+            return "select";
+        }
+    
         // Input
         if (containsAny(signature,
-                "input", "nama", "name", "barang", "produk", "product",
+                "input", "email", "mail", "password", "pass",
+                "nama", "name", "barang", "produk", "product",
                 "harga", "price", "stok", "stock", "qty", "quantity",
                 "jumlah", "paid", "bayar", "payment", "total", "nominal",
-                "gambar", "image", "foto", "file", "search", "cari",
-                "email", "password", "tanggal", "date")) {
+                "gambar", "image", "foto", "file",
+                "search", "cari",
+                "tanggal", "date", "year", "tahun",
+                "nomor", "surat", "kode", "paket")) {
             return "input";
         }
-
+    
+        // Button/action
+        if (containsAny(signature,
+                "btn", "button", "simpan", "save", "tambah", "add",
+                "hapus", "delete", "edit", "update", "submit",
+                "checkout", "login", "logout", "upload", "download", "cari")) {
+            return "button";
+        }
+    
         return "";
     }
-
     private String inferExpectedInputType(ElementProfile profile) {
         String signature = buildTargetSignature(profile);
 

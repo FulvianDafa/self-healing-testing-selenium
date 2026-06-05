@@ -1,0 +1,2 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-06-05T20:41:47.264904","ARS-BL-001","sistembagluri","By.id: loginEmailInput","id=loginEmailInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
