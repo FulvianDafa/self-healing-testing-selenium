@@ -1,0 +1,8 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-06-11T20:13:05.207686900","SBA-AD-BL-001","sapi_admin_laravel","By.id: email","id=adminEmailInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-11T20:13:07.088758500","SBA-AD-BL-002","sapi_admin_laravel","By.id: adminLoginButton","id=adminLoginButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-11T20:13:10.836479200","SBA-AD-BL-003","sapi_admin_laravel","By.id: adminHewanKurbanNavLink","id=adminHewanKurbanNavLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-11T20:13:15.264305300","SBA-AD-BL-004","sapi_admin_laravel","By.id: filter_jenis_hewan","id=filterJenisHewanRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-11T20:13:19.292770500","SBA-AD-BL-005","sapi_admin_laravel","By.id: addHewanButton","id=addHewanButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-11T20:13:23.551536","SBA-AD-BL-006","sapi_admin_laravel","By.id: nama","id=namaHewanInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-11T20:13:27.664411400","SBA-AD-BL-007","sapi_admin_laravel","By.id: harga_display","id=hargaDisplayInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

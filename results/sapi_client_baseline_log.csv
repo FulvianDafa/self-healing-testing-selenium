@@ -1,0 +1,6 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-06-06T00:10:32.810717200","SBA-CL-BL-001","sapi_client_vue","By.id: clientHeroBuyButton","id=clientHeroBuyButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-06T00:10:34.410571800","SBA-CL-BL-002","sapi_client_vue","By.id: clientFaqNavLink","id=clientFaqNavLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-06T00:10:35.720342200","SBA-CL-BL-003","sapi_client_vue","By.id: clientResellerCtaLink","id=clientResellerCtaLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-06T00:10:37.956450800","SBA-CL-BL-004","sapi_client_vue","By.id: clientResellerNameInput","id=clientResellerNameInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-06-06T00:10:40.175645700","SBA-CL-BL-005","sapi_client_vue","By.id: clientResellerCancelButton","id=clientResellerCancelButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
