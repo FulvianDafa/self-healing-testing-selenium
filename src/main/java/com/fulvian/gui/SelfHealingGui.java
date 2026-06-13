@@ -356,7 +356,7 @@ public class SelfHealingGui extends JFrame {
         command.add("-DselfHealing.enabled=true");
         command.add("-Dhealing.threshold=" + threshold);
         command.add("-DuploadedScript=" + scriptPath);
-        command.add("-Dhealing.logPath=" + logPath);
+        command.add("-Dhealing.log.file=" + logPath);
         command.add("-DsutName=" + sut);
 
         if ("Sapi Admin".equals(sut)) {
@@ -454,19 +454,49 @@ public class SelfHealingGui extends JFrame {
     }
 
     /**
-     * Mendukung dua format CSV:
+     * Mendukung tiga format CSV:
      *
-     * Format lama 10 kolom:
-     * timestamp, test_case_id, sut, original_locator, mutated_locator,
-     * selected_element, similarity_score, healing_time_ms, status, message
+     * Format HealingResult (12 kolom, dari AutoHealingWebDriver / HealingDriver):
+     * timestamp, test_case_id, scenario_type, original_locator,
+     * status, text_score, locator_score, position_score, combined_score,
+     * selected_element, healing_time_ms, is_false_positive
      *
-     * Format baru 11 kolom:
+     * Format GUI lama 11 kolom:
      * timestamp, test_case_id, sut, original_locator, mutated_locator,
      * selected_element, similarity_score, threshold, healing_time_ms, status, message
+     *
+     * Format GUI lama 10 kolom (tanpa threshold):
+     * timestamp, test_case_id, sut, original_locator, mutated_locator,
+     * selected_element, similarity_score, healing_time_ms, status, message
      */
     private Object[] normalizeLogRow(String[] values) {
         Object[] row = new Object[11];
+        String sut = String.valueOf(sutComboBox.getSelectedItem());
+        String guiThreshold = thresholdField.getText().trim();
 
+        // Deteksi format HealingResult (12 kolom) dari HealingDriver/AutoHealingWebDriver
+        // Kolom ke-4 (index 4) berisi "SUCCESS" atau "FAIL"
+        if (values.length >= 12 && isHealingResultFormat(values)) {
+            // Format: timestamp, test_case_id, scenario_type, original_locator,
+            //         status, text_score, locator_score, position_score, combined_score,
+            //         selected_element, healing_time_ms, is_false_positive
+            row[0]  = getValue(values, 0);  // Timestamp
+            row[1]  = getValue(values, 1);  // Test Case ID
+            row[2]  = sut;                  // SUT (dari combobox GUI)
+            row[3]  = getValue(values, 3);  // Original Locator
+            row[4]  = "-";                  // Mutated Locator (tidak ada di format ini)
+            row[5]  = getValue(values, 9);  // Selected Element
+            row[6]  = getValue(values, 8);  // Similarity Score (combined_score)
+            row[7]  = guiThreshold;          // Threshold (dari field GUI)
+            row[8]  = getValue(values, 10); // Healing Time (ms)
+            row[9]  = getValue(values, 4);  // Status
+            row[10] = String.format("scenario_type=%s, text_score=%s, locator_score=%s, position_score=%s, false_positive=%s",
+                    getValue(values, 2), getValue(values, 5), getValue(values, 6),
+                    getValue(values, 7), getValue(values, 11));
+            return row;
+        }
+
+        // Format GUI lama 11 kolom (sudah sesuai urutan tabel)
         if (values.length >= 11) {
             for (int i = 0; i < row.length; i++) {
                 row[i] = i < values.length ? values[i] : "";
@@ -474,7 +504,7 @@ public class SelfHealingGui extends JFrame {
             return row;
         }
 
-        // Backward compatible untuk log lama yang belum punya kolom Threshold.
+        // Backward compatible untuk log lama 10 kolom (tanpa Threshold)
         row[0] = getValue(values, 0); // Timestamp
         row[1] = getValue(values, 1); // Test Case ID
         row[2] = getValue(values, 2); // SUT
@@ -482,12 +512,34 @@ public class SelfHealingGui extends JFrame {
         row[4] = getValue(values, 4); // Mutated Locator
         row[5] = getValue(values, 5); // Selected Element
         row[6] = getValue(values, 6); // Similarity Score
-        row[7] = thresholdField.getText().trim(); // Threshold fallback dari GUI
+        row[7] = guiThreshold;         // Threshold fallback dari GUI
         row[8] = getValue(values, 7); // Healing Time
         row[9] = getValue(values, 8); // Status
         row[10] = getValue(values, 9); // Message
 
         return row;
+    }
+
+    /**
+     * Deteksi apakah baris CSV menggunakan format HealingResult.
+     * Format HealingResult memiliki kolom ke-4 (index 4) berisi "SUCCESS" atau "FAIL",
+     * dan kolom ke-5 (index 5) berisi angka (text_score).
+     */
+    private boolean isHealingResultFormat(String[] values) {
+        if (values.length < 12) return false;
+
+        String status = getValue(values, 4).trim().toUpperCase();
+        if (!"SUCCESS".equals(status) && !"FAIL".equals(status)) {
+            return false;
+        }
+
+        // Cek apakah kolom 5 (text_score) adalah angka
+        try {
+            Double.parseDouble(getValue(values, 5).trim());
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 
     private String getValue(String[] values, int index) {

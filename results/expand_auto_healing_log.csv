@@ -1,0 +1,45 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-06-13 12:56:39.808","AUTO-001","auto_healing","By.id: password","SUCCESS",1.0000,0.3478,0.0000,1.0000,"<input type='password' class='form-control' name='password' id='passwordInputRefactor' autocomplete='new-password' value='' data-self-healing-old-id='",2356,false
+"2026-06-13 12:56:50.809","AUTO-002","auto_healing","By.id: logoutButton","SUCCESS",1.0000,0.5909,0.0000,1.0000,"<a class='button secondary radius btn btn-danger' href='/logout' data-self-healing-old-id='logoutButton' id='logoutButtonRefactor' data-self-healing-m",2188,false
+"2026-06-13 12:56:57.382","AUTO-003","auto_healing","By.id: username","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1348,false
+"2026-06-13 12:57:03.834","AUTO-004","auto_healing","By.cssSelector: button[type='submit']","FAIL",0.2222,0.0000,0.0000,0.1389,"-",2202,false
+"2026-06-13 12:57:06.412","AUTO-005","auto_healing","By.cssSelector: button[type='submit']","FAIL",0.2222,0.0000,0.0000,0.1389,"-",2052,false
+"2026-06-13 12:57:08.856","AUTO-006","auto_healing","By.cssSelector: button[type='submit']","FAIL",0.2222,0.0000,0.0000,0.1389,"-",1916,false
+"2026-06-13 12:57:11.326","AUTO-007","auto_healing","By.cssSelector: button[type='submit']","FAIL",0.2222,0.0000,0.0000,0.1389,"-",1942,false
+"2026-06-13 12:57:13.713","AUTO-008","auto_healing","By.cssSelector: button[type='submit']","FAIL",0.2222,0.0000,0.0000,0.1389,"-",1861,false
+"2026-06-13 12:57:15.671","AUTO-009","auto_healing","By.cssSelector: input[type='submit']","FAIL",0.2941,0.0000,0.0000,0.1838,"-",1936,false
+"2026-06-13 12:57:18.051","AUTO-010","auto_healing","By.cssSelector: input[type='submit']","FAIL",0.2941,0.0000,0.0000,0.1838,"-",1844,false
+"2026-06-13 12:57:20.407","AUTO-011","auto_healing","By.cssSelector: input[type='submit']","FAIL",0.2941,0.0000,0.0000,0.1838,"-",1824,false
+"2026-06-13 12:57:22.798","AUTO-012","auto_healing","By.cssSelector: input[type='submit']","FAIL",0.2941,0.0000,0.0000,0.1838,"-",1862,false
+"2026-06-13 12:57:25.265","AUTO-013","auto_healing","By.cssSelector: input[type='submit']","FAIL",0.2941,0.0000,0.0000,0.1838,"-",1926,false
+"2026-06-13 12:57:27.113","AUTO-014","auto_healing","By.xpath: //button[contains(translate(normalize-space(.),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0495,0.1287,0.0000,0.0804,"-",1826,false
+"2026-06-13 12:57:29.422","AUTO-015","auto_healing","By.xpath: //button[contains(translate(normalize-space(.),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0495,0.1287,0.0000,0.0804,"-",1781,false
+"2026-06-13 12:57:31.764","AUTO-016","auto_healing","By.xpath: //button[contains(translate(normalize-space(.),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0495,0.1287,0.0000,0.0804,"-",1813,false
+"2026-06-13 12:57:34.085","AUTO-017","auto_healing","By.xpath: //button[contains(translate(normalize-space(.),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0495,0.1287,0.0000,0.0804,"-",1786,false
+"2026-06-13 12:57:36.430","AUTO-018","auto_healing","By.xpath: //button[contains(translate(normalize-space(.),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0495,0.1287,0.0000,0.0804,"-",1816,false
+"2026-06-13 12:57:38.266","AUTO-019","auto_healing","By.xpath: //input[@type='submit' and contains(translate(@value,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0472,0.1132,0.0000,0.0708,"-",1814,false
+"2026-06-13 12:57:40.540","AUTO-020","auto_healing","By.xpath: //input[@type='submit' and contains(translate(@value,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0472,0.1132,0.0000,0.0708,"-",1738,false
+"2026-06-13 12:57:42.991","AUTO-021","auto_healing","By.xpath: //input[@type='submit' and contains(translate(@value,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0472,0.1132,0.0000,0.0708,"-",1928,false
+"2026-06-13 12:57:45.370","AUTO-022","auto_healing","By.xpath: //input[@type='submit' and contains(translate(@value,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0472,0.1132,0.0000,0.0708,"-",1853,false
+"2026-06-13 12:57:47.695","AUTO-023","auto_healing","By.xpath: //input[@type='submit' and contains(translate(@value,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'LOGIN')]","FAIL",0.0472,0.1132,0.0000,0.0708,"-",1788,false
+"2026-06-13 12:57:53.435","AUTO-024","auto_healing","By.id: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1228,false
+"2026-06-13 12:57:55.093","AUTO-025","auto_healing","By.id: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1137,false
+"2026-06-13 12:57:56.830","AUTO-026","auto_healing","By.id: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1202,false
+"2026-06-13 12:57:58.512","AUTO-027","auto_healing","By.id: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1160,false
+"2026-06-13 12:58:00.247","AUTO-028","auto_healing","By.id: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1202,false
+"2026-06-13 12:58:01.921","AUTO-029","auto_healing","By.id: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1148,false
+"2026-06-13 12:58:03.625","AUTO-030","auto_healing","By.id: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1173,false
+"2026-06-13 12:58:04.805","AUTO-031","auto_healing","By.name: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1158,false
+"2026-06-13 12:58:06.465","AUTO-032","auto_healing","By.name: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1132,false
+"2026-06-13 12:58:08.240","AUTO-033","auto_healing","By.name: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1249,false
+"2026-06-13 12:58:09.903","AUTO-034","auto_healing","By.name: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1130,false
+"2026-06-13 12:58:11.538","AUTO-035","auto_healing","By.name: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1109,false
+"2026-06-13 12:58:13.244","AUTO-036","auto_healing","By.name: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1182,false
+"2026-06-13 12:58:14.905","AUTO-037","auto_healing","By.name: password","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1129,false
+"2026-06-13 12:58:16.022","AUTO-038","auto_healing","By.cssSelector: input[type='password']","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1098,false
+"2026-06-13 12:58:17.736","AUTO-039","auto_healing","By.cssSelector: input[type='password']","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1186,false
+"2026-06-13 12:58:19.411","AUTO-040","auto_healing","By.cssSelector: input[type='password']","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1141,false
+"2026-06-13 12:58:21.036","AUTO-041","auto_healing","By.cssSelector: input[type='password']","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1100,false
+"2026-06-13 12:58:22.735","AUTO-042","auto_healing","By.cssSelector: input[type='password']","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1180,false
+"2026-06-13 12:58:24.375","AUTO-043","auto_healing","By.cssSelector: input[type='password']","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1112,false
+"2026-06-13 12:58:26.066","AUTO-044","auto_healing","By.cssSelector: input[type='password']","FAIL",0.0000,0.0000,0.0000,0.0000,"-",1161,false

@@ -82,7 +82,7 @@ public class HealingDriver {
         long healStart = System.currentTimeMillis();
 
         // Tahap 2: ambil kandidat elemen dari DOM
-        List<WebElement> candidates = getAllInteractiveElements();
+        List<WebElement> candidates = getAllInteractiveElements(profile);
 
         if (candidates.isEmpty()) {
             logAndThrow(locator, healStart,
@@ -228,7 +228,7 @@ public class HealingDriver {
     // KUMPULKAN KANDIDAT ELEMEN
     // -------------------------------------------------------
 
-    private List<WebElement> getAllInteractiveElements() {
+    private List<WebElement> getAllInteractiveElements(ElementProfile profile) {
         List<WebElement> all = new ArrayList<>();
 
         for (String tag : INTERACTIVE_TAGS) {
@@ -239,10 +239,74 @@ public class HealingDriver {
             }
         }
 
-        return all.stream()
+        // Tahap 1: filter hanya displayed && enabled
+        List<WebElement> visible = all.stream()
                 .filter(el -> {
                     try {
                         return el.isDisplayed() && el.isEnabled();
+                    } catch (Exception e) {
+                        return false;
+                    }
+                })
+                .collect(Collectors.toList());
+
+        // Tahap 2 (fallback untuk input target):
+        // Jika target adalah input dan tidak ada input COMPATIBLE yang visible,
+        // tambahkan semua input dari DOM (termasuk di dalam modal tersembunyi).
+        // Ini mengatasi kasus namaBarang di dalam productModal yang hidden via CSS.
+        String expectedTag = inferExpectedTag(profile);
+        if ("input".equals(expectedTag) || "select".equals(expectedTag) || "textarea".equals(expectedTag)) {
+            boolean hasCompatibleVisibleInput = visible.stream().anyMatch(el -> {
+                try {
+                    return isCompatibleElement(profile, el);
+                } catch (Exception e) {
+                    return false;
+                }
+            });
+
+            if (!hasCompatibleVisibleInput) {
+                System.out.println("[HealingDriver] ⚠ Tidak ada input compatible yang visible. Menambahkan semua input dari DOM (termasuk modal)...");
+
+                List<WebElement> allInputs = all.stream()
+                        .filter(el -> {
+                            try {
+                                String tag = el.getTagName().toLowerCase();
+                                return tag.equals("input") || tag.equals("select") || tag.equals("textarea");
+                            } catch (Exception e) { return false; }
+                        })
+                        .collect(Collectors.toList());
+
+                // Gabungkan visible + allInputs (tanpa duplikat)
+                List<WebElement> combined = new ArrayList<>(visible);
+                for (WebElement inp : allInputs) {
+                    if (!combined.contains(inp)) {
+                        combined.add(inp);
+                    }
+                }
+                return combined;
+            }
+        }
+
+        if (!visible.isEmpty()) {
+            return visible;
+        }
+
+        // Tahap 3 (fallback umum): jika tidak ada elemen visible sama sekali,
+        // kembalikan semua input di DOM
+        System.out.println("[HealingDriver] ⚠ Tidak ada elemen visible. Mencoba fallback: semua input di DOM...");
+
+        return all.stream()
+                .filter(el -> {
+                    try {
+                        String tag = el.getTagName().toLowerCase();
+                        return tag.equals("input") || tag.equals("select") || tag.equals("textarea");
+                    } catch (Exception e) {
+                        return false;
+                    }
+                })
+                .filter(el -> {
+                    try {
+                        return el.isEnabled();
                     } catch (Exception e) {
                         return false;
                     }
@@ -428,28 +492,45 @@ public class HealingDriver {
 
     private String inferExpectedTag(ElementProfile profile) {
         String signature = buildTargetSignature(profile);
-    
+
         /*
-         * Urutan pengecekan penting:
-         * Input dicek lebih dulu karena locator seperti "loginEmailInput"
-         * mengandung kata "login", tetapi target sebenarnya adalah input,
-         * bukan button.
+         * Urutan pengecekan (diperbaiki):
+         *
+         * 1. Textarea — paling spesifik, jarang ambigu.
+         * 2. Select — cukup spesifik.
+         * 3. Button (keyword kuat) — btn, button, simpan, tambah, add, edit,
+         *    hapus, delete, layout, tab, dsb. HARUS dicek SEBELUM input.
+         *    Contoh: inputProductBtn mengandung "product" (input keyword)
+         *    DAN "btn" (button keyword). "btn" harus menang.
+         * 4. Input — dicek setelah button agar tidak salah tangkap
+         *    locator yang mengandung keyword input + button sekaligus.
+         * 5. Button (keyword ambigu) — login, logout, cari, yang bisa
+         *    muncul di konteks input (loginEmailInput).
          */
-    
+
         // Textarea
         if (containsAny(signature,
                 "textarea", "alamat", "address", "deskripsi", "description",
                 "keterangan", "catatan", "note", "notes", "perihal")) {
             return "textarea";
         }
-    
+
         // Select/dropdown
         if (containsAny(signature,
                 "select", "dropdown", "kategori", "category", "supplier",
                 "status", "jenis", "role", "tahun_anggaran")) {
             return "select";
         }
-    
+
+        // Button — keyword KUAT (dicek sebelum input)
+        // Locator yang mengandung kata-kata ini pasti tombol/aksi.
+        if (containsAny(signature,
+                "btn", "button", "simpan", "save", "tambah", "add",
+                "hapus", "delete", "edit", "update", "submit",
+                "checkout", "upload", "download", "layout", "tab")) {
+            return "button";
+        }
+
         // Input
         if (containsAny(signature,
                 "input", "email", "mail", "password", "pass",
@@ -462,15 +543,14 @@ public class HealingDriver {
                 "nomor", "surat", "kode", "paket")) {
             return "input";
         }
-    
-        // Button/action
-        if (containsAny(signature,
-                "btn", "button", "simpan", "save", "tambah", "add",
-                "hapus", "delete", "edit", "update", "submit",
-                "checkout", "login", "logout", "upload", "download", "cari")) {
+
+        // Button — keyword AMBIGU (fallback setelah input)
+        // login, logout, cari bisa muncul di konteks input
+        // (loginEmailInput → input, bukan button)
+        if (containsAny(signature, "login", "logout", "cari")) {
             return "button";
         }
-    
+
         return "";
     }
     private String inferExpectedInputType(ElementProfile profile) {

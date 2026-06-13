@@ -1,5 +1,6 @@
 package com.fulvian.base;
 
+import com.fulvian.healing.AutoHealingWebDriver;
 import com.fulvian.healing.HealingLogger;
 import com.fulvian.utils.DomMutationHelper;
 import com.fulvian.utils.WaitHelper;
@@ -26,6 +27,11 @@ import java.time.Duration;
  *   memang sengaja menguji kondisi locator berubah/rusak.
  * - baseUrl bisa diganti dari command line:
  *   mvn test -DbaseUrl=http://anugrah_jaya.test/app/index.html
+ *
+ * Mode Self-Healing:
+ * - Jika -DselfHealing.enabled=true, driver dibungkus AutoHealingWebDriver.
+ * - Semua panggilan driver.findElement(By...) otomatis masuk mekanisme healing
+ *   tanpa perlu mengubah code di baseline test.
  */
 public abstract class BaseTest {
 
@@ -55,16 +61,31 @@ public abstract class BaseTest {
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-popup-blocking");
 
-        driver = new ChromeDriver(options);
-        driver.manage().window().maximize();
+        // Buat raw driver dulu
+        WebDriver rawDriver = new ChromeDriver(options);
+        rawDriver.manage().window().maximize();
 
         // Implicit wait dimatikan agar waktu healing tidak bias.
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+        rawDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+
+        // Cek flag self-healing
+        boolean selfHealingEnabled = Boolean.parseBoolean(
+                System.getProperty("selfHealing.enabled", "false")
+        );
+        double threshold = Double.parseDouble(
+                System.getProperty("healing.threshold", "0.50")
+        );
+
+        if (selfHealingEnabled) {
+            driver = new AutoHealingWebDriver(rawDriver, true, threshold);
+            System.out.println("[BaseTest] WebDriver siap dalam mode AUTO SELF-HEALING");
+        } else {
+            driver = rawDriver;
+            System.out.println("[BaseTest] WebDriver siap dalam mode BASELINE/NORMAL");
+        }
 
         wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIMEOUT));
         js = (JavascriptExecutor) driver;
-
-        System.out.println("[BaseTest] WebDriver siap.");
     }
 
     @BeforeEach
@@ -85,7 +106,13 @@ public abstract class BaseTest {
 
     @AfterAll
     static void tearDown() {
-        HealingLogger.printSummary();
+        // Summary self-healing hanya dicetak saat mode self-healing aktif
+        boolean selfHealingEnabled = Boolean.parseBoolean(
+                System.getProperty("selfHealing.enabled", "false")
+        );
+        if (selfHealingEnabled) {
+            HealingLogger.printSummary();
+        }
 
         if (driver != null) {
             driver.quit();

@@ -32,7 +32,8 @@ public class HealingLogger {
     private static String activeLogFile = null;
 
     private static String logFile() {
-        return System.getProperty("healing.log.file", DEFAULT_LOG_FILE);
+        return System.getProperty("healing.log.file",
+                System.getProperty("healing.logPath", DEFAULT_LOG_FILE));
     }
 
     // -------------------------------------------------------
