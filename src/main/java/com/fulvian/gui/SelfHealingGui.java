@@ -14,12 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * GUI final untuk penelitian self-healing Selenium.
+ * GUI untuk penelitian self-healing Selenium WebDriver.
  *
  * Framing GUI:
  * - Bukan sebagai tools untuk membuat test dari nol.
  * - Dipakai ketika tester sudah punya script Selenium baseline yang bermasalah karena locator berubah.
- * - Tester memilih/upload script baseline, lalu menekan tombol Aktifkan Self-Healing.
+ * - Tester memilih/upload script baseline rusak, lalu menekan tombol Aktifkan Self-Healing.
  * - Sistem menjalankan Maven test dengan flag self-healing dan menampilkan log similarity.
  */
 public class SelfHealingGui extends JFrame {
@@ -48,6 +48,7 @@ public class SelfHealingGui extends JFrame {
     private final DefaultTableModel logTableModel;
 
     public SelfHealingGui() {
+        // Fix #1: Perbaiki typo pada title window
         setTitle("Self-Healing Script Recovery Tool");
         setSize(1280, 780);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -58,9 +59,11 @@ public class SelfHealingGui extends JFrame {
 
         scriptPathField = new JTextField();
         scriptPathField.setEditable(false);
-        chooseScriptButton = new JButton("Upload Script");
+        // Fix #4: Ubah teks tombol upload agar lebih jelas
+        chooseScriptButton = new JButton("Pilih Script Rusak");
         testClassField = new JTextField();
-        copyScriptCheckBox = new JCheckBox("Salin script ke src/test/java/com/fulvian/tests jika berada di luar project", true);
+        // Fix #5: Sederhanakan teks checkbox
+        copyScriptCheckBox = new JCheckBox("Salin script ke folder test project secara otomatis", true);
 
         sutComboBox = new JComboBox<>(new String[]{
                 "Anugrah Jaya",
@@ -70,7 +73,8 @@ public class SelfHealingGui extends JFrame {
                 "Custom"
         });
 
-        urlField = new JTextField("http://localhost:8000");
+        // Fix #2: Default URL saat GUI pertama dibuka harus Anugrah Jaya
+        urlField = new JTextField(resolveDefaultUrlBySut("Anugrah Jaya"));
         emailField = new JTextField("admin@example.com");
         passwordField = new JPasswordField("admin123");
         thresholdField = new JTextField("0.50");
@@ -85,6 +89,7 @@ public class SelfHealingGui extends JFrame {
         refreshLogButton = new JButton("Refresh Log");
         clearOutputButton = new JButton("Clear Output");
 
+        // Fix #6 & #7: Kolom tabel lengkap dan lebar kolom diatur agar mudah di-screenshot
         String[] columns = {
                 "Timestamp",
                 "Test Case ID",
@@ -131,7 +136,8 @@ public class SelfHealingGui extends JFrame {
         addRow(formPanel, gbc, 0, "Project Maven Root:", projectRootField, chooseProjectRootButton);
         addRow(formPanel, gbc, 1, "Script Baseline Rusak:", scriptPathField, chooseScriptButton);
         addRow(formPanel, gbc, 2, "Test Class:", testClassField, null);
-        addRow(formPanel, gbc, 3, "Target SUT / Log:", sutComboBox, null);
+        // Fix #3: Ubah label "Target SUT / Log:" menjadi "Target SUT:"
+        addRow(formPanel, gbc, 3, "Target SUT:", sutComboBox, null);
         addRow(formPanel, gbc, 4, "Base URL:", urlField, null);
         addRow(formPanel, gbc, 5, "Admin Email:", emailField, null);
         addRow(formPanel, gbc, 6, "Admin Password:", passwordField, null);
@@ -146,6 +152,7 @@ public class SelfHealingGui extends JFrame {
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         buttonPanel.add(clearOutputButton);
         buttonPanel.add(refreshLogButton);
+        // Fix #8: Tombol utama tetap "Aktifkan Self-Healing"
         buttonPanel.add(activateHealingButton);
 
         gbc.gridx = 0;
@@ -197,11 +204,12 @@ public class SelfHealingGui extends JFrame {
         refreshLogButton.addActionListener(e -> loadLogTable());
         clearOutputButton.addActionListener(e -> outputArea.setText(""));
 
+        // Fix #2: Saat SUT berubah, URL dan path log ikut menyesuaikan
         sutComboBox.addActionListener(e -> {
             String sut = (String) sutComboBox.getSelectedItem();
             if (sut != null && !"Custom".equals(sut)) {
                 logPathField.setText(resolveDefaultHealingLogPath(sut));
-                applyDefaultUrlBySut(sut);
+                urlField.setText(resolveDefaultUrlBySut(sut));
             }
         });
     }
@@ -221,7 +229,7 @@ public class SelfHealingGui extends JFrame {
 
     private void chooseBaselineScript() {
         JFileChooser chooser = new JFileChooser(projectRootField.getText().trim());
-        chooser.setDialogTitle("Upload / Pilih Script Selenium Baseline yang Bermasalah");
+        chooser.setDialogTitle("Pilih Script Selenium Baseline yang Bermasalah (.java)");
         chooser.setFileFilter(new FileNameExtensionFilter("Java Test Script (*.java)", "java"));
 
         int result = chooser.showOpenDialog(this);
@@ -260,7 +268,8 @@ public class SelfHealingGui extends JFrame {
         String sut = String.valueOf(sutComboBox.getSelectedItem());
         String logPath = logPathField.getText().trim();
 
-        if (!validateInputs(projectRoot, scriptPath, testClass, threshold)) {
+        // Fix #9: Validasi ringan sebelum Maven dijalankan (tambahkan validasi Base URL)
+        if (!validateInputs(projectRoot, scriptPath, testClass, threshold, url)) {
             activateHealingButton.setEnabled(true);
             return;
         }
@@ -276,11 +285,14 @@ public class SelfHealingGui extends JFrame {
 
             List<String> command = buildMavenCommand(testClass, sut, url, email, password, threshold, scriptPath, logPath);
 
+            // Fix #10: Output area menampilkan ringkasan lengkap sebelum Maven dijalankan
             appendOutput("\n====================================\n");
             appendOutput("Mengaktifkan self-healing untuk script baseline bermasalah\n");
+            appendOutput("Project Root : " + projectRoot + "\n");
             appendOutput("Script       : " + scriptPath + "\n");
             appendOutput("Test Class   : " + testClass + "\n");
             appendOutput("SUT          : " + sut + "\n");
+            appendOutput("Base URL     : " + url + "\n");
             appendOutput("Threshold    : " + threshold + "\n");
             appendOutput("Log CSV      : " + logPath + "\n");
             appendOutput("Command      : " + String.join(" ", command) + "\n");
@@ -295,48 +307,55 @@ public class SelfHealingGui extends JFrame {
         }
     }
 
-    private boolean validateInputs(String projectRoot, String scriptPath, String testClass, String threshold) {
+    // Fix #9: Tambahkan parameter url ke validasi dan validasi Base URL tidak boleh kosong
+    private boolean validateInputs(String projectRoot, String scriptPath, String testClass, String threshold, String url) {
         if (projectRoot.isBlank()) {
-            appendOutput("Project Maven root belum dipilih.\n");
+            appendOutput("[VALIDASI] Project Maven root belum dipilih.\n");
             return false;
         }
 
         Path pomPath = Path.of(projectRoot, "pom.xml");
         if (!Files.exists(pomPath)) {
-            appendOutput("pom.xml tidak ditemukan di project root: " + projectRoot + "\n");
-            appendOutput("Pastikan memilih folder root project Maven.\n");
+            appendOutput("[VALIDASI] pom.xml tidak ditemukan di project root: " + projectRoot + "\n");
+            appendOutput("[VALIDASI] Pastikan memilih folder root project Maven.\n");
             return false;
         }
 
         if (scriptPath.isBlank()) {
-            appendOutput("Script baseline bermasalah belum dipilih.\n");
+            appendOutput("[VALIDASI] Script baseline bermasalah belum dipilih.\n");
             return false;
         }
 
         if (!Files.exists(Path.of(scriptPath))) {
-            appendOutput("File script tidak ditemukan: " + scriptPath + "\n");
+            appendOutput("[VALIDASI] File script tidak ditemukan: " + scriptPath + "\n");
             return false;
         }
 
         if (testClass.isBlank()) {
-            appendOutput("Test Class belum diisi. Isi manual, contoh: TestAnugrahJayaHealing\n");
+            appendOutput("[VALIDASI] Test Class belum diisi. Isi manual, contoh: TestAnugrahJayaHealing\n");
+            return false;
+        }
+
+        if (url.isBlank()) {
+            appendOutput("[VALIDASI] Base URL tidak boleh kosong.\n");
             return false;
         }
 
         try {
             double parsedThreshold = Double.parseDouble(threshold);
             if (parsedThreshold < 0 || parsedThreshold > 1) {
-                appendOutput("Threshold harus berada pada rentang 0 sampai 1. Contoh: 0.50\n");
+                appendOutput("[VALIDASI] Threshold harus berada pada rentang 0 sampai 1. Contoh: 0.50\n");
                 return false;
             }
         } catch (NumberFormatException e) {
-            appendOutput("Threshold tidak valid. Gunakan angka desimal, contoh: 0.50\n");
+            appendOutput("[VALIDASI] Threshold tidak valid. Gunakan angka desimal, contoh: 0.50\n");
             return false;
         }
 
         return true;
     }
 
+    // Fix #12: Command Maven membawa semua parameter yang diperlukan
     private List<String> buildMavenCommand(
             String testClass,
             String sut,
@@ -361,13 +380,12 @@ public class SelfHealingGui extends JFrame {
 
         if ("Sapi Admin".equals(sut)) {
             command.add("-DadminUrl=" + url);
-            command.add("-DadminEmail=" + email);
-            command.add("-DadminPassword=" + password);
         } else {
             command.add("-DbaseUrl=" + url);
-            command.add("-DadminEmail=" + email);
-            command.add("-DadminPassword=" + password);
         }
+
+        command.add("-DadminEmail=" + email);
+        command.add("-DadminPassword=" + password);
 
         return command;
     }
@@ -475,11 +493,7 @@ public class SelfHealingGui extends JFrame {
         String guiThreshold = thresholdField.getText().trim();
 
         // Deteksi format HealingResult (12 kolom) dari HealingDriver/AutoHealingWebDriver
-        // Kolom ke-4 (index 4) berisi "SUCCESS" atau "FAIL"
         if (values.length >= 12 && isHealingResultFormat(values)) {
-            // Format: timestamp, test_case_id, scenario_type, original_locator,
-            //         status, text_score, locator_score, position_score, combined_score,
-            //         selected_element, healing_time_ms, is_false_positive
             row[0]  = getValue(values, 0);  // Timestamp
             row[1]  = getValue(values, 1);  // Test Case ID
             row[2]  = sut;                  // SUT (dari combobox GUI)
@@ -520,11 +534,6 @@ public class SelfHealingGui extends JFrame {
         return row;
     }
 
-    /**
-     * Deteksi apakah baris CSV menggunakan format HealingResult.
-     * Format HealingResult memiliki kolom ke-4 (index 4) berisi "SUCCESS" atau "FAIL",
-     * dan kolom ke-5 (index 5) berisi angka (text_score).
-     */
     private boolean isHealingResultFormat(String[] values) {
         if (values.length < 12) return false;
 
@@ -533,7 +542,6 @@ public class SelfHealingGui extends JFrame {
             return false;
         }
 
-        // Cek apakah kolom 5 (text_score) adalah angka
         try {
             Double.parseDouble(getValue(values, 5).trim());
             return true;
@@ -637,24 +645,23 @@ public class SelfHealingGui extends JFrame {
 
     private String resolveDefaultHealingLogPath(String sut) {
         return switch (sut) {
-            case "Anugrah Jaya" -> "results/healing_log.csv";
+            case "Anugrah Jaya"  -> "results/healing_log.csv";
             case "Arsip Dokumen" -> "results/arsip_healing_log.csv";
-            case "Sapi Admin" -> "results/sapi_admin_healing_log.csv";
-            case "Sapi Client" -> "results/sapi_client_healing_log.csv";
-            default -> "results/healing_log.csv";
+            case "Sapi Admin"    -> "results/sapi_admin_healing_log.csv";
+            case "Sapi Client"   -> "results/sapi_client_healing_log.csv";
+            default              -> "results/healing_log.csv";
         };
     }
 
-    private void applyDefaultUrlBySut(String sut) {
-        switch (sut) {
-            case "Anugrah Jaya" -> urlField.setText("http://anugrah_jaya.test/app/index.html");
-            case "Arsip Dokumen" -> urlField.setText("http://localhost:8000");
-            case "Sapi Admin" -> urlField.setText("http://localhost:8000");
-            case "Sapi Client" -> urlField.setText("http://localhost:5173");
-            default -> {
-                // Biarkan user isi manual.
-            }
-        }
+    // Fix #2: Resolusi default URL per SUT — Anugrah Jaya menggunakan URL yang benar
+    private String resolveDefaultUrlBySut(String sut) {
+        return switch (sut) {
+            case "Anugrah Jaya"  -> "http://anugrah_jaya.test/app/index.html";
+            case "Arsip Dokumen" -> "http://localhost:8000";
+            case "Sapi Admin"    -> "http://localhost:8000";
+            case "Sapi Client"   -> "http://localhost:5173";
+            default              -> "";
+        };
     }
 
     private String getMavenCommand() {
@@ -669,9 +676,11 @@ public class SelfHealingGui extends JFrame {
         });
     }
 
+    // Fix #7: Lebar kolom diatur agar kolom penting (Status, Threshold, Score) mudah terlihat saat screenshot
     private void configureColumnWidth() {
         TableColumnModel columns = logTable.getColumnModel();
-        int[] widths = {160, 120, 120, 210, 210, 280, 120, 90, 130, 130, 420};
+        // Timestamp | Test Case ID | SUT | Original Locator | Mutated Locator | Selected Element | Score | Threshold | Time | Status | Message
+        int[] widths = {160, 130, 120, 220, 160, 280, 130, 100, 140, 120, 400};
 
         for (int i = 0; i < widths.length; i++) {
             columns.getColumn(i).setPreferredWidth(widths[i]);
