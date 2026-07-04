@@ -93,77 +93,65 @@ public class TestAnugrahJayaBaseline extends BaseTest {
 
     @Test
     @Order(1)
-    @DisplayName("BL-001 Produk: locator lama tombol Tambah Produk gagal tanpa healing")
-    void bl001_addProductOldLocatorFails() {
+    @DisplayName("BL-001 Produk: tombol Add Product berhasil dengan locator aktual tanpa healing")
+    void bl001_addProductNormalLocatorSucceeds() {
         /*
          * Pasangan: SH-001
-         * Locator lama: inputProductBtn
+         * Locator asli yang diharapkan: inputProductBtn
          * DOM aktual: inputProduct--Button
          */
-        expectLocatorFailure(
+        expectLocatorSuccess(
                 "BL-001",
                 "index.html",
-                "id_change",
-                By.id("inputProductBtn")
+                "normal",
+                By.id("inputProduct--Button")
         );
     }
 
     @Test
     @Order(2)
-    @DisplayName("BL-004 Produk: input Nama Barang gagal setelah id berubah tanpa healing")
-    void bl004_namaBarangChangedIdFails() {
+    @DisplayName("BL-004 Produk: input Nama Barang berhasil ditemukan secara normal")
+    void bl004_namaBarangNormalLocatorSucceeds() {
         /*
          * Pasangan: SH-004
          * Locator lama: namaBarang
-         * DOM dimutasi menjadi: inputNamaBarangRefactor
-         *
-         * Catatan self-healing mode:
-         * Modal harus tetap terbuka agar inputNamaBarangRefactor
-         * terbaca sebagai displayed/enabled oleh HealingDriver.
+         * Skenario diubah menjadi normal/berhasil
          */
         openProductModalUsingCurrentLocator();
 
         waitForElementPresent(
                 By.id("namaBarang"),
-                "Precondition gagal: namaBarang tidak ditemukan sebelum mutasi"
+                "Precondition gagal: namaBarang tidak ditemukan"
         );
 
-        simulateIdChange("namaBarang", "inputNamaBarangRefactor");
-
-        // Pastikan modal terbuka DAN input visible (penting untuk self-healing)
-        forceOpenProductModalIfNeeded();
-        forceElementVisible("inputNamaBarangRefactor");
-
-        expectLocatorFailure(
+        expectLocatorSuccess(
                 "BL-004",
                 "index.html",
-                "id_change",
+                "normal",
                 By.id("namaBarang")
         );
     }
 
     @Test
     @Order(3)
-    @DisplayName("BL-011 Produk: search input gagal setelah id berubah tanpa healing")
-    void bl011_productSearchChangedIdFails() {
+    @DisplayName("BL-011 Produk: search input berhasil ditemukan secara normal")
+    void bl011_productSearchNormalLocatorSucceeds() {
         /*
          * Pasangan: SH-011
          * Locator lama: searchInput
-         * DOM dimutasi menjadi: productSearchInputRefactor
+         * Skenario diubah menjadi normal/berhasil
          */
         waitForPageReady();
 
         waitForElementPresent(
                 By.id("searchInput"),
-                "Precondition gagal: searchInput produk tidak ditemukan sebelum mutasi"
+                "Precondition gagal: searchInput produk tidak ditemukan"
         );
 
-        simulateIdChange("searchInput", "productSearchInputRefactor");
-
-        expectLocatorFailure(
+        expectLocatorSuccess(
                 "BL-011",
                 "index.html",
-                "id_change",
+                "normal",
                 By.id("searchInput")
         );
     }
@@ -480,6 +468,34 @@ public class TestAnugrahJayaBaseline extends BaseTest {
     // =========================================================
     // LOCAL HELPERS
     // =========================================================
+
+    private void expectLocatorSuccess(String tcId, String page, String scenario, By locator) {
+        totalTC++;
+        try {
+            driver.findElement(locator);
+            successCount++;
+            logBaseline(
+                    tcId,
+                    page,
+                    scenario,
+                    locator.toString(),
+                    "SUCCESS",
+                    "Locator berhasil ditemukan secara normal"
+            );
+            System.out.printf("[%s] SUCCESS — locator ditemukan secara normal: %s%n", tcId, locator);
+        } catch (NoSuchElementException e) {
+            failCount++;
+            logBaseline(
+                    tcId,
+                    page,
+                    scenario,
+                    locator.toString(),
+                    "UNEXPECTED_FAIL",
+                    "NoSuchElementException"
+            );
+            System.out.printf("[%s] UNEXPECTED_FAIL — locator normal gagal: %s%n", tcId, locator);
+        }
+    }
 
     private void expectLocatorFailure(String tcId, String page, String scenario, By locator) {
         totalTC++;

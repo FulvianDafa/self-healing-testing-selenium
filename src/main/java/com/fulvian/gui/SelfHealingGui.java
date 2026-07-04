@@ -48,7 +48,6 @@ public class SelfHealingGui extends JFrame {
     private final DefaultTableModel logTableModel;
 
     public SelfHealingGui() {
-        // Fix #1: Perbaiki typo pada title window
         setTitle("Self-Healing Script Recovery Tool");
         setSize(1280, 780);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,10 +58,8 @@ public class SelfHealingGui extends JFrame {
 
         scriptPathField = new JTextField();
         scriptPathField.setEditable(false);
-        // Fix #4: Ubah teks tombol upload agar lebih jelas
         chooseScriptButton = new JButton("Pilih Script Rusak");
         testClassField = new JTextField();
-        // Fix #5: Sederhanakan teks checkbox
         copyScriptCheckBox = new JCheckBox("Salin script ke folder test project secara otomatis", true);
 
         sutComboBox = new JComboBox<>(new String[]{
@@ -70,6 +67,8 @@ public class SelfHealingGui extends JFrame {
                 "Arsip Dokumen",
                 "Sapi Admin",
                 "Sapi Client",
+                "SauceDemo",
+                "OrangeHRM",
                 "Custom"
         });
 
@@ -649,6 +648,8 @@ public class SelfHealingGui extends JFrame {
             case "Arsip Dokumen" -> "results/arsip_healing_log.csv";
             case "Sapi Admin"    -> "results/sapi_admin_healing_log.csv";
             case "Sapi Client"   -> "results/sapi_client_healing_log.csv";
+            case "SauceDemo"     -> "results/saucedemo_healing_log.csv";
+            case "OrangeHRM"     -> "results/orangehrm_healing_log.csv";
             default              -> "results/healing_log.csv";
         };
     }
@@ -660,6 +661,8 @@ public class SelfHealingGui extends JFrame {
             case "Arsip Dokumen" -> "http://localhost:8000";
             case "Sapi Admin"    -> "http://localhost:8000";
             case "Sapi Client"   -> "http://localhost:5173";
+            case "SauceDemo"     -> "https://www.saucedemo.com";
+            case "OrangeHRM"     -> "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
             default              -> "";
         };
     }

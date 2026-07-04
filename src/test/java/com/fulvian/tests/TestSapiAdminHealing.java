@@ -96,7 +96,7 @@ public class TestSapiAdminHealing {
         WebElement emailInput = heal(
                 "SBA-AD-SH-001",
                 By.id("email"),
-                new ElementProfile("Email Address", "email", "id")
+                new ElementProfile("Email", "email", "id")
         );
 
         assertEquals("adminEmailInputRefactor", emailInput.getAttribute("id"));
