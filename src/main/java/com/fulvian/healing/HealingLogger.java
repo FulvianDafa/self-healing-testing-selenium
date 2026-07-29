@@ -25,15 +25,24 @@ public class HealingLogger {
 
     // Lokasi file output — relatif dari root project
     private static final String DEFAULT_LOG_FILE = "results/healing_log.csv";
+    private static final String DEFAULT_CANDIDATE_LOG_FILE = "results/candidates_log.csv";
     private static final String STDOUT_SEP  = "─".repeat(70);
 
     // Flag: apakah header CSV sudah ditulis di sesi ini?
     private static boolean headerWritten = false;
     private static String activeLogFile = null;
+    
+    private static boolean candidateHeaderWritten = false;
+    private static String activeCandidateLogFile = null;
 
     private static String logFile() {
         return System.getProperty("healing.log.file",
                 System.getProperty("healing.logPath", DEFAULT_LOG_FILE));
+    }
+
+    private static String candidateLogFile() {
+        return System.getProperty("healing.candidateLog.file",
+                System.getProperty("healing.candidateLogPath", DEFAULT_CANDIDATE_LOG_FILE));
     }
 
     // -------------------------------------------------------
@@ -66,6 +75,28 @@ public class HealingLogger {
 
         // 4. Cetak ke konsol (untuk debugging saat test berjalan)
         printToConsole(result);
+    }
+
+    /**
+     * Simpan satu data kandidat ke file log kandidat (CSV).
+     *
+     * @param result objek CandidateResult
+     */
+    public static synchronized void logCandidate(CandidateResult result) {
+        ensureDirectoryExists();
+
+        String currentLogFile = candidateLogFile();
+        if (!currentLogFile.equals(activeCandidateLogFile)) {
+            candidateHeaderWritten = false;
+            activeCandidateLogFile = currentLogFile;
+        }
+
+        if (!candidateHeaderWritten || !Files.exists(Paths.get(currentLogFile))) {
+            writeToSpecificFile(currentLogFile, CandidateResult.csvHeader() + "\n", false);
+            candidateHeaderWritten = true;
+        }
+
+        writeToSpecificFile(currentLogFile, result.toCsvRow() + "\n", true);
     }
 
     // -------------------------------------------------------
@@ -141,14 +172,18 @@ public class HealingLogger {
     }
 
     private static void writeToFile(String content, boolean append) {
+        writeToSpecificFile(logFile(), content, append);
+    }
+
+    private static void writeToSpecificFile(String filePath, String content, boolean append) {
         try {
             StandardOpenOption mode = append
                     ? StandardOpenOption.APPEND
                     : StandardOpenOption.TRUNCATE_EXISTING;
-            Files.write(Paths.get(logFile()), content.getBytes(StandardCharsets.UTF_8),
+            Files.write(Paths.get(filePath), content.getBytes(StandardCharsets.UTF_8),
                     StandardOpenOption.CREATE, mode);
         } catch (IOException e) {
-            System.err.println("[HealingLogger] Gagal menulis ke CSV: " + e.getMessage());
+            System.err.println("[HealingLogger] Gagal menulis ke " + filePath + ": " + e.getMessage());
         }
     }
 

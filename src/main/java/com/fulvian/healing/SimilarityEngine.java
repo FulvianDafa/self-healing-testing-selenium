@@ -39,22 +39,13 @@ public class SimilarityEngine {
 
     private static final double POSITION_NORMALIZATION = 150.0;
 
-    // -------------------------------------------------------
     // METHOD UTAMA: HITUNG SKOR GABUNGAN
-    // -------------------------------------------------------
-
     public static double calculateCombinedScore(ElementProfile profile,
                                                 WebElement candidate) {
         if (profile == null || candidate == null) {
             return 0.0;
         }
 
-        /*
-         * Untuk elemen input, expectedText kadang kosong atau tidak sama
-         * dengan visible text, karena input biasanya tidak punya getText().
-         *
-         * Maka expectedText fallback ke originalLocatorValue.
-         */
         String expectedText = firstNonBlank(
                 profile.expectedText,
                 profile.originalLocatorValue
@@ -76,10 +67,7 @@ public class SimilarityEngine {
 
         // 3. Skor kemiripan posisi
         if (profile.lastKnownLocation == null) {
-            /*
-             * Kalau tidak ada posisi referensi, bobot position tidak dipakai.
-             * Bobot text dan locator dinormalisasi ulang supaya total tetap 1.0.
-             */
+            
             double totalWeight = WEIGHT_TEXT + WEIGHT_LOCATOR;
 
             return (textScore * (WEIGHT_TEXT / totalWeight))
@@ -145,7 +133,6 @@ public class SimilarityEngine {
      * 1. Levenshtein similarity
      * 2. Substring similarity
      * 3. Token coverage similarity
-     *
      * Ini membuat kasus locator panjang tetap terbaca mirip.
      */
     private static double calculateSmartSimilarity(String expected, String actual) {

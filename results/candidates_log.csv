@@ -1,0 +1,256 @@
+timestamp,test_case_id,original_locator,candidate_description,status,text_score,locator_score,position_score,combined_score
+"2026-07-17 08:54:28.597","SH-001","By.id: inputProductBtn","<button type='submit' id='inputProduct--Button' name='' placeholder='' text='+ Tambah Produk'>","EVALUATED",1.0000,0.8500,0.0000,0.9437
+"2026-07-17 08:54:28.754","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:28.891","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:29.087","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:29.290","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:29.442","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:29.600","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:29.761","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:29.926","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:30.129","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:30.398","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:30.590","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:30.744","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:30.884","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:31.013","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:31.169","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:31.293","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:31.428","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:31.558","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:31.691","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:31.817","SH-001","By.id: inputProductBtn","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:31.934","SH-001","By.id: inputProductBtn","<button type='submit' id='nextPage' name='' placeholder='' text='Next'>","EVALUATED",0.0000,0.2353,0.0000,0.1844
+"2026-07-17 08:54:32.060","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Dashboard'>","EVALUATED",0.2308,0.0000,0.0000,0.1442
+"2026-07-17 08:54:32.183","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","EVALUATED",0.5000,0.0000,0.0000,0.3125
+"2026-07-17 08:54:32.311","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","EVALUATED",0.3158,0.0000,0.0000,0.1974
+"2026-07-17 08:54:32.433","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","EVALUATED",0.1333,0.0000,0.0000,0.0833
+"2026-07-17 08:54:32.552","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","EVALUATED",0.1429,0.0000,0.0000,0.0893
+"2026-07-17 08:54:32.674","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Belanja'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:54:32.803","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Print Barcode'>","EVALUATED",0.1538,0.0000,0.0000,0.0962
+"2026-07-17 08:54:32.926","SH-001","By.id: inputProductBtn","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","EVALUATED",0.2105,0.0000,0.0000,0.1316
+"2026-07-17 08:54:33.005","SH-001","By.id: inputProductBtn","<input type='text' id='searchInput' name='' placeholder='Cari nama barang...' text='Cari nama barang...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.000","SH-004","By.id: namaBarang","<button type='submit' id='inputProduct--Button' name='' placeholder='' text='+ Tambah Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.047","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.093","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.143","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.184","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.235","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.282","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.334","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.378","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.424","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.474","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.517","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.576","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.622","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.675","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.730","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.793","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.853","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.902","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:35.956","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Edit'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.003","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.053","SH-004","By.id: namaBarang","<button type='submit' id='nextPage' name='' placeholder='' text='Next'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.103","SH-004","By.id: namaBarang","<button type='button' id='' name='' placeholder='' text='Batal'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.150","SH-004","By.id: namaBarang","<button type='submit' id='saveBtn' name='' placeholder='' text='Simpan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.195","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Dashboard'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.240","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.289","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.334","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.376","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.421","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Belanja'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.470","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Print Barcode'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.523","SH-004","By.id: namaBarang","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.681","SH-004","By.id: namaBarang","<input type='text' id='searchInput' name='' placeholder='Cari nama barang...' text='Cari nama barang...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:36.937","SH-004","By.id: namaBarang","<input type='text' id='inputNamaBarangRefactor' name='namaBarang' placeholder='' text='namaBarang'>","EVALUATED",1.0000,0.4231,0.0000,1.0000
+"2026-07-17 08:54:37.150","SH-004","By.id: namaBarang","<input type='text' id='alias' name='alias' placeholder='Nama alternatif / singkatan produk' text='Nama alternatif / singkatan produk'>","EVALUATED",0.2813,0.1818,0.0000,0.3807
+"2026-07-17 08:54:37.228","SH-004","By.id: namaBarang","<input type='date' id='tanggalBeli' name='tanggalBeli' placeholder='' text='tanggalBeli'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:37.401","SH-004","By.id: namaBarang","<input type='number' id='hargaBeli' name='hargaBeli' placeholder='' text='hargaBeli'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:37.576","SH-004","By.id: namaBarang","<input type='number' id='hargaJual' name='hargaJual' placeholder='' text='hargaJual'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:37.749","SH-004","By.id: namaBarang","<input type='number' id='hargaTawar' name='hargaTawar' placeholder='' text='hargaTawar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:37.924","SH-004","By.id: namaBarang","<input type='text' id='qtyAwal' name='qtyAwal' placeholder='' text='qtyAwal'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:38.098","SH-004","By.id: namaBarang","<input type='text' id='qty' name='qty' placeholder='' text='qty'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:38.285","SH-004","By.id: namaBarang","<input type='text' id='keuntungan' name='keuntungan' placeholder='' text='keuntungan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:38.455","SH-004","By.id: namaBarang","<input type='text' id='persentase' name='persentase' placeholder='' text='persentase'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:38.645","SH-004","By.id: namaBarang","<input type='text' id='keterangan' name='keterangan' placeholder='' text='keterangan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:38.729","SH-004","By.id: namaBarang","<input type='file' id='gambar' name='gambar' placeholder='' text='gambar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:39.990","SH-011","By.id: searchInput","<button type='submit' id='inputProduct--Button' name='' placeholder='' text='+ Tambah Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.048","SH-011","By.id: searchInput","<button type='submit' id='nextPage' name='' placeholder='' text='Next'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.094","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Dashboard'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.142","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.184","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.241","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.290","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.339","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Belanja'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.388","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Print Barcode'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.438","SH-011","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:40.648","SH-011","By.id: searchInput","<input type='text' id='productSearchInputRefactor' name='' placeholder='Cari nama barang...' text='Cari nama barang...'>","EVALUATED",0.0000,0.4138,0.0000,1.0000
+"2026-07-17 08:54:42.248","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='submit' id='inputProduct--Button' name='' placeholder='' text='+ Tambah Produk'>","EVALUATED",0.0769,0.3000,0.0000,0.0625
+"2026-07-17 08:54:42.359","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:42.491","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:42.609","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:42.726","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:42.834","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:42.945","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:43.059","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:43.170","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:43.290","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:43.402","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:43.510","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:43.617","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:43.725","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:43.833","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:43.933","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:44.048","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:44.155","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:44.265","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:44.367","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Edit'>","EVALUATED",1.0000,0.0000,0.0000,0.6250
+"2026-07-17 08:54:44.474","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='button' id='' name='' placeholder='' text='Hapus'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:44.579","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<button type='submit' id='nextPage' name='' placeholder='' text='Next'>","EVALUATED",0.2500,0.2222,0.0000,0.1563
+"2026-07-17 08:54:44.700","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Dashboard'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:44.829","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","EVALUATED",0.1250,0.0000,0.0000,0.0781
+"2026-07-17 08:54:44.946","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","EVALUATED",0.0526,0.0000,0.0000,0.0329
+"2026-07-17 08:54:45.055","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","EVALUATED",0.1333,0.0000,0.0000,0.0833
+"2026-07-17 08:54:45.195","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","EVALUATED",0.0714,0.0000,0.0000,0.0446
+"2026-07-17 08:54:45.311","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Belanja'>","EVALUATED",0.1429,0.0000,0.0000,0.0893
+"2026-07-17 08:54:45.433","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Print Barcode'>","EVALUATED",0.1538,0.0000,0.0000,0.0962
+"2026-07-17 08:54:45.534","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","EVALUATED",0.1053,0.0000,0.0000,0.0658
+"2026-07-17 08:54:45.608","SH-013","By.xpath: //tbody[@id='productTableBody']/tr[1]/td[10]/button[@id='editBtn']","<input type='text' id='searchInput' name='' placeholder='Cari nama barang...' text='Cari nama barang...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.110","SH-020","By.id: searchInput","<button type='submit' id='backButton' name='' placeholder='' text='⬅ Kembali invoice'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.159","SH-020","By.id: searchInput","<button type='submit' id='generateNewInvoiceBtn' name='' placeholder='' text='Tambah (Invoice Baru)'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.208","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Dashboard'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.255","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.301","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.348","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.391","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.440","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Belanja'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.483","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Print Barcode'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.533","SH-020","By.id: searchInput","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.740","SH-020","By.id: searchInput","<input type='text' id='transactionSearchInputRefactor' name='' placeholder='Cari nama barang untuk ditambahkan ke keranjang...' text='Cari nama barang untuk ditambahkan ke...'>","EVALUATED",0.0000,0.3636,0.0000,1.0000
+"2026-07-17 08:54:49.795","SH-020","By.id: searchInput","<input type='date' id='tanggalTransaksi' name='' placeholder='' text='2026-07-17'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.934","SH-020","By.id: searchInput","<input type='text' id='customerName' name='customerName' placeholder='Masukkan nama pembeli...' text='Masukkan nama pembeli...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:49.989","SH-020","By.id: searchInput","<input type='radio' id='radioBayar' name='payment_type' placeholder='' text='bayar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:50.052","SH-020","By.id: searchInput","<input type='radio' id='radioUtang' name='payment_type' placeholder='' text='utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:52.203","SH-021","By.id: simpanTransactionBtn","<button type='submit' id='backButton' name='' placeholder='' text='⬅ Kembali invoice'>","EVALUATED",0.1875,0.1818,0.0000,0.1854
+"2026-07-17 08:54:52.383","SH-021","By.id: simpanTransactionBtn","<button type='submit' id='' name='' placeholder='' text=''>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:52.496","SH-021","By.id: simpanTransactionBtn","<button type='submit' id='generateNewInvoiceBtn' name='' placeholder='' text='Tambah (Invoice Baru)'>","EVALUATED",0.1579,0.2917,0.0000,0.2237
+"2026-07-17 08:54:52.607","SH-021","By.id: simpanTransactionBtn","<button type='submit' id='saveTransactionButtonRefactor' name='' placeholder='' text='Simpan Transaksi'>","EVALUATED",1.0000,0.4688,0.0000,0.8008
+"2026-07-17 08:54:52.718","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Dashboard'>","EVALUATED",0.1250,0.0000,0.0000,0.0781
+"2026-07-17 08:54:52.852","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","EVALUATED",0.0625,0.0000,0.0000,0.0391
+"2026-07-17 08:54:52.960","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","EVALUATED",0.1579,0.0000,0.0000,0.3125
+"2026-07-17 08:54:53.082","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","EVALUATED",0.1250,0.0000,0.0000,0.0781
+"2026-07-17 08:54:53.200","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","EVALUATED",0.2857,0.0000,0.0000,0.1786
+"2026-07-17 08:54:53.315","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Belanja'>","EVALUATED",0.1875,0.0000,0.0000,0.1172
+"2026-07-17 08:54:53.429","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Print Barcode'>","EVALUATED",0.1250,0.0000,0.0000,0.0781
+"2026-07-17 08:54:53.541","SH-021","By.id: simpanTransactionBtn","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","EVALUATED",0.1579,0.0000,0.0000,0.0987
+"2026-07-17 08:54:53.613","SH-021","By.id: simpanTransactionBtn","<input type='text' id='searchInput' name='' placeholder='Cari nama barang untuk ditambahkan ke keranjang...' text='Cari nama barang untuk ditambahkan ke...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:53.675","SH-021","By.id: simpanTransactionBtn","<input type='date' id='tanggalTransaksi' name='' placeholder='' text='2026-07-17'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:53.740","SH-021","By.id: simpanTransactionBtn","<input type='text' id='customerName' name='customerName' placeholder='Masukkan nama pembeli...' text='Customer Test Healing'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:53.805","SH-021","By.id: simpanTransactionBtn","<input type='text' id='' name='' placeholder='' text='1'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:53.867","SH-021","By.id: simpanTransactionBtn","<input type='number' id='' name='' placeholder='' text='15000.00'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:53.928","SH-021","By.id: simpanTransactionBtn","<input type='radio' id='radioBayar' name='payment_type' placeholder='' text='bayar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:54.000","SH-021","By.id: simpanTransactionBtn","<input type='radio' id='radioUtang' name='payment_type' placeholder='' text='utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.440","SH-022","By.id: paidInput","<button type='submit' id='backButton' name='' placeholder='' text='⬅ Kembali invoice'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.525","SH-022","By.id: paidInput","<button type='submit' id='' name='' placeholder='' text=''>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.581","SH-022","By.id: paidInput","<button type='submit' id='generateNewInvoiceBtn' name='' placeholder='' text='Tambah (Invoice Baru)'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.627","SH-022","By.id: paidInput","<button type='submit' id='simpanTransactionBtn' name='' placeholder='' text='Simpan Transaksi'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.686","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Dashboard'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.733","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.779","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.823","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.868","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.914","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Belanja'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:56.955","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Print Barcode'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.002","SH-022","By.id: paidInput","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.140","SH-022","By.id: paidInput","<input type='text' id='searchInput' name='' placeholder='Cari nama barang untuk ditambahkan ke keranjang...' text='Cari nama barang untuk ditambahkan ke...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.194","SH-022","By.id: paidInput","<input type='date' id='tanggalTransaksi' name='' placeholder='' text='2026-07-17'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.319","SH-022","By.id: paidInput","<input type='text' id='customerName' name='customerName' placeholder='Masukkan nama pembeli...' text='Customer Test Healing'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.445","SH-022","By.id: paidInput","<input type='text' id='' name='' placeholder='' text='1'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.567","SH-022","By.id: paidInput","<input type='number' id='' name='' placeholder='' text='15000.00'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.625","SH-022","By.id: paidInput","<input type='checkbox' id='' name='' placeholder='' text='on'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.687","SH-022","By.id: paidInput","<input type='radio' id='radioBayar' name='payment_type' placeholder='' text='bayar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.752","SH-022","By.id: paidInput","<input type='radio' id='radioUtang' name='payment_type' placeholder='' text='utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:54:57.952","SH-022","By.id: paidInput","<input type='number' id='paidInputRefactor' name='' placeholder='' text='15000'>","EVALUATED",0.0000,0.5263,0.0000,1.0000
+"2026-07-17 08:54:59.404","SH-030","By.id: addDebtorBtn","<button type='submit' id='addDebtorButtonRefactor' name='' placeholder='' text='Tambah Pengutang Baru'>","EVALUATED",0.7619,0.5385,0.0000,0.8750
+"2026-07-17 08:54:59.517","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Dashboard'>","EVALUATED",0.1875,0.0000,0.0000,0.1172
+"2026-07-17 08:54:59.630","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","EVALUATED",0.1875,0.0000,0.0000,0.1172
+"2026-07-17 08:54:59.740","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","EVALUATED",0.4737,0.0000,0.0000,0.2961
+"2026-07-17 08:54:59.853","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","EVALUATED",0.5625,0.0000,0.0000,0.3516
+"2026-07-17 08:54:59.958","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","EVALUATED",0.2143,0.0000,0.0000,0.1339
+"2026-07-17 08:55:00.065","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Belanja'>","EVALUATED",0.1875,0.0000,0.0000,0.1172
+"2026-07-17 08:55:00.170","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Print Barcode'>","EVALUATED",0.0625,0.0000,0.0000,0.0391
+"2026-07-17 08:55:00.268","SH-030","By.id: addDebtorBtn","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","EVALUATED",0.2105,0.0000,0.0000,0.1316
+"2026-07-17 08:55:00.339","SH-030","By.id: addDebtorBtn","<input type='text' id='debtorSearchInput' name='' placeholder='Cari Nama Pengutang...' text='Cari Nama Pengutang...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.352","SH-031","By.id: inputDebtorName","<button type='submit' id='addDebtorBtn' name='' placeholder='' text='Tambah Pengutang Baru'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.398","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Bayar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.442","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Tambah Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.485","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.531","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Bayar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.574","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Tambah Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.617","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.660","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Bayar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.703","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Tambah Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.744","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.791","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Bayar'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.839","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Tambah Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.883","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Hapus'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.929","SH-031","By.id: inputDebtorName","<button type='button' id='' name='' placeholder='' text='Cek Inv'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:02.978","SH-031","By.id: inputDebtorName","<button type='button' id='' name='' placeholder='' text='Batal'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.022","SH-031","By.id: inputDebtorName","<button type='submit' id='' name='' placeholder='' text='Simpan Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.065","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Dashboard'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.107","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.153","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.194","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.236","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.284","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Belanja'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.325","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Print Barcode'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.374","SH-031","By.id: inputDebtorName","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.510","SH-031","By.id: inputDebtorName","<input type='text' id='debtorSearchInput' name='' placeholder='Cari Nama Pengutang...' text='Cari Nama Pengutang...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.716","SH-031","By.id: inputDebtorName","<input type='text' id='inputDebtorNameRefactor' name='' placeholder='Masukkan nama pengutang' text='Masukkan nama pengutang'>","EVALUATED",0.0000,0.6538,0.0000,1.0000
+"2026-07-17 08:55:03.773","SH-031","By.id: inputDebtorName","<input type='date' id='inputDate' name='' placeholder='' text='2026-07-17'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:03.906","SH-031","By.id: inputDebtorName","<input type='text' id='inputInvoiceCode' name='' placeholder='Contoh: INV-2025...' text='Contoh: INV-2025...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:04.039","SH-031","By.id: inputDebtorName","<input type='text' id='inputInitialDebt' name='' placeholder='Contoh: Rp 500.000' text='Contoh: Rp 500.000'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:04.090","SH-031","By.id: inputDebtorName","<input type='radio' id='' name='debt_type' placeholder='' text='barang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:04.144","SH-031","By.id: inputDebtorName","<input type='radio' id='' name='debt_type' placeholder='' text='pinjaman'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:04.199","SH-031","By.id: inputDebtorName","<textarea type='textarea' id='inputDescription' name='' placeholder='Deskripsi transaksi utang ini...' text='Deskripsi transaksi utang ini...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:05.356","SH-040","By.id: tab-debt","<button type='submit' id='tab-product' name='' placeholder='' text='Tracking Produk'>","EVALUATED",0.1333,0.5455,0.0000,0.2879
+"2026-07-17 08:55:05.464","SH-040","By.id: tab-debt","<button type='submit' id='tabDebtRefactor' name='' placeholder='' text='Data Utang'>","EVALUATED",1.0000,0.4706,0.0000,1.0000
+"2026-07-17 08:55:05.570","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Dashboard'>","EVALUATED",0.3000,0.0000,0.0000,0.1875
+"2026-07-17 08:55:05.685","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","EVALUATED",0.1875,0.0000,0.0000,0.1172
+"2026-07-17 08:55:05.796","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","EVALUATED",0.2632,0.0000,0.0000,0.1645
+"2026-07-17 08:55:05.917","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","EVALUATED",0.5333,0.0000,0.0000,0.3333
+"2026-07-17 08:55:06.044","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","EVALUATED",0.2143,0.0000,0.0000,0.1339
+"2026-07-17 08:55:06.156","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Belanja'>","EVALUATED",0.2000,0.0000,0.0000,0.1250
+"2026-07-17 08:55:06.266","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Print Barcode'>","EVALUATED",0.0769,0.0000,0.0000,0.0481
+"2026-07-17 08:55:06.369","SH-040","By.id: tab-debt","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","EVALUATED",0.4211,0.0000,0.0000,0.2632
+"2026-07-17 08:55:06.438","SH-040","By.id: tab-debt","<input type='text' id='product-search-input' name='' placeholder='Cari nama produk...' text='Cari nama produk...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.618","SH-041","By.id: product-search-input","<button type='submit' id='tab-product' name='' placeholder='' text='Tracking Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.661","SH-041","By.id: product-search-input","<button type='submit' id='tab-debt' name='' placeholder='' text='Data Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.705","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Dashboard'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.747","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Manajemen Produk'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.788","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Transaksi Penjualan'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.831","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Manajemen Utang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.875","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Dashboard Analisis Finansial'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.913","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Belanja'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:07.959","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Print Barcode'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:08.001","SH-041","By.id: product-search-input","<a type='' id='' name='' placeholder='' text='Print daftar barang'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:08.194","SH-041","By.id: product-search-input","<input type='text' id='productSearchDashboardRefactor' name='' placeholder='Cari nama produk...' text='Cari nama produk...'>","EVALUATED",0.0000,0.4848,0.0000,0.6667
+"2026-07-17 08:55:09.694","SH-050","By.id: searchInput","<button type='submit' id='btnLayoutVertical' name='' placeholder='' text='KEBAWAH'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:09.741","SH-050","By.id: searchInput","<button type='submit' id='btnLayoutHorizontal' name='' placeholder='' text='KESAMPING'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:09.783","SH-050","By.id: searchInput","<button type='submit' id='btnLayoutTable' name='' placeholder='' text='TABEL'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:09.826","SH-050","By.id: searchInput","<button type='submit' id='' name='' placeholder='' text='MUAT DATA'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:09.871","SH-050","By.id: searchInput","<button type='submit' id='' name='' placeholder='' text='SIMPAN'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:09.920","SH-050","By.id: searchInput","<button type='submit' id='' name='' placeholder='' text='RESET'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:09.960","SH-050","By.id: searchInput","<button type='submit' id='' name='' placeholder='' text='CETAK SEKARANG'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:10.167","SH-050","By.id: searchInput","<input type='text' id='printSearchInputRefactor' name='' placeholder='Ketik nama produk...' text='Ketik nama produk...'>","EVALUATED",0.0000,0.4444,0.0000,1.0000
+"2026-07-17 08:55:10.286","SH-050","By.id: searchInput","<input type='text' id='tableName' name='' placeholder='Masukkan Nama Tabel...' text='DAFTAR HARGA BARANG'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:11.327","SH-051","By.id: btnLayoutTable","<button type='submit' id='btnLayoutVertical' name='' placeholder='' text='KEBAWAH'>","EVALUATED",0.1429,0.6316,0.0000,0.3816
+"2026-07-17 08:55:11.434","SH-051","By.id: btnLayoutTable","<button type='submit' id='btnLayoutHorizontal' name='' placeholder='' text='KESAMPING'>","EVALUATED",0.1111,0.5714,0.0000,0.3393
+"2026-07-17 08:55:11.553","SH-051","By.id: btnLayoutTable","<button type='submit' id='layoutTableButtonRefactor' name='' placeholder='' text='TABEL'>","EVALUATED",1.0000,0.2857,0.0000,0.8750
+"2026-07-17 08:55:11.675","SH-051","By.id: btnLayoutTable","<button type='submit' id='' name='' placeholder='' text='MUAT DATA'>","EVALUATED",0.1111,0.0000,0.0000,0.0694
+"2026-07-17 08:55:11.791","SH-051","By.id: btnLayoutTable","<button type='submit' id='' name='' placeholder='' text='SIMPAN'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:11.895","SH-051","By.id: btnLayoutTable","<button type='submit' id='' name='' placeholder='' text='RESET'>","EVALUATED",0.2000,0.0000,0.0000,0.1250
+"2026-07-17 08:55:12.002","SH-051","By.id: btnLayoutTable","<button type='submit' id='' name='' placeholder='' text='CETAK SEKARANG'>","EVALUATED",0.2143,0.0000,0.0000,0.1339
+"2026-07-17 08:55:12.071","SH-051","By.id: btnLayoutTable","<input type='text' id='searchInput' name='' placeholder='Ketik nama produk...' text='Ketik nama produk...'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-07-17 08:55:12.133","SH-051","By.id: btnLayoutTable","<input type='text' id='tableName' name='' placeholder='Masukkan Nama Tabel...' text='DAFTAR HARGA BARANG'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000

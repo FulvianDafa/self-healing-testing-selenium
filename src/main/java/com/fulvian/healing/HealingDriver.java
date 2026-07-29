@@ -111,25 +111,51 @@ public class HealingDriver {
                 if (!isCompatibleElement(profile, candidate)) {
                     skippedIncompatible++;
 
+                    String candidateDesc = describeCandidate(candidate);
                     System.out.printf("  ├─ SKIP %-70s | alasan: incompatible%n",
-                            truncate(describeCandidate(candidate), 70));
+                            truncate(candidateDesc, 70));
+                    
+                    // Log candidate skipped
+                    HealingLogger.logCandidate(new CandidateResult(
+                            testCaseId,
+                            locator.toString(),
+                            candidateDesc,
+                            0.0, 0.0, 0.0, 0.0,
+                            "SKIPPED_INCOMPATIBLE"
+                    ));
+                    
                     continue;
                 }
 
                 evaluatedCompatible++;
 
                 double score = SimilarityEngine.calculateCombinedScore(profile, candidate);
+                String candidateDesc = describeCandidate(candidate);
 
                 System.out.printf("  ├─ CAND %-70s → combined=%.4f%n",
-                        truncate(describeCandidate(candidate), 70), score);
+                        truncate(candidateDesc, 70), score);
+
+                // Hitung skor komponen untuk dilog ke file candidate
+                double cText = calculateTextScore(profile, candidate);
+                double cLocator = calculateLocatorScore(profile, candidate);
+                double cPos = calculatePositionScore(profile, candidate);
+
+                // Log candidate evaluated
+                HealingLogger.logCandidate(new CandidateResult(
+                        testCaseId,
+                        locator.toString(),
+                        candidateDesc,
+                        cText, cLocator, cPos, score,
+                        "EVALUATED"
+                ));
 
                 if (score > bestScore) {
                     bestScore = score;
                     bestElement = candidate;
 
-                    bestText = calculateTextScore(profile, candidate);
-                    bestLocator = calculateLocatorScore(profile, candidate);
-                    bestPosition = calculatePositionScore(profile, candidate);
+                    bestText = cText;
+                    bestLocator = cLocator;
+                    bestPosition = cPos;
                 }
 
             } catch (StaleElementReferenceException ignored) {
@@ -253,7 +279,7 @@ public class HealingDriver {
         // Tahap 2 (fallback untuk input target):
         // Jika target adalah input dan tidak ada input COMPATIBLE yang visible,
         // tambahkan semua input dari DOM (termasuk di dalam modal tersembunyi).
-        // Ini mengatasi kasus namaBarang di dalam productModal yang hidden via CSS.
+        // Ini mengatasi kasus namaBarang di dalam productModal yang tudden via CSS.
         String expectedTag = inferExpectedTag(profile);
         if ("input".equals(expectedTag) || "select".equals(expectedTag) || "textarea".equals(expectedTag)) {
             boolean hasCompatibleVisibleInput = visible.stream().anyMatch(el -> {

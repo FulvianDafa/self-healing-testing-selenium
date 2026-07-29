@@ -4,7 +4,7 @@ import com.fulvian.healing.AutoHealingWebDriver;
 import com.fulvian.healing.HealingLogger;
 import com.fulvian.utils.DomMutationHelper;
 import com.fulvian.utils.WaitHelper;
-import io.github.bonigarcia.wdm.WebDriverManager;
+// import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -51,7 +51,7 @@ public abstract class BaseTest {
 
     @BeforeAll
     static void setUpDriver() {
-        WebDriverManager.chromedriver().setup();
+        // WebDriverManager.chromedriver().setup(); // Ditutup karena menyebabkan hang, Selenium 4+ sudah ada Selenium Manager.
 
         ChromeOptions options = new ChromeOptions();
         if (Boolean.parseBoolean(System.getProperty("headless", "false"))) {
@@ -106,11 +106,8 @@ public abstract class BaseTest {
 
     @AfterAll
     static void tearDown() {
-        // Summary self-healing hanya dicetak saat mode self-healing aktif
-        boolean selfHealingEnabled = Boolean.parseBoolean(
-                System.getProperty("selfHealing.enabled", "false")
-        );
-        if (selfHealingEnabled) {
+        // Summary self-healing dicetak jika ada percobaan healing yang dicatat
+        if (HealingLogger.calculateMetrics().totalAttempts > 0) {
             HealingLogger.printSummary();
         }
 

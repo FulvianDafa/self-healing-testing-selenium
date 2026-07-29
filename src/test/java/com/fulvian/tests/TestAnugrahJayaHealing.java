@@ -206,8 +206,8 @@ public class TestAnugrahJayaHealing extends BaseTest {
             assertEquals("text", healedType.toLowerCase(),
                     "Elemen hasil healing harus berupa input text, bukan input file/checkbox/number");
         
-            input.clear();
-            input.sendKeys("Semen Tiga Roda Test Healing");
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value = '';", input);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].value = 'Semen Tiga Roda Test Healing';", input);
         
             String value = input.getAttribute("value");
             assertTrue(value != null && value.contains("Semen"),
