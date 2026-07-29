@@ -1,4 +1,0 @@
-timestamp,test_case_id,sut,original_locator,mutated_locator,status,message
-"2026-06-15 10:05:01.123","EXP-001","expand_testing","By.id: username","id=usernameInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
-"2026-06-15 10:05:05.456","EXP-002","expand_testing","By.id: password","id=passwordInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
-"2026-06-15 10:05:08.789","EXP-003","expand_testing","By.id: submit-login","id=submitLoginButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

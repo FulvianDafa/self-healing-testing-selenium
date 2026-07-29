@@ -1,6 +1,0 @@
-timestamp,test_case_id,sut,original_locator,mutated_locator,status,message
-"2026-06-15 10:00:01.123","SPOT-001","spot_upi","By.id: spotMainHeaderTitle","id=spotMainHeaderTitleRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
-"2026-06-15 10:00:05.456","SPOT-002","spot_upi","By.id: spotCourseMenuLink","id=spotCourseMenuLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
-"2026-06-15 10:00:08.789","SPOT-003","spot_upi","By.id: spotCourseTableTitle","id=spotCourseTableTitleRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
-"2026-06-15 10:00:12.345","SPOT-004","spot_upi","By.id: spotCourseCodeCell","id=spotCourseCodeCellRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
-"2026-06-15 10:00:15.678","SPOT-005","spot_upi","By.id: spotLogoutButton","id=spotLogoutButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
