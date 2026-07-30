@@ -1,0 +1,3 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 12:21:53.666","WIKI-SH-001","wikipedia_id_change","By.id: wikiSearchInput","SUCCESS",1.0000,0.6538,0.0000,1.0000,"<input class='cdx-text-input__input mw-searchInput' autocomplete='off' type='search' name='search' placeholder='Search Wikipedia' aria-label='Search W",23487,false
+"2026-07-29 12:22:36.778","WIKI-SH-002","wikipedia_id_change","By.id: wikiSearchButton","SUCCESS",1.0000,0.6667,0.0000,1.0000,"<button class='cdx-button cdx-search-input__end-button' id='wikiSearchButtonRefactor' data-self-healing-old-id='wikiSearchButton' data-self-healing-mu",41245,false

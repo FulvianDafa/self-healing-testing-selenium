@@ -1,0 +1,4 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T11:45:55.722476600","BING-BL-001","bing","By.id: bingSearchInput","id=bingSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:46:00.400315400","BING-BL-002","bing","By.id: bingSearchButton","id=bingSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:46:05.279325700","BING-BL-003","bing","By.id: bingImagesLink","id=bingImagesLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

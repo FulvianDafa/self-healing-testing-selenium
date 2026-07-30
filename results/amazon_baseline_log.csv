@@ -1,0 +1,6 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T15:17:56.065802500","AMZ-BL-001","amazon","By.id: amzSearchInput","id=amzSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T15:18:00.920379700","AMZ-BL-002","amazon","By.id: amzSearchButton","id=amzSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T15:18:06.046219","AMZ-BL-003","amazon","By.id: amzNavAll","id=amzNavAllRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T15:18:12.341250600","AMZ-BL-004","amazon","By.id: amzOrdersLink","id=amzOrdersLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T15:18:17.323788","AMZ-BL-005","amazon","By.id: amzCartLink","id=amzCartLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

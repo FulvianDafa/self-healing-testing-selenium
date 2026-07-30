@@ -1,0 +1,4 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 17:10:39.607","KMP-SH-001","kompas_id_change","By.id: kmpSearchInput","SUCCESS",0.1290,0.6400,0.0000,1.0000,"<input type='text' name='q' class='header-search-input' value='' placeholder='Cari tokoh, topik atau peristiwa' autocomplete='off' list='populer' id='",27019,false
+"2026-07-29 17:11:41.924","KMP-SH-002","kompas_id_change","By.id: kmpLogo","FALSE_POSITIVE",0.6000,0.1111,0.0000,0.6667,"<a href='https://plus.kompas.com/group/kompas-max?source=top_navbar' class='button-default active' role='link' id='menu-plus' aria-label='Kompas.com+'",53000,true
+

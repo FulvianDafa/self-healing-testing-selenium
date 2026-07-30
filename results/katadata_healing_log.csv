@@ -1,0 +1,7 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 17:07:36.173","KTD-SH-001","katadata_id_change","By.id: ktdSearchInput","SUCCESS",0.2500,0.6400,0.0000,0.9063,"<input type='text' class='form-control search-input flex-grow-1' id='ktdSearchInputRefactor' value='' placeholder='Cari' required='' data-self-healing",6614,false
+"2026-07-29 17:07:48.619","KTD-SH-002","katadata_id_change","By.id: ktdLogo","FALSE_POSITIVE",0.5714,0.0000,0.0000,0.6250,"<a target='_blank' class='nav-link' href='https://green.katadata.co.id/'><span style='color: green;'>Katadata Green</span></a>",9354,true
+"2026-07-29 17:08:01.663","KTD-SH-003","katadata_id_change","By.id: ktdFinansial","SUCCESS",1.0000,0.5909,0.0000,1.0000,"<a class='nav-link' href='https://katadata.co.id/finansial' id='ktdFinansialRefactor' data-self-healing-old-id='ktdFinansial' data-self-healing-mutate",10102,false
+"2026-07-29 17:08:52.039","KTD-SH-004","katadata_id_change","By.id: ktdBerita","SUCCESS",1.0000,0.5263,0.0000,1.0000,"<a class='nav-link' href='https://katadata.co.id/berita' id='ktdBeritaRefactor' data-self-healing-old-id='ktdBerita' data-self-healing-mutated-from='k",8373,false
+"2026-07-29 17:09:34.783","KTD-SH-005","katadata_id_change","By.id: ktdDataboks","SUCCESS",1.0000,0.5714,0.0000,1.0000,"<a target='_blank' class='nav-link' href='https://databoks.katadata.co.id/' id='ktdDataboksRefactor' data-self-healing-old-id='ktdDataboks' data-self-",9239,false
+

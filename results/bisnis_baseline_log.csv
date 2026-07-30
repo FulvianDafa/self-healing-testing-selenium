@@ -1,0 +1,5 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:36:59.850314900","BSN-BL-001","bisnis","By.id: bsnSearchIcon","id=bsnSearchIconRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:37:02.795723600","BSN-BL-002","bisnis","By.id: bsnLogo","id=bsnLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:37:05.815422600","BSN-BL-003","bisnis","By.id: bsnMarket","id=bsnMarketRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:37:14.749819500","BSN-BL-004","bisnis","By.id: bsnFinansial","id=bsnFinansialRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

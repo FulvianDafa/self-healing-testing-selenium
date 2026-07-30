@@ -1,0 +1,4 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 17:22:04.132","TKT-SH-001","tiket_id_change","By.id: tktSearchInput","FAIL",0.0000,0.0000,0.0000,0.0000,"-",18744,false
+"2026-07-29 17:23:20.038","TKT-SH-004","tiket_id_change","By.id: tktHotel","FALSE_POSITIVE",0.5556,0.1429,0.0000,0.5848,"<a data-testid='verticalTab-hotel' id='verticalTab-2' href='/en-id/hotel' class='Tab_tab__0xyXV'><img data-testid='imgTabIcon' alt='Hotel Booking' fet",14271,true
+"2026-07-29 17:23:42.634","TKT-SH-005","tiket_id_change","By.id: tktEvent","FALSE_POSITIVE",0.8333,0.1333,0.0000,0.5812,"<a data-testid='verticalTab-event' id='verticalTab-16' href='/en-id/to-do/search?title=&amp;utm_source=INTERNAL&amp;utm_medium=home&amp;productCategor",15905,true

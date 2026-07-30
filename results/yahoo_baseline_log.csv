@@ -1,0 +1,4 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T12:00:11.070779200","YHOO-BL-003","yahoo","By.id: yhooFinance","id=yhooFinanceRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T12:00:44.729950900","YHOO-BL-004","yahoo","By.id: yhooNews","id=yhooNewsRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T12:00:53.220092200","YHOO-BL-005","yahoo","By.id: yhooSports","id=yhooSportsRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

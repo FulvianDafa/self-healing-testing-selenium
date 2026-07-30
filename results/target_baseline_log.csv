@@ -1,0 +1,5 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T11:55:54.564836800","TGT-BL-001","target","By.id: tgtSearchInput","id=tgtSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:56:01.544860600","TGT-BL-002","target","By.id: tgtSearchButton","id=tgtSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:56:35.629490400","TGT-BL-004","target","By.id: tgtLogo","id=tgtLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:56:42.267684600","TGT-BL-005","target","By.id: tgtCategories","id=tgtCategoriesRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

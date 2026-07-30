@@ -1,0 +1,4 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:18:37.556264200","DCD-BL-001","dicoding","By.id: dcdSearchInput","id=dcdSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:19:07.338442600","DCD-BL-003","dicoding","By.id: dcdAkademi","id=dcdAkademiRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:19:14.457269400","DCD-BL-004","dicoding","By.id: dcdLearningPaths","id=dcdLearningPathsRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

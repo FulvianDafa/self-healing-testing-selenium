@@ -1,0 +1,4 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:40:54.564952600","CNN-BL-003","cnnindo","By.id: cnnLogo","id=cnnLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:41:27.204406500","CNN-BL-004","cnnindo","By.id: cnnNasional","id=cnnNasionalRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:41:31.941835200","CNN-BL-005","cnnindo","By.id: cnnEkonomi","id=cnnEkonomiRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

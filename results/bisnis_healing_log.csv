@@ -1,0 +1,5 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 16:54:03.391","BSN-SH-001","bisnis_id_change","By.id: bsnSearchIcon","FAIL",0.0000,0.0000,0.0000,0.0000,"-",31402,false
+"2026-07-29 16:54:59.691","BSN-SH-002","bisnis_id_change","By.id: bsnLogo","SUCCESS",0.3158,0.4706,0.0000,1.0000,"<a href='https://www.bisnis.com' aria-label='homepage Bisnis.com' id='bsnLogoRefactor' data-self-healing-old-id='bsnLogo' data-self-healing-mutated-fr",53506,false
+"2026-07-29 16:55:50.579","BSN-SH-003","bisnis_id_change","By.id: bsnMarket","SUCCESS",0.0769,0.5263,0.0000,1.0000,"<a href='https://market.bisnis.com/read/20260729/235/1991896/harga-lengkap-emas-antam-ubs-dan-galeri-24-di-pegadaian-rabu-297' class='flashnewsLink' i",47670,false
+"2026-07-29 16:56:48.289","BSN-SH-004","bisnis_id_change","By.id: bsnFinansial","SUCCESS",0.1077,0.5909,0.0000,1.0000,"<a href='https://finansial.bisnis.com/read/20260728/90/1991829/btn-perkuat-kemitraan-strategis-untuk-dukung-ekonomi-maluku-utara' class='flashnewsLink",48431,false

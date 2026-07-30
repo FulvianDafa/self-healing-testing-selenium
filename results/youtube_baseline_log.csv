@@ -1,0 +1,4 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T12:01:00.376661100","YT-BL-001","youtube","By.id: ytSearchInput","id=ytSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T12:01:34.778912200","YT-BL-003","youtube","By.id: ytLogo","id=ytLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T12:02:10.313457500","YT-BL-005","youtube","By.id: ytHome","id=ytHomeRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

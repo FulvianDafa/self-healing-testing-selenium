@@ -1,0 +1,3 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 12:08:46.525","EBY-SH-001","ebay_id_change","By.id: ebySearchInput","SUCCESS",1.0000,0.6400,0.0000,1.0000,"<input data-marko='{&quot;oninput&quot;:&quot;handleTextUpdate s0-1-4-10-4 false&quot;,&quot;onfocusin&quot;:&quot;handleMarkTimer s0-1-4-10-4 false&q",15337,false
+"2026-07-29 12:10:30.070","EBY-SH-005","ebay_id_change","By.id: ebyLogo","SUCCESS",1.0000,0.4706,0.0000,1.0000,"<a href='https://www.ebay.com' _sp='m570.l2586' class='gh-logo' tabindex='2' id='ebyLogoRefactor' data-self-healing-old-id='ebyLogo' data-self-healing",24854,false

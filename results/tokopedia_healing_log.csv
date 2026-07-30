@@ -1,0 +1,2 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 17:23:52.551","TKP-SH-001","tokopedia_id_change","By.id: tkpSearchInput","SUCCESS",1.0000,0.6400,0.0000,1.0000,"<input type='search' aria-label='Cari di Tokopedia' data-unify='Search' placeholder='Cari di Tokopedia' value='' class='css-6v0gm9 exxxdg63' id='tkpSe",2804,false

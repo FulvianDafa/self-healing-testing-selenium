@@ -220,11 +220,19 @@ public class TestSauceDemoHealing {
 
     private WebElement heal(String testCaseId, By brokenLocator, ElementProfile profile) {
         System.setProperty("healing.log.file", SUT_LOG_FILE);
+        // Jeda setelah mutasi locator — validator dapat melihat kondisi "locator rusak"
+        sleep(1500);
         HealingDriver healingDriver = new HealingDriver(driver, testCaseId, "saucedemo_id_change", THRESHOLD);
         WebElement result = healingDriver.findElement(brokenLocator, profile);
         assertNotNull(result, "[" + testCaseId + "] Self-healing gagal menemukan elemen pengganti.");
         assertTrue(result.isDisplayed(), "[" + testCaseId + "] Elemen hasil healing tidak terlihat.");
+        // Jeda setelah healing berhasil — validator dapat melihat elemen yang dipulihkan
+        sleep(2000);
         return result;
+    }
+
+    private void sleep(long ms) {
+        try { Thread.sleep(ms); } catch (InterruptedException ignored) {}
     }
 
     private void loginAsStandard() {

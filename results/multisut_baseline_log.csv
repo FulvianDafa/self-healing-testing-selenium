@@ -1,0 +1,6 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T11:20:41.143027","MS-BL-001","multi-sut","By.id: wikiSearchInput","id=wikiSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:20:43.523745900","MS-BL-002","multi-sut","By.id: wikiSearchButton","id=wikiSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:21:23.189584100","MS-BL-005","multi-sut","By.id: bingSearchInput","id=bingSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:21:28.311985900","MS-BL-006","multi-sut","By.id: bingSearchButton","id=bingSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:21:33.206220700","MS-BL-007","multi-sut","By.id: bingImagesLink","id=bingImagesLinkRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

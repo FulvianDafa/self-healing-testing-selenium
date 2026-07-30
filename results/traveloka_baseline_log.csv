@@ -1,0 +1,4 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:48:07.345672600","TVL-BL-001","traveloka","By.id: tvlSearchInput","id=tvlSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:49:06.063959700","TVL-BL-004","traveloka","By.id: tvlFlights","id=tvlFlightsRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:49:12.125933100","TVL-BL-005","traveloka","By.id: tvlHotels","id=tvlHotelsRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

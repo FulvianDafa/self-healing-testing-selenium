@@ -1,0 +1,3 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T11:46:11.714933700","EBY-BL-001","ebay","By.id: ebySearchInput","id=ebySearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:47:31.533508700","EBY-BL-005","ebay","By.id: ebyLogo","id=ebyLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

@@ -1,0 +1,4 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 12:08:11.407","BING-SH-001","bing_id_change","By.id: bingSearchInput","SUCCESS",0.2308,0.2353,0.0000,0.7132,"<input id='sb_imgpst' class='imgpst' type='text' placeholder='paste image link to search'>",3466,false
+"2026-07-29 12:08:18.838","BING-SH-002","bing_id_change","By.id: bingSearchButton","FAIL",0.4286,0.2778,0.0000,0.3720,"-",3682,false
+"2026-07-29 12:08:26.850","BING-SH-003","bing_id_change","By.id: bingImagesLink","FAIL",0.0833,0.1250,0.0000,0.0990,"-",3211,false

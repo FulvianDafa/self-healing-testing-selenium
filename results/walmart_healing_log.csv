@@ -1,0 +1,3 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-07-29 12:20:02.329","WMT-SH-001","walmart_id_change","By.id: wmtSearchInput","SUCCESS",0.7292,0.6400,0.0000,1.0000,"<input aria-label='Search' aria-activedescendant='' class='flex-auto lh-solid sans-serif search-bar br-pill f5 search-input-field-v2 b--none search-ba",8056,false
+"2026-07-29 12:21:28.352","WMT-SH-005","walmart_id_change","By.id: wmtLogo","SUCCESS",1.0000,0.4706,0.0000,1.0000,"<a link-identifier='walmartLogoDesktop' class='header-navigation flex-hdkp items-center no-underline justify-center mr3 pa3 hover-bg-dark-primary hove",9001,false
