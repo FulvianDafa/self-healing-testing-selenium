@@ -1,0 +1,960 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:14:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:14:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: bsnSearchIcon
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] ? Tidak ada input compatible yang visible. Menambahkan semua input dari DOM (termasuk modal)...
+[HealingDriver] Mengevaluasi 250 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Navigation... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Previous'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Next'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Next'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Previous'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Next'>        | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Close bill... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bisnis Indonesia Prem... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bisnismuda.id'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Data Indonesia'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Konten Interaktif'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Foto'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Video'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Baca E-Paper'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='homepage Bisnis.com'>    | alasan: incompatible
+  ?? SKIP <a type='' id='bsnSearchIconRefactor' name='' placeholder='' text='... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Login'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='HOME'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MARKET'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='FINANSIAL'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='EKONOMI'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='TEKNO'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='STYLE'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KABAR24'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='HIJAU'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BOLA'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INDEKS'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KVB Futures Bidik Lon... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Komoditas'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KVB Futures Bidik Lon... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='IHSG Hari Ini (2/10) ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Daftar 14 Emiten Gant... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Korporasi'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Daftar 14 Emiten Gant... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Asian Games dan Bagai... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Premium'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Asian Games dan Bagai... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Proses Kilat Pengangk... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nasional'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Proses Kilat Pengangk... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bahu Membahu Tekan Ha... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Meniti Jalan Penyehat... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Prospek Tekanan Harga... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Peluang Cuan di Tenga... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat berita premium ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bisnis Kalimantan'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Harga TBS Sawit Kalti... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kabar Sumatra'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bidik Pasar Halal Dun... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Premium'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bahu Membahu Tekan Ha... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Perbankan'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MDR QRIS 0% untuk Pel... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pajak'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bos DJP Janji Pajak D... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kabar Jatim'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lima Tahun Merger Pel... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jasa & Niaga'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Buruh Masih Kawal 10 ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Korporasi'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='30 Tahun Erajaya (ERA... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nasional'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jusuf Hamka Ungkap Al... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Asuransi'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BPJS Kesehatan-Kemenk... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Energi & Tambang'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ESDM Lirik Teknologi ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nasional'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dato Sri Tahir Jadi W... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bisnis Jabar'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Penghentian Pembangun... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See others'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='30 Tahun Erajaya (ERA... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ADHI Jelaskan Upaya P... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ADHI Fokus Bisnis Int... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Erajaya (ERAA) Perlua... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See others'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MDR QRIS 0% untuk Pel... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BPJS Kesehatan-Kemenk... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='5 Tahun Livin by Mand... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='HUT ke-28, Bank Mandi... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See others'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bos DJP Janji Pajak D... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tak Cuma Produk, Pela... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Buruh Masih Kawal 10 ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ESDM Lirik Teknologi ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='kapolri baru'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='saham gocap'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Reshuffle Kabinet'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Erupsi gunung anak kr... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Institute for Essenti... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua Brief Ins... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Tabrak... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Jhonli... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Berben... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See others'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sinergi Mendorong Per... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See others'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Deretan Gunung Berapi... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='VIDEO'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Babeh Haikal Bahas Wa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Laba Golden Energy (G... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='FWD Insurance Raup Pr... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Laba Melonjak, Medco ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Artikel lainnya'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='LIHAT LAINNYA'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KVB Futures Perkenalk... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='DBS Indonesia dan Bat... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lippo Mall Kemang Cat... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='TIKI Rayakan HUT ke-5... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat lainnya'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bisnis Kalimantan'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Harga TBS Sawit Kalti... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kabar Sumatra'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bidik Pasar Halal Dun... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kabar Jatim'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lima Tahun Merger Pel... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Korporasi'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Erajaya (ERAA) Perlua... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Energi & Tambang'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bahlil Rangkap Menter... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Perbankan'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Transaksi OCTO Pay Tu... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Korporasi'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OJK Catat Pipeline IP... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nasional'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jonan dan Jacky Manup... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Asuransi'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='AIA & BCA Luncurkan P... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat lainnya'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Zahre Mar!
+Reni Lesta... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aneuk
+Rayful Mudassir'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Infrastrukt...'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Profil Jusuf Hamka, B... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jasa & Niaga'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Heboh Setoran per Omp... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hukum'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sertijab Kapolri, Lis... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Premium'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Meniti Jalan Penyehat... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aneka Sport'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jadwal dan Harga Tike... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nasional'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rocky Gerung Sebut Wa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Indeks Berita'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OPINI: Jalan Terjal M... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Irwan Wisanggeni
+Dose... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OPINI: Dari Kekayaan ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Irwandy Arif
+Chairman... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OPINI: Menjaga Asa Pe... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Singgih Widagdo
+Ketua... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1
+KUR BRI Oktober 202... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='2
+Hashim Djojohadikus... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='3
+Nilai Tukar Rupiah ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='4
+Hashim Mundur, WIFI... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='5
+DOOH Akuisisi 29,88... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bisnis.com'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BisnisMuda.id'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='DataIndonesia.id'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Espos.id'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='HarianJogja.com'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Epaper Bisnis Indones... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Konten Interaktif'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bisnis Indonesia Prem... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Video'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BroadCash'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bandung'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Banten'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Semarang'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bali'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sumatra'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kalimantan'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sulawesi'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Papua'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tentang Kami'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Info Iklan'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kode Etik'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Karir'>                  | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 0 | Kandidat dilewati: 250
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=BSN-SH-001 | Skenario: bisnis_id_change
+  Status       : FAIL
+  Skor teks    : 0.0000  (bobot 50%)
+  Skor locator : 0.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.0000
+  Waktu healing: 54190 ms
+  Elemen dipilih: -
+??????????????????????????????????????????????????????????????????????
+Oct 02, 2026 10:15:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:15:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: bsnLogo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 248 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Navigation... ? combined=0.0833
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Previous'>    ? combined=0.1563
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Previous'>    ? combined=0.1563
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next'>        ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Close bill... ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Indonesia Prem... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnismuda.id'>          ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Data Indonesia'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Konten Interaktif'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Foto'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Baca E-Paper'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jadwal dan Harga Tike... ? combined=0.0446
+  ?? CAND <a type='' id='bsnLogoRefactor' name='' placeholder='' text='homepa... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari berita terkini'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Login'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='HOME'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='MARKET'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='FINANSIAL'>              ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='EKONOMI'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='TEKNO'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='STYLE'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='KABAR24'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='HIJAU'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='BOLA'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDEKS'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='KVB Futures Bidik Lon... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='KVB Futures Bidik Lon... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar 14 Emiten Gant... ? combined=0.0333
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar 14 Emiten Gant... ? combined=0.0333
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asian Games dan Bagai... ? combined=0.0410
+  ?? CAND <a type='' id='' name='' placeholder='' text='Premium'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asian Games dan Bagai... ? combined=0.0410
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proses Kilat Pengangk... ? combined=0.0410
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proses Kilat Pengangk... ? combined=0.0410
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahu Membahu Tekan Ha... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Meniti Jalan Penyehat... ? combined=0.0280
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prospek Tekanan Harga... ? combined=0.0362
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Peluang Cuan di Tenga... ? combined=0.0457
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat berita premium ... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Kalimantan'>      ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Harga TBS Sawit Kalti... ? combined=0.0372
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Sumatra'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bidik Pasar Halal Dun... ? combined=0.0412
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Premium'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahu Membahu Tekan Ha... ? combined=0.0386
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perbankan'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='MDR QRIS 0% untuk Pel... ? combined=0.0321
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pajak'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bos DJP Janji Pajak D... ? combined=0.0428
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Jatim'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lima Tahun Merger Pel... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jasa & Niaga'>           ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buruh Masih Kawal 10 ... ? combined=0.0426
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='30 Tahun Erajaya (ERA... ? combined=0.0281
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jusuf Hamka Ungkap Al... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asuransi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='BPJS Kesehatan-Kemenk... ? combined=0.0377
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi & Tambang'>       ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Lirik Teknologi ... ? combined=0.0263
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dato Sri Tahir Jadi W... ? combined=0.0338
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Jabar'>           ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Penghentian Pembangun... ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='30 Tahun Erajaya (ERA... ? combined=0.0342
+  ?? CAND <a type='' id='' name='' placeholder='' text='ADHI Jelaskan Upaya P... ? combined=0.0558
+  ?? CAND <a type='' id='' name='' placeholder='' text='ADHI Fokus Bisnis Int... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Erajaya (ERAA) Perlua... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='MDR QRIS 0% untuk Pel... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='BPJS Kesehatan-Kemenk... ? combined=0.0466
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Tahun Livin by Mand... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='HUT ke-28, Bank Mandi... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bos DJP Janji Pajak D... ? combined=0.0548
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tak Cuma Produk, Pela... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buruh Masih Kawal 10 ... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Lirik Teknologi ... ? combined=0.0316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='kapolri baru'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='saham gocap'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reshuffle Kabinet'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Erupsi gunung anak kr... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Institute for Essenti... ? combined=0.0710
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua Brief Ins... ? combined=0.1000
+  ?? CAND <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Tabrak... ? combined=0.0421
+  ?? CAND <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Jhonli... ? combined=0.0636
+  ?? CAND <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Berben... ? combined=0.0487
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sinergi Mendorong Per... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deretan Gunung Berapi... ? combined=0.0601
+  ?? CAND <a type='' id='' name='' placeholder='' text='VIDEO'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Babeh Haikal Bahas Wa... ? combined=0.0488
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laba Golden Energy (G... ? combined=0.0466
+  ?? CAND <a type='' id='' name='' placeholder='' text='FWD Insurance Raup Pr... ? combined=0.0434
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laba Melonjak, Medco ... ? combined=0.0354
+  ?? CAND <a type='' id='' name='' placeholder='' text='Artikel lainnya'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT LAINNYA'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat Foto'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='KVB Futures Perkenalk... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='DBS Indonesia dan Bat... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lippo Mall Kemang Cat... ? combined=0.0397
+  ?? CAND <a type='' id='' name='' placeholder='' text='TIKI Rayakan HUT ke-5... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat lainnya'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Kalimantan'>      ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Harga TBS Sawit Kalti... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Sumatra'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bidik Pasar Halal Dun... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Jatim'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lima Tahun Merger Pel... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Erajaya (ERAA) Perlua... ? combined=0.0340
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi & Tambang'>       ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahlil Rangkap Menter... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perbankan'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Transaksi OCTO Pay Tu... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Catat Pipeline IP... ? combined=0.0321
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jonan dan Jacky Manup... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asuransi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='AIA & BCA Luncurkan P... ? combined=0.0364
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat lainnya'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Zahre Mar!
+Reni Lesta... ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aneuk
+Rayful Mudassir'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infrastrukt...'>         ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil Jusuf Hamka, B... ? combined=0.0428
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jasa & Niaga'>           ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Heboh Setoran per Omp... ? combined=0.0340
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hukum'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sertijab Kapolri, Lis... ? combined=0.0421
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Premium'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Meniti Jalan Penyehat... ? combined=0.0226
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aneka Sport'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jadwal dan Harga Tike... ? combined=0.0363
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Gerung Sebut Wa... ? combined=0.0363
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks Berita'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='OPINI: Jalan Terjal M... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Irwan Wisanggeni
+Dose... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='OPINI: Dari Kekayaan ... ? combined=0.0539
+  ?? CAND <a type='' id='' name='' placeholder='' text='Irwandy Arif
+Chairman... ? combined=0.0638
+  ?? CAND <a type='' id='' name='' placeholder='' text='OPINI: Menjaga Asa Pe... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Singgih Widagdo
+Ketua... ? combined=0.0490
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='1
+KUR BRI Oktober 202... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='2
+Hashim Djojohadikus... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='3
+Nilai Tukar Rupiah ... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='4
+Hashim Mundur, WIFI... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='5
+DOOH Akuisisi 29,88... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis.com'>             ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='BisnisMuda.id'>          ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='DataIndonesia.id'>       ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Espos.id'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='HarianJogja.com'>        ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Epaper Bisnis Indones... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Konten Interaktif'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Indonesia Prem... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='BroadCash'>              ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bandung'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Banten'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semarang'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bali'>                   ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sumatra'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalimantan'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sulawesi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Papua'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info Iklan'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.1838
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kode Etik'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.1042
+[HealingDriver] Kandidat kompatibel: 248 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=BSN-SH-002 | Skenario: bisnis_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 64338 ms
+  Elemen dipilih: <a href="https://www.bisnis.com" aria-label="homepage Bisnis.com" id="bsnLogoRef
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=64338ms
+[HealingDriver] Elemen dipilih: <a type='' id='bsnLogoRefactor' name='' placeholder='' text='homepage Bisnis.com'>
+Oct 02, 2026 10:16:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:16:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: bsnMarket
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 248 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Navigation... ? combined=0.0833
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Previous'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next'>        ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next'>        ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Previous'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next'>        ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Close bill... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Indonesia Prem... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnismuda.id'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Data Indonesia'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Konten Interaktif'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Foto'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Baca E-Paper'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jadwal dan Harga Tike... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='homepage Bisnis.com'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari berita terkini'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Login'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='HOME'>                   ? combined=0.1042
+  ?? CAND <a type='' id='bsnMarketRefactor' name='' placeholder='' text='MARK... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='FINANSIAL'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='EKONOMI'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TEKNO'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='STYLE'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='KABAR24'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='HIJAU'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='BOLA'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDEKS'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='KVB Futures Bidik Lon... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='Komoditas'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='KVB Futures Bidik Lon... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar 14 Emiten Gant... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar 14 Emiten Gant... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asian Games dan Bagai... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text='Premium'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asian Games dan Bagai... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proses Kilat Pengangk... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proses Kilat Pengangk... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahu Membahu Tekan Ha... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Meniti Jalan Penyehat... ? combined=0.0466
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prospek Tekanan Harga... ? combined=0.0453
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Peluang Cuan di Tenga... ? combined=0.0457
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat berita premium ... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hukum'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kejagung akan Ajukan ... ? combined=0.0343
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Kalimantan'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Harga TBS Sawit Kalti... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Sumatra'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bidik Pasar Halal Dun... ? combined=0.0412
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Premium'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahu Membahu Tekan Ha... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perbankan'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='MDR QRIS 0% untuk Pel... ? combined=0.0401
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pajak'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bos DJP Janji Pajak D... ? combined=0.0428
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Jatim'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lima Tahun Merger Pel... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jasa & Niaga'>           ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buruh Masih Kawal 10 ... ? combined=0.0426
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='30 Tahun Erajaya (ERA... ? combined=0.0351
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jusuf Hamka Ungkap Al... ? combined=0.0488
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asuransi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='BPJS Kesehatan-Kemenk... ? combined=0.0377
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi & Tambang'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Lirik Teknologi ... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dato Sri Tahir Jadi W... ? combined=0.0422
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='30 Tahun Erajaya (ERA... ? combined=0.0428
+  ?? CAND <a type='' id='' name='' placeholder='' text='ADHI Jelaskan Upaya P... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='ADHI Fokus Bisnis Int... ? combined=0.0408
+  ?? CAND <a type='' id='' name='' placeholder='' text='Erajaya (ERAA) Perlua... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='MDR QRIS 0% untuk Pel... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text='BPJS Kesehatan-Kemenk... ? combined=0.0466
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Tahun Livin by Mand... ? combined=0.0577
+  ?? CAND <a type='' id='' name='' placeholder='' text='HUT ke-28, Bank Mandi... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bos DJP Janji Pajak D... ? combined=0.0548
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tak Cuma Produk, Pela... ? combined=0.0536
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buruh Masih Kawal 10 ... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Lirik Teknologi ... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='kapolri baru'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='saham gocap'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reshuffle Kabinet'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Erupsi gunung anak kr... ? combined=0.0926
+  ?? CAND <a type='' id='' name='' placeholder='' text='Institute for Essenti... ? combined=0.0426
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua Brief Ins... ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Tabrak... ? combined=0.0421
+  ?? CAND <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Jhonli... ? combined=0.0424
+  ?? CAND <a type='' id='' name='' placeholder='' text='BRIEF INSIGHT: Berben... ? combined=0.0406
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sinergi Mendorong Per... ? combined=0.0460
+  ?? CAND <a type='' id='' name='' placeholder='' text='See others'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deretan Gunung Berapi... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='VIDEO'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Babeh Haikal Bahas Wa... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laba Golden Energy (G... ? combined=0.0466
+  ?? CAND <a type='' id='' name='' placeholder='' text='FWD Insurance Raup Pr... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laba Melonjak, Medco ... ? combined=0.0590
+  ?? CAND <a type='' id='' name='' placeholder='' text='Artikel lainnya'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT LAINNYA'>          ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Foto'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TIKI Rayakan HUT ke-5... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat Foto'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='KVB Futures Perkenalk... ? combined=0.0281
+  ?? CAND <a type='' id='' name='' placeholder='' text='DBS Indonesia dan Bat... ? combined=0.0309
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lippo Mall Kemang Cat... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='TIKI Rayakan HUT ke-5... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat lainnya'>          ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Kalimantan'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Harga TBS Sawit Kalti... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Sumatra'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bidik Pasar Halal Dun... ? combined=0.0434
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kabar Jatim'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lima Tahun Merger Pel... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Jabar'>           ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Penghentian Pembangun... ? combined=0.0375
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Erajaya (ERAA) Perlua... ? combined=0.0340
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi & Tambang'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahlil Rangkap Menter... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perbankan'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Transaksi OCTO Pay Tu... ? combined=0.0326
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Catat Pipeline IP... ? combined=0.0240
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jonan dan Jacky Manup... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat lainnya'>          ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Zahre Mar!
+Reni Lesta... ? combined=0.1420
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aneuk
+Rayful Mudassir'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asuransi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='AIA & BCA Luncurkan P... ? combined=0.0303
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infrastrukt...'>         ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil Jusuf Hamka, B... ? combined=0.0342
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jasa & Niaga'>           ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Heboh Setoran per Omp... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hukum'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sertijab Kapolri, Lis... ? combined=0.0351
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Premium'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Meniti Jalan Penyehat... ? combined=0.0377
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aneka Sport'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jadwal dan Harga Tike... ? combined=0.0363
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks Berita'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='OPINI: Jalan Terjal M... ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Irwan Wisanggeni
+Dose... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='OPINI: Dari Kekayaan ... ? combined=0.0539
+  ?? CAND <a type='' id='' name='' placeholder='' text='Irwandy Arif
+Chairman... ? combined=0.0510
+  ?? CAND <a type='' id='' name='' placeholder='' text='OPINI: Menjaga Asa Pe... ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Singgih Widagdo
+Ketua... ? combined=0.0490
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nyaman tanpa iklan. L... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='1
+KUR BRI Oktober 202... ? combined=0.0385
+  ?? CAND <a type='' id='' name='' placeholder='' text='2
+Hashim Djojohadikus... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='3
+Nilai Tukar Rupiah ... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='4
+Hashim Mundur, WIFI... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text='5
+DOOH Akuisisi 29,88... ? combined=0.0385
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis.com'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='BisnisMuda.id'>          ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='DataIndonesia.id'>       ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Espos.id'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='HarianJogja.com'>        ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Epaper Bisnis Indones... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Konten Interaktif'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bisnis Indonesia Prem... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='BroadCash'>              ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bandung'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Banten'>                 ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semarang'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bali'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sumatra'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalimantan'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sulawesi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Papua'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info Iklan'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kode Etik'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.2083
+[HealingDriver] Kandidat kompatibel: 248 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=BSN-SH-003 | Skenario: bisnis_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 69227 ms
+  Elemen dipilih: <a href="https://market.bisnis.com" class="navLink" id="bsnMarketRefactor" data-
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=69227ms
+[HealingDriver] Elemen dipilih: <a type='' id='bsnMarketRefactor' name='' placeholder='' text='MARKET'>
+Oct 02, 2026 10:17:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:17:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:19:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:19:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 3
+  Berhasil dipulihkan         : 2
+  Healing Success Rate        : 66.67%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 62585.00 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\bisnis_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 294.4 s <<< FAILURE! -- in com.fulvian.tests.TestBisnisHealing
+[ERROR] com.fulvian.tests.TestBisnisHealing.bsnSh001_searchIcon -- Time elapsed: 58.58 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+[HealingDriver] Healing GAGAL. Skor terbaik -1.0000 di bawah threshold 0.5000. Locator: By.id: bsnSearchIcon
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: HealingDriver
+	at com.fulvian.healing.HealingDriver.findElement(HealingDriver.java:237)
+	at com.fulvian.tests.TestBisnisHealing.heal(TestBisnisHealing.java:152)
+	at com.fulvian.tests.TestBisnisHealing.bsnSh001_searchIcon(TestBisnisHealing.java:83)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestBisnisHealing.bsnSh004_finansial -- Time elapsed: 71.80 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[normalize-space()='Finansial' or contains(@href,'finansial.bisnis')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51815}, goog:processID: 36396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51815/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e277b5240e2b79a29ab49b0ebdbc180
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestBisnisHealing.waitVisible(TestBisnisHealing.java:170)
+	at com.fulvian.tests.TestBisnisHealing.bsnSh004_finansial(TestBisnisHealing.java:124)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestBisnisHealing.bsnSh005_terpopuler -- Time elapsed: 23.10 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[normalize-space()='Terpopuler' or contains(normalize-space(),'Populer')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58097}, goog:processID: 32864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58097/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 350e9fff17141d0ffd26a494a96106f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestBisnisHealing.waitVisible(TestBisnisHealing.java:170)
+	at com.fulvian.tests.TestBisnisHealing.bsnSh005_terpopuler(TestBisnisHealing.java:139)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestBisnisHealing.bsnSh001_searchIcon:83->heal:152 � NoSuchElement [HealingDriver] Healing GAGAL. Skor terbaik -1.0000 di bawah threshold 0.5000. Locator: By.id: bsnSearchIcon
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: HealingDriver
+[ERROR]   TestBisnisHealing.bsnSh004_finansial:124->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[normalize-space()='Finansial' or contains(@href,'finansial.bisnis')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51815}, goog:processID: 36396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51815/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e277b5240e2b79a29ab49b0ebdbc180
+[ERROR]   TestBisnisHealing.bsnSh005_terpopuler:139->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[normalize-space()='Terpopuler' or contains(normalize-space(),'Populer')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58097}, goog:processID: 32864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58097/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 350e9fff17141d0ffd26a494a96106f9
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

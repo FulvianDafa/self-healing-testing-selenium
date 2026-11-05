@@ -1,0 +1,6 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:41:36.679184100","KTD-BL-001","katadata","By.id: ktdSearchInput","id=ktdSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:41:40.037871700","KTD-BL-002","katadata","By.id: ktdLogo","id=ktdLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:41:45.082952100","KTD-BL-003","katadata","By.id: ktdFinansial","id=ktdFinansialRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:41:48.226340800","KTD-BL-004","katadata","By.id: ktdBerita","id=ktdBeritaRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:41:51.939399500","KTD-BL-005","katadata","By.id: ktdDataboks","id=ktdDataboksRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

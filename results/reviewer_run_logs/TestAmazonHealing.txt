@@ -1,0 +1,748 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:09:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:09:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: amzSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 87 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Expand to ... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Expand Acc... | alasan: incompatible
+  ?? SKIP <button type='submit' id='navBackToTop' name='' placeholder='' text... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Expand to ... | alasan: incompatible
+  ?? SKIP <a type='' id='nav-logo-sprites' name='' placeholder='' text='Amazon'> | alasan: incompatible
+  ?? SKIP <a type='' id='nav-global-location-popover-link' name='' placeholde... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='EN'>                     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hello, sign in
+Accoun... | alasan: incompatible
+  ?? SKIP <a type='' id='nav-orders' name='' placeholder='' text='Returns
+& O... | alasan: incompatible
+  ?? SKIP <a type='' id='nav-cart' name='' placeholder='' text='0
+Cart'>         | alasan: incompatible
+  ?? SKIP <a type='' id='nav-hamburger-menu' name='' placeholder='' text='All'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Prime Video'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Coupons'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Customer Service'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Today's Deals'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Registry'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gift Cards'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sell'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shop kitchen must-hav... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shop all things beauty'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Start looking sharp'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Toys for little ones'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Level up your PC here'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Discover books you ca... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Carousel next slide'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Careers'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Blog'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='About Amazon'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Investor Relations'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Devices'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Science'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sell products on Amaz... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sell on Amazon Busine... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sell apps on Amazon'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Become an Affiliate'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Advertise Your Produc... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Self-Publish with Us'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Host an Amazon Hub'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See More Make Money w... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Business Card'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shop with Points'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Reload Your Balance'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Currency Conve... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Your Account'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Your Orders'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shipping Rates & Poli... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Returns & Replacements'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Manage Your Content a... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Help'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon US Home'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='English'>                | alasan: incompatible
+  ?? SKIP <a type='' id='icp-touch-link-cop' name='' placeholder='' text='IDR... | alasan: incompatible
+  ?? SKIP <a type='' id='icp-touch-link-country' name='' placeholder='' text=... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Music
+Stream m... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Ads
+Reach cust... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='6pm
+Score deals
+on fa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='AbeBooks
+Books, art
+&... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ACX
+Audiobook Publish... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sell on Amazon
+Start ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Veeqo
+Shipping Softwa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Business
+Every... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='AmazonGlobal
+Ship Ord... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amazon Web Services
+S... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Audible
+Listen to Boo... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Box Office Mojo
+Find ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Goodreads
+Book review... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='IMDb
+Movies, TV
+& Cel... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='IMDbPro
+Get Info Ente... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kindle Direct Publish... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Prime Video Direct
+Vi... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shopbop
+Designer
+Fash... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Woot!
+Deals and
+Shena... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Zappos
+Shoes &
+Clothi... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ring
+Smart Home
+Secur... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='eero WiFi
+Stream 4K V... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Blink
+Smart Security
+... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Neighbors App
+Real-Ti... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='PillPack
+Pharmacy Sim... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Conditions of Use'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Privacy Notice'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Consumer Health Data ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Your Ads Privacy Choi... | alasan: incompatible
+  ?? CAND <input type='text' id='amzSearchInputRefactor' name='field-keywords... ? combined=1.0000
+  ?? SKIP <input type='submit' id='nav-search-submit-button' name='' placehol... | alasan: incompatible
+  ?? SKIP <input type='submit' id='nav-search-submit-button-agent' name='' pl... | alasan: incompatible
+  ?? SKIP <input type='submit' id='' name='' placeholder='' text=''>             | alasan: incompatible
+  ?? SKIP <input type='submit' id='' name='' placeholder='' text=''>             | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 86
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=AMZ-SH-001 | Skenario: amazon_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 12572 ms
+  Elemen dipilih: <input type="text" id="amzSearchInputRefactor" value="" name="field-keywords" au
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=12572ms
+[HealingDriver] Elemen dipilih: <input type='text' id='amzSearchInputRefactor' name='field-keywords' placeholder='Search Amazon' text='Search Amazon'>
+Oct 02, 2026 10:09:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:09:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: amzSearchButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 87 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.0347
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand Acc... ? combined=0.0260
+  ?? CAND <button type='submit' id='navBackToTop' name='' placeholder='' text... ? combined=0.1892
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.0347
+  ?? CAND <a type='' id='nav-logo-sprites' name='' placeholder='' text='Amazon'> ? combined=0.5754
+  ?? CAND <a type='' id='nav-global-location-popover-link' name='' placeholde... ? combined=0.0977
+  ?? CAND <a type='' id='' name='' placeholder='' text='EN'>                     ? combined=0.0139
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hello, sign in
+Accoun... ? combined=0.0463
+  ?? CAND <a type='' id='nav-orders' name='' placeholder='' text='Returns
+& O... ? combined=0.1066
+  ?? CAND <a type='' id='nav-cart' name='' placeholder='' text='0
+Cart'>         ? combined=0.0882
+  ?? CAND <a type='' id='nav-hamburger-menu' name='' placeholder='' text='All'>  ? combined=0.5729
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coupons'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Customer Service'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Today's Deals'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Registry'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gift Cards'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop kitchen must-hav... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop all things beauty'> ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text='Start looking sharp'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Toys for little ones'>   ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Level up your PC here'>  ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Discover books you ca... ? combined=0.0189
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carousel next slide'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Amazon'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investor Relations'>     ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Devices'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Science'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell products on Amaz... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon Busine... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell apps on Amazon'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Become an Affiliate'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertise Your Produc... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self-Publish with Us'>   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Host an Amazon Hub'>     ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='See More Make Money w... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business Card'>   ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop with Points'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reload Your Balance'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Currency Conve... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Account'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Orders'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shipping Rates & Poli... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Returns & Replacements'> ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Manage Your Content a... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon US Home'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='English'>                ? combined=0.0893
+  ?? CAND <a type='' id='icp-touch-link-cop' name='' placeholder='' text='IDR... ? combined=0.1181
+  ?? CAND <a type='' id='icp-touch-link-country' name='' placeholder='' text=... ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Music
+Stream m... ? combined=0.0169
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Ads
+Reach cust... ? combined=0.0110
+  ?? CAND <a type='' id='' name='' placeholder='' text='6pm
+Score deals
+on fa... ? combined=0.0189
+  ?? CAND <a type='' id='' name='' placeholder='' text='AbeBooks
+Books, art
+&... ? combined=0.0195
+  ?? CAND <a type='' id='' name='' placeholder='' text='ACX
+Audiobook Publish... ? combined=0.0184
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon
+Start ... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Veeqo
+Shipping Softwa... ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business
+Every... ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text='AmazonGlobal
+Ship Ord... ? combined=0.0305
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Web Services
+S... ? combined=0.0118
+  ?? CAND <a type='' id='' name='' placeholder='' text='Audible
+Listen to Boo... ? combined=0.0245
+  ?? CAND <a type='' id='' name='' placeholder='' text='Box Office Mojo
+Find ... ? combined=0.0149
+  ?? CAND <a type='' id='' name='' placeholder='' text='Goodreads
+Book review... ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDb
+Movies, TV
+& Cel... ? combined=0.0240
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDbPro
+Get Info Ente... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kindle Direct Publish... ? combined=0.0096
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video Direct
+Vi... ? combined=0.0133
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shopbop
+Designer
+Fash... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='Woot!
+Deals and
+Shena... ? combined=0.0240
+  ?? CAND <a type='' id='' name='' placeholder='' text='Zappos
+Shoes &
+Clothi... ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ring
+Smart Home
+Secur... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='eero WiFi
+Stream 4K V... ? combined=0.0156
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blink
+Smart Security
+... ? combined=0.0179
+  ?? CAND <a type='' id='' name='' placeholder='' text='Neighbors App
+Real-Ti... ? combined=0.0291
+  ?? CAND <a type='' id='' name='' placeholder='' text='PillPack
+Pharmacy Sim... ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Conditions of Use'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Notice'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Consumer Health Data ... ? combined=0.0160
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Ads Privacy Choi... ? combined=0.0260
+  ?? SKIP <input type='text' id='twotabsearchtextbox' name='field-keywords' p... | alasan: incompatible
+  ?? CAND <input type='submit' id='amzSearchButtonRefactor' name='' placehold... ? combined=1.0000
+  ?? CAND <input type='submit' id='nav-search-submit-button-agent' name='' pl... ? combined=0.3021
+  ?? CAND <input type='submit' id='' name='' placeholder='' text=''>             ? combined=0.0000
+  ?? CAND <input type='submit' id='' name='' placeholder='' text=''>             ? combined=0.0000
+[HealingDriver] Kandidat kompatibel: 86 | Kandidat dilewati: 1
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=AMZ-SH-002 | Skenario: amazon_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 16052 ms
+  Elemen dipilih: <input id="amzSearchButtonRefactor" type="submit" class="nav-input nav-progressi
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=16052ms
+[HealingDriver] Elemen dipilih: <input type='submit' id='amzSearchButtonRefactor' name='' placeholder='' text='Go'>
+Oct 02, 2026 10:10:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:10:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: amzNavAll
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 84 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.0347
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand Acc... ? combined=0.0521
+  ?? CAND <button type='submit' id='navBackToTop' name='' placeholder='' text... ? combined=0.1818
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.0347
+  ?? CAND <a type='' id='nav-logo-sprites' name='' placeholder='' text='Amazon'> ? combined=0.2292
+  ?? CAND <a type='' id='nav-global-location-popover-link' name='' placeholde... ? combined=0.1836
+  ?? CAND <a type='' id='' name='' placeholder='' text='EN'>                     ? combined=0.0208
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hello, sign in
+Accoun... ? combined=0.0463
+  ?? CAND <a type='' id='nav-orders' name='' placeholder='' text='Returns
+& O... ? combined=0.1875
+  ?? CAND <a type='' id='nav-cart' name='' placeholder='' text='0
+Cart'>         ? combined=0.2405
+  ?? CAND <a type='' id='amzNavAllRefactor' name='' placeholder='' text='All'>   ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coupons'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Customer Service'>       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Today's Deals'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Registry'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gift Cards'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell'>                   ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop kitchen must-hav... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop all things beauty'> ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Start looking sharp'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Toys for little ones'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Level up your PC here'>  ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Discover books you ca... ? combined=0.0189
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carousel next slide'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Amazon'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investor Relations'>     ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Devices'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Science'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell products on Amaz... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon Busine... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell apps on Amazon'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Become an Affiliate'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertise Your Produc... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self-Publish with Us'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Host an Amazon Hub'>     ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='See More Make Money w... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business Card'>   ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop with Points'>       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reload Your Balance'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Currency Conve... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Account'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Orders'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shipping Rates & Poli... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Returns & Replacements'> ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Manage Your Content a... ? combined=0.0202
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon US Home'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='English'>                ? combined=0.0893
+  ?? CAND <a type='' id='icp-touch-link-cop' name='' placeholder='' text='IDR... ? combined=0.0764
+  ?? CAND <a type='' id='icp-touch-link-country' name='' placeholder='' text=... ? combined=0.0822
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Music
+Stream m... ? combined=0.0507
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Ads
+Reach cust... ? combined=0.0110
+  ?? CAND <a type='' id='' name='' placeholder='' text='6pm
+Score deals
+on fa... ? combined=0.0379
+  ?? CAND <a type='' id='' name='' placeholder='' text='AbeBooks
+Books, art
+&... ? combined=0.0586
+  ?? CAND <a type='' id='' name='' placeholder='' text='ACX
+Audiobook Publish... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon
+Start ... ? combined=0.0493
+  ?? CAND <a type='' id='' name='' placeholder='' text='Veeqo
+Shipping Softwa... ? combined=0.0142
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business
+Every... ? combined=0.0142
+  ?? CAND <a type='' id='' name='' placeholder='' text='AmazonGlobal
+Ship Ord... ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Web Services
+S... ? combined=0.0354
+  ?? CAND <a type='' id='' name='' placeholder='' text='Audible
+Listen to Boo... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Box Office Mojo
+Find ... ? combined=0.0149
+  ?? CAND <a type='' id='' name='' placeholder='' text='Goodreads
+Book review... ? combined=0.0164
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDb
+Movies, TV
+& Cel... ? combined=0.0240
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDbPro
+Get Info Ente... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kindle Direct Publish... ? combined=0.0288
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video Direct
+Vi... ? combined=0.0133
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shopbop
+Designer
+Fash... ? combined=0.0202
+  ?? CAND <a type='' id='' name='' placeholder='' text='Woot!
+Deals and
+Shena... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Zappos
+Shoes &
+Clothi... ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ring
+Smart Home
+Secur... ? combined=0.0195
+  ?? CAND <a type='' id='' name='' placeholder='' text='eero WiFi
+Stream 4K V... ? combined=0.0156
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blink
+Smart Security
+... ? combined=0.0179
+  ?? CAND <a type='' id='' name='' placeholder='' text='Neighbors App
+Real-Ti... ? combined=0.0436
+  ?? CAND <a type='' id='' name='' placeholder='' text='PillPack
+Pharmacy Sim... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='Conditions of Use'>      ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Notice'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Consumer Health Data ... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Ads Privacy Choi... ? combined=0.0260
+  ?? CAND <input type='text' id='twotabsearchtextbox' name='field-keywords' p... ? combined=0.0678
+  ?? CAND <input type='submit' id='nav-search-submit-button' name='' placehol... ? combined=0.1510
+[HealingDriver] Kandidat kompatibel: 84 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=AMZ-SH-003 | Skenario: amazon_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 13116 ms
+  Elemen dipilih: <a href="javascript: void(0)" id="amzNavAllRefactor" role="button" aria-label="O
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=13116ms
+[HealingDriver] Elemen dipilih: <a type='' id='amzNavAllRefactor' name='' placeholder='' text='All'>
+Oct 02, 2026 10:10:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:10:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: amzOrdersLink
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 86 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand Acc... ? combined=0.1302
+  ?? CAND <button type='submit' id='navBackToTop' name='' placeholder='' text... ? combined=0.0696
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.1042
+  ?? CAND <a type='' id='nav-logo-sprites' name='' placeholder='' text='Amazon'> ? combined=0.1875
+  ?? CAND <a type='' id='nav-global-location-popover-link' name='' placeholde... ? combined=0.2813
+  ?? CAND <a type='' id='' name='' placeholder='' text='EN'>                     ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hello, sign in
+Accoun... ? combined=0.1157
+  ?? CAND <a type='' id='amzOrdersLinkRefactor' name='' placeholder='' text='... ? combined=1.0000
+  ?? CAND <a type='' id='nav-cart' name='' placeholder='' text='0
+Cart'>         ? combined=0.1750
+  ?? CAND <a type='' id='nav-hamburger-menu' name='' placeholder='' text='All'>  ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video'>            ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coupons'>                ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Customer Service'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Today's Deals'>          ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Registry'>               ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gift Cards'>             ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell'>                   ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop kitchen must-hav... ? combined=0.1359
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop all things beauty'> ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Start looking sharp'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Toys for little ones'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Level up your PC here'>  ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Discover books you ca... ? combined=0.0947
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carousel next slide'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Amazon'>           ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investor Relations'>     ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Devices'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Science'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell products on Amaz... ? combined=0.1359
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon Busine... ? combined=0.1359
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell apps on Amazon'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Become an Affiliate'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertise Your Produc... ? combined=0.1902
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self-Publish with Us'>   ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Host an Amazon Hub'>     ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='See More Make Money w... ? combined=0.1157
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business Card'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop with Points'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reload Your Balance'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Currency Conve... ? combined=0.1750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Account'>           ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Orders'>            ? combined=0.4018
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shipping Rates & Poli... ? combined=0.1359
+  ?? CAND <a type='' id='' name='' placeholder='' text='Returns & Replacements'> ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Manage Your Content a... ? combined=0.1613
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon US Home'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='English'>                ? combined=0.0893
+  ?? CAND <a type='' id='icp-touch-link-cop' name='' placeholder='' text='IDR... ? combined=0.2500
+  ?? CAND <a type='' id='icp-touch-link-country' name='' placeholder='' text=... ? combined=0.2955
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Music
+Stream m... ? combined=0.1182
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Ads
+Reach cust... ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='6pm
+Score deals
+on fa... ? combined=0.1326
+  ?? CAND <a type='' id='' name='' placeholder='' text='AbeBooks
+Books, art
+&... ? combined=0.1367
+  ?? CAND <a type='' id='' name='' placeholder='' text='ACX
+Audiobook Publish... ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon
+Start ... ? combined=0.0822
+  ?? CAND <a type='' id='' name='' placeholder='' text='Veeqo
+Shipping Softwa... ? combined=0.0994
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business
+Every... ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='AmazonGlobal
+Ship Ord... ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Web Services
+S... ? combined=0.1061
+  ?? CAND <a type='' id='' name='' placeholder='' text='Audible
+Listen to Boo... ? combined=0.1225
+  ?? CAND <a type='' id='' name='' placeholder='' text='Box Office Mojo
+Find ... ? combined=0.0744
+  ?? CAND <a type='' id='' name='' placeholder='' text='Goodreads
+Book review... ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDb
+Movies, TV
+& Cel... ? combined=0.1202
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDbPro
+Get Info Ente... ? combined=0.1125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kindle Direct Publish... ? combined=0.1058
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video Direct
+Vi... ? combined=0.1197
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shopbop
+Designer
+Fash... ? combined=0.1210
+  ?? CAND <a type='' id='' name='' placeholder='' text='Woot!
+Deals and
+Shena... ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Zappos
+Shoes &
+Clothi... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ring
+Smart Home
+Secur... ? combined=0.1367
+  ?? CAND <a type='' id='' name='' placeholder='' text='eero WiFi
+Stream 4K V... ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blink
+Smart Security
+... ? combined=0.1607
+  ?? CAND <a type='' id='' name='' placeholder='' text='Neighbors App
+Real-Ti... ? combined=0.1163
+  ?? CAND <a type='' id='' name='' placeholder='' text='PillPack
+Pharmacy Sim... ? combined=0.0647
+  ?? CAND <a type='' id='' name='' placeholder='' text='Conditions of Use'>      ? combined=0.1838
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Notice'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Consumer Health Data ... ? combined=0.1122
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Ads Privacy Choi... ? combined=0.1302
+  ?? CAND <input type='text' id='twotabsearchtextbox' name='field-keywords' p... ? combined=0.1734
+  ?? CAND <input type='submit' id='nav-search-submit-button' name='' placehol... ? combined=0.1406
+  ?? CAND <input type='submit' id='' name='' placeholder='' text=''>             ? combined=0.0000
+  ?? CAND <input type='submit' id='' name='' placeholder='' text=''>             ? combined=0.0000
+[HealingDriver] Kandidat kompatibel: 86 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=AMZ-SH-004 | Skenario: amazon_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 13911 ms
+  Elemen dipilih: <a href="/gp/css/order-history?ref_=nav_orders_first" class="nav-a nav-a-2   nav
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=13911ms
+[HealingDriver] Elemen dipilih: <a type='' id='amzOrdersLinkRefactor' name='' placeholder='' text='Returns
+& Orders'>
+Oct 02, 2026 10:10:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:10:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: amzCartLink
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 86 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.0694
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand Acc... ? combined=0.0781
+  ?? CAND <button type='submit' id='navBackToTop' name='' placeholder='' text... ? combined=0.1886
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand to ... ? combined=0.0694
+  ?? CAND <a type='' id='nav-logo-sprites' name='' placeholder='' text='Amazon'> ? combined=0.1875
+  ?? CAND <a type='' id='nav-global-location-popover-link' name='' placeholde... ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='EN'>                     ? combined=0.0278
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hello, sign in
+Accoun... ? combined=0.0463
+  ?? CAND <a type='' id='nav-orders' name='' placeholder='' text='Returns
+& O... ? combined=0.1827
+  ?? CAND <a type='' id='amzCartLinkRefactor' name='' placeholder='' text='0
+... ? combined=1.0000
+  ?? CAND <a type='' id='nav-hamburger-menu' name='' placeholder='' text='All'>  ? combined=0.2604
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coupons'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Customer Service'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Today's Deals'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Registry'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gift Cards'>             ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop kitchen must-hav... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop all things beauty'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Start looking sharp'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Toys for little ones'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Level up your PC here'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Discover books you ca... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carousel next slide'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.2679
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Amazon'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investor Relations'>     ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Devices'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Science'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell products on Amaz... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon Busine... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell apps on Amazon'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Become an Affiliate'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertise Your Produc... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self-Publish with Us'>   ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Host an Amazon Hub'>     ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='See More Make Money w... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business Card'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop with Points'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reload Your Balance'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Currency Conve... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Account'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Orders'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shipping Rates & Poli... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Returns & Replacements'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Manage Your Content a... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon US Home'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='English'>                ? combined=0.0424
+  ?? CAND <a type='' id='icp-touch-link-cop' name='' placeholder='' text='IDR... ? combined=0.1944
+  ?? CAND <a type='' id='icp-touch-link-country' name='' placeholder='' text=... ? combined=0.1818
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Music
+Stream m... ? combined=0.0338
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Ads
+Reach cust... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='6pm
+Score deals
+on fa... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='AbeBooks
+Books, art
+&... ? combined=0.0586
+  ?? CAND <a type='' id='' name='' placeholder='' text='ACX
+Audiobook Publish... ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell on Amazon
+Start ... ? combined=0.0493
+  ?? CAND <a type='' id='' name='' placeholder='' text='Veeqo
+Shipping Softwa... ? combined=0.0426
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Business
+Every... ? combined=0.0426
+  ?? CAND <a type='' id='' name='' placeholder='' text='AmazonGlobal
+Ship Ord... ? combined=0.0457
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amazon Web Services
+S... ? combined=0.0354
+  ?? CAND <a type='' id='' name='' placeholder='' text='Audible
+Listen to Boo... ? combined=0.0245
+  ?? CAND <a type='' id='' name='' placeholder='' text='Box Office Mojo
+Find ... ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Goodreads
+Book review... ? combined=0.0493
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDb
+Movies, TV
+& Cel... ? combined=0.0721
+  ?? CAND <a type='' id='' name='' placeholder='' text='IMDbPro
+Get Info Ente... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kindle Direct Publish... ? combined=0.0385
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prime Video Direct
+Vi... ? combined=0.0399
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shopbop
+Designer
+Fash... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='Woot!
+Deals and
+Shena... ? combined=0.0240
+  ?? CAND <a type='' id='' name='' placeholder='' text='Zappos
+Shoes &
+Clothi... ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ring
+Smart Home
+Secur... ? combined=0.0586
+  ?? CAND <a type='' id='' name='' placeholder='' text='eero WiFi
+Stream 4K V... ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blink
+Smart Security
+... ? combined=0.0536
+  ?? CAND <a type='' id='' name='' placeholder='' text='Neighbors App
+Real-Ti... ? combined=0.0581
+  ?? CAND <a type='' id='' name='' placeholder='' text='PillPack
+Pharmacy Sim... ? combined=0.0647
+  ?? CAND <a type='' id='' name='' placeholder='' text='Conditions of Use'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Notice'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Consumer Health Data ... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Ads Privacy Choi... ? combined=0.0521
+  ?? CAND <input type='text' id='twotabsearchtextbox' name='field-keywords' p... ? combined=0.1579
+  ?? CAND <input type='submit' id='nav-search-submit-button' name='' placehol... ? combined=0.1563
+  ?? CAND <input type='submit' id='' name='' placeholder='' text=''>             ? combined=0.0000
+  ?? CAND <input type='submit' id='' name='' placeholder='' text=''>             ? combined=0.0000
+[HealingDriver] Kandidat kompatibel: 86 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=AMZ-SH-005 | Skenario: amazon_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 12957 ms
+  Elemen dipilih: <a href="/gp/cart/view.html?ref_=nav_cart" aria-label="0 items in cart" class="n
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=12957ms
+[HealingDriver] Elemen dipilih: <a type='' id='amzCartLinkRefactor' name='' placeholder='' text='0
+Cart'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 5
+  Berhasil dipulihkan         : 5
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 13721.60 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\amazon_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+

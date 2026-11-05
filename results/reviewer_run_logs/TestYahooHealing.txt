@@ -1,0 +1,508 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 11:12:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:12:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:16:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:16:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:18:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:18:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: yhooFinance
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 99 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Search wit... ? combined=0.0815
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Search Que... ? combined=0.0806
+  ?? CAND <button type='submit' id='_R_4tcl6iusq5bH1_' name='' placeholder=''... ? combined=0.1127
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Feedback'>    ? combined=0.1563
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Pause'>       ? combined=0.1786
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Previous s... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Next slide'>  ? combined=0.0625
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Small Cards'> ? combined=0.0568
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Large Cards'> ? combined=0.0568
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Dismiss'>     ? combined=0.0893
+  ?? CAND <button type='button' id='popular' name='' placeholder='' text='Pop... ? combined=0.0625
+  ?? CAND <button type='button' id='word' name='' placeholder='' text='Word'>    ? combined=0.0313
+  ?? CAND <button type='button' id='card' name='' placeholder='' text='Card'>    ? combined=0.1205
+  ?? CAND <button type='button' id='puzzle' name='' placeholder='' text='Puzz... ? combined=0.1205
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Dismiss'>     ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Home'>                   ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.0893
+  ?? CAND <a type='' id='yhooFinanceRefactor' name='' placeholder='' text='Fi... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sports'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mail'>                   ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sign in'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trending'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gypsy Rose Blanchard ... ? combined=0.0472
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olivier Martinez gran... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text='New York governor rem... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Victim's family react... ? combined=0.0548
+  ?? CAND <a type='' id='' name='' placeholder='' text='Browns holds off Stee... ? combined=0.0590
+  ?? CAND <a type='' id='' name='' placeholder='' text='See more stories on Y... ? combined=0.0647
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finance'>                ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sports'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mail'>                   ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Search'>                 ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Weather'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Games'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shopping'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Health'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Creators'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Entertainment'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Technology'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Travel'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Life'>                   ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Newsletters'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Former Dallas officer... ? combined=0.0412
+  ?? CAND <a type='' id='' name='' placeholder='' text='Diddy reportedly plac... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text='DOJ considers miscond... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text='Man Surprised After H... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='654'>                    ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tips and Tricks
+Ad
+Ja... ? combined=0.0343
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ad'>                     ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ben Affleck Was Held ... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='133'>                    ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='This Florida Beach De... ? combined=0.0433
+  ?? CAND <a type='' id='' name='' placeholder='' text='62'>                     ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dad of Student Who Ha... ? combined=0.0437
+  ?? CAND <a type='' id='' name='' placeholder='' text='2K'>                     ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Taylor Swift Reported... ? combined=0.0507
+  ?? CAND <a type='' id='' name='' placeholder='' text='74'>                     ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Byron Scott detailed ... ? combined=0.0364
+  ?? CAND <a type='' id='' name='' placeholder='' text='65'>                     ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Colin Kaepernick's Wi... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='1.4K'>                   ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trump to begin sendin... ? combined=0.0560
+  ?? CAND <a type='' id='' name='' placeholder='' text='12.7K'>                  ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Toddler vomited blue-... ? combined=0.0452
+  ?? CAND <a type='' id='' name='' placeholder='' text='968'>                    ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='�You Did Absolutely N... ? combined=0.0332
+  ?? CAND <a type='' id='' name='' placeholder='' text='676'>                    ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Neighbor parents tell... ? combined=0.0211
+  ?? CAND <a type='' id='' name='' placeholder='' text='141'>                    ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Barron Trump Debuts W... ? combined=0.0361
+  ?? CAND <a type='' id='' name='' placeholder='' text='1.7K'>                   ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dealership Tells Driv... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='544'>                    ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Popular Games'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='New game
+Yahoo Mini'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='New features
+Yahoo IQ... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='New game
+Pile-Up Poker'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='YouTube'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='TikTok'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Policy'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Dashboard'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertise'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Our Ads'>          ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Feedback'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Products and Services'>  ? combined=0.1190
+  ?? CAND <input type='search' id='uh-sbq' name='' placeholder='Search the we... ? combined=0.1518
+  ?? CAND <select type='select-one' id='' name='' placeholder='' text='Capric... ? combined=0.1389
+  ?? CAND <select type='select-one' id='' name='' placeholder='' text='Featur... ? combined=0.0833
+[HealingDriver] Kandidat kompatibel: 99 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=YHOO-SH-003 | Skenario: yahoo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 24785 ms
+  Elemen dipilih: <a class="hover:text-ymp-uh-grape-jelly dark:hover:text-uds-brand-dark focus-vis
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=24785ms
+[HealingDriver] Elemen dipilih: <a type='' id='yhooFinanceRefactor' name='' placeholder='' text='Finance'>
+Oct 02, 2026 11:19:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:19:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: yhooNews
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 106 kandidat elemen...
+  ?? CAND <button type='button' id='uh-incontext-login-trigger' name='' place... ? combined=0.1058
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Search wit... ? combined=0.0815
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Search Que... ? combined=0.0403
+  ?? CAND <button type='submit' id='_R_4tcl6iusq5bH1_' name='' placeholder=''... ? combined=0.0929
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Feedback'>    ? combined=0.0781
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Pause'>       ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Previous s... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Next slide'>  ? combined=0.1875
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Small Cards'> ? combined=0.0568
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Large Cards'> ? combined=0.1136
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Dismiss'>     ? combined=0.0893
+  ?? CAND <button type='button' id='popular' name='' placeholder='' text='Pop... ? combined=0.0417
+  ?? CAND <button type='button' id='word' name='' placeholder='' text='Word'>    ? combined=0.0417
+  ?? CAND <button type='button' id='card' name='' placeholder='' text='Card'>    ? combined=0.0000
+  ?? CAND <button type='button' id='puzzle' name='' placeholder='' text='Puzz... ? combined=0.0417
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Dismiss'>     ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Home'>                   ? combined=0.0000
+  ?? CAND <a type='' id='yhooNewsRefactor' name='' placeholder='' text='News'>   ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finance'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sports'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mail'>                   ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sign in'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Horoscope�Libra
+You n... ? combined=0.0127
+  ?? CAND <a type='' id='' name='' placeholder='' text='What to Watch
+Heart o... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='Featured�Sat 5:30 AM
+... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Major Markets
+S&P 500... ? combined=0.0236
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trending'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gypsy Rose Blanchard ... ? combined=0.0354
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olivier Martinez gran... ? combined=0.0302
+  ?? CAND <a type='' id='' name='' placeholder='' text='New York governor rem... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Victim's family react... ? combined=0.0219
+  ?? CAND <a type='' id='' name='' placeholder='' text='Browns holds off Stee... ? combined=0.0472
+  ?? CAND <a type='' id='' name='' placeholder='' text='See more stories on Y... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finance'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sports'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mail'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Search'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Weather'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Games'>                  ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shopping'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Health'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Creators'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Entertainment'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Technology'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Travel'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Life'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Newsletters'>            ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Former Dallas officer... ? combined=0.0275
+  ?? CAND <a type='' id='' name='' placeholder='' text='Diddy reportedly plac... ? combined=0.0237
+  ?? CAND <a type='' id='' name='' placeholder='' text='DOJ considers miscond... ? combined=0.0410
+  ?? CAND <a type='' id='' name='' placeholder='' text='Man Surprised After H... ? combined=0.0216
+  ?? CAND <a type='' id='' name='' placeholder='' text='654'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tips and Tricks
+Ad
+Ja... ? combined=0.0275
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ad'>                     ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='LeBron James� Wife Un... ? combined=0.0263
+  ?? CAND <a type='' id='' name='' placeholder='' text='567'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Colin Kaepernick's Wi... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='1.4K'>                   ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='This Florida Beach De... ? combined=0.0248
+  ?? CAND <a type='' id='' name='' placeholder='' text='62'>                     ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dad of Student Who Ha... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='2K'>                     ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Toddler vomited blue-... ? combined=0.0226
+  ?? CAND <a type='' id='' name='' placeholder='' text='968'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bono Said When U2 Wor... ? combined=0.0207
+  ?? CAND <a type='' id='' name='' placeholder='' text='968'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Watch Tyrrell Hatton ... ? combined=0.0244
+  ?? CAND <a type='' id='' name='' placeholder='' text='63'>                     ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Neighbor parents tell... ? combined=0.0169
+  ?? CAND <a type='' id='' name='' placeholder='' text='141'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Senator reveals the m... ? combined=0.0294
+  ?? CAND <a type='' id='' name='' placeholder='' text='2.5K'>                   ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dealership Tells Driv... ? combined=0.0269
+  ?? CAND <a type='' id='' name='' placeholder='' text='544'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Barron Trump Debuts W... ? combined=0.0240
+  ?? CAND <a type='' id='' name='' placeholder='' text='1.7K'>                   ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mario Lopez reacts to... ? combined=0.0193
+  ?? CAND <a type='' id='' name='' placeholder='' text='816'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='See forecast'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Popular Games'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='New game
+Yahoo Mini'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='New features
+Yahoo IQ... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='New game
+Pile-Up Poker'> ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='YouTube'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TikTok'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms'>                  ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Policy'>         ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Dashboard'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertise'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Our Ads'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Feedback'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Products and Services'>  ? combined=0.0893
+  ?? CAND <input type='search' id='uh-sbq' name='' placeholder='Search the we... ? combined=0.1875
+  ?? CAND <select type='select-one' id='' name='' placeholder='' text='Capric... ? combined=0.0694
+  ?? CAND <select type='select-one' id='' name='' placeholder='' text='Featur... ? combined=0.0417
+[HealingDriver] Kandidat kompatibel: 106 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=YHOO-SH-004 | Skenario: yahoo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 30099 ms
+  Elemen dipilih: <a class="hover:text-ymp-uh-grape-jelly dark:hover:text-uds-brand-dark focus-vis
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=30099ms
+[HealingDriver] Elemen dipilih: <a type='' id='yhooNewsRefactor' name='' placeholder='' text='News'>
+Oct 02, 2026 11:20:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:20:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: yhooSports
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 103 kandidat elemen...
+  ?? CAND <button type='button' id='uh-incontext-login-trigger' name='' place... ? combined=0.1058
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Search wit... ? combined=0.1087
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Search Que... ? combined=0.0806
+  ?? CAND <button type='submit' id='_R_4tcl6iusq5bH1_' name='' placeholder=''... ? combined=0.2318
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Feedback'>    ? combined=0.0852
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Pause'>       ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Previous s... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Next slide'>  ? combined=0.0625
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Small Cards'> ? combined=0.1705
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Large Cards'> ? combined=0.1136
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Dismiss'>     ? combined=0.0893
+  ?? CAND <button type='button' id='popular' name='' placeholder='' text='Pop... ? combined=0.1575
+  ?? CAND <button type='button' id='word' name='' placeholder='' text='Word'>    ? combined=0.2765
+  ?? CAND <button type='button' id='card' name='' placeholder='' text='Card'>    ? combined=0.1383
+  ?? CAND <button type='button' id='puzzle' name='' placeholder='' text='Puzz... ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Dismiss'>     ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Home'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finance'>                ? combined=0.0000
+  ?? CAND <a type='' id='yhooSportsRefactor' name='' placeholder='' text='Spo... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mail'>                   ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sign in'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Horoscope�Libra
+You n... ? combined=0.0190
+  ?? CAND <a type='' id='' name='' placeholder='' text='What to Watch
+Heart o... ? combined=0.0532
+  ?? CAND <a type='' id='' name='' placeholder='' text='Featured�Sat 5:30 AM
+... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Major Markets
+S&P 500... ? combined=0.0472
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trending'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gypsy Rose Blanchard ... ? combined=0.0590
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olivier Martinez gran... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='New York governor rem... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Victim's family react... ? combined=0.0548
+  ?? CAND <a type='' id='' name='' placeholder='' text='Browns holds off Stee... ? combined=0.0590
+  ?? CAND <a type='' id='' name='' placeholder='' text='See more stories on Y... ? combined=0.1078
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finance'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sports'>                 ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mail'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Search'>                 ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Weather'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Games'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shopping'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Health'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Creators'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Entertainment'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Technology'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Travel'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Life'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Newsletters'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Former Dallas officer... ? combined=0.0412
+  ?? CAND <a type='' id='' name='' placeholder='' text='Diddy reportedly plac... ? combined=0.0475
+  ?? CAND <a type='' id='' name='' placeholder='' text='DOJ considers miscond... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ben Affleck Was Held ... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='135'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Man Surprised After H... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='654'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='This Florida Beach De... ? combined=0.0371
+  ?? CAND <a type='' id='' name='' placeholder='' text='62'>                     ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bono Said When U2 Wor... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='968'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dad of Student Who Ha... ? combined=0.0375
+  ?? CAND <a type='' id='' name='' placeholder='' text='2K'>                     ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Byron Scott detailed ... ? combined=0.0364
+  ?? CAND <a type='' id='' name='' placeholder='' text='65'>                     ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Colin Kaepernick's Wi... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='1.4K'>                   ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trump to begin sendin... ? combined=0.0466
+  ?? CAND <a type='' id='' name='' placeholder='' text='12.7K'>                  ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Neighbor parents tell... ? combined=0.0253
+  ?? CAND <a type='' id='' name='' placeholder='' text='144'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Researchers dumped co... ? combined=0.0375
+  ?? CAND <a type='' id='' name='' placeholder='' text='216'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Barron Trump Debuts W... ? combined=0.0361
+  ?? CAND <a type='' id='' name='' placeholder='' text='1.7K'>                   ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dealership Tells Driv... ? combined=0.0336
+  ?? CAND <a type='' id='' name='' placeholder='' text='545'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Entire �DWTS� Cas... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='107'>                    ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='See forecast'>           ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Popular Games'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='New game
+Yahoo Mini'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='New features
+Yahoo IQ... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text='New game
+Pile-Up Poker'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='YouTube'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='TikTok'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms'>                  ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Policy'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Dashboard'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertise'>              ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Our Ads'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Feedback'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Products and Services'>  ? combined=0.0893
+  ?? CAND <input type='search' id='uh-sbq' name='' placeholder='Search the we... ? combined=0.2362
+  ?? CAND <select type='select-one' id='' name='' placeholder='' text='Capric... ? combined=0.1389
+  ?? CAND <select type='select-one' id='' name='' placeholder='' text='Featur... ? combined=0.0833
+[HealingDriver] Kandidat kompatibel: 103 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=YHOO-SH-005 | Skenario: yahoo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 24888 ms
+  Elemen dipilih: <a class="hover:text-ymp-uh-grape-jelly dark:hover:text-uds-brand-dark focus-vis
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=24888ms
+[HealingDriver] Elemen dipilih: <a type='' id='yhooSportsRefactor' name='' placeholder='' text='Sports'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 3
+  Berhasil dipulihkan         : 3
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 26590.67 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\yahoo_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 466.7 s <<< FAILURE! -- in com.fulvian.tests.TestYahooHealing
+[ERROR] com.fulvian.tests.TestYahooHealing.yhooSh001_searchInput -- Time elapsed: 189.7 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b99e79df4e5b65fe30ec39c67f5929fb, get {url=https://www.yahoo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55061}, goog:processID: 39232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55061/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b99e79df4e5b65fe30ec39c67f5929fb
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:403)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:359)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:301)
+	at com.fulvian.tests.TestYahooHealing.yhooSh001_searchInput(TestYahooHealing.java:77)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:386)
+	... 12 more
+
+[ERROR] com.fulvian.tests.TestYahooHealing.yhooSh002_searchButton -- Time elapsed: 169.0 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //button[@type='submit' and @id='header-search-btn'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53270}, goog:processID: 11332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53270/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7277e1ce13e6f0d942b932501874a8b3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestYahooHealing.waitVisible(TestYahooHealing.java:170)
+	at com.fulvian.tests.TestYahooHealing.yhooSh002_searchButton(TestYahooHealing.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestYahooHealing.yhooSh001_searchInput:77 � Timeout java.util.concurrent.TimeoutException
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b99e79df4e5b65fe30ec39c67f5929fb, get {url=https://www.yahoo.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55061}, goog:processID: 39232, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55061/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b99e79df4e5b65fe30ec39c67f5929fb
+[ERROR]   TestYahooHealing.yhooSh002_searchButton:94->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //button[@type='submit' and @id='header-search-btn'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53270}, goog:processID: 11332, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53270/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7277e1ce13e6f0d942b932501874a8b3
+[ERROR] Tests run: 5, Failures: 0, Errors: 2, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

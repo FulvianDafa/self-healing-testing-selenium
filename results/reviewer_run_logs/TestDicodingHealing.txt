@@ -1,0 +1,343 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:27:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:27:42 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: dcdSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 59 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Learning Path'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Langganan'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Corporate Training'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Program'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Capaian & Dampak'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lainnya'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Masuk'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Daftar'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='AI Engineer'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gen AI Engineer'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MLOps Engineer'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Data Scientist'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Data Analyst'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Front-End Web'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='React'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Back-End JavaScript'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Back-End Python'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Android'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Multi-Platform App'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='iOS'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='DevOps Engineer'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Google Cloud Professi... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Semua Kelas'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Langkah 1
+Belajar Das... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Langkah 2
+Memulai Pem... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Langkah 3
+Belajar Mac... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Langkah 4
+Belajar Fun... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Langkah 5
+Machine Lea... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Langkah 6
+Membangun P... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Mulai belajar'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Baca selengkapnya'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat testimoni lainn... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tentang Kami'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Karier'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Blog'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='FAQ'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Elite'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Event'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Challenge'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Mentoring'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jobs'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Terms'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Privacy'>                | alasan: incompatible
+  ?? CAND <input type='search' id='dcdSearchInputRefactor' name='q' placehold... ? combined=1.0000
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 58
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=DCD-SH-001 | Skenario: dicoding_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 8947 ms
+  Elemen dipilih: <input type="search" class="form-control search-course-form__input" name="q" aut
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=8947ms
+[HealingDriver] Elemen dipilih: <input type='search' id='dcdSearchInputRefactor' name='q' placeholder='Apa yang ingin Anda pelajari?' text='Apa yang ...
+Oct 02, 2026 10:27:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:27:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:28:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:28:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: dcdAkademi
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 56 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='AI Engineer'> ? combined=0.1136
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Gen AI Eng... ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='MLOps Engi... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Data Scien... ? combined=0.1786
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Data Analy... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Front-End ... ? combined=0.0543
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='React Deve... ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Back-End D... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Back-End D... ? combined=0.1000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Android De... ? combined=0.1103
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Multi-Plat... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='iOS Develo... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='DevOps Eng... ? combined=0.0781
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Google Clo... ? combined=0.0750
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Previous'>    ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Go to slid... ? combined=0.0962
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Go to slid... ? combined=0.0962
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Next'>        ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coba gratis!
+Belajar ... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semua learning path'>    ? combined=0.0987
+  ?? CAND <a type='' id='dcdAkademiRefactor' name='' placeholder='' text='Bel... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Putar video'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gabung sekarang'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karier'>                 ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='FAQ'>                    ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Elite'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Challenge'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mentoring'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jobs'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Siap Upgrade Skill? P... ? combined=0.0351
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+[HealingDriver] Kandidat kompatibel: 56 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=DCD-SH-003 | Skenario: dicoding_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 14558 ms
+  Elemen dipilih: <a href="/academies/653-belajar-dasar-ai" class="course-card-cta" style="backgro
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=14558ms
+[HealingDriver] Elemen dipilih: <a type='' id='dcdAkademiRefactor' name='' placeholder='' text='Belajar sekarang'>
+Oct 02, 2026 10:28:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:28:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: dcdLearningPaths
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 54 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='AI Engineer'> ? combined=0.1339
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Gen AI Eng... ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='MLOps Engi... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Data Scien... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Data Analy... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Front-End ... ? combined=0.0543
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='React Deve... ? combined=0.0833
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Back-End D... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Back-End D... ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Android De... ? combined=0.0735
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Multi-Plat... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='iOS Develo... ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='DevOps Eng... ? combined=0.0781
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Google Clo... ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Previous'>    ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Go to slid... ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Go to slid... ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Next'>        ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coba gratis!
+Belajar ... ? combined=0.1116
+  ?? CAND <a type='' id='dcdLearningPathsRefactor' name='' placeholder='' tex... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Belajar sekarang'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari'>               ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari'>               ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Putar video'>            ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gabung sekarang'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.2232
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karier'>                 ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='FAQ'>                    ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Elite'>                  ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Challenge'>              ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mentoring'>              ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jobs'>                   ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms'>                  ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy'>                ? combined=0.1339
+[HealingDriver] Kandidat kompatibel: 54 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=DCD-SH-004 | Skenario: dicoding_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 9655 ms
+  Elemen dipilih: <a class="framer-BRYuO framer-whrq8a framer-v-whrq8a framer-dxjvn2" data-framer-
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=9655ms
+[HealingDriver] Elemen dipilih: <a type='' id='dcdLearningPathsRefactor' name='' placeholder='' text='Semua learning path'>
+Oct 02, 2026 10:29:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:29:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 3
+  Berhasil dipulihkan         : 3
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 11053.33 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\dicoding_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 104.1 s <<< FAILURE! -- in com.fulvian.tests.TestDicodingHealing
+[ERROR] com.fulvian.tests.TestDicodingHealing.dcdSh002_logo -- Time elapsed: 25.64 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[./img[contains(@alt,'Dicoding')] or contains(@class,'logo')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50736}, goog:processID: 3368, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50736/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9768568942d5ffd8cce99b5570f9375b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestDicodingHealing.waitVisible(TestDicodingHealing.java:154)
+	at com.fulvian.tests.TestDicodingHealing.dcdSh002_logo(TestDicodingHealing.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestDicodingHealing.dcdSh005_register -- Time elapsed: 25.39 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[normalize-space()='Daftar' or normalize-space()='Register'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63079}, goog:processID: 41824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63079/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 616fe3bee0868d0be74cb3ad575b21cf
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestDicodingHealing.waitVisible(TestDicodingHealing.java:154)
+	at com.fulvian.tests.TestDicodingHealing.dcdSh005_register(TestDicodingHealing.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestDicodingHealing.dcdSh002_logo:81->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[./img[contains(@alt,'Dicoding')] or contains(@class,'logo')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50736}, goog:processID: 3368, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50736/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9768568942d5ffd8cce99b5570f9375b
+[ERROR]   TestDicodingHealing.dcdSh005_register:123->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[normalize-space()='Daftar' or normalize-space()='Register'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63079}, goog:processID: 41824, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63079/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 616fe3bee0868d0be74cb3ad575b21cf
+[ERROR] Tests run: 5, Failures: 0, Errors: 2, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,1703 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:58:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:58:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tktSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 391 kandidat elemen...
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Let�s Sear... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Copy'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Terms and ... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Copy'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Terms and ... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='See more'>    | alasan: incompatible
+  ?? SKIP < type='' id='' name='' placeholder='' text=''>                        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Attraction'>  | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Villas & A... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Playgrounds'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Tours'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Spa & Beau... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Others'>      | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP < type='' id='' name='' placeholder='' text=''>                        | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='From Saudi... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='To Saudi A... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Makkah'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Madinah'>     | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Deli Serda... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Ubud'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bengkulu'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Sanur'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Riau'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Malang'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='East Kotaw... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Makassar'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Garut'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Labuan Bajo'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='East Java'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Villa & Ap... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Singapore'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Kuching'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bangkok'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Khanh Hoa'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Barcelona'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Little Ind... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Johor'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Krabi'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Tokyo'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hong Kong'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Cebu'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Other Dest... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bali'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bandung'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Yogyakarta'>  | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bogor'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Jakarta'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Malang'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Surabaya'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Semarang'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Lombok'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Seminyak'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Ubud'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Kuta'>        | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Regular Bus'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Sleeper Bus'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Shuttle'>     | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bandung'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Jakarta'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Lombok City'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Makassar'>    | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Malang'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Medan'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bali'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='From Bali ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='From Jakar... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='From Surab... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='From Yogya... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='From Makas... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Flight'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Transporta... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='All'>         | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Flights'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Villa & Apt'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='To Dos'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Trains'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bus & Shut... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Car Rentals'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Blibli Tik... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Left'> | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Internatio... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Indonesia'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Travel Type'> | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Button Rig... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='To Do'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Flight Tic... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bali'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bandung'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bogor'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Jakarta'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Yogyakarta'>  | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Japan'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Singapore'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Labuan Bajo'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='PO Bus & T... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bus Route'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Explore Mo... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels in ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Hotels In ... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Property n... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Bobocabin'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Glamping i... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Popular Gl... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Most Favor... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Popular Vi... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Favorit Vi... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Popular Ap... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Most Favor... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Close'>       | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Download'>    | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-0' name='' placeholder='' text='Flights'>   | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-1' name='' placeholder='' text='Events'>    | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-2' name='' placeholder='' text='Hotels
+-... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-3' name='' placeholder='' text='To Dos
+B... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-4' name='' placeholder='' text='Airport ... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-5' name='' placeholder='' text='Trains'>    | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-6' name='' placeholder='' text='Villas &... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-7' name='' placeholder='' text='Bus & Sh... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-8' name='' placeholder='' text='Whoosh'>    | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-9' name='' placeholder='' text='Car Rent... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-10' name='' placeholder='' text='Shinkan... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-11' name='' placeholder='' text='Travel ... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-12' name='' placeholder='' text='My Chem... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-13' name='' placeholder='' text='Affilia... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-14' name='' placeholder='' text='A7X'>      | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-15' name='' placeholder='' text='Indones... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-16' name='' placeholder='' text='LANY (3... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-17' name='' placeholder='' text='STP'>      | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-18' name='' placeholder='' text='Sep 26'>   | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-19' name='' placeholder='' text='Sep 27'>   | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-20' name='' placeholder='' text='Visa Pr... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-21' name='' placeholder='' text='BABY MO... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-22' name='' placeholder='' text='Flight ... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-23' name='' placeholder='' text='BTS (26... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-24' name='' placeholder='' text='BTS (27... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-25' name='' placeholder='' text='Gift Ca... | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-26' name='' placeholder='' text='BND'>      | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-27' name='' placeholder='' text='BND'>      | alasan: incompatible
+  ?? SKIP <a type='' id='verticalTab-28' name='' placeholder='' text='Umrah D... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+F... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+Habitat Park S... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+Museum MACAN (... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+Gondola Ancol
+... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+Magic Art 3D M... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+P... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+O... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+X... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+Museum Listrik... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+Motion Studio ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+The Cat Cabin ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta Attraction Pa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ancol Pass
+Central Ja... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Payday
+Rumah Hantu Ba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Banner-Card-0'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Jeddah
+Rou... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya
+to
+Jeddah
+Ro... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Medan
+to
+Jeddah
+Round... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Denpasar Bali
+to
+Jedd... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Yogyakarta
+to
+Jeddah
+... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Makassar
+to
+Jeddah
+Ro... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Madinah
+Ro... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya
+to
+Madinah
+R... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Riyadh
+Rou... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Dammam
+Rou... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Jakarta
+One... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Surabaya
+On... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Medan
+One w... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Denpasar Ba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Makassar
+On... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Banjarmasin... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Madinah
+to
+Jakarta
+On... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Madinah
+to
+Surabaya
+O... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Madinah
+to
+Medan
+One ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Surabaya
+On... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Denpasar Ba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Jakarta
+One... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dammam
+to
+Jakarta
+One... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Novotel Makkah Thakhe... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pullman ZamZam Makkah... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='M�venpick Hotel & Res... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Elaf Kinda Hotel
+Al H... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Makarem Ajyad Makkah ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Swiss�tel Makkah
+Al H... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Le Meridien Makkah
+Al... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Makkah Towers
+Al Hara... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hilton Suites Jabal O... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jabal Omar Hyatt Rege... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ibis Styles Makkah
+Al... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tilal Jabal Al Kabah
+... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Manazel Ajyad Hotel B... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Le Meridien Towers Ma... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='InterContinental Hote... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='d'primahotel Kualanam... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Crew Hotel Kualan... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Thongs Inn Hotel Kual... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Quadrant Hotel KN... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='RedDoorz Plus near Ku... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='T Hotel Kualanamu
+Ber... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pancur Gading Hotel &... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Lively Hotel Kual... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='My Studio Hotel Kuala... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Villa Green Hill AKAS... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KNIA Indah Homestay
+B... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Anara Sky Kualanamu
+L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wing Hotel Kualanamu ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Miyanna Hotel
+Percut ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See all'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Concorde Hotel Singap... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='A Hotel Joo Chiat
+Gey... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='lyf Bugis Singapore m... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='YMCA@One Orchard
+Orch... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aura Opera House Chin... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Goodwood Park Hotel (... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pullman Singapore Orc... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aura Hotel Mackenzie
+... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Jen Orchardgate... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Chancellor Orch... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bugis Social- Newly R... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jen Singapore Tanglin... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Grand Central
+O... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='A Hotel Farrer Park -... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='RELC International Ho... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See all'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ziva a Boutique Villa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Villa Leona Valley Vi... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Wina Villa Canggu... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bhatara Villa Sanur
+V... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Senetan Villas & Spa ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Anema Villa Seminyak
+... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MJ Villa Sanur
+Apartm... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Ubud, Bali
+... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Legian Sunset Res... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lumbini Luxury Villas... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='New Pondok Sara Villa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dewantara Resort Bali... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Retreat at Kharis... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See all'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MY CHEMICAL ROMANCE L... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='PETRONAS GRAND PRIX O... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See all'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disc. up to 50%
+Jakar... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Malan... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Check More Routes'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Self Drive
+Most Booke... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Check More Cities'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='From the airport
+(DPS... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Check More Airport Tr... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See all promo'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='See all!'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Banner-Card-0'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='here'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MORE'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MORE'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pororo Park Indonesia'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Things To Do Near Mal... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pari Island'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Salon Spa in Surabaya'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Salon in Jakarta'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Spa in South Jakarta'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Things To Do in Ciwid... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Things To Do in Malang'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nusa Penida'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Salon in Bandung'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tebing Breksi'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bali Nature Tourism'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Spa in Bandung'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tidung Island'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Things To Do in Palem... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Things To Do in Solo'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Padma Hotel Bandung'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gaia Hotel Bandung'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Harris Bandung'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Pullman Bandung'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Santika Bandung'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Ibis Bandung'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Fave Hotel Bandung'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Aryaduta Bandung'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='El Royale Hotel Bandu... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tebu Hotel Bandung'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Grand Tebu Hotel Band... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Hilton Bandung'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotel Intercontinenta... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Trans Luxury Hotel Ba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pet Friendly Hotel'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cheap Hotels in Bandu... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Cikole, Ban... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Rancaupas, ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Gunung Mas,... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Coban Rondo... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Baturraden,... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Pangalengan... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Pacet, Mojo... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Kintamani, ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Ubud, Bali'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Kaldera, To... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin Gunung Rinj... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bobocabin'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Chat with us'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='cs@tiket.com'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='+62 804 1500 878'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='+62 21 3973 0888'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Blog'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Newsroom'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Careers'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Corporate'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Business Partner'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Blibli Tiket Rewards'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Protection'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Blibli.com'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Flights'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotels'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Villas & Apt.'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='To Dos'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='halo tiket Help Center'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Group Booking'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Privacy Policy'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Terms & Conditions'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Register Your Hotel'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Register Your Activit... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Facebook'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Twitter'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='LinkedIn'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='YouTube'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Instagram'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='TikTok'>                 | alasan: incompatible
+  ?? CAND <input type='text' id='' name='' placeholder='' text='Search Text I... ? combined=0.1471
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 390
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TKT-SH-001 | Skenario: tiket_id_change
+  Status       : FAIL
+  Skor teks    : 0.2353  (bobot 50%)
+  Skor locator : 0.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.1471
+  Waktu healing: 64494 ms
+  Elemen dipilih: -
+??????????????????????????????????????????????????????????????????????
+Oct 02, 2026 11:00:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:00:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:00:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:00:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:01:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:01:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tktHotel
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 404 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Be a tiket... ? combined=0.0781
+  ?? CAND <button type='button' id='' name='' placeholder='' text='EN | IDR'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='More'>        ? combined=0.2500
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Let�s Sear... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Copy'>        ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Terms and ... ? combined=0.0625
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Copy'>        ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Terms and ... ? combined=0.0625
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='See more'>    ? combined=0.0781
+  ?? CAND < type='' id='' name='' placeholder='' text=''>                        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Attraction'>  ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels'>      ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Villas & A... ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Playgrounds'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Tours'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Spa & Beau... ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Others'>      ? combined=0.2083
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Saudi... ? combined=0.0500
+  ?? CAND <button type='button' id='' name='' placeholder='' text='To Saudi A... ? combined=0.0543
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Makkah'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Madinah'>     ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Deli Serda... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Ubud'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bengkulu'>    ? combined=0.0781
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Sanur'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Riau'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Malang'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='East Kotaw... ? combined=0.0735
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Makassar'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Garut'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Labuan Bajo'> ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='East Java'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Villa & Ap... ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Singapore'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Kuching'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bangkok'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Khanh Hoa'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Barcelona'>   ? combined=0.1389
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Little Ind... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Johor'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Krabi'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Tokyo'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hong Kong'>   ? combined=0.1389
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Cebu'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Other Dest... ? combined=0.0735
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bali'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Yogyakarta'>  ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bogor'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Jakarta'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Malang'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Surabaya'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Semarang'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Lombok'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Seminyak'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Ubud'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Kuta'>        ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Regular Bus'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Sleeper Bus'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Shuttle'>     ? combined=0.2679
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Jakarta'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Lombok City'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Makassar'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Malang'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Medan'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bali'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Bali ... ? combined=0.0962
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Jakar... ? combined=0.0781
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Surab... ? combined=0.0368
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Yogya... ? combined=0.0658
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Makas... ? combined=0.0368
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Flight'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels'>      ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Transporta... ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='All'>         ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Flights'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels'>      ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Villa & Apt'> ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='To Dos'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Trains'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bus & Shut... ? combined=0.1705
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Car Rentals'> ? combined=0.1136
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Blibli Tik... ? combined=0.0625
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Left'> ? combined=0.1136
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Internatio... ? combined=0.1442
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Indonesia'>   ? combined=0.1389
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Travel Type'> ? combined=0.1136
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.0521
+  ?? CAND <button type='button' id='' name='' placeholder='' text='To Do'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Flight Tic... ? combined=0.1442
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bali'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bogor'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Jakarta'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Yogyakarta'>  ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Japan'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Singapore'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Labuan Bajo'> ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='PO Bus & T... ? combined=0.1923
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bus Route'>   ? combined=0.1389
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Explore Mo... ? combined=0.0500
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels in ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.5313
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Property n... ? combined=0.1136
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bobocabin'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Glamping i... ? combined=0.0368
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Popular Gl... ? combined=0.0500
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Most Favor... ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Popular Vi... ? combined=0.0543
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Favorit Vi... ? combined=0.1442
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Popular Ap... ? combined=0.0926
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Most Favor... ? combined=0.0815
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Close'>       ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Download'>    ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Promo'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blibli Tiket Rewards'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Orders'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flights'>                ? combined=0.0000
+  ?? CAND <a type='' id='tktHotelRefactor' name='' placeholder='' text='Hotels'> ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villas & Apt.'>          ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='To Dos'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trains'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Login'>                  ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Register'>               ? combined=0.1563
+  ?? CAND <a type='' id='verticalTab-0' name='' placeholder='' text='Flights'>   ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-1' name='' placeholder='' text='Events'>    ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-2' name='' placeholder='' text='Hotels
+-... ? combined=0.5848
+  ?? CAND <a type='' id='verticalTab-3' name='' placeholder='' text='To Dos
+B... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-4' name='' placeholder='' text='Airport ... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-5' name='' placeholder='' text='Trains'>    ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-6' name='' placeholder='' text='Villas &... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-7' name='' placeholder='' text='Bus & Sh... ? combined=0.2240
+  ?? CAND <a type='' id='verticalTab-8' name='' placeholder='' text='Whoosh'>    ? combined=0.2619
+  ?? CAND <a type='' id='verticalTab-9' name='' placeholder='' text='Car Rent... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-10' name='' placeholder='' text='Shinkan... ? combined=0.1393
+  ?? CAND <a type='' id='verticalTab-11' name='' placeholder='' text='Travel ... ? combined=0.1462
+  ?? CAND <a type='' id='verticalTab-12' name='' placeholder='' text='My Chem... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-13' name='' placeholder='' text='Affilia... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-14' name='' placeholder='' text='A7X'>      ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-15' name='' placeholder='' text='Indones... ? combined=0.1393
+  ?? CAND <a type='' id='verticalTab-16' name='' placeholder='' text='LANY (3... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-17' name='' placeholder='' text='STP'>      ? combined=0.1750
+  ?? CAND <a type='' id='verticalTab-18' name='' placeholder='' text='Sep 26'>   ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-19' name='' placeholder='' text='Sep 27'>   ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-20' name='' placeholder='' text='Visa Pr... ? combined=0.1672
+  ?? CAND <a type='' id='verticalTab-21' name='' placeholder='' text='BABY MO... ? combined=0.2063
+  ?? CAND <a type='' id='verticalTab-22' name='' placeholder='' text='Flight ... ? combined=0.1839
+  ?? CAND <a type='' id='verticalTab-23' name='' placeholder='' text='BTS (26... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-24' name='' placeholder='' text='BTS (27... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-25' name='' placeholder='' text='Gift Ca... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-26' name='' placeholder='' text='BND'>      ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-27' name='' placeholder='' text='BND'>      ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-28' name='' placeholder='' text='Umrah D... ? combined=0.1333
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+F... ? combined=0.0229
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Habitat Park S... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Museum MACAN (... ? combined=0.0149
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Gondola Ancol
+... ? combined=0.0229
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Magic Art 3D M... ? combined=0.0129
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+P... ? combined=0.0198
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+O... ? combined=0.0191
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+X... ? combined=0.0199
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Museum Listrik... ? combined=0.0147
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Motion Studio ... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+The Cat Cabin ... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta Attraction Pa... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ancol Pass
+Central Ja... ? combined=0.0301
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Rumah Hantu Ba... ? combined=0.0275
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Banner-Card-0'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Jeddah
+Rou... ? combined=0.0267
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya
+to
+Jeddah
+Ro... ? combined=0.0269
+  ?? CAND <a type='' id='' name='' placeholder='' text='Medan
+to
+Jeddah
+Round... ? combined=0.0277
+  ?? CAND <a type='' id='' name='' placeholder='' text='Denpasar Bali
+to
+Jedd... ? combined=0.0212
+  ?? CAND <a type='' id='' name='' placeholder='' text='Yogyakarta
+to
+Jeddah
+... ? combined=0.0203
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makassar
+to
+Jeddah
+Ro... ? combined=0.0269
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Madinah
+Ro... ? combined=0.0234
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya
+to
+Madinah
+R... ? combined=0.0267
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Riyadh
+Rou... ? combined=0.0223
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Dammam
+Rou... ? combined=0.0217
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Jakarta
+One... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Surabaya
+On... ? combined=0.0309
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Medan
+One w... ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Denpasar Ba... ? combined=0.0243
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Makassar
+On... ? combined=0.0309
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Banjarmasin... ? combined=0.0300
+  ?? CAND <a type='' id='' name='' placeholder='' text='Madinah
+to
+Jakarta
+On... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Madinah
+to
+Surabaya
+O... ? combined=0.0306
+  ?? CAND <a type='' id='' name='' placeholder='' text='Madinah
+to
+Medan
+One ... ? combined=0.0316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Surabaya
+On... ? combined=0.0309
+  ?? CAND <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Denpasar Ba... ? combined=0.0243
+  ?? CAND <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Jakarta
+One... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dammam
+to
+Jakarta
+One... ? combined=0.0193
+  ?? CAND <a type='' id='' name='' placeholder='' text='Novotel Makkah Thakhe... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pullman ZamZam Makkah... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='M�venpick Hotel & Res... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Elaf Kinda Hotel
+Al H... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makarem Ajyad Makkah ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Swiss�tel Makkah
+Al H... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Le Meridien Makkah
+Al... ? combined=0.0216
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makkah Towers
+Al Hara... ? combined=0.0373
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hilton Suites Jabal O... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jabal Omar Hyatt Rege... ? combined=0.0352
+  ?? CAND <a type='' id='' name='' placeholder='' text='ibis Styles Makkah
+Al... ? combined=0.0323
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tilal Jabal Al Kabah
+... ? combined=0.0084
+  ?? CAND <a type='' id='' name='' placeholder='' text='Manazel Ajyad Hotel B... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Le Meridien Towers Ma... ? combined=0.0288
+  ?? CAND <a type='' id='' name='' placeholder='' text='InterContinental Hote... ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='d'primahotel Kualanam... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Crew Hotel Kualan... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Thongs Inn Hotel Kual... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Quadrant Hotel KN... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='RedDoorz Plus near Ku... ? combined=0.0253
+  ?? CAND <a type='' id='' name='' placeholder='' text='T Hotel Kualanamu
+Ber... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pancur Gading Hotel &... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Lively Hotel Kual... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='My Studio Hotel Kuala... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villa Green Hill AKAS... ? combined=0.0267
+  ?? CAND <a type='' id='' name='' placeholder='' text='KNIA Indah Homestay
+B... ? combined=0.0440
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anara Sky Kualanamu
+L... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wing Hotel Kualanamu ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Miyanna Hotel
+Percut ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Concorde Hotel Singap... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='A Hotel Joo Chiat
+Gey... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='lyf Bugis Singapore m... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='YMCA@One Orchard
+Orch... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aura Opera House Chin... ? combined=0.0336
+  ?? CAND <a type='' id='' name='' placeholder='' text='Goodwood Park Hotel (... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pullman Singapore Orc... ? combined=0.0280
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aura Hotel Mackenzie
+... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Jen Orchardgate... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Chancellor Orch... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bugis Social- Newly R... ? combined=0.0247
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jen Singapore Tanglin... ? combined=0.0244
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Grand Central
+O... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='A Hotel Farrer Park -... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='RELC International Ho... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ziva a Boutique Villa... ? combined=0.0281
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villa Leona Valley Vi... ? combined=0.0247
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Wina Villa Canggu... ? combined=0.0167
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bhatara Villa Sanur
+V... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text='Senetan Villas & Spa ... ? combined=0.0240
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anema Villa Seminyak
+... ? combined=0.0139
+  ?? CAND <a type='' id='' name='' placeholder='' text='MJ Villa Sanur
+Apartm... ? combined=0.0234
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Ubud, Bali
+... ? combined=0.0278
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Legian Sunset Res... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lumbini Luxury Villas... ? combined=0.0070
+  ?? CAND <a type='' id='' name='' placeholder='' text='New Pondok Sara Villa... ? combined=0.0152
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dewantara Resort Bali... ? combined=0.0333
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Retreat at Kharis... ? combined=0.0332
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='MY CHEMICAL ROMANCE L... ? combined=0.0269
+  ?? CAND <a type='' id='' name='' placeholder='' text='PETRONAS GRAND PRIX O... ? combined=0.0223
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0293
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0181
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0179
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 50%
+Jakar... ? combined=0.0385
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0253
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Malan... ? combined=0.0189
+  ?? CAND <a type='' id='' name='' placeholder='' text='Check More Routes'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self Drive
+Most Booke... ? combined=0.0218
+  ?? CAND <a type='' id='' name='' placeholder='' text='Check More Cities'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='From the airport
+(DPS... ? combined=0.0277
+  ?? CAND <a type='' id='' name='' placeholder='' text='Check More Airport Tr... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all promo'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all!'>               ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Banner-Card-0'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='here'>                   ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='MORE'>                   ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='MORE'>                   ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pororo Park Indonesia'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do Near Mal... ? combined=0.0926
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pari Island'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salon Spa in Surabaya'>  ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salon in Jakarta'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Spa in South Jakarta'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Ciwid... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Malang'> ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nusa Penida'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salon in Bandung'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tebing Breksi'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bali Nature Tourism'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Spa in Bandung'>         ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tidung Island'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Palem... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Solo'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Padma Hotel Bandung'>    ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaia Hotel Bandung'>     ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Harris Bandung'>   ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Pullman Bandung'>  ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Santika Bandung'>  ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Ibis Bandung'>     ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fave Hotel Bandung'>     ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Aryaduta Bandung'> ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='El Royale Hotel Bandu... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tebu Hotel Bandung'>     ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Grand Tebu Hotel Band... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Hilton Bandung'>   ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Intercontinenta... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trans Luxury Hotel Ba... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pet Friendly Hotel'>     ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cheap Hotels in Bandu... ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Cikole, Ban... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Rancaupas, ... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Gunung Mas,... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Coban Rondo... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Baturraden,... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Pangalengan... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Pacet, Mojo... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Kintamani, ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Ubud, Bali'>   ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Kaldera, To... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Gunung Rinj... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Chat with us'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='cs@tiket.com'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 804 1500 878'>       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 21 3973 0888'>       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Newsroom'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Corporate'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Business Partner'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blibli Tiket Rewards'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Protection'>             ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blibli.com'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flights'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotels'>                 ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villas & Apt.'>          ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='To Dos'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='halo tiket Help Center'> ? combined=0.1420
+  ?? CAND <a type='' id='' name='' placeholder='' text='Group Booking'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Policy'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms & Conditions'>     ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Register Your Hotel'>    ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Register Your Activit... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='LinkedIn'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='YouTube'>                ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='TikTok'>                 ? combined=0.0893
+  ?? CAND <input type='text' id='' name='' placeholder='' text='Search Text I... ? combined=0.1103
+[HealingDriver] Kandidat kompatibel: 404 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TKT-SH-004 | Skenario: tiket_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 78770 ms
+  Elemen dipilih: <a href="/en-id/hotel" class="rr___HeaderBottom-module__option___hoCd0 rr___Text
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=78770ms
+[HealingDriver] Elemen dipilih: <a type='' id='tktHotelRefactor' name='' placeholder='' text='Hotels'>
+Oct 02, 2026 11:02:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:02:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tktEvent
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 392 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Be a tiket... ? combined=0.0781
+  ?? CAND <button type='button' id='' name='' placeholder='' text='EN | IDR'>    ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='More'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Let�s Sear... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Copy'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Terms and ... ? combined=0.0938
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Copy'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Terms and ... ? combined=0.0938
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='See more'>    ? combined=0.0781
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Attraction'>  ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Villas & A... ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Playgrounds'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Tours'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Spa & Beau... ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Others'>      ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Saudi... ? combined=0.0250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='To Saudi A... ? combined=0.0272
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Makkah'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Madinah'>     ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Deli Serda... ? combined=0.1563
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Ubud'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bengkulu'>    ? combined=0.0781
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Sanur'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Riau'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Malang'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='East Kotaw... ? combined=0.0735
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Makassar'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Garut'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Labuan Bajo'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='East Java'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Villa & Ap... ? combined=0.0694
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Singapore'>   ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Kuching'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bangkok'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Khanh Hoa'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Barcelona'>   ? combined=0.1389
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Little Ind... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Johor'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Krabi'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Tokyo'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hong Kong'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Cebu'>        ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Other Dest... ? combined=0.1471
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bali'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Yogyakarta'>  ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bogor'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Jakarta'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Malang'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Surabaya'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Semarang'>    ? combined=0.1563
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Lombok'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Seminyak'>    ? combined=0.1563
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Ubud'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Kuta'>        ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Regular Bus'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Sleeper Bus'> ? combined=0.1136
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Shuttle'>     ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Jakarta'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Lombok City'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Makassar'>    ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Malang'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Medan'>       ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bali'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Bali ... ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Jakar... ? combined=0.0391
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Surab... ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Yogya... ? combined=0.0329
+  ?? CAND <button type='button' id='' name='' placeholder='' text='From Makas... ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Flight'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Transporta... ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='All'>         ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Flights'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Villa & Apt'> ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='To Dos'>      ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Trains'>      ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bus & Shut... ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Car Rentals'> ? combined=0.1705
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Blibli Tik... ? combined=0.0625
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Left'> ? combined=0.1136
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Internatio... ? combined=0.1442
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Indonesia'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Travel Type'> ? combined=0.1705
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Button Rig... ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text='To Do'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Flight Tic... ? combined=0.0481
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bali'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bandung'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bogor'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Jakarta'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Yogyakarta'>  ? combined=0.0625
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Japan'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Singapore'>   ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Labuan Bajo'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='PO Bus & T... ? combined=0.0481
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bus Route'>   ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Explore Mo... ? combined=0.1000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0735
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0833
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.1103
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.1000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0815
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0852
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0815
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0658
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0721
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.1103
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0926
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.1103
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels in ... ? combined=0.0750
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Hotels In ... ? combined=0.0543
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Property n... ? combined=0.0852
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Bobocabin'>   ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Glamping i... ? combined=0.0368
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Popular Gl... ? combined=0.0500
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Most Favor... ? combined=0.0595
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Popular Vi... ? combined=0.0543
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Favorit Vi... ? combined=0.0962
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Popular Ap... ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Most Favor... ? combined=0.1087
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Close'>       ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Download'>    ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Promo'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blibli Tiket Rewards'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your Orders'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flights'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotels'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villas & Apt.'>          ? combined=0.0625
+  ?? CAND <a type='' id='tktEventRefactor' name='' placeholder='' text='To Dos'> ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trains'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Login'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Register'>               ? combined=0.1563
+  ?? CAND <a type='' id='verticalTab-0' name='' placeholder='' text='Flights'>   ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-1' name='' placeholder='' text='Events'>    ? combined=0.5848
+  ?? CAND <a type='' id='verticalTab-2' name='' placeholder='' text='Hotels
+-... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-3' name='' placeholder='' text='To Dos
+B... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-4' name='' placeholder='' text='Airport ... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-5' name='' placeholder='' text='Trains'>    ? combined=0.1577
+  ?? CAND <a type='' id='verticalTab-6' name='' placeholder='' text='Villas &... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-7' name='' placeholder='' text='Bus & Sh... ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-8' name='' placeholder='' text='Whoosh'>    ? combined=0.1429
+  ?? CAND <a type='' id='verticalTab-9' name='' placeholder='' text='Car Rent... ? combined=0.1875
+  ?? CAND <a type='' id='verticalTab-10' name='' placeholder='' text='Shinkan... ? combined=0.1393
+  ?? CAND <a type='' id='verticalTab-11' name='' placeholder='' text='Travel ... ? combined=0.1462
+  ?? CAND <a type='' id='verticalTab-12' name='' placeholder='' text='My Chem... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-13' name='' placeholder='' text='Affilia... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-14' name='' placeholder='' text='Visa Pr... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-15' name='' placeholder='' text='Flight ... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-16' name='' placeholder='' text='Gift Ca... ? combined=0.1333
+  ?? CAND <a type='' id='verticalTab-17' name='' placeholder='' text='Umrah D... ? combined=0.1333
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+F... ? combined=0.0229
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Habitat Park S... ? combined=0.0204
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Museum MACAN (... ? combined=0.0198
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Gondola Ancol
+... ? combined=0.0229
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Magic Art 3D M... ? combined=0.0193
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+P... ? combined=0.0198
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+O... ? combined=0.0191
+  ?? CAND <a type='' id='' name='' placeholder='' text='INSTANT_PASS
+Payday
+X... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Museum Listrik... ? combined=0.0221
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Motion Studio ... ? combined=0.0217
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+The Cat Cabin ... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta Attraction Pa... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ancol Pass
+Central Ja... ? combined=0.0301
+  ?? CAND <a type='' id='' name='' placeholder='' text='Payday
+Rumah Hantu Ba... ? combined=0.0206
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Banner-Card-0'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Jeddah
+Rou... ? combined=0.0214
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya
+to
+Jeddah
+Ro... ? combined=0.0216
+  ?? CAND <a type='' id='' name='' placeholder='' text='Medan
+to
+Jeddah
+Round... ? combined=0.0221
+  ?? CAND <a type='' id='' name='' placeholder='' text='Denpasar Bali
+to
+Jedd... ? combined=0.0212
+  ?? CAND <a type='' id='' name='' placeholder='' text='Yogyakarta
+to
+Jeddah
+... ? combined=0.0203
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makassar
+to
+Jeddah
+Ro... ? combined=0.0216
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Madinah
+Ro... ? combined=0.0175
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya
+to
+Madinah
+R... ? combined=0.0160
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Riyadh
+Rou... ? combined=0.0167
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta
+to
+Dammam
+Rou... ? combined=0.0163
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Jakarta
+One... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Surabaya
+On... ? combined=0.0248
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Medan
+One w... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Denpasar Ba... ? combined=0.0243
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Makassar
+On... ? combined=0.0186
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jeddah
+to
+Banjarmasin... ? combined=0.0180
+  ?? CAND <a type='' id='' name='' placeholder='' text='Madinah
+to
+Jakarta
+On... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Madinah
+to
+Surabaya
+O... ? combined=0.0245
+  ?? CAND <a type='' id='' name='' placeholder='' text='Madinah
+to
+Medan
+One ... ? combined=0.0253
+  ?? CAND <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Surabaya
+On... ? combined=0.0186
+  ?? CAND <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Denpasar Ba... ? combined=0.0243
+  ?? CAND <a type='' id='' name='' placeholder='' text='Riyadh
+to
+Jakarta
+One... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dammam
+to
+Jakarta
+One... ? combined=0.0258
+  ?? CAND <a type='' id='' name='' placeholder='' text='Novotel Makkah Thakhe... ? combined=0.0263
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pullman ZamZam Makkah... ? combined=0.0208
+  ?? CAND <a type='' id='' name='' placeholder='' text='M�venpick Hotel & Res... ? combined=0.0223
+  ?? CAND <a type='' id='' name='' placeholder='' text='Elaf Kinda Hotel
+Al H... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makarem Ajyad Makkah ... ? combined=0.0238
+  ?? CAND <a type='' id='' name='' placeholder='' text='Swiss�tel Makkah
+Al H... ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Le Meridien Makkah
+Al... ? combined=0.0338
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makkah Towers
+Al Hara... ? combined=0.0301
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hilton Suites Jabal O... ? combined=0.0236
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jabal Omar Hyatt Rege... ? combined=0.0287
+  ?? CAND <a type='' id='' name='' placeholder='' text='ibis Styles Makkah
+Al... ? combined=0.0338
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tilal Jabal Al Kabah
+... ? combined=0.0208
+  ?? CAND <a type='' id='' name='' placeholder='' text='Manazel Ajyad Hotel B... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Le Meridien Towers Ma... ? combined=0.0309
+  ?? CAND <a type='' id='' name='' placeholder='' text='InterContinental Hote... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='d'primahotel Kualanam... ? combined=0.0227
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Crew Hotel Kualan... ? combined=0.0200
+  ?? CAND <a type='' id='' name='' placeholder='' text='Thongs Inn Hotel Kual... ? combined=0.0255
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Quadrant Hotel KN... ? combined=0.0278
+  ?? CAND <a type='' id='' name='' placeholder='' text='RedDoorz Plus near Ku... ? combined=0.0217
+  ?? CAND <a type='' id='' name='' placeholder='' text='T Hotel Kualanamu
+Ber... ? combined=0.0325
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pancur Gading Hotel &... ? combined=0.0255
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Lively Hotel Kual... ? combined=0.0300
+  ?? CAND <a type='' id='' name='' placeholder='' text='My Studio Hotel Kuala... ? combined=0.0229
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villa Green Hill AKAS... ? combined=0.0239
+  ?? CAND <a type='' id='' name='' placeholder='' text='KNIA Indah Homestay
+B... ? combined=0.0287
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anara Sky Kualanamu
+L... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wing Hotel Kualanamu ... ? combined=0.0278
+  ?? CAND <a type='' id='' name='' placeholder='' text='Miyanna Hotel
+Percut ... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Concorde Hotel Singap... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='A Hotel Joo Chiat
+Gey... ? combined=0.0287
+  ?? CAND <a type='' id='' name='' placeholder='' text='lyf Bugis Singapore m... ? combined=0.0217
+  ?? CAND <a type='' id='' name='' placeholder='' text='YMCA@One Orchard
+Orch... ? combined=0.0250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aura Opera House Chin... ? combined=0.0287
+  ?? CAND <a type='' id='' name='' placeholder='' text='Goodwood Park Hotel (... ? combined=0.0272
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pullman Singapore Orc... ? combined=0.0301
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aura Hotel Mackenzie
+... ? combined=0.0275
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Jen Orchardgate... ? combined=0.0238
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Chancellor Orch... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bugis Social- Newly R... ? combined=0.0340
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jen Singapore Tanglin... ? combined=0.0269
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Grand Central
+O... ? combined=0.0236
+  ?? CAND <a type='' id='' name='' placeholder='' text='A Hotel Farrer Park -... ? combined=0.0303
+  ?? CAND <a type='' id='' name='' placeholder='' text='RELC International Ho... ? combined=0.0278
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ziva a Boutique Villa... ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villa Leona Valley Vi... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Wina Villa Canggu... ? combined=0.0343
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bhatara Villa Sanur
+V... ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text='Senetan Villas & Spa ... ? combined=0.0332
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anema Villa Seminyak
+... ? combined=0.0295
+  ?? CAND <a type='' id='' name='' placeholder='' text='MJ Villa Sanur
+Apartm... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Ubud, Bali
+... ? combined=0.0236
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Legian Sunset Res... ? combined=0.0223
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lumbini Luxury Villas... ? combined=0.0238
+  ?? CAND <a type='' id='' name='' placeholder='' text='New Pondok Sara Villa... ? combined=0.0319
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dewantara Resort Bali... ? combined=0.0343
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Retreat at Kharis... ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='MY CHEMICAL ROMANCE L... ? combined=0.0336
+  ?? CAND <a type='' id='' name='' placeholder='' text='PETRONAS GRAND PRIX O... ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0086
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0237
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0084
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 50%
+Jakar... ? combined=0.0333
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Jakar... ? combined=0.0223
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disc. up to 20%
+Malan... ? combined=0.0247
+  ?? CAND <a type='' id='' name='' placeholder='' text='Check More Routes'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self Drive
+Most Booke... ? combined=0.0291
+  ?? CAND <a type='' id='' name='' placeholder='' text='Check More Cities'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='From the airport
+(DPS... ? combined=0.0221
+  ?? CAND <a type='' id='' name='' placeholder='' text='Check More Airport Tr... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all promo'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='See all!'>               ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Banner-Card-0'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='here'>                   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='MORE'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='MORE'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pororo Park Indonesia'>  ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do Near Mal... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pari Island'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salon Spa in Surabaya'>  ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salon in Jakarta'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Spa in South Jakarta'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Ciwid... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Malang'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nusa Penida'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salon in Bandung'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tebing Breksi'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bali Nature Tourism'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Spa in Bandung'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tidung Island'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Palem... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things To Do in Solo'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Padma Hotel Bandung'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaia Hotel Bandung'>     ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Harris Bandung'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Pullman Bandung'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Santika Bandung'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Ibis Bandung'>     ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fave Hotel Bandung'>     ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Aryaduta Bandung'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='El Royale Hotel Bandu... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tebu Hotel Bandung'>     ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Grand Tebu Hotel Band... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Hilton Bandung'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotel Intercontinenta... ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trans Luxury Hotel Ba... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pet Friendly Hotel'>     ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cheap Hotels in Bandu... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Cikole, Ban... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Rancaupas, ... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Gunung Mas,... ? combined=0.0231
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Coban Rondo... ? combined=0.0223
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Baturraden,... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Pangalengan... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Pacet, Mojo... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Kintamani, ... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Ubud, Bali'>   ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Kaldera, To... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin Gunung Rinj... ? combined=0.0202
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bobocabin'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Chat with us'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='cs@tiket.com'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 804 1500 878'>       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 21 3973 0888'>       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Newsroom'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Corporate'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Business Partner'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blibli Tiket Rewards'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Protection'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blibli.com'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flights'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotels'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Villas & Apt.'>          ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='To Dos'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='halo tiket Help Center'> ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Group Booking'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Policy'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms & Conditions'>     ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Register Your Hotel'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Register Your Activit... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='LinkedIn'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='YouTube'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TikTok'>                 ? combined=0.0893
+  ?? CAND <input type='text' id='' name='' placeholder='' text='Search Text I... ? combined=0.1471
+[HealingDriver] Kandidat kompatibel: 392 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TKT-SH-005 | Skenario: tiket_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 79555 ms
+  Elemen dipilih: <a href="/en-id/to-do?utm_source=INTERNAL&amp;utm_medium=home" class="rr___Heade
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=79555ms
+[HealingDriver] Elemen dipilih: <a type='' id='tktEventRefactor' name='' placeholder='' text='To Dos'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 3
+  Berhasil dipulihkan         : 2
+  Healing Success Rate        : 66.67%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 74273.00 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\tiket_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 305.8 s <<< FAILURE! -- in com.fulvian.tests.TestTiketHealing
+[ERROR] com.fulvian.tests.TestTiketHealing.tktSh001_searchInput -- Time elapsed: 72.91 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+[HealingDriver] Healing GAGAL. Skor terbaik 0.1471 di bawah threshold 0.5000. Locator: By.id: tktSearchInput
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: HealingDriver
+	at com.fulvian.healing.HealingDriver.findElement(HealingDriver.java:237)
+	at com.fulvian.tests.TestTiketHealing.heal(TestTiketHealing.java:152)
+	at com.fulvian.tests.TestTiketHealing.tktSh001_searchInput(TestTiketHealing.java:83)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTiketHealing.tktSh002_logo -- Time elapsed: 28.77 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'tiket.com')]//img[contains(@alt,'tiket.com') or contains(@alt,'logo')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52976}, goog:processID: 16532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52976/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3db1f52801faca35d060e8a624a6209
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestTiketHealing.waitVisible(TestTiketHealing.java:170)
+	at com.fulvian.tests.TestTiketHealing.tktSh002_logo(TestTiketHealing.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTiketHealing.tktSh003_pesawatMenu -- Time elapsed: 27.37 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'pesawat') or contains(normalize-space(),'Pesawat')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54423}, goog:processID: 24692, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54423/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38dc5c38b28a2c3d1c382541817da89f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestTiketHealing.waitVisible(TestTiketHealing.java:170)
+	at com.fulvian.tests.TestTiketHealing.tktSh003_pesawatMenu(TestTiketHealing.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestTiketHealing.tktSh001_searchInput:83->heal:152 � NoSuchElement [HealingDriver] Healing GAGAL. Skor terbaik 0.1471 di bawah threshold 0.5000. Locator: By.id: tktSearchInput
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: HealingDriver
+[ERROR]   TestTiketHealing.tktSh002_logo:94->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'tiket.com')]//img[contains(@alt,'tiket.com') or contains(@alt,'logo')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52976}, goog:processID: 16532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52976/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b3db1f52801faca35d060e8a624a6209
+[ERROR]   TestTiketHealing.tktSh003_pesawatMenu:109->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'pesawat') or contains(normalize-space(),'Pesawat')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54423}, goog:processID: 24692, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54423/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 38dc5c38b28a2c3d1c382541817da89f
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

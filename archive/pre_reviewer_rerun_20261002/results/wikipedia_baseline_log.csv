@@ -1,0 +1,3 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T11:58:02.010491100","WIKI-BL-001","wikipedia","By.id: wikiSearchInput","id=wikiSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:58:03.546092200","WIKI-BL-002","wikipedia","By.id: wikiSearchButton","id=wikiSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

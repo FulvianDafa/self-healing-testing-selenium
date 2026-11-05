@@ -1,0 +1,804 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:51:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:51:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: rmhSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 129 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='id'>          | alasan: incompatible
+  ?? SKIP <button type='submit' id='sale' name='' placeholder='' text='Dijual'>  | alasan: incompatible
+  ?? SKIP <button type='submit' id='rent' name='' placeholder='' text='Disewa'>  | alasan: incompatible
+  ?? SKIP <button type='submit' id='newLaunch' name='' placeholder='' text='P... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Cari'>        | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Lihat Sele... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Acak Penca... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='submit' id='properti-dijual-di-indonesia' name='' pla... | alasan: incompatible
+  ?? SKIP <button type='submit' id='lokasi-paling-banyak-dicari' name='' plac... | alasan: incompatible
+  ?? SKIP <button type='submit' id='properti-unggulan' name='' placeholder=''... | alasan: incompatible
+  ?? SKIP <button type='submit' id='ragam-hunian' name='' placeholder='' text... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Tampilkan ... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Kembali ke... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Close spla... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Previous s... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Next splash'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Go to spla... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Go to spla... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Go to spla... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Go to spla... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Go to spla... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pasang Iklan'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dijual'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disewa'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Baru'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aset Bank'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KPR'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lainnya'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Carikan Saya Properti'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Agen'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Perusahaan'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aplikasi'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Carikan Properti'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cari Agen'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Turun Harga'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kalkulator KPR'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pindah KPR (Take Over)'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tanya Forum (Teras123)'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lainnya'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jelajahi properti di ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 1,29 Miliar'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 5 Jutaan/bulan'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rumah Furnished Tanah... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cinere, Depok'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 700 Juta'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 3 Jutaan/bulan'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hunian Modern Nyaman ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pedungan, Denpasar'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 14 Juta /bulan'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disewkan Apartemen Em... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Setiabudi, Jakarta Se... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 25 Juta /tahun'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rumah Compact Termura... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gading Serpong, Tange... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sewa Apartement, Deka... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Furnished'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1 Kamar/Studio'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='2 Kamar'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Apartemen Praktis Sek... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Furnished'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1 Kamar/Studio'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='2 Kamar'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sewa Apartemen Prakti... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1 Kamar/Studio'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='2 Kamar'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Furnished'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hunian Strategis Deka... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kos'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Apartment'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rumah'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Brawijaya
+Serpong... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nuone At Arcova Grand... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cimanggis Golf Estate... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Parkland Podomoro
+Kar... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Padma Serang
+Serang, ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bukit Podomoro Jakart... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 1,5 Miliar - 3 Mil... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rp 1,23 Miliar - 6,8 ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cari Properti'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jual Properti'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pelajari Lebih Lanjut'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hitung KPR'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Selengkapnya'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='infopengaduan@rumah12... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='0853 1111 1010'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ac... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Be... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Da... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di DK... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Go... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Properti Dijual di Ka... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tentang Kami'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Produk & Layanan'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Partner'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Karir'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pressroom'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KPR'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Syarat Penggunaan'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Syarat Penggunaan Agen'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='99.co Indonesia'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='99.co Singapura'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='SRX'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='info@rumah123.com'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='+62 21 30496123'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? CAND <input type='text' id='rmhSearchInputRefactor' name='' placeholder=... ? combined=1.0000
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 128
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=RMH-SH-001 | Skenario: rumah123_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 25293 ms
+  Elemen dipilih: <input type="text" autocomplete="off" autocorrect="off" placeholder="Lokasi, key
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=25293ms
+[HealingDriver] Elemen dipilih: <input type='text' id='rmhSearchInputRefactor' name='' placeholder='Lokasi, keyword, area, project, developer' text='...
+Oct 02, 2026 10:52:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:52:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: rmhSearchButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 127 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='id'>          ? combined=0.0000
+  ?? CAND <button type='submit' id='sale' name='' placeholder='' text='Dijual'>  ? combined=0.2004
+  ?? CAND <button type='submit' id='rent' name='' placeholder='' text='Disewa'>  ? combined=0.0662
+  ?? CAND <button type='submit' id='newLaunch' name='' placeholder='' text='P... ? combined=0.1623
+  ?? CAND <button type='submit' id='rmhSearchButtonRefactor' name='' placehol... ? combined=1.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Lihat Sele... ? combined=0.0347
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Acak Penca... ? combined=0.5313
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='properti-dijual-di-indonesia' name='' pla... ? combined=0.1116
+  ?? CAND <button type='submit' id='lokasi-paling-banyak-dicari' name='' plac... ? combined=0.5868
+  ?? CAND <button type='submit' id='properti-unggulan' name='' placeholder=''... ? combined=0.1176
+  ?? CAND <button type='submit' id='ragam-hunian' name='' placeholder='' text... ? combined=0.2145
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Tampilkan ... ? combined=0.0568
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Kembali ke... ? combined=0.0833
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Close spla... ? combined=0.0987
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Previous s... ? combined=0.0417
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next splash'> ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0446
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0446
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0446
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0446
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pasang Iklan'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dijual'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disewa'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Baru'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aset Bank'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Saya Properti'>  ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Agen'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perusahaan'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aplikasi'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Properti'>       ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Agen'>              ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Turun Harga'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalkulator KPR'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pindah KPR (Take Over)'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tanya Forum (Teras123)'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi properti di ... ? combined=0.0318
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 28 Juta /tahun'>      ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Disewakan Harga... ? combined=0.0375
+  ?? CAND <a type='' id='' name='' placeholder='' text='Alam Sutera, Tangerang'> ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 75 Juta /tahun'>      ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disewakan Klasika Vic... ? combined=0.0357
+  ?? CAND <a type='' id='' name='' placeholder='' text='Grand Wisata, Bekasi'>   ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 20 Juta /tahun'>      ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Green Pramuka Cit... ? combined=0.0472
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cempaka Putih, Jakart... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 23 Juta /tahun'>      ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='DISEWAKAN APARTMENT T... ? combined=0.0247
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kemayoran, Jakarta Pu... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rekomendasi Hunian De... ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kos'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartment'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sewa Apartment Dekat ... ? combined=0.0268
+  ?? CAND <a type='' id='' name='' placeholder='' text='UMN'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prasmul'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Binus Alsut'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='UPH'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rekomendasi Hunian Ny... ? combined=0.0227
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartment'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kos'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hunian Strategis Deka... ? combined=0.0408
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kos'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartment'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Brawijaya
+Serpong... ? combined=0.0218
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nuone At Arcova Grand... ? combined=0.0263
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cimanggis Golf Estate... ? combined=0.0291
+  ?? CAND <a type='' id='' name='' placeholder='' text='Parkland Podomoro
+Kar... ? combined=0.0208
+  ?? CAND <a type='' id='' name='' placeholder='' text='Padma Serang
+Serang, ... ? combined=0.0257
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bukit Podomoro Jakart... ? combined=0.0191
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,5 Miliar - 3 Mil... ? combined=0.0203
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,23 Miliar - 6,8 ... ? combined=0.0225
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Properti'>          ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jual Properti'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari Lebih Lanjut'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hitung KPR'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='infopengaduan@rumah12... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='0853 1111 1010'>         ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ac... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Be... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Da... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di DK... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Go... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0431
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ka... ? combined=0.0357
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Produk & Layanan'>       ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Partner'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.3750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pressroom'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan Agen'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Indonesia'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Singapura'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='SRX'>                    ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='info@rumah123.com'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 21 30496123'>        ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? SKIP <input type='text' id='' name='' placeholder='Lokasi, keyword, area... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 126 | Kandidat dilewati: 1
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=RMH-SH-002 | Skenario: rumah123_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 32850 ms
+  Elemen dipilih: <button type="submit" class="ui-atomic-button ui-atomic-button--theme-primary ui
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=32850ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='rmhSearchButtonRefactor' name='' placeholder='' text='Cari'>
+Oct 02, 2026 10:53:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:53:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: rmhLogo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 120 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='id'>          ? combined=0.0000
+  ?? CAND <button type='submit' id='sale' name='' placeholder='' text='Dijual'>  ? combined=0.1250
+  ?? CAND <button type='submit' id='rent' name='' placeholder='' text='Disewa'>  ? combined=0.1250
+  ?? CAND <button type='submit' id='newLaunch' name='' placeholder='' text='P... ? combined=0.1375
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Cari'>        ? combined=0.0781
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Lihat Sele... ? combined=0.0347
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Acak Penca... ? combined=0.0446
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='properti-dijual-di-indonesia' name='' pla... ? combined=0.0982
+  ?? CAND <button type='submit' id='lokasi-paling-banyak-dicari' name='' plac... ? combined=0.0648
+  ?? CAND <button type='submit' id='properti-unggulan' name='' placeholder=''... ? combined=0.1397
+  ?? CAND <button type='submit' id='ragam-hunian' name='' placeholder='' text... ? combined=0.2500
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Tampilkan ... ? combined=0.0852
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Kembali ke... ? combined=0.0833
+  ?? CAND <a type='' id='rmhLogoRefactor' name='' placeholder='' text='rmhLog... ? combined=0.4485
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pasang Iklan'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dijual'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disewa'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Baru'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aset Bank'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Saya Properti'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Agen'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perusahaan'>             ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aplikasi'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Properti'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Agen'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Turun Harga'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalkulator KPR'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pindah KPR (Take Over)'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tanya Forum (Teras123)'> ? combined=0.2188
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi properti di ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 150 Juta'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 690 Ribuan/bulan'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Di Jual Cepat Super B... ? combined=0.0336
+  ?? CAND <a type='' id='' name='' placeholder='' text='Malalayang, Manado'>     ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 100 Juta /tahun'>     ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='*Disewakan Rumah Uk 8... ? combined=0.0509
+  ?? CAND <a type='' id='' name='' placeholder='' text='Permata Buana, Jakart... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 5,62 Juta /bulan'>    ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Minimalis, Bagu... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bintaro, Tangerang Se... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,69 Miliar'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 7 Jutaan/bulan'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Baru 2 Lantai O... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nusa Dua, Badung'>       ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sewa Apartemen Prakti... ? combined=0.0475
+  ?? CAND <a type='' id='' name='' placeholder='' text='1 Kamar/Studio'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='2 Kamar'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Furnished'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartemen Praktis Sek... ? combined=0.0560
+  ?? CAND <a type='' id='' name='' placeholder='' text='Furnished'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='1 Kamar/Studio'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='2 Kamar'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pilihan Hunian Mahasi... ? combined=0.0532
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kos'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartment'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sewa Apartment Prakti... ? combined=0.0302
+  ?? CAND <a type='' id='' name='' placeholder='' text='UNAIR'>                  ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ubaya'>                  ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='UNESA'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='UPN Veteran'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Brawijaya
+Serpong... ? combined=0.0291
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nuone At Arcova Grand... ? combined=0.0263
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cimanggis Golf Estate... ? combined=0.0436
+  ?? CAND <a type='' id='' name='' placeholder='' text='Parkland Podomoro
+Kar... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='Padma Serang
+Serang, ... ? combined=0.0514
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bukit Podomoro Jakart... ? combined=0.0383
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,5 Miliar - 3 Mil... ? combined=0.0305
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,23 Miliar - 6,8 ... ? combined=0.0338
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Properti'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jual Properti'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari Lebih Lanjut'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hitung KPR'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='infopengaduan@rumah12... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='0853 1111 1010'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ac... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Be... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Da... ? combined=0.0556
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di DK... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Go... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0647
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0647
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ka... ? combined=0.0714
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Produk & Layanan'>       ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Partner'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pressroom'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan Agen'> ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Indonesia'>        ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Singapura'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='SRX'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='info@rumah123.com'>      ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 21 30496123'>        ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <input type='text' id='' name='' placeholder='Lokasi, keyword, area... ? combined=0.0338
+[HealingDriver] Kandidat kompatibel: 120 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=RMH-SH-003 | Skenario: rumah123_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.6250
+  Waktu healing: 29945 ms
+  Elemen dipilih: <a class="map-view-banner" href="/peta-harga-properti/?itm_source=organic&amp;it
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.6250 | time=29945ms
+[HealingDriver] Elemen dipilih: <a type='' id='' name='' placeholder='' text='Jelajahi properti di Jakarta lewat pe...'>
+Oct 02, 2026 10:53:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:53:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: rmhDijual
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 116 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='id'>          ? combined=0.1042
+  ?? CAND <button type='submit' id='sale' name='' placeholder='' text='Dijual'>  ? combined=0.6625
+  ?? CAND <button type='submit' id='rent' name='' placeholder='' text='Disewa'>  ? combined=0.2458
+  ?? CAND <button type='submit' id='newLaunch' name='' placeholder='' text='P... ? combined=0.1337
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Cari'>        ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Lihat Sele... ? combined=0.0694
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Acak Penca... ? combined=0.0446
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='properti-dijual-di-indonesia' name='' pla... ? combined=0.8125
+  ?? CAND <button type='submit' id='lokasi-paling-banyak-dicari' name='' plac... ? combined=0.1111
+  ?? CAND <button type='submit' id='properti-unggulan' name='' placeholder=''... ? combined=0.1985
+  ?? CAND <button type='submit' id='ragam-hunian' name='' placeholder='' text... ? combined=0.1979
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Tampilkan ... ? combined=0.0852
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Kembali ke... ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pasang Iklan'>           ? combined=0.1042
+  ?? CAND <a type='' id='rmhDijualRefactor' name='' placeholder='' text='Diju... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disewa'>                 ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Baru'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aset Bank'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Saya Properti'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Agen'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perusahaan'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aplikasi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Properti'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Agen'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Turun Harga'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalkulator KPR'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pindah KPR (Take Over)'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tanya Forum (Teras123)'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi properti di ... ? combined=0.0530
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 89,9 Juta'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 410 Ribuan/bulan'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Dijual Kota Bar... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kota Baru, Jambi'>       ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 18 Juta /tahun'>      ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Dikontrakkan Al... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tegalrejo, Yogyakarta'>  ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 16,5 Juta /tahun'>    ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Siap Huni Hrg M... ? combined=0.0493
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semarang Timur, Semar... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,35 Miliar'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 6 Jutaan/bulan'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Siap Huni Perce... ? combined=0.0610
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cempaka Putih, Jakart... ? combined=0.0926
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maba Merapat! Kos Mur... ? combined=0.0321
+  ?? CAND <a type='' id='' name='' placeholder='' text='UNDIP'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sewa Apartemen Prakti... ? combined=0.0316
+  ?? CAND <a type='' id='' name='' placeholder='' text='1 Kamar/Studio'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='2 Kamar'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Furnished'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pilihan Hunian Mahasi... ? combined=0.0399
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kos'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartment'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rekomendasi Hunian Ny... ? combined=0.0455
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartment'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kos'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Brawijaya
+Serpong... ? combined=0.0363
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nuone At Arcova Grand... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cimanggis Golf Estate... ? combined=0.0291
+  ?? CAND <a type='' id='' name='' placeholder='' text='Parkland Podomoro
+Kar... ? combined=0.0278
+  ?? CAND <a type='' id='' name='' placeholder='' text='Padma Serang
+Serang, ... ? combined=0.0342
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bukit Podomoro Jakart... ? combined=0.0383
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,5 Miliar - 3 Mil... ? combined=0.0203
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,23 Miliar - 6,8 ... ? combined=0.0282
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Properti'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jual Properti'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari Lebih Lanjut'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hitung KPR'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='infopengaduan@rumah12... ? combined=0.0721
+  ?? CAND <a type='' id='' name='' placeholder='' text='0853 1111 1010'>         ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ac... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Be... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Da... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di DK... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Go... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ka... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Produk & Layanan'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Partner'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pressroom'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan Agen'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Indonesia'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Singapura'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='SRX'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='info@rumah123.com'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 21 30496123'>        ? combined=0.0000
+  ?? CAND <input type='text' id='' name='' placeholder='Lokasi, keyword, area... ? combined=0.0507
+[HealingDriver] Kandidat kompatibel: 116 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=RMH-SH-004 | Skenario: rumah123_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 27443 ms
+  Elemen dipilih: <a title="Properti Dijual" aria-expanded="false" aria-haspopup="true" class="tex
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=27443ms
+[HealingDriver] Elemen dipilih: <a type='' id='rmhDijualRefactor' name='' placeholder='' text='Dijual'>
+Oct 02, 2026 10:54:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:54:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: rmhDisewa
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 127 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='id'>          ? combined=0.1042
+  ?? CAND <button type='submit' id='sale' name='' placeholder='' text='Dijual'>  ? combined=0.2458
+  ?? CAND <button type='submit' id='rent' name='' placeholder='' text='Disewa'>  ? combined=0.7000
+  ?? CAND <button type='submit' id='newLaunch' name='' placeholder='' text='P... ? combined=0.1337
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Cari'>        ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Lihat Sele... ? combined=0.1389
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Acak Penca... ? combined=0.0893
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='properti-dijual-di-indonesia' name='' pla... ? combined=0.1696
+  ?? CAND <button type='submit' id='lokasi-paling-banyak-dicari' name='' plac... ? combined=0.0880
+  ?? CAND <button type='submit' id='properti-unggulan' name='' placeholder=''... ? combined=0.1397
+  ?? CAND <button type='submit' id='ragam-hunian' name='' placeholder='' text... ? combined=0.1146
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Tampilkan ... ? combined=0.0852
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Kembali ke... ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Close spla... ? combined=0.0987
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Previous s... ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Next splash'> ? combined=0.1136
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Go to spla... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pasang Iklan'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dijual'>                 ? combined=0.2083
+  ?? CAND <a type='' id='rmhDisewaRefactor' name='' placeholder='' text='Dise... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Baru'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aset Bank'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Saya Properti'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Agen'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Perusahaan'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aplikasi'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carikan Properti'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Agen'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Turun Harga'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalkulator KPR'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pindah KPR (Take Over)'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tanya Forum (Teras123)'> ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lainnya'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi properti di ... ? combined=0.0530
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 330 Juta /tahun'>     ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Furnished Townhouse 3... ? combined=0.0601
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kemang, Jakarta Selat... ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 358 Juta'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1 Jutaan/bulan'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dijual Rumah Baru Har... ? combined=0.0455
+  ?? CAND <a type='' id='' name='' placeholder='' text='Denpasar Barat, Denpa... ? combined=0.1087
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 260 Juta'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1 Jutaan/bulan'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Green Pramuka Cit... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cempaka Putih, Jakart... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 375 Juta'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1 Jutaan/bulan'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rumah Dp Rendah Angsu... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tamalate, Makassar'>     ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kost Jakarta Nyaman, ... ? combined=0.0558
+  ?? CAND <a type='' id='' name='' placeholder='' text='AC'>                     ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Free WIFI'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Parkir'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rekomendasi Hunian De... ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kos'>                    ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Apartment'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maba Merapat! Kos Mur... ? combined=0.0321
+  ?? CAND <a type='' id='' name='' placeholder='' text='UNDIP'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rekomendasi Sewa Ruma... ? combined=0.0586
+  ?? CAND <a type='' id='' name='' placeholder='' text='2 Kamar'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='3 Kamar'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Furnished'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Brawijaya
+Serpong... ? combined=0.0291
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nuone At Arcova Grand... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cimanggis Golf Estate... ? combined=0.0291
+  ?? CAND <a type='' id='' name='' placeholder='' text='Parkland Podomoro
+Kar... ? combined=0.0278
+  ?? CAND <a type='' id='' name='' placeholder='' text='Padma Serang
+Serang, ... ? combined=0.0342
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bukit Podomoro Jakart... ? combined=0.0255
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,5 Miliar - 3 Mil... ? combined=0.0254
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rp 1,23 Miliar - 6,8 ... ? combined=0.0225
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari Properti'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jual Properti'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelajari Lebih Lanjut'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hitung KPR'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='infopengaduan@rumah12... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='0853 1111 1010'>         ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ac... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ba... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Be... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Da... ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di DK... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Go... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0862
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ja... ? combined=0.0862
+  ?? CAND <a type='' id='' name='' placeholder='' text='Properti Dijual di Ka... ? combined=0.0536
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Produk & Layanan'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Partner'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pressroom'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iklankan Properti'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='KPR'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat Penggunaan Agen'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Indonesia'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='99.co Singapura'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='SRX'>                    ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='info@rumah123.com'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='+62 21 30496123'>        ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <input type='text' id='' name='' placeholder='Lokasi, keyword, area... ? combined=0.0676
+[HealingDriver] Kandidat kompatibel: 127 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=RMH-SH-005 | Skenario: rumah123_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 29051 ms
+  Elemen dipilih: <a title="Sewa Properti" aria-expanded="false" aria-haspopup="true" class="text-
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=29051ms
+[HealingDriver] Elemen dipilih: <a type='' id='rmhDisewaRefactor' name='' placeholder='' text='Disewa'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 5
+  Berhasil dipulihkan         : 5
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 28916.40 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\rumah123_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 165.2 s <<< FAILURE! -- in com.fulvian.tests.TestRumah123Healing
+[ERROR] com.fulvian.tests.TestRumah123Healing.rmhSh003_logo -- Time elapsed: 33.41 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <rmhLogoRefactor> but was: <>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestRumah123Healing.rmhSh003_logo(TestRumah123Healing.java:115)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Failures: 
+[ERROR]   TestRumah123Healing.rmhSh003_logo:115 expected: <rmhLogoRefactor> but was: <>
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

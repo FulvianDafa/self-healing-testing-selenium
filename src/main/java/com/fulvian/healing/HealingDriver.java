@@ -4,6 +4,8 @@ import org.openqa.selenium.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.stream.Collectors;
 
 /**
@@ -34,6 +36,8 @@ public class HealingDriver {
     private final String testCaseId;
     private final String scenarioType;
     private final double threshold;
+
+    private static final AtomicLong ATTEMPT_SEQUENCE = new AtomicLong();
 
     private static final String[] INTERACTIVE_TAGS = {
             "button", "a", "input", "select", "textarea"
@@ -80,12 +84,14 @@ public class HealingDriver {
         }
 
         long healStart = System.currentTimeMillis();
+        String sut = resolveSut();
+        String attemptId = createAttemptId(sut);
 
         // Tahap 2: ambil kandidat elemen dari DOM
         List<WebElement> candidates = getAllInteractiveElements(profile);
 
         if (candidates.isEmpty()) {
-            logAndThrow(locator, healStart,
+            logAndThrow(locator, healStart, attemptId, sut,
                     "Tidak ada elemen interaktif ditemukan di DOM");
         }
 
@@ -96,73 +102,73 @@ public class HealingDriver {
         double bestScore = -1.0;
         WebElement bestElement = null;
 
-        double bestText = 0.0;
-        double bestLocator = 0.0;
-        double bestPosition = 0.0;
+        SimilarityEngine.ScoreResult bestScoreResult =
+                new SimilarityEngine.ScoreResult(0.0, 0.0, 0.0, 0.0);
 
         int skippedIncompatible = 0;
         int evaluatedCompatible = 0;
+        int candidateIndex = 0;
+        List<CandidateObservation> observations = new ArrayList<>();
 
         for (WebElement candidate : candidates) {
+            candidateIndex++;
             try {
-                // FIX UTAMA:
-                // Jangan langsung hitung similarity.
-                // Filter dulu apakah kandidat kompatibel dengan target lama.
-                if (!isCompatibleElement(profile, candidate)) {
+                // Compatibility tetap dihitung sebelum kandidat dapat ikut ranking.
+                // Hanya kandidat yang lolos filter yang memiliki score produksi;
+                // kandidat lain tetap dicatat dengan status dan score kosong.
+                boolean compatible = isCompatibleElement(profile, candidate);
+                SimilarityEngine.ScoreResult scoreResult = compatible
+                        ? SimilarityEngine.calculateCombinedScoreWithDetail(profile, candidate)
+                        : null;
+                String candidateDesc = describeCandidate(candidate);
+                String candidateIdentifier = identifyCandidate(candidate, candidateIndex);
+                boolean isTarget = isGroundTruthTarget(profile, candidate);
+
+                observations.add(new CandidateObservation(
+                        candidate,
+                        candidateIdentifier,
+                        candidateDesc,
+                        compatible ? "EVALUATED" : "SKIPPED_INCOMPATIBLE",
+                        scoreResult,
+                        isTarget
+                ));
+
+                if (!compatible) {
                     skippedIncompatible++;
 
-                    String candidateDesc = describeCandidate(candidate);
                     System.out.printf("  ├─ SKIP %-70s | alasan: incompatible%n",
                             truncate(candidateDesc, 70));
-                    
-                    // Log candidate skipped
-                    HealingLogger.logCandidate(new CandidateResult(
-                            testCaseId,
-                            locator.toString(),
-                            candidateDesc,
-                            0.0, 0.0, 0.0, 0.0,
-                            "SKIPPED_INCOMPATIBLE"
-                    ));
-                    
                     continue;
                 }
 
                 evaluatedCompatible++;
-
-                double score = SimilarityEngine.calculateCombinedScore(profile, candidate);
-                String candidateDesc = describeCandidate(candidate);
+                double score = scoreResult.combinedScore;
 
                 System.out.printf("  ├─ CAND %-70s → combined=%.4f%n",
                         truncate(candidateDesc, 70), score);
 
-                // Hitung skor komponen untuk dilog ke file candidate
-                double cText = calculateTextScore(profile, candidate);
-                double cLocator = calculateLocatorScore(profile, candidate);
-                double cPos = calculatePositionScore(profile, candidate);
-
-                // Log candidate evaluated
-                HealingLogger.logCandidate(new CandidateResult(
-                        testCaseId,
-                        locator.toString(),
-                        candidateDesc,
-                        cText, cLocator, cPos, score,
-                        "EVALUATED"
-                ));
-
                 if (score > bestScore) {
                     bestScore = score;
                     bestElement = candidate;
-
-                    bestText = cText;
-                    bestLocator = cLocator;
-                    bestPosition = cPos;
+                    bestScoreResult = scoreResult;
                 }
 
             } catch (StaleElementReferenceException ignored) {
-                // Elemen sudah stale, lewati saja
+                observations.add(CandidateObservation.error(
+                        candidate,
+                        String.format(Locale.ROOT, "candidate-%04d", candidateIndex),
+                        "stale element",
+                        "EVALUATION_ERROR_STALE"
+                ));
             } catch (Exception ex) {
                 // Supaya satu kandidat error tidak menggagalkan seluruh proses healing
                 System.out.printf("  ├─ SKIP candidate error: %s%n", ex.getMessage());
+                observations.add(CandidateObservation.error(
+                        candidate,
+                        String.format(Locale.ROOT, "candidate-%04d", candidateIndex),
+                        ex.getMessage(),
+                        "EVALUATION_ERROR"
+                ));
             }
         }
 
@@ -171,18 +177,31 @@ public class HealingDriver {
         System.out.printf("[HealingDriver] Kandidat kompatibel: %d | Kandidat dilewati: %d%n",
                 evaluatedCompatible, skippedIncompatible);
 
+        boolean selectionAccepted = bestElement != null && bestScore >= threshold;
+        logCandidateObservations(
+                observations,
+                attemptId,
+                sut,
+                locator,
+                profile.lastKnownLocation != null,
+                selectionAccepted ? bestElement : null
+        );
+
         // Tahap 4: evaluasi hasil healing
-        if (bestElement != null && bestScore >= threshold) {
+        if (selectionAccepted) {
             String html = safeGetAttribute(bestElement, "outerHTML");
 
             HealingLogger.log(new HealingResult(
+                    attemptId,
                     testCaseId,
+                    sut,
                     scenarioType,
                     locator.toString(),
                     "SUCCESS",
-                    bestText,
-                    bestLocator,
-                    bestPosition,
+                    bestScoreResult.textScore,
+                    bestScoreResult.locatorScore,
+                    bestScoreResult.positionScore,
+                    profile.lastKnownLocation != null,
                     bestScore,
                     html,
                     healTime,
@@ -199,13 +218,16 @@ public class HealingDriver {
 
         // Tahap 5: healing gagal
         HealingLogger.log(new HealingResult(
+                attemptId,
                 testCaseId,
+                sut,
                 scenarioType,
                 locator.toString(),
                 "FAIL",
-                bestText,
-                bestLocator,
-                bestPosition,
+                bestScoreResult.textScore,
+                bestScoreResult.locatorScore,
+                bestScoreResult.positionScore,
+                profile.lastKnownLocation != null,
                 bestScore < 0 ? 0.0 : bestScore,
                 "-",
                 healTime,
@@ -665,37 +687,6 @@ public class HealingDriver {
     }
 
     // -------------------------------------------------------
-    // SKOR KOMPONEN UNTUK LOGGING
-    // -------------------------------------------------------
-
-    private double calculateTextScore(ElementProfile profile, WebElement candidate) {
-        String expected = SimilarityEngine.normalizeText(getSafe(profile.expectedText));
-        String actual = SimilarityEngine.normalizeText(getCandidateReadableText(candidate));
-
-        return SimilarityEngine.calculateLevenshteinSimilarity(expected, actual);
-    }
-
-    private double calculateLocatorScore(ElementProfile profile, WebElement candidate) {
-        String expected = SimilarityEngine.normalizeText(getSafe(profile.originalLocatorValue));
-
-        String attrName = resolveLocatorAttributeName(profile.locatorType);
-        String actual = SimilarityEngine.normalizeText(safeGetAttribute(candidate, attrName));
-
-        return SimilarityEngine.calculateLevenshteinSimilarity(expected, actual);
-    }
-
-    private double calculatePositionScore(ElementProfile profile, WebElement candidate) {
-        if (profile.lastKnownLocation == null) {
-            return 0.0;
-        }
-
-        return SimilarityEngine.calculatePositionSimilarity(
-                profile.lastKnownLocation,
-                candidate.getLocation()
-        );
-    }
-
-    // -------------------------------------------------------
     // SIGNATURE HELPER
     // -------------------------------------------------------
 
@@ -897,17 +888,121 @@ public class HealingDriver {
         return s.substring(0, Math.max(0, max - 3)) + "...";
     }
 
-    private void logAndThrow(By locator, long healStart, String reason) {
+    private String createAttemptId(String sut) {
+        return String.format(
+                Locale.ROOT,
+                "%s-%s-%d-%06d",
+                sanitizeIdentifier(sut),
+                sanitizeIdentifier(testCaseId),
+                System.currentTimeMillis(),
+                ATTEMPT_SEQUENCE.incrementAndGet()
+        );
+    }
+
+    private String resolveSut() {
+        String configured = System.getProperty("healing.sut");
+        if (!isBlank(configured)) {
+            return configured.trim().toLowerCase(Locale.ROOT);
+        }
+
+        String normalizedScenario = getSafe(scenarioType).toLowerCase(Locale.ROOT);
+        int changeSuffix = normalizedScenario.indexOf("_id_change");
+        if (changeSuffix > 0) {
+            return normalizedScenario.substring(0, changeSuffix);
+        }
+
+        try {
+            String currentUrl = driver.getCurrentUrl();
+            String host = java.net.URI.create(currentUrl).getHost();
+            if (!isBlank(host)) {
+                return host.toLowerCase(Locale.ROOT).replaceFirst("^www\\.", "");
+            }
+        } catch (Exception ignored) {
+            // Logging provenance should never interrupt healing.
+        }
+
+        return "unknown";
+    }
+
+    private String sanitizeIdentifier(String value) {
+        String sanitized = getSafe(value).toLowerCase(Locale.ROOT)
+                .replaceAll("[^a-z0-9]+", "-")
+                .replaceAll("(^-+|-+$)", "");
+        return sanitized.isEmpty() ? "unknown" : sanitized;
+    }
+
+    private String identifyCandidate(WebElement candidate, int index) {
+        return String.format(
+                Locale.ROOT,
+                "candidate-%04d|tag=%s|id=%s|name=%s",
+                index,
+                safeGetTagName(candidate),
+                safeGetAttribute(candidate, "id"),
+                safeGetAttribute(candidate, "name")
+        );
+    }
+
+    /**
+     * Ground truth berasal dari marker yang ditambahkan test saat DOM dimutasi.
+     * Nilai ini hanya dicatat setelah ranking dan tidak pernah dipakai untuk selection.
+     */
+    private boolean isGroundTruthTarget(ElementProfile profile, WebElement candidate) {
+        String expected = getSafe(profile.originalLocatorValue).trim();
+        if (expected.isEmpty()) return false;
+
+        return expected.equals(safeGetAttribute(candidate, "data-self-healing-mutated-from"))
+                || expected.equals(safeGetAttribute(candidate, "data-self-healing-old-id"))
+                || expected.equals(safeGetAttribute(candidate, "data-healing-target"));
+    }
+
+    private void logCandidateObservations(List<CandidateObservation> observations,
+                                          String attemptId,
+                                          String sut,
+                                          By locator,
+                                          boolean positionAvailable,
+                                          WebElement selectedElement) {
+        boolean groundTruthAvailable = observations.stream().anyMatch(o -> o.isTarget);
+
+        for (CandidateObservation observation : observations) {
+            SimilarityEngine.ScoreResult score = observation.scoreResult;
+            HealingLogger.logCandidate(new CandidateResult(
+                    attemptId,
+                    testCaseId,
+                    sut,
+                    locator.toString(),
+                    observation.candidateIdentifier,
+                    observation.candidateDescription,
+                    score == null ? null : score.textScore,
+                    score == null ? null : score.locatorScore,
+                    score == null ? null : score.positionScore,
+                    positionAvailable,
+                    score == null ? null : score.combinedScore,
+                    observation.status,
+                    selectedElement != null && observation.element == selectedElement,
+                    groundTruthAvailable,
+                    observation.isTarget
+            ));
+        }
+    }
+
+    private void logAndThrow(By locator,
+                             long healStart,
+                             String attemptId,
+                             String sut,
+                             String reason) {
         long healTime = System.currentTimeMillis() - healStart;
 
         HealingLogger.log(new HealingResult(
+                attemptId,
                 testCaseId,
+                sut,
                 scenarioType,
                 locator.toString(),
                 "FAIL",
                 0,
                 0,
                 0,
+                false,
                 0,
                 reason,
                 healTime,
@@ -917,5 +1012,42 @@ public class HealingDriver {
         throw new NoSuchElementException(
                 "[HealingDriver] " + reason + " | Locator: " + locator
         );
+    }
+
+    private static class CandidateObservation {
+        final WebElement element;
+        final String candidateIdentifier;
+        final String candidateDescription;
+        final String status;
+        final SimilarityEngine.ScoreResult scoreResult;
+        final boolean isTarget;
+
+        CandidateObservation(WebElement element,
+                             String candidateIdentifier,
+                             String candidateDescription,
+                             String status,
+                             SimilarityEngine.ScoreResult scoreResult,
+                             boolean isTarget) {
+            this.element = element;
+            this.candidateIdentifier = candidateIdentifier;
+            this.candidateDescription = candidateDescription;
+            this.status = status;
+            this.scoreResult = scoreResult;
+            this.isTarget = isTarget;
+        }
+
+        static CandidateObservation error(WebElement element,
+                                          String candidateIdentifier,
+                                          String description,
+                                          String status) {
+            return new CandidateObservation(
+                    element,
+                    candidateIdentifier,
+                    description == null ? "candidate evaluation error" : description,
+                    status,
+                    null,
+                    false
+            );
+        }
     }
 }

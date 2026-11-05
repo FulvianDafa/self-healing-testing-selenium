@@ -1,0 +1,371 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:57:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:57:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tgtSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 26 kandidat elemen...
+  ?? SKIP <button type='button' id='zip-code-id-btn' name='' placeholder='' t... | alasan: incompatible
+  ?? SKIP <button type='button' id='web-store-id-msg-btn' name='' placeholder... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='search by ... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='search'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Sign in or... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='close'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Shop all H... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='skip to main content'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='skip to footer'>         | alasan: incompatible
+  ?? SKIP <a type='' id='utilityNav-circle' name='' placeholder='' text='Targ... | alasan: incompatible
+  ?? SKIP <a type='' id='utilityNav-circleCardLI' name='' placeholder='' text... | alasan: incompatible
+  ?? SKIP <a type='' id='utilityNav-circle360' name='' placeholder='' text='T... | alasan: incompatible
+  ?? SKIP <a type='' id='utilityNav-registries' name='' placeholder='' text='... | alasan: incompatible
+  ?? SKIP <a type='' id='utilityNav-weeklyAd' name='' placeholder='' text='We... | alasan: incompatible
+  ?? SKIP <a type='' id='utilityNav-findStores' name='' placeholder='' text='... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Target home'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Categories'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Deals'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pickup & delivery'>      | alasan: incompatible
+  ?? SKIP <a type='' id='account-sign-in' name='' placeholder='' text='Account'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='cart 0 items'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shop all Halloween'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Under
+
+$10'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='From
+
+$15'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='From
+
+1
+.
+29'>           | alasan: incompatible
+  ?? CAND <input type='search' id='tgtSearchInputRefactor' name='searchTerm' ... ? combined=0.7426
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 25
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TGT-SH-001 | Skenario: target_id_change
+  Status       : SUCCESS
+  Skor teks    : 0.5882  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.7426
+  Waktu healing: 5213 ms
+  Elemen dipilih: <input aria-label="What can we help you find? suggestions appear below" autocapi
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.7426 | time=5213ms
+[HealingDriver] Elemen dipilih: <input type='search' id='tgtSearchInputRefactor' name='searchTerm' placeholder='What can we help you find?' text='Wha...
+Oct 02, 2026 10:57:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:57:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tgtSearchButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 26 kandidat elemen...
+  ?? CAND <button type='button' id='zip-code-id-btn' name='' placeholder='' t... ? combined=0.1451
+  ?? CAND <button type='button' id='web-store-id-msg-btn' name='' placeholder... ? combined=0.2040
+  ?? CAND <button type='button' id='' name='' placeholder='' text='search by ... ? combined=0.6250
+  ?? CAND <button type='submit' id='tgtSearchButtonRefactor' name='' placehol... ? combined=1.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Sign in or... ? combined=0.1000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='close'>       ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Shop all H... ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='skip to main content'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='skip to footer'>         ? combined=0.0446
+  ?? CAND <a type='' id='utilityNav-circle' name='' placeholder='' text='Targ... ? combined=0.1859
+  ?? CAND <a type='' id='utilityNav-circleCardLI' name='' placeholder='' text... ? combined=0.1907
+  ?? CAND <a type='' id='utilityNav-circle360' name='' placeholder='' text='T... ? combined=0.1817
+  ?? CAND <a type='' id='utilityNav-registries' name='' placeholder='' text='... ? combined=0.1723
+  ?? CAND <a type='' id='utilityNav-weeklyAd' name='' placeholder='' text='We... ? combined=0.1230
+  ?? CAND <a type='' id='utilityNav-findStores' name='' placeholder='' text='... ? combined=0.1952
+  ?? CAND <a type='' id='' name='' placeholder='' text='Target home'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Categories'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deals'>                  ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pickup & delivery'>      ? combined=0.0417
+  ?? CAND <a type='' id='account-sign-in' name='' placeholder='' text='Account'> ? combined=0.0637
+  ?? CAND <a type='' id='' name='' placeholder='' text='cart 0 items'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop all Halloween'>     ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Under
+
+$10'>             ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='From
+
+$15'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='From
+
+1
+.
+29'>           ? combined=0.0000
+  ?? SKIP <input type='search' id='search' name='searchTerm' placeholder='Wha... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 25 | Kandidat dilewati: 1
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TGT-SH-002 | Skenario: target_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 6334 ms
+  Elemen dipilih: <button aria-label="search" class="styles_searchButton__atdn9 " data-test="@web/
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=6334ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='tgtSearchButtonRefactor' name='' placeholder='' text='search'>
+Oct 02, 2026 10:57:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:57:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:58:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:58:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tgtLogo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 26 kandidat elemen...
+  ?? CAND <button type='button' id='zip-code-id-btn' name='' placeholder='' t... ? combined=0.1462
+  ?? CAND <button type='button' id='web-store-id-msg-btn' name='' placeholder... ? combined=0.2033
+  ?? CAND <button type='button' id='' name='' placeholder='' text='search by ... ? combined=0.2083
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='search'>      ? combined=0.1136
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Sign in or... ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='close'>       ? combined=0.1136
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Shop all H... ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='skip to main content'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='skip to footer'>         ? combined=0.1786
+  ?? CAND <a type='' id='utilityNav-circle' name='' placeholder='' text='Targ... ? combined=0.4471
+  ?? CAND <a type='' id='utilityNav-circleCardLI' name='' placeholder='' text... ? combined=0.3702
+  ?? CAND <a type='' id='utilityNav-circle360' name='' placeholder='' text='T... ? combined=0.3839
+  ?? CAND <a type='' id='utilityNav-registries' name='' placeholder='' text='... ? combined=0.1818
+  ?? CAND <a type='' id='utilityNav-weeklyAd' name='' placeholder='' text='We... ? combined=0.1607
+  ?? CAND <a type='' id='utilityNav-findStores' name='' placeholder='' text='... ? combined=0.2011
+  ?? CAND <a type='' id='tgtLogoRefactor' name='' placeholder='' text='Target... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Categories'>             ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deals'>                  ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pickup & delivery'>      ? combined=0.0833
+  ?? CAND <a type='' id='account-sign-in' name='' placeholder='' text='Account'> ? combined=0.1583
+  ?? CAND <a type='' id='' name='' placeholder='' text='cart 0 items'>           ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop all Halloween'>     ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Under
+
+$10'>             ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='From
+
+$15'>              ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='From
+
+1
+.
+29'>           ? combined=0.1136
+  ?? CAND <input type='search' id='search' name='searchTerm' placeholder='Wha... ? combined=0.1250
+[HealingDriver] Kandidat kompatibel: 26 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TGT-SH-004 | Skenario: target_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 5610 ms
+  Elemen dipilih: <a aria-label="Target home" class="styles_ndsLink__WPjeX styles_logoLinkDesktop_
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=5610ms
+[HealingDriver] Elemen dipilih: <a type='' id='tgtLogoRefactor' name='' placeholder='' text='Target home'>
+Oct 02, 2026 10:58:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:58:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tgtCategories
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 26 kandidat elemen...
+  ?? CAND <button type='button' id='zip-code-id-btn' name='' placeholder='' t... ? combined=0.1602
+  ?? CAND <button type='button' id='web-store-id-msg-btn' name='' placeholder... ? combined=0.1812
+  ?? CAND <button type='button' id='' name='' placeholder='' text='search by ... ? combined=0.0833
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='search'>      ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Sign in or... ? combined=0.1000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='close'>       ? combined=0.1875
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Shop all H... ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='skip to main content'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='skip to footer'>         ? combined=0.1339
+  ?? CAND <a type='' id='utilityNav-circle' name='' placeholder='' text='Targ... ? combined=0.2484
+  ?? CAND <a type='' id='utilityNav-circleCardLI' name='' placeholder='' text... ? combined=0.2254
+  ?? CAND <a type='' id='utilityNav-circle360' name='' placeholder='' text='T... ? combined=0.2542
+  ?? CAND <a type='' id='utilityNav-registries' name='' placeholder='' text='... ? combined=0.3693
+  ?? CAND <a type='' id='utilityNav-weeklyAd' name='' placeholder='' text='We... ? combined=0.1518
+  ?? CAND <a type='' id='utilityNav-findStores' name='' placeholder='' text='... ? combined=0.2846
+  ?? CAND <a type='' id='' name='' placeholder='' text='Target home'>            ? combined=0.1136
+  ?? CAND <a type='' id='tgtCategoriesRefactor' name='' placeholder='' text='... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deals'>                  ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pickup & delivery'>      ? combined=0.1316
+  ?? CAND <a type='' id='account-sign-in' name='' placeholder='' text='Account'> ? combined=0.1750
+  ?? CAND <a type='' id='' name='' placeholder='' text='cart 0 items'>           ? combined=0.2604
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shop all Halloween'>     ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Under
+
+$10'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='From
+
+$15'>              ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='From
+
+1
+.
+29'>           ? combined=0.0000
+  ?? CAND <input type='search' id='search' name='searchTerm' placeholder='Wha... ? combined=0.1786
+[HealingDriver] Kandidat kompatibel: 26 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TGT-SH-005 | Skenario: target_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 5450 ms
+  Elemen dipilih: <a aria-expanded="false" aria-label="Categories" data-test="@web/Header/MainMenu
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=5450ms
+[HealingDriver] Elemen dipilih: <a type='' id='tgtCategoriesRefactor' name='' placeholder='' text='Categories'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 4
+  Berhasil dipulihkan         : 4
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 5651.75 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\target_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 95.70 s <<< FAILURE! -- in com.fulvian.tests.TestTargetHealing
+[ERROR] com.fulvian.tests.TestTargetHealing.tgtSh002_searchButton -- Time elapsed: 17.19 s <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button aria-label="..." class="styles_searchButton__atdn9 " data-test="@web/Search/SearchButton" tabindex="0" type="submit" id="tgtSearchButtonRefactor" data-self-healing-old-id="tgtSearchButton" data-self-healing-mutated-from="tgtSearchButton">search</button> is not clickable at point (913, 92). Other element would receive the click: <iframe id="px-captcha-modal" style="display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 2147483647;"></iframe>
+  (Session info: chrome=154.0.8037.93)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8828dd575cb32338f6fe075a06eb4050, clickElement {id=f.1540D5A0EF9BE068A9474FD93F36E385.d.DC7340D3DCCC6A185E6CADD1532D1531.e.65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63373}, goog:processID: 7004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63373/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8828dd575cb32338f6fe075a06eb4050)] -> tag name: button]
+Session ID: 8828dd575cb32338f6fe075a06eb4050
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.fulvian.tests.TestTargetHealing.tgtSh002_searchButton(TestTargetHealing.java:88)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTargetHealing.tgtSh003_cart -- Time elapsed: 29.40 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[@aria-label='cart' or @aria-label='Cart'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61742}, goog:processID: 14128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61742/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5ef0895ab61d73500e1be4b06d93a9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestTargetHealing.waitVisible(TestTargetHealing.java:154)
+	at com.fulvian.tests.TestTargetHealing.tgtSh003_cart(TestTargetHealing.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTargetHealing.tgtSh005_categories -- Time elapsed: 16.35 s <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a aria-expanded="false" aria-label="Categories" data-test="@web/Header/MainMenuLink" class="styles_ndsLink__WPjeX styles_neverDecorate__P_tPc styles_spacedPrimaryHeaderLink__F8MNV h-margin-l-wide" href="/c/shop-all-categories/-/N-5xsxf?prehydrateClick=true" id="tgtCategoriesRefactor" data-self-healing-old-id="tgtCategories" data-self-healing-mutated-from="tgtCategories">...</a> is not clickable at point (158, 90). Other element would receive the click: <iframe id="px-captcha-modal" style="display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 2147483647;"></iframe>
+  (Session info: chrome=154.0.8037.93)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7155d3a3c4159d8c95b1f672d14afd63, clickElement {id=f.8BE839B78712FC496FBFD24D89170945.d.3278C0568EB73A871A0CFFEE74F4D6E3.e.111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58015}, goog:processID: 34092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58015/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7155d3a3c4159d8c95b1f672d14afd63)] -> tag name: a]
+Session ID: 7155d3a3c4159d8c95b1f672d14afd63
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.fulvian.tests.TestTargetHealing.tgtSh005_categories(TestTargetHealing.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestTargetHealing.tgtSh002_searchButton:88 � ElementClickIntercepted element click intercepted: Element <button aria-label="..." class="styles_searchButton__atdn9 " data-test="@web/Search/SearchButton" tabindex="0" type="submit" id="tgtSearchButtonRefactor" data-self-healing-old-id="tgtSearchButton" data-self-healing-mutated-from="tgtSearchButton">search</button> is not clickable at point (913, 92). Other element would receive the click: <iframe id="px-captcha-modal" style="display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 2147483647;"></iframe>
+  (Session info: chrome=154.0.8037.93)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8828dd575cb32338f6fe075a06eb4050, clickElement {id=f.1540D5A0EF9BE068A9474FD93F36E385.d.DC7340D3DCCC6A185E6CADD1532D1531.e.65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63373}, goog:processID: 7004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63373/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8828dd575cb32338f6fe075a06eb4050)] -> tag name: button]
+Session ID: 8828dd575cb32338f6fe075a06eb4050
+[ERROR]   TestTargetHealing.tgtSh003_cart:95->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[@aria-label='cart' or @aria-label='Cart'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61742}, goog:processID: 14128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61742/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c5ef0895ab61d73500e1be4b06d93a9
+[ERROR]   TestTargetHealing.tgtSh005_categories:130 � ElementClickIntercepted element click intercepted: Element <a aria-expanded="false" aria-label="Categories" data-test="@web/Header/MainMenuLink" class="styles_ndsLink__WPjeX styles_neverDecorate__P_tPc styles_spacedPrimaryHeaderLink__F8MNV h-margin-l-wide" href="/c/shop-all-categories/-/N-5xsxf?prehydrateClick=true" id="tgtCategoriesRefactor" data-self-healing-old-id="tgtCategories" data-self-healing-mutated-from="tgtCategories">...</a> is not clickable at point (158, 90). Other element would receive the click: <iframe id="px-captcha-modal" style="display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 2147483647;"></iframe>
+  (Session info: chrome=154.0.8037.93)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7155d3a3c4159d8c95b1f672d14afd63, clickElement {id=f.8BE839B78712FC496FBFD24D89170945.d.3278C0568EB73A871A0CFFEE74F4D6E3.e.111}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58015}, goog:processID: 34092, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58015/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7155d3a3c4159d8c95b1f672d14afd63)] -> tag name: a]
+Session ID: 7155d3a3c4159d8c95b1f672d14afd63
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

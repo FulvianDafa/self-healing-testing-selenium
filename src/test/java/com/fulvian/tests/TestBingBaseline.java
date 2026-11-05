@@ -107,6 +107,83 @@ public class TestBingBaseline {
         assertFails("BING-BL-003", "By.id: bingImagesLink", "id=bingImagesLinkRefactor", By.id("bingImagesLink"));
     }
 
+    @Test @Order(4)
+    @DisplayName("BING-BL-004 Bing: link Videos gagal saat id berubah")
+    void bingBl004_videosLink() {
+        driver.get("https://www.bing.com");
+        handleCookiePopup();
+        WebElement orig = waitVisible(By.xpath("//a[contains(text(), 'Videos') or contains(text(), 'Video')]"));
+        setId(orig, "bingVideosLink");
+        mutate("bingVideosLink", "bingVideosLinkRefactor");
+        assertFails("BING-BL-004", "By.id: bingVideosLink", "id=bingVideosLinkRefactor", By.id("bingVideosLink"));
+    }
+
+    @Test @Order(5)
+    @DisplayName("BING-BL-005 Bing: link Maps gagal saat id berubah")
+    void bingBl005_mapsLink() {
+        driver.get("https://www.bing.com");
+        handleCookiePopup();
+        WebElement orig = waitVisible(By.xpath("//a[contains(text(), 'Maps') or contains(text(), 'Peta')]"));
+        setId(orig, "bingMapsLink");
+        mutate("bingMapsLink", "bingMapsLinkRefactor");
+        assertFails("BING-BL-005", "By.id: bingMapsLink", "id=bingMapsLinkRefactor", By.id("bingMapsLink"));
+    }
+
+    @Test @Order(6)
+    @DisplayName("BING-BL-006 Bing: link News gagal saat id berubah")
+    void bingBl006_newsLink() {
+        driver.get("https://www.bing.com");
+        handleCookiePopup();
+        WebElement orig = waitVisible(By.xpath("//a[contains(text(), 'News') or contains(text(), 'Berita')]"));
+        setId(orig, "bingNewsLink");
+        mutate("bingNewsLink", "bingNewsLinkRefactor");
+        assertFails("BING-BL-006", "By.id: bingNewsLink", "id=bingNewsLinkRefactor", By.id("bingNewsLink"));
+    }
+
+    @Test @Order(7)
+    @DisplayName("BING-BL-007 Bing: icon Mic gagal saat id berubah")
+    void bingBl007_micIcon() {
+        driver.get("https://www.bing.com");
+        handleCookiePopup();
+        WebElement orig = waitVisible(By.xpath("//*[@id='sb_form_mic' or @aria-label='Search using voice' or contains(@class,'mic')]"));
+        setId(orig, "bingMicIcon");
+        mutate("bingMicIcon", "bingMicIconRefactor");
+        assertFails("BING-BL-007", "By.id: bingMicIcon", "id=bingMicIconRefactor", By.id("bingMicIcon"));
+    }
+
+    @Test @Order(8)
+    @DisplayName("BING-BL-008 Bing: icon Camera gagal saat id berubah")
+    void bingBl008_cameraIcon() {
+        driver.get("https://www.bing.com");
+        handleCookiePopup();
+        WebElement orig = waitVisible(By.xpath("//*[@id='sb_form_cb' or @aria-label='Search using an image' or contains(@class,'camera')]"));
+        setId(orig, "bingCameraIcon");
+        mutate("bingCameraIcon", "bingCameraIconRefactor");
+        assertFails("BING-BL-008", "By.id: bingCameraIcon", "id=bingCameraIconRefactor", By.id("bingCameraIcon"));
+    }
+
+    @Test @Order(9)
+    @DisplayName("BING-BL-009 Bing: tombol Settings gagal saat id berubah")
+    void bingBl009_settingsMenu() {
+        driver.get("https://www.bing.com");
+        handleCookiePopup();
+        WebElement orig = waitVisible(By.xpath("//*[@id='id_sc' or @aria-label='Settings']"));
+        setId(orig, "bingSettingsMenu");
+        mutate("bingSettingsMenu", "bingSettingsMenuRefactor");
+        assertFails("BING-BL-009", "By.id: bingSettingsMenu", "id=bingSettingsMenuRefactor", By.id("bingSettingsMenu"));
+    }
+
+    @Test @Order(10)
+    @DisplayName("BING-BL-010 Bing: icon Logo gagal saat id berubah")
+    void bingBl010_logoIcon() {
+        driver.get("https://www.bing.com");
+        handleCookiePopup();
+        WebElement orig = waitVisible(By.xpath("//*[@id='b_logo' or contains(@class, 'logo')]"));
+        setId(orig, "bingLogoIcon");
+        mutate("bingLogoIcon", "bingLogoIconRefactor");
+        assertFails("BING-BL-010", "By.id: bingLogoIcon", "id=bingLogoIconRefactor", By.id("bingLogoIcon"));
+    }
+
     private void setId(WebElement el, String id) {
         js.executeScript("arguments[0].setAttribute('id', arguments[1]);", el, id);
     }

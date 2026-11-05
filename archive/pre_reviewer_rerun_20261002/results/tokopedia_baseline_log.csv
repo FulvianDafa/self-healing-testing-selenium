@@ -1,0 +1,2 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:29:59.199858500","TKP-BL-001","tokopedia","By.id: tkpSearchInput","id=tkpSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

@@ -1,0 +1,5 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:15:30.748308900","CKR-BL-001","cekresi","By.id: ckrResiInput","id=ckrResiInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:15:36.060070100","CKR-BL-002","cekresi","By.id: ckrCheckButton","id=ckrCheckButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:15:41.280345200","CKR-BL-003","cekresi","By.id: ckrLogo","id=ckrLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:16:09.561996100","CKR-BL-005","cekresi","By.id: ckrHeading","id=ckrHeadingRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

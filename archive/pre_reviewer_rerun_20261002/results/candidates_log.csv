@@ -1,0 +1,37 @@
+timestamp,test_case_id,original_locator,candidate_description,status,text_score,locator_score,position_score,combined_score
+"2026-09-30 12:24:51.289","YT-SH-001","By.id: ytSearchInput","<button type='submit' id='button' name='' placeholder='' text='Guide'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.380","YT-SH-001","By.id: ytSearchInput","<button type='submit' id='' name='' placeholder='' text='Search'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.473","YT-SH-001","By.id: ytSearchInput","<button type='submit' id='' name='' placeholder='' text='Search with your voice'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.563","YT-SH-001","By.id: ytSearchInput","<button type='submit' id='button' name='' placeholder='' text='Settings'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.683","YT-SH-001","By.id: ytSearchInput","<a type='' id='logo' name='' placeholder='' text='logo'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.796","YT-SH-001","By.id: ytSearchInput","<a type='' id='' name='' placeholder='' text=''>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.860","YT-SH-001","By.id: ytSearchInput","<a type='' id='' name='' placeholder='' text='Sign in'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.916","YT-SH-001","By.id: ytSearchInput","<a type='' id='endpoint' name='' placeholder='' text='Home'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:51.974","YT-SH-001","By.id: ytSearchInput","<a type='' id='endpoint' name='' placeholder='' text='Shorts'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:52.030","YT-SH-001","By.id: ytSearchInput","<a type='' id='endpoint' name='' placeholder='' text='Subscriptions'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:52.085","YT-SH-001","By.id: ytSearchInput","<a type='' id='endpoint' name='' placeholder='' text='You'>","SKIPPED_INCOMPATIBLE",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:24:52.345","YT-SH-001","By.id: ytSearchInput","<input type='text' id='ytSearchInputRefactor' name='search_query' placeholder='Search' text='Search'>","EVALUATED",1.0000,0.6250,0.0000,1.0000
+"2026-09-30 12:25:31.818","YT-SH-003","By.id: ytLogo","<button type='submit' id='button' name='' placeholder='' text='Guide'>","EVALUATED",0.2500,0.1429,0.0000,0.2098
+"2026-09-30 12:25:31.994","YT-SH-003","By.id: ytLogo","<button type='submit' id='' name='' placeholder='' text='Search'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:25:32.175","YT-SH-003","By.id: ytLogo","<button type='submit' id='' name='' placeholder='' text='Search with your voice'>","EVALUATED",0.2273,0.0000,0.0000,0.1420
+"2026-09-30 12:25:32.349","YT-SH-003","By.id: ytLogo","<button type='submit' id='button' name='' placeholder='' text='Settings'>","EVALUATED",0.0000,0.1429,0.0000,0.2098
+"2026-09-30 12:25:32.563","YT-SH-003","By.id: ytLogo","<a type='' id='logo' name='' placeholder='' text='logo'>","EVALUATED",0.1250,0.5714,0.0000,0.3969
+"2026-09-30 12:25:32.793","YT-SH-003","By.id: ytLogo","<a type='' id='' name='' placeholder='' text=''>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:25:32.943","YT-SH-003","By.id: ytLogo","<a type='' id='' name='' placeholder='' text='Sign in'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:25:33.101","YT-SH-003","By.id: ytLogo","<a type='' id='endpoint' name='' placeholder='' text='Home'>","EVALUATED",0.2500,0.1250,0.0000,0.2031
+"2026-09-30 12:25:33.251","YT-SH-003","By.id: ytLogo","<a type='' id='endpoint' name='' placeholder='' text='Shorts'>","EVALUATED",0.1250,0.1250,0.0000,0.1250
+"2026-09-30 12:25:33.384","YT-SH-003","By.id: ytLogo","<a type='' id='endpoint' name='' placeholder='' text='Subscriptions'>","EVALUATED",0.0769,0.1250,0.0000,0.0950
+"2026-09-30 12:25:33.527","YT-SH-003","By.id: ytLogo","<a type='' id='endpoint' name='' placeholder='' text='You'>","EVALUATED",0.3750,0.1250,0.0000,0.5781
+"2026-09-30 12:25:33.679","YT-SH-003","By.id: ytLogo","<input type='text' id='' name='search_query' placeholder='Search' text='Search'>","EVALUATED",0.0000,0.0000,0.0000,0.1042
+"2026-09-30 12:26:12.951","YT-SH-005","By.id: ytHome","<button type='submit' id='button' name='' placeholder='' text='Guide'>","EVALUATED",0.2000,0.1429,0.0000,0.1786
+"2026-09-30 12:26:13.127","YT-SH-005","By.id: ytHome","<button type='submit' id='' name='' placeholder='' text='Search'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:26:13.296","YT-SH-005","By.id: ytHome","<button type='submit' id='' name='' placeholder='' text='Search with your voice'>","EVALUATED",0.1364,0.0000,0.0000,0.0852
+"2026-09-30 12:26:13.462","YT-SH-005","By.id: ytHome","<button type='submit' id='button' name='' placeholder='' text='Settings'>","EVALUATED",0.0000,0.1429,0.0000,0.0536
+"2026-09-30 12:26:13.672","YT-SH-005","By.id: ytHome","<a type='' id='ytHomeRefactor' name='' placeholder='' text='ytHomeRefactor'>","EVALUATED",0.2500,0.4375,0.0000,1.0000
+"2026-09-30 12:26:13.910","YT-SH-005","By.id: ytHome","<a type='' id='' name='' placeholder='' text=''>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:26:14.036","YT-SH-005","By.id: ytHome","<a type='' id='' name='' placeholder='' text='Sign in'>","EVALUATED",0.0000,0.0000,0.0000,0.0000
+"2026-09-30 12:26:14.181","YT-SH-005","By.id: ytHome","<a type='' id='endpoint' name='' placeholder='' text='Home'>","EVALUATED",1.0000,0.1250,0.0000,0.6719
+"2026-09-30 12:26:14.332","YT-SH-005","By.id: ytHome","<a type='' id='endpoint' name='' placeholder='' text='Shorts'>","EVALUATED",0.3333,0.1250,0.0000,0.2552
+"2026-09-30 12:26:14.463","YT-SH-005","By.id: ytHome","<a type='' id='endpoint' name='' placeholder='' text='Subscriptions'>","EVALUATED",0.0769,0.1250,0.0000,0.1250
+"2026-09-30 12:26:14.588","YT-SH-005","By.id: ytHome","<a type='' id='endpoint' name='' placeholder='' text='You'>","EVALUATED",0.2500,0.1250,0.0000,0.2031
+"2026-09-30 12:26:14.740","YT-SH-005","By.id: ytHome","<input type='text' id='' name='search_query' placeholder='Search' text='Search'>","EVALUATED",0.0000,0.0000,0.0000,0.1042

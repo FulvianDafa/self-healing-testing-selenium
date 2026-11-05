@@ -13,52 +13,86 @@ public class CandidateResult {
             DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
 
     public final String timestamp;
+    public final String attemptId;
     public final String testCaseId;
+    public final String sut;
     public final String originalLocator;
+    public final String candidateIdentifier;
     public final String candidateDescription;
-    public final double textScore;
-    public final double locatorScore;
-    public final double positionScore;
-    public final double combinedScore;
+    public final Double textScore;
+    public final Double locatorScore;
+    public final Double positionScore;
+    public final boolean positionAvailable;
+    public final Double combinedScore;
     public final String status; // misal: "EVALUATED", "SKIPPED_INCOMPATIBLE"
+    public final boolean selected;
+    public final boolean groundTruthAvailable;
+    public final Boolean isTarget;
 
-    public CandidateResult(String testCaseId,
+    public CandidateResult(String attemptId,
+                           String testCaseId,
+                           String sut,
                            String originalLocator,
+                           String candidateIdentifier,
                            String candidateDescription,
-                           double textScore,
-                           double locatorScore,
-                           double positionScore,
-                           double combinedScore,
-                           String status) {
+                           Double textScore,
+                           Double locatorScore,
+                           Double positionScore,
+                           boolean positionAvailable,
+                           Double combinedScore,
+                           String status,
+                           boolean selected,
+                           boolean groundTruthAvailable,
+                           Boolean isTarget) {
         this.timestamp = LocalDateTime.now().format(FMT);
+        this.attemptId = attemptId;
         this.testCaseId = testCaseId;
+        this.sut = sut;
         this.originalLocator = originalLocator;
+        this.candidateIdentifier = candidateIdentifier;
         this.candidateDescription = candidateDescription == null ? "-" : 
                 candidateDescription.replaceAll("[\\r\\n]+", " ");
         this.textScore = textScore;
         this.locatorScore = locatorScore;
         this.positionScore = positionScore;
+        this.positionAvailable = positionAvailable;
         this.combinedScore = combinedScore;
         this.status = status;
+        this.selected = selected;
+        this.groundTruthAvailable = groundTruthAvailable;
+        this.isTarget = groundTruthAvailable ? Boolean.TRUE.equals(isTarget) : null;
     }
 
     public static String csvHeader() {
-        return "timestamp,test_case_id,original_locator,candidate_description," +
-               "status,text_score,locator_score,position_score,combined_score";
+        return "timestamp,attempt_id,test_case_id,sut,original_locator," +
+               "candidate_identifier,candidate_description,status," +
+               "text_score,locator_score,position_score,position_available," +
+               "combined_score,selected,ground_truth_available,is_target";
     }
 
     public String toCsvRow() {
         return String.join(",",
                 wrap(timestamp),
+                wrap(attemptId),
                 wrap(testCaseId),
+                wrap(sut),
                 wrap(originalLocator),
+                wrap(candidateIdentifier),
                 wrap(candidateDescription),
                 wrap(status),
-                String.format("%.4f", textScore),
-                String.format("%.4f", locatorScore),
-                String.format("%.4f", positionScore),
-                String.format("%.4f", combinedScore)
+                formatScore(textScore),
+                formatScore(locatorScore),
+                formatScore(positionScore),
+                String.valueOf(positionAvailable),
+                formatScore(combinedScore),
+                String.valueOf(selected),
+                String.valueOf(groundTruthAvailable),
+                isTarget == null ? "" : String.valueOf(isTarget)
         );
+    }
+
+    private static String formatScore(Double value) {
+        return value == null ? "" : String.format(java.util.Locale.ROOT, "%.4f", value);
     }
 
     private static String wrap(String val) {

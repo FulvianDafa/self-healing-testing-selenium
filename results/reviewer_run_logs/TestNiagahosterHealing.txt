@@ -1,0 +1,307 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:46:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:46:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:46:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:46:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:47:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:47:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:47:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:47:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:47:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:47:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: nghLogin
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 122 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Produk'>      ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Solusi'>      ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Developer'>   ? combined=0.1389
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Informasi'>   ? combined=0.0694
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Agent'>       ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='ID'>          ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Buat'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Apa yang i... ? combined=0.0568
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Buat'>        ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Online'>      ? combined=0.2083
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Kembangkan'>  ? combined=0.1250
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Kelola'>      ? combined=0.1042
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Mulai chat'>  ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='homepage link'>          ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Harga'>                  ? combined=0.0000
+  ?? CAND <a type='' id='nghLoginRefactor' name='' placeholder='' text='Login'>  ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari'>                   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='rencana tahunan'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coba sekarang'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi semua penawa... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Baru
+Hostinger Agent
+... ? combined=0.0275
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sedang tren
+VPS yang ... ? combined=0.0219
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buat dengan AI'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hosting untuk WordPre... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Templat Hostinger
+Tem... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hosting'>                ? combined=0.2679
+  ?? CAND <a type='' id='' name='' placeholder='' text='Domain'>                 ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Email bisnis'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Migrasi situs web gra... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi E-commerce'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi pemasaran em... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='info selengkapnya'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pilih paket'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pilih paket'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pilih paket'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pilih paket'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ketentuan Penggunaan'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cek paket VPS'>          ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OpenClaw'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hermes Agent'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self-hosted n8n'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hosting VPS
+Jalankan ... ? combined=0.0397
+  ?? CAND <a type='' id='' name='' placeholder='' text='Web app deployment
+De... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cloud Hosting
+Kembang... ? combined=0.0403
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katalog aplikasi
+Lunc... ? combined=0.0336
+  ?? CAND <a type='' id='' name='' placeholder='' text='Penyelenggara agensi
+... ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jelajahi templat'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mulai'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Web hosting'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shared hosting'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hosting untuk WordPre... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='VPS hosting'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Self-hosted n8n'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Email hosting'>          ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cloud hosting'>          ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hosting untuk WooComm... ? combined=0.0721
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hosting untuk agensi'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Minecraft hosting'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hermes Agent VPS'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='OpenClaw'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Paperclip VPS'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Google Workspace'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Web hosting'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari domain murah'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Beli domain'>            ? combined=0.2273
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gratis domain'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='WHOIS'>                  ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='SSL gratis'>             ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Transfer domain'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekstensi domain'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='AI builder'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Website Builder'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='AI Website Builder'>     ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ecommerce Website Bui... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Template'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Print on demand'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Link in Bio'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='AI Logo Generator'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Migrasi website'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='API Hostinger'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Harga'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ulasan'>                 ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Program afiliasi'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Educational partnersh... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Program Referral'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar Resmi Agency'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Penawaran Black Friday'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Roadmap (Bahasa Inggr... ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text='Status sistem'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pusat transparansi ke... ? combined=0.0463
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sitemap'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='EntitasMap'>             ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang kami'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi kami'>         ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prinsip Hostinger'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tutorial'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pengetahuan Dasar'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hostinger Academy'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi kami'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporkan penyalahguna... ? combined=0.1087
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cari partner & pakar'>   ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-linkedin-monochrom... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-facebook-monochrom... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-instagram-monochro... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-x-twitter-monochro... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-youtube-24'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-reddit-monochrome-... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-tiktok-monochrome-... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='ic-discord-monochrome... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='homepage link'>          ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ketentuan Permintaan ... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Pengembalia... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ketentuan Penggunaan'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='dan lainnya'>            ? combined=0.1136
+  ?? SKIP <input type='text' id='' name='' placeholder='Apa yang ingin Anda b... | alasan: incompatible
+  ?? SKIP <textarea type='textarea' id='h-domain-finder-header-input' name=''... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 120 | Kandidat dilewati: 2
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=NGH-SH-005 | Skenario: niagahoster_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 20169 ms
+  Elemen dipilih: <a href="https://auth.hostinger.com/id/login" rel="noopener noreferrer" id="nghL
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=20169ms
+[HealingDriver] Elemen dipilih: <a type='' id='nghLoginRefactor' name='' placeholder='' text='Login'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 1
+  Berhasil dipulihkan         : 1
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 20169.00 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\niagahoster_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 133.5 s <<< FAILURE! -- in com.fulvian.tests.TestNiagahosterHealing
+[ERROR] com.fulvian.tests.TestNiagahosterHealing.nghSh001_domainInput -- Time elapsed: 27.26 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@id,'domain-input') or contains(@placeholder,'domain')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52308}, goog:processID: 9648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52308/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c6a8c323cab54f85818618205f2825e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestNiagahosterHealing.waitVisible(TestNiagahosterHealing.java:170)
+	at com.fulvian.tests.TestNiagahosterHealing.nghSh001_domainInput(TestNiagahosterHealing.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestNiagahosterHealing.nghSh002_domainButton -- Time elapsed: 27.39 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //button[contains(normalize-space(),'Cari Domain') or contains(normalize-space(),'Cari')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61958}, goog:processID: 20428, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61958/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0b3ca85e1dc7b95de649acc7abd1e05
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestNiagahosterHealing.waitVisible(TestNiagahosterHealing.java:170)
+	at com.fulvian.tests.TestNiagahosterHealing.nghSh002_domainButton(TestNiagahosterHealing.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestNiagahosterHealing.nghSh003_logo -- Time elapsed: 26.22 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[.//img[contains(@alt,'Niagahoster')]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53111}, goog:processID: 4796, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53111/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02ad955d272f41ed56a09834f40ea8a9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestNiagahosterHealing.waitVisible(TestNiagahosterHealing.java:170)
+	at com.fulvian.tests.TestNiagahosterHealing.nghSh003_logo(TestNiagahosterHealing.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestNiagahosterHealing.nghSh004_hostingMenu -- Time elapsed: 26.03 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(normalize-space(),'Hosting') and contains(@href,'hosting')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58344}, goog:processID: 37928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58344/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfc6c57f4c5d91c17de7e676974593b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestNiagahosterHealing.waitVisible(TestNiagahosterHealing.java:170)
+	at com.fulvian.tests.TestNiagahosterHealing.nghSh004_hostingMenu(TestNiagahosterHealing.java:124)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestNiagahosterHealing.nghSh001_domainInput:79->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //input[contains(@id,'domain-input') or contains(@placeholder,'domain')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52308}, goog:processID: 9648, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52308/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c6a8c323cab54f85818618205f2825e
+[ERROR]   TestNiagahosterHealing.nghSh002_domainButton:94->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //button[contains(normalize-space(),'Cari Domain') or contains(normalize-space(),'Cari')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61958}, goog:processID: 20428, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61958/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b0b3ca85e1dc7b95de649acc7abd1e05
+[ERROR]   TestNiagahosterHealing.nghSh003_logo:109->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[.//img[contains(@alt,'Niagahoster')]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53111}, goog:processID: 4796, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53111/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02ad955d272f41ed56a09834f40ea8a9
+[ERROR]   TestNiagahosterHealing.nghSh004_hostingMenu:124->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(normalize-space(),'Hosting') and contains(@href,'hosting')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58344}, goog:processID: 37928, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58344/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fbfc6c57f4c5d91c17de7e676974593b
+[ERROR] Tests run: 5, Failures: 0, Errors: 4, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

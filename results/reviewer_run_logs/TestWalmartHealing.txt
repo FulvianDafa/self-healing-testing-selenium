@@ -1,0 +1,223 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 11:08:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:08:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: wmtSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Search'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='cart-button-header' name='' placeholder='... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Departments'> | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Services'>    | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Pause caro... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Close dial... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Walmart Homepage'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Reorder
+My Items'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sign In
+Account'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Previous slide for he... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Next slide for heroCa... | alasan: incompatible
+  ?? SKIP <a type='' id='link-TryWalmartfor-PrismAdjustableCardCarousel-conte... | alasan: incompatible
+  ?? SKIP <a type='' id='linkcard-TryWalmartfor-PrismAdjustableCardCarousel-c... | alasan: incompatible
+  ?? SKIP <a type='' id='link-Shopnow-PrismAdjustableCardCarousel-contentZone... | alasan: incompatible
+  ?? SKIP <a type='' id='linkcard-Shopnow-PrismAdjustableCardCarousel-content... | alasan: incompatible
+  ?? SKIP <a type='' id='link-Shopall-PrismAdjustableCardCarousel-contentZone... | alasan: incompatible
+  ?? SKIP <a type='' id='linkcard-Shopall-PrismAdjustableCardCarousel-content... | alasan: incompatible
+  ?? SKIP <a type='' id='link-Shopnow-PrismCollectionCarousel-collectionHero-... | alasan: incompatible
+  ?? SKIP <a type='' id='linkcard-Shopnow-PrismCollectionCarousel-collectionH... | alasan: incompatible
+  ?? SKIP <a type='' id='link-Shopnow-PrismCollectionCarousel-horizontal-cont... | alasan: incompatible
+  ?? SKIP <a type='' id='linkcard-Shopnow-PrismCollectionCarousel-horizontal-... | alasan: incompatible
+  ?? SKIP <a type='' id='link-Shopnow-PrismCollectionCarousel-verticalLarge-c... | alasan: incompatible
+  ?? SKIP <a type='' id='linkcard-Shopnow-PrismCollectionCarousel-verticalLar... | alasan: incompatible
+  ?? CAND <input type='search' id='wmtSearchInputRefactor' name='q' placehold... ? combined=1.0000
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 23
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=WMT-SH-001 | Skenario: walmart_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 7935 ms
+  Elemen dipilih: <input aria-label="Search" role="combobox" aria-expanded="false" aria-controls="
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=7935ms
+[HealingDriver] Elemen dipilih: <input type='search' id='wmtSearchInputRefactor' name='q' placeholder='Search everything at Walmart online and in sto...
+Oct 02, 2026 11:09:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:09:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:09:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:09:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:10:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:10:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:10:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:10:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: wmtLogo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Search'>      ? combined=0.1172
+  ?? CAND <button type='button' id='cart-button-header' name='' placeholder='... ? combined=0.2014
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Departments'> ? combined=0.1953
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Services'>    ? combined=0.0781
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Pause caro... ? combined=0.0781
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Close dial... ? combined=0.1172
+  ?? CAND <a type='' id='wmtLogoRefactor' name='' placeholder='' text='Walmar... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reorder
+My Items'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sign In
+Account'>        ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Previous slide for he... ? combined=0.0845
+  ?? CAND <a type='' id='' name='' placeholder='' text='Next slide for heroCa... ? combined=0.0947
+  ?? CAND <a type='' id='link-TryWalmartfor-PrismAdjustableCardCarousel-conte... ? combined=0.3449
+  ?? CAND <a type='' id='linkcard-TryWalmartfor-PrismAdjustableCardCarousel-c... ? combined=0.3434
+  ?? CAND <a type='' id='link-Shopnow-PrismAdjustableCardCarousel-contentZone... ? combined=0.1284
+  ?? CAND <a type='' id='linkcard-Shopnow-PrismAdjustableCardCarousel-content... ? combined=0.1218
+  ?? CAND <a type='' id='link-Shopall-PrismAdjustableCardCarousel-contentZone... ? combined=0.1476
+  ?? CAND <a type='' id='linkcard-Shopall-PrismAdjustableCardCarousel-content... ? combined=0.1460
+  ?? CAND <a type='' id='link-Shopnow-PrismCollectionCarousel-collectionHero-... ? combined=0.1123
+  ?? CAND <a type='' id='linkcard-Shopnow-PrismCollectionCarousel-collectionH... ? combined=0.1098
+  ?? CAND <a type='' id='link-Shopnow-PrismCollectionCarousel-horizontal-cont... ? combined=0.1136
+  ?? CAND <a type='' id='linkcard-Shopnow-PrismCollectionCarousel-horizontal-... ? combined=0.1118
+  ?? CAND <a type='' id='link-Shopnow-PrismCollectionCarousel-verticalLarge-c... ? combined=0.1138
+  ?? CAND <a type='' id='linkcard-Shopnow-PrismCollectionCarousel-verticalLar... ? combined=0.1101
+  ?? CAND <input type='search' id='' name='q' placeholder='Search everything ... ? combined=0.3125
+[HealingDriver] Kandidat kompatibel: 24 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=WMT-SH-005 | Skenario: walmart_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 8375 ms
+  Elemen dipilih: <a link-identifier="walmartLogoDesktop" class="header-navigation flex-hdkp items
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=8375ms
+[HealingDriver] Elemen dipilih: <a type='' id='wmtLogoRefactor' name='' placeholder='' text='Walmart Homepage'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 2
+  Berhasil dipulihkan         : 2
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 8155.00 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\walmart_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 124.1 s <<< FAILURE! -- in com.fulvian.tests.TestWalmartHealing
+[ERROR] com.fulvian.tests.TestWalmartHealing.wmtSh002_searchButton -- Time elapsed: 30.33 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //button[@type='submit' and @aria-label='Search'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52263}, goog:processID: 29028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52263/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e0dc8af2b482ffda294bd2487c6825e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestWalmartHealing.waitVisible(TestWalmartHealing.java:154)
+	at com.fulvian.tests.TestWalmartHealing.wmtSh002_searchButton(TestWalmartHealing.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestWalmartHealing.wmtSh003_departments -- Time elapsed: 31.18 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //button[@aria-label='Departments'] | //a[normalize-space()='Departments'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63935}, goog:processID: 34784, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63935/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73d637cf34c3f6c93cb4f08e29ecf079
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestWalmartHealing.waitVisible(TestWalmartHealing.java:154)
+	at com.fulvian.tests.TestWalmartHealing.wmtSh003_departments(TestWalmartHealing.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestWalmartHealing.wmtSh004_cart -- Time elapsed: 30.16 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[@link-identifier='Cart' or @aria-label='Cart'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64987}, goog:processID: 29852, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64987/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0bb79ab7a56f41ca9108a8fc65e2626b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestWalmartHealing.waitVisible(TestWalmartHealing.java:154)
+	at com.fulvian.tests.TestWalmartHealing.wmtSh004_cart(TestWalmartHealing.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestWalmartHealing.wmtSh002_searchButton:81->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //button[@type='submit' and @aria-label='Search'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52263}, goog:processID: 29028, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52263/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e0dc8af2b482ffda294bd2487c6825e
+[ERROR]   TestWalmartHealing.wmtSh003_departments:95->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //button[@aria-label='Departments'] | //a[normalize-space()='Departments'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63935}, goog:processID: 34784, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63935/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73d637cf34c3f6c93cb4f08e29ecf079
+[ERROR]   TestWalmartHealing.wmtSh004_cart:109->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[@link-identifier='Cart' or @aria-label='Cart'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64987}, goog:processID: 29852, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64987/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0bb79ab7a56f41ca9108a8fc65e2626b
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

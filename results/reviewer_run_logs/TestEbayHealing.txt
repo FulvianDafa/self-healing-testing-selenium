@@ -1,0 +1,257 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:29:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:29:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ebySearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 43 kandidat elemen...
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='40287'>       | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Dismiss'>     | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Expand Sel... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Expand Wat... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Expand My ... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Expand Cart'> | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Shop by ca... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Camera icon'> | alasan: incompatible
+  ?? SKIP <button type='submit' id='gh-search-btn' name='' placeholder='' tex... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Previous S... | alasan: incompatible
+  ?? SKIP <button type='button' id='s0-0-1-1-0-2-6-5-10-2-0-4-0-1-3-@homepage... | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Play'>        | alasan: incompatible
+  ?? SKIP <button type='button' id='ifhItem0' name='' placeholder='' text='He... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Skip to main content'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sign in'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='register'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Deals'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Brand Outlet'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Help & Contact'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sell'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Watchlist'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='My eBay'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Your shopping cart co... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='eBay Home'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Advanced'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Saved'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Electronics'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Motors'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Fashion'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Collectibles and art'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sports'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Health and beauty'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Industrial equipment'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Home and garden'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Deals'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sell'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Do your thing'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Home and Garden'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Fashion'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Business & Industrial'>  | alasan: incompatible
+  ?? CAND <input type='text' id='ebySearchInputRefactor' name='_nkw' placehol... ? combined=1.0000
+  ?? SKIP <select type='select-one' id='gh-cat' name='_sacat' placeholder='' ... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 42
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=EBY-SH-001 | Skenario: ebay_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 11574 ms
+  Elemen dipilih: <input data-marko="{&quot;oninput&quot;:&quot;handleTextUpdate s0-1-4-10-4 false
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=11574ms
+[HealingDriver] Elemen dipilih: <input type='text' id='ebySearchInputRefactor' name='_nkw' placeholder='Search for anything' text='Search for anything'>
+Oct 02, 2026 10:29:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:29:49 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:30:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:30:14 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:30:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:30:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:31:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:31:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ebyLogo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 43 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text='40287'>       ? combined=0.0833
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Dismiss'>     ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand Sel... ? combined=0.1953
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand Wat... ? combined=0.1471
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand My ... ? combined=0.4167
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Expand Cart'> ? combined=0.1705
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Shop by ca... ? combined=0.1563
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Camera icon'> ? combined=0.0568
+  ?? CAND <button type='submit' id='gh-search-btn' name='' placeholder='' tex... ? combined=0.1731
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Previous S... ? combined=0.1339
+  ?? CAND <button type='button' id='s0-0-1-1-0-2-6-5-10-2-0-4-0-1-3-@homepage... ? combined=0.0774
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Play'>        ? combined=0.1250
+  ?? CAND <button type='button' id='ifhItem0' name='' placeholder='' text='He... ? combined=0.1806
+  ?? CAND <a type='' id='' name='' placeholder='' text='Skip to main content'>   ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sign in'>                ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='register'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deals'>                  ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Brand Outlet'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help & Contact'>         ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Watchlist'>              ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='My eBay'>                ? combined=0.4167
+  ?? CAND <a type='' id='' name='' placeholder='' text='Your shopping cart co... ? combined=0.0893
+  ?? CAND <a type='' id='ebyLogoRefactor' name='' placeholder='' text='eBay H... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advanced'>               ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Saved'>                  ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Electronics'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Motors'>                 ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fashion'>                ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Collectibles and art'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sports'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Health and beauty'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Industrial equipment'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Home and garden'>        ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deals'>                  ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sell'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Do your thing'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Home and Garden'>        ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fashion'>                ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Business & Industrial'>  ? combined=0.0658
+  ?? CAND <input type='text' id='gh-ac' name='_nkw' placeholder='Search for a... ? combined=0.2113
+  ?? CAND <select type='select-one' id='gh-cat' name='_sacat' placeholder='' ... ? combined=0.6719
+[HealingDriver] Kandidat kompatibel: 43 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=EBY-SH-005 | Skenario: ebay_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 12532 ms
+  Elemen dipilih: <a href="https://www.ebay.com" _sp="m570.l2586" class="gh-logo" tabindex="2" id=
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=12532ms
+[HealingDriver] Elemen dipilih: <a type='' id='ebyLogoRefactor' name='' placeholder='' text='eBay Home'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 2
+  Berhasil dipulihkan         : 2
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 12053.00 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\ebay_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 110.8 s <<< FAILURE! -- in com.fulvian.tests.TestEbayHealing
+[ERROR] com.fulvian.tests.TestEbayHealing.ebySh002_searchButton -- Time elapsed: 25.13 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: gh-btn (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61394}, goog:processID: 40916, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61394/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 658fa35b45361dd3a197a05cd11e24ed
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestEbayHealing.waitVisible(TestEbayHealing.java:170)
+	at com.fulvian.tests.TestEbayHealing.ebySh002_searchButton(TestEbayHealing.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestEbayHealing.ebySh003_myEbay -- Time elapsed: 24.93 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: gh-eb-My (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58956}, goog:processID: 18108, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58956/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: caf7799f2aff33ebb660d7a013587351
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestEbayHealing.waitVisible(TestEbayHealing.java:170)
+	at com.fulvian.tests.TestEbayHealing.ebySh003_myEbay(TestEbayHealing.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestEbayHealing.ebySh004_cart -- Time elapsed: 24.83 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: gh-cart-n (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54478}, goog:processID: 36312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54478/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56a83b25d659425a7de7da6b616c8d8f
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestEbayHealing.waitVisible(TestEbayHealing.java:170)
+	at com.fulvian.tests.TestEbayHealing.ebySh004_cart(TestEbayHealing.java:124)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestEbayHealing.ebySh002_searchButton:94->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.id: gh-btn (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61394}, goog:processID: 40916, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61394/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 658fa35b45361dd3a197a05cd11e24ed
+[ERROR]   TestEbayHealing.ebySh003_myEbay:109->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.id: gh-eb-My (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58956}, goog:processID: 18108, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58956/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: caf7799f2aff33ebb660d7a013587351
+[ERROR]   TestEbayHealing.ebySh004_cart:124->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.id: gh-cart-n (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54478}, goog:processID: 36312, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54478/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 56a83b25d659425a7de7da6b616c8d8f
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

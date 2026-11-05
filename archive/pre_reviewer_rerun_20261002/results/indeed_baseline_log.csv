@@ -1,0 +1,5 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T11:53:54.042060300","IND-BL-001","indeed","By.id: indWhatInput","id=indWhatInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:53:56.703184900","IND-BL-002","indeed","By.id: indWhereInput","id=indWhereInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:53:59.421358200","IND-BL-003","indeed","By.id: indSearchButton","id=indSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:54:02.305489300","IND-BL-004","indeed","By.id: indCompanyReviews","id=indCompanyReviewsRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

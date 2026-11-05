@@ -1,0 +1,6 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:46:12.369329900","RMH-BL-001","rumah123","By.id: rmhSearchInput","id=rmhSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:46:25.892375700","RMH-BL-002","rumah123","By.id: rmhSearchButton","id=rmhSearchButtonRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:46:32.120584100","RMH-BL-003","rumah123","By.id: rmhLogo","id=rmhLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:46:38.183168900","RMH-BL-004","rumah123","By.id: rmhDijual","id=rmhDijualRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:46:47.651029200","RMH-BL-005","rumah123","By.id: rmhDisewa","id=rmhDisewaRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

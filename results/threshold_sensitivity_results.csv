@@ -1,0 +1,6 @@
+threshold,weight_text,weight_locator,weight_position,labeled_attempts,excluded_unlabeled_attempts,accepted_healing,rejected_healing,correct_healing,false_positive,hsr_percent,correct_healing_rate_percent,fpr_percent
+0.30,0.50,0.30,0.20,76,12,74,2,66,8,97.37,86.84,10.81
+0.40,0.50,0.30,0.20,76,12,74,2,66,8,97.37,86.84,10.81
+0.50,0.50,0.30,0.20,76,12,74,2,66,8,97.37,86.84,10.81
+0.60,0.50,0.30,0.20,76,12,74,2,66,8,97.37,86.84,10.81
+0.70,0.50,0.30,0.20,76,12,67,9,64,3,88.16,84.21,4.48

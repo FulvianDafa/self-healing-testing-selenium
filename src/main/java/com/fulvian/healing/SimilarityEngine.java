@@ -42,8 +42,50 @@ public class SimilarityEngine {
     // METHOD UTAMA: HITUNG SKOR GABUNGAN
     public static double calculateCombinedScore(ElementProfile profile,
                                                 WebElement candidate) {
+        return calculateCombinedScoreWithDetail(profile, candidate).combinedScore;
+    }
+
+    // -------------------------------------------------------
+    // SCORE RESULT — Wadah skor komponen asli untuk logging
+    // -------------------------------------------------------
+
+    /**
+     * Wadah immutable yang membawa keempat nilai hasil perhitungan
+     * calculateCombinedScoreWithDetail() agar HealingDriver tidak
+     * perlu menghitung ulang komponen similarity secara terpisah.
+     *
+     * Setiap field di sini adalah nilai yang BENAR-BENAR digunakan
+     * untuk menghasilkan combinedScore — bukan hasil kalkulasi ulang.
+     */
+    public static class ScoreResult {
+        public final double textScore;
+        public final double locatorScore;
+        public final double positionScore;
+        public final double combinedScore;
+
+        public ScoreResult(double textScore,
+                           double locatorScore,
+                           double positionScore,
+                           double combinedScore) {
+            this.textScore     = textScore;
+            this.locatorScore  = locatorScore;
+            this.positionScore = positionScore;
+            this.combinedScore = combinedScore;
+        }
+    }
+
+    /**
+     * Versi detail dari calculateCombinedScore() yang mengembalikan
+     * ScoreResult berisi textScore, locatorScore, positionScore, dan
+     * combinedScore.
+     *
+     * Logika di dalam method ini IDENTIK dengan calculateCombinedScore().
+     * Tidak ada algoritma baru di sini — hanya hasil antara yang diekspos.
+     */
+    public static ScoreResult calculateCombinedScoreWithDetail(ElementProfile profile,
+                                                               WebElement candidate) {
         if (profile == null || candidate == null) {
-            return 0.0;
+            return new ScoreResult(0.0, 0.0, 0.0, 0.0);
         }
 
         String expectedText = firstNonBlank(
@@ -65,13 +107,15 @@ public class SimilarityEngine {
                 candidateLocatorValue
         );
 
-        // 3. Skor kemiripan posisi
+        // 3. Skor kemiripan posisi — identik dengan cabang di calculateCombinedScore()
         if (profile.lastKnownLocation == null) {
-            
             double totalWeight = WEIGHT_TEXT + WEIGHT_LOCATOR;
 
-            return (textScore * (WEIGHT_TEXT / totalWeight))
+            double combined = (textScore * (WEIGHT_TEXT / totalWeight))
                     + (locatorScore * (WEIGHT_LOCATOR / totalWeight));
+
+            // positionScore = 0.0 karena data posisi tidak tersedia
+            return new ScoreResult(textScore, locatorScore, 0.0, combined);
         }
 
         double positionScore = calculatePositionSimilarity(
@@ -79,9 +123,11 @@ public class SimilarityEngine {
                 safeGetLocation(candidate)
         );
 
-        return (WEIGHT_TEXT * textScore)
+        double combined = (WEIGHT_TEXT * textScore)
                 + (WEIGHT_LOCATOR * locatorScore)
                 + (WEIGHT_POSITION * positionScore);
+
+        return new ScoreResult(textScore, locatorScore, positionScore, combined);
     }
 
     // -------------------------------------------------------

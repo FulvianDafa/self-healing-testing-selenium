@@ -1,0 +1,1567 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:32:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:32:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ktdSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 279 kandidat elemen...
+  ?? SKIP <button type='submit' id='search-button' name='' placeholder='' tex... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control00' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control01' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control02' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control03' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control04' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control05' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control06' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control07' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='slick-slide-control08' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='button' id='filterEvents' name='' placeholder='' text... | alasan: incompatible
+  ?? SKIP <button type='button' id='resetEvents' name='' placeholder='' text=... | alasan: incompatible
+  ?? SKIP <button type='button' id='btn-langganan-newsletter' name='' placeho... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Databoks'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Katadata Green'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Katadata Insights Cen... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Event'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='home'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Berita'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Finansial'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Digital'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Regional'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Otomotif'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ekonopedia'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Video'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Info'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Telaah'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sorot'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Analisis Data'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Infografik'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Opini'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OJK Perketat Aturan I... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kesenjangan Inklusi d... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tips Mengelola Dana D... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Indeks berita �'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Desakan Transisi Ener... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INVESTASI HIJAU'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bangunan Lapas Cibino... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NASIONAL'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Menko Baru Bahlil Dim... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ENERGI BARU'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Anwar Usman Bungkam S... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NASIONAL'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dari Pelayanan Publik... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='REGIONAL'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gempa Berkekuatan Sed... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Top Loser Saham Hari ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='5 Saham Top Gainer Ha... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nilai Tukar Rupiah Me... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rocky Gerung Usai Jad... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NASIONAL'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kepala Bakom Sebut Pe... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NASIONAL'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Danantara Petakan 4 J... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KORPORASI'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ENERGI'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sektor Utilitas & Lis... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INDUSTRI'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kuliah Gratis di PTN:... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ironi Jakarta: Langga... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Mengukur Kelayakan Da... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nasib Hidup di Cincin... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Berburu Kartu BRIZZI ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INFO'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OJK Luncurkan Peta Ja... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KEUANGAN'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='5 Strategi Pakai Pinj... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INFO'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NEWS'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NEWS'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jejak Fadil Imran, Pu... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='3,5 Juta Ha Lahan Kri... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Badan Gambut Diusulka... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='IHSG Berbalik Menguat... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BURSA'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Prabowo Lantik Syahga... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NASIONAL'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tak Direstui Prabowo,... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MAKRO'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bertepatan dengan HUT... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KORPORASI'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hadirkan BRImo Junior... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INFO'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Menguji Kekuatan 3 Me... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pertarungan Ambang Ba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Utang Whoosh di Meja ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='TB di Balik Batuk yan... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Danantara Bakal Inves... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KORPORASI'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NEWS'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Angkasa Pura Proyeksi... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INDUSTRI'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='PBNU Umumkan Struktur... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NEWS'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ESDM Targetkan DIM RU... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ENERGI'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='YLKI Desak Pemerintah... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INDUSTRI'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kalah Produktif dari ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INDUSTRI'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aksi Grup Astra Boron... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='BURSA'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INACA Dorong Pemerint... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INDUSTRI'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='LRT City Dibangun Lag... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='NASIONAL'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Indeks Berita'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Emiten Hashim Adik Pr... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Danantara Dahulukan M... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='IHSG Diramal Melemah ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Adik Prabowo, Hashim ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Driver Ojol Demo Tola... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Semua event �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='UU Reforma Agraria: S... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Karhutla Berulang, Ni... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Indonesia Membutuhkan... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='QRIS dan Masa Depan U... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Waspada Super El Nino'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Proyek Karbon Meramba... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ibam dalam Jerat Akro... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat semua �'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dampak Rupiah Anjlok'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Musim Gugur Para Cham... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dampak Perang AS-Isra... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Berita'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nasional'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Industri'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Internasional'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Energi'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Finansial'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Makro'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Keuangan'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bursa'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Korporasi'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Digital'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='E-Commerce'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Fintech'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Startup'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gadget'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Teknologi'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ekonopedia'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sejarah Ekonomi'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Profil'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Istilah Ekonomi'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Energi Baru'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ekonomi Sirkular'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Investasi Hijau'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Infografik'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Analisis'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cek Data'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Telaah'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Opini'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wawancara'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Video'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='News'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wawancara'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Katalogue'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Foto'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Podcast'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Info'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Indeks'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Insight Center'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Databoks'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Event'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='KatadataOto'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tentang Katadata'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Advertising'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Karier'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disclaimer'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           | alasan: incompatible
+  ?? CAND <input type='text' id='ktdSearchInputRefactor' name='' placeholder=... ? combined=0.9063
+  ?? SKIP <input type='text' id='inputEmailNewsletter' name='' placeholder='E... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 278
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=KTD-SH-001 | Skenario: katadata_id_change
+  Status       : SUCCESS
+  Skor teks    : 0.8500  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.9063
+  Waktu healing: 47547 ms
+  Elemen dipilih: <input type="text" class="form-control search-input flex-grow-1" id="ktdSearchIn
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.9063 | time=47547ms
+[HealingDriver] Elemen dipilih: <input type='text' id='ktdSearchInputRefactor' name='' placeholder='Cari' text='Cari'>
+Oct 02, 2026 10:33:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:33:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ktdLogo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 280 kandidat elemen...
+  ?? CAND <button type='submit' id='search-button' name='' placeholder='' tex... ? combined=0.1538
+  ?? CAND <button type='button' id='slick-slide-control00' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control01' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control02' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control03' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control04' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control05' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control06' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control07' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='slick-slide-control08' name='' placeholde... ? combined=0.1786
+  ?? CAND <button type='button' id='filterEvents' name='' placeholder='' text... ? combined=0.1713
+  ?? CAND <button type='button' id='resetEvents' name='' placeholder='' text=... ? combined=0.1354
+  ?? CAND <button type='button' id='btn-langganan-newsletter' name='' placeho... ? combined=0.2187
+  ?? CAND <a type='' id='' name='' placeholder='' text='Databoks'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Green'>         ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Insights Cen... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.0781
+  ?? CAND <a type='' id='ktdLogoRefactor' name='' placeholder='' text='ktdLog... ? combined=0.4853
+  ?? CAND <a type='' id='' name='' placeholder='' text='home'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finansial'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Regional'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sorot'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis Data'>          ? combined=0.2404
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Perketat Aturan I... ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kesenjangan Inklusi d... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tips Mengelola Dana D... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks berita �'>        ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Desakan Transisi Ener... ? combined=0.0649
+  ?? CAND <a type='' id='' name='' placeholder='' text='INVESTASI HIJAU'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bangunan Lapas Cibino... ? combined=0.0514
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menko Baru Bahlil Dim... ? combined=0.0576
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI BARU'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anwar Usman Bungkam S... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dari Pelayanan Publik... ? combined=0.0583
+  ?? CAND <a type='' id='' name='' placeholder='' text='REGIONAL'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gempa Berkekuatan Sed... ? combined=0.0663
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Top Loser Saham Hari ... ? combined=0.0379
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Saham Top Gainer Ha... ? combined=0.0577
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nilai Tukar Rupiah Me... ? combined=0.0469
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Gerung Usai Jad... ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kepala Bakom Sebut Pe... ? combined=0.0608
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Petakan 4 J... ? combined=0.0649
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sektor Utilitas & Lis... ? combined=0.0685
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuliah Gratis di PTN:... ? combined=0.0714
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ironi Jakarta: Langga... ? combined=0.0673
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mengukur Kelayakan Da... ? combined=0.0994
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasib Hidup di Cincin... ? combined=0.0616
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berburu Kartu BRIZZI ... ? combined=0.0583
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Luncurkan Peta Ja... ? combined=0.0554
+  ?? CAND <a type='' id='' name='' placeholder='' text='KEUANGAN'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Strategi Pakai Pinj... ? combined=0.0616
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0586
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0706
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jejak Fadil Imran, Pu... ? combined=0.0554
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='3,5 Juta Ha Lahan Kri... ? combined=0.0583
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Badan Gambut Diusulka... ? combined=0.0583
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Berbalik Menguat... ? combined=0.0643
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Syahga... ? combined=0.0507
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tak Direstui Prabowo,... ? combined=0.0746
+  ?? CAND <a type='' id='' name='' placeholder='' text='MAKRO'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bertepatan dengan HUT... ? combined=0.0591
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hadirkan BRImo Junior... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menguji Kekuatan 3 Me... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pertarungan Ambang Ba... ? combined=0.0576
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Utang Whoosh di Meja ... ? combined=0.0613
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TB di Balik Batuk yan... ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Bakal Inves... ? combined=0.0676
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0475
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Angkasa Pura Proyeksi... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='PBNU Umumkan Struktur... ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Targetkan DIM RU... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='YLKI Desak Pemerintah... ? combined=0.0653
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalah Produktif dari ... ? combined=0.0704
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aksi Grup Astra Boron... ? combined=0.0667
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='INACA Dorong Pemerint... ? combined=0.0554
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LRT City Dibangun Lag... ? combined=0.0682
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks Berita'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Emiten Hashim Adik Pr... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Dahulukan M... ? combined=0.0877
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Diramal Melemah ... ? combined=0.0434
+  ?? CAND <a type='' id='' name='' placeholder='' text='Adik Prabowo, Hashim ... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Driver Ojol Demo Tola... ? combined=0.0536
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semua event �'>          ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0586
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0706
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0475
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='UU Reforma Agraria: S... ? combined=0.0576
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karhutla Berulang, Ni... ? combined=0.0717
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indonesia Membutuhkan... ? combined=0.0613
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='QRIS dan Masa Depan U... ? combined=0.0872
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Waspada Super El Nino'>  ? combined=0.1190
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proyek Karbon Meramba... ? combined=0.0919
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ibam dalam Jerat Akro... ? combined=0.0915
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Rupiah Anjlok'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Musim Gugur Para Cham... ? combined=0.0613
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Perang AS-Isra... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Industri'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finansial'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makro'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Keuangan'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bursa'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='E-Commerce'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fintech'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Startup'>                ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gadget'>                 ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sejarah Ekonomi'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Istilah Ekonomi'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi Baru'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Sirkular'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investasi Hijau'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cek Data'>               ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katalogue'>              ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text='Foto'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Podcast'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks'>                 ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Insight Center'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Databoks'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='KatadataOto'>            ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Katadata'>       ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertising'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karier'>                 ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimer'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <input type='text' id='inputSearch' name='' placeholder='Cari' text... ? combined=0.1354
+  ?? CAND <input type='text' id='inputEmailNewsletter' name='' placeholder='E... ? combined=0.1364
+[HealingDriver] Kandidat kompatibel: 280 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=KTD-SH-002 | Skenario: katadata_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.6250
+  Waktu healing: 56349 ms
+  Elemen dipilih: <a target="_blank" class="nav-link" href="https://green.katadata.co.id/"><span s
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.6250 | time=56349ms
+[HealingDriver] Elemen dipilih: <a type='' id='' name='' placeholder='' text='Katadata Green'>
+Oct 02, 2026 10:35:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:35:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ktdFinansial
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 280 kandidat elemen...
+  ?? CAND <button type='submit' id='search-button' name='' placeholder='' tex... ? combined=0.1389
+  ?? CAND <button type='button' id='slick-slide-control00' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control01' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control02' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control03' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control04' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control05' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control06' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control07' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='slick-slide-control08' name='' placeholde... ? combined=0.1905
+  ?? CAND <button type='button' id='filterEvents' name='' placeholder='' text... ? combined=0.1136
+  ?? CAND <button type='button' id='resetEvents' name='' placeholder='' text=... ? combined=0.0694
+  ?? CAND <button type='button' id='btn-langganan-newsletter' name='' placeho... ? combined=0.2326
+  ?? CAND <a type='' id='' name='' placeholder='' text='Databoks'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Green'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Insights Cen... ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='home'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.0694
+  ?? CAND <a type='' id='ktdFinansialRefactor' name='' placeholder='' text='F... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Regional'>               ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sorot'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis Data'>          ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Perketat Aturan I... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kesenjangan Inklusi d... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tips Mengelola Dana D... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks berita �'>        ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Desakan Transisi Ener... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='INVESTASI HIJAU'>        ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bangunan Lapas Cibino... ? combined=0.0685
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menko Baru Bahlil Dim... ? combined=0.0576
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI BARU'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anwar Usman Bungkam S... ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dari Pelayanan Publik... ? combined=0.0667
+  ?? CAND <a type='' id='' name='' placeholder='' text='REGIONAL'>               ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gempa Berkekuatan Sed... ? combined=0.0473
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Top Loser Saham Hari ... ? combined=0.0379
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Saham Top Gainer Ha... ? combined=0.0577
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nilai Tukar Rupiah Me... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Gerung Usai Jad... ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kepala Bakom Sebut Pe... ? combined=0.0434
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Petakan 4 J... ? combined=0.0487
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sektor Utilitas & Lis... ? combined=0.0514
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuliah Gratis di PTN:... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ironi Jakarta: Langga... ? combined=0.0673
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mengukur Kelayakan Da... ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasib Hidup di Cincin... ? combined=0.0616
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berburu Kartu BRIZZI ... ? combined=0.0583
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Luncurkan Peta Ja... ? combined=0.0554
+  ?? CAND <a type='' id='' name='' placeholder='' text='KEUANGAN'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Strategi Pakai Pinj... ? combined=0.0616
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jejak Fadil Imran, Pu... ? combined=0.0633
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='3,5 Juta Ha Lahan Kri... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Badan Gambut Diusulka... ? combined=0.0583
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Berbalik Menguat... ? combined=0.0643
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Syahga... ? combined=0.0591
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tak Direstui Prabowo,... ? combined=0.0653
+  ?? CAND <a type='' id='' name='' placeholder='' text='MAKRO'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bertepatan dengan HUT... ? combined=0.0422
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hadirkan BRImo Junior... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menguji Kekuatan 3 Me... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pertarungan Ambang Ba... ? combined=0.0576
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Utang Whoosh di Meja ... ? combined=0.0613
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TB di Balik Batuk yan... ? combined=0.0641
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Bakal Inves... ? combined=0.0591
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0554
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Angkasa Pura Proyeksi... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='PBNU Umumkan Struktur... ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Targetkan DIM RU... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='YLKI Desak Pemerintah... ? combined=0.0653
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalah Produktif dari ... ? combined=0.0792
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aksi Grup Astra Boron... ? combined=0.0583
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='INACA Dorong Pemerint... ? combined=0.0475
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LRT City Dibangun Lag... ? combined=0.0795
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks Berita'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Dahulukan M... ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Emiten Hashim Adik Pr... ? combined=0.0576
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Diramal Melemah ... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Adik Prabowo, Hashim ... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Driver Ojol Demo Tola... ? combined=0.0536
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semua event �'>          ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0554
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='UU Reforma Agraria: S... ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karhutla Berulang, Ni... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indonesia Membutuhkan... ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='QRIS dan Masa Depan U... ? combined=0.0872
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Waspada Super El Nino'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proyek Karbon Meramba... ? combined=0.0551
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ibam dalam Jerat Akro... ? combined=0.0457
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Rupiah Anjlok'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Musim Gugur Para Cham... ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Perang AS-Isra... ? combined=0.1071
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text='Industri'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.2885
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finansial'>              ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makro'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Keuangan'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bursa'>                  ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='E-Commerce'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fintech'>                ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Startup'>                ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gadget'>                 ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sejarah Ekonomi'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Istilah Ekonomi'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi Baru'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Sirkular'>       ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investasi Hijau'>        ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cek Data'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katalogue'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Foto'>                   ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Podcast'>                ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Insight Center'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Databoks'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='KatadataOto'>            ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Katadata'>       ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertising'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karier'>                 ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.1838
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimer'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <input type='text' id='inputSearch' name='' placeholder='Cari' text... ? combined=0.1563
+  ?? CAND <input type='text' id='inputEmailNewsletter' name='' placeholder='E... ? combined=0.2765
+[HealingDriver] Kandidat kompatibel: 280 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=KTD-SH-003 | Skenario: katadata_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 51092 ms
+  Elemen dipilih: <a class="nav-link" href="https://katadata.co.id/finansial" id="ktdFinansialRefa
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=51092ms
+[HealingDriver] Elemen dipilih: <a type='' id='ktdFinansialRefactor' name='' placeholder='' text='Finansial'>
+Oct 02, 2026 10:37:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:37:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ktdBerita
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 279 kandidat elemen...
+  ?? CAND <button type='submit' id='search-button' name='' placeholder='' tex... ? combined=0.2660
+  ?? CAND <button type='button' id='slick-slide-control00' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control01' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control02' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control03' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control04' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control05' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control06' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control07' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control08' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='filterEvents' name='' placeholder='' text... ? combined=0.2308
+  ?? CAND <button type='button' id='resetEvents' name='' placeholder='' text=... ? combined=0.2708
+  ?? CAND <button type='button' id='btn-langganan-newsletter' name='' placeho... ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='Databoks'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Green'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Insights Cen... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='home'>                   ? combined=0.0000
+  ?? CAND <a type='' id='ktdBeritaRefactor' name='' placeholder='' text='Beri... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finansial'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.2679
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Regional'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sorot'>                  ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis Data'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Perketat Aturan I... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kesenjangan Inklusi d... ? combined=0.0406
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tips Mengelola Dana D... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks berita �'>        ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Desakan Transisi Ener... ? combined=0.0406
+  ?? CAND <a type='' id='' name='' placeholder='' text='INVESTASI HIJAU'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bangunan Lapas Cibino... ? combined=0.0428
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menko Baru Bahlil Dim... ? combined=0.0493
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI BARU'>            ? combined=0.2273
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anwar Usman Bungkam S... ? combined=0.0397
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dari Pelayanan Publik... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='REGIONAL'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gempa Berkekuatan Sed... ? combined=0.0473
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Top Loser Saham Hari ... ? combined=0.0473
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Saham Top Gainer Ha... ? combined=0.0577
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nilai Tukar Rupiah Me... ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Gerung Usai Jad... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kepala Bakom Sebut Pe... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Petakan 4 J... ? combined=0.0406
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0325
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sektor Utilitas & Lis... ? combined=0.0428
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuliah Gratis di PTN:... ? combined=0.0357
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ironi Jakarta: Langga... ? combined=0.0577
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mengukur Kelayakan Da... ? combined=0.0710
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasib Hidup di Cincin... ? combined=0.0528
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berburu Kartu BRIZZI ... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Luncurkan Peta Ja... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text='KEUANGAN'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Strategi Pakai Pinj... ? combined=0.0440
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0325
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jejak Fadil Imran, Pu... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='3,5 Juta Ha Lahan Kri... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Badan Gambut Diusulka... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Berbalik Menguat... ? combined=0.0551
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Syahga... ? combined=0.0422
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tak Direstui Prabowo,... ? combined=0.0560
+  ?? CAND <a type='' id='' name='' placeholder='' text='MAKRO'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bertepatan dengan HUT... ? combined=0.0422
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hadirkan BRImo Junior... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menguji Kekuatan 3 Me... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pertarungan Ambang Ba... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Utang Whoosh di Meja ... ? combined=0.0613
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TB di Balik Batuk yan... ? combined=0.0641
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Bakal Inves... ? combined=0.0507
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Angkasa Pura Proyeksi... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='PBNU Umumkan Struktur... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Targetkan DIM RU... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='YLKI Desak Pemerintah... ? combined=0.0560
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalah Produktif dari ... ? combined=0.0440
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aksi Grup Astra Boron... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='INACA Dorong Pemerint... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LRT City Dibangun Lag... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks Berita'>          ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Dahulukan M... ? combined=0.0548
+  ?? CAND <a type='' id='' name='' placeholder='' text='Emiten Hashim Adik Pr... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Diramal Melemah ... ? combined=0.0347
+  ?? CAND <a type='' id='' name='' placeholder='' text='Adik Prabowo, Hashim ... ? combined=0.0406
+  ?? CAND <a type='' id='' name='' placeholder='' text='Driver Ojol Demo Tola... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semua event �'>          ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='UU Reforma Agraria: S... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karhutla Berulang, Ni... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indonesia Membutuhkan... ? combined=0.0613
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='QRIS dan Masa Depan U... ? combined=0.0436
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Waspada Super El Nino'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proyek Karbon Meramba... ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ibam dalam Jerat Akro... ? combined=0.0762
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Rupiah Anjlok'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Musim Gugur Para Cham... ? combined=0.0490
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Perang AS-Isra... ? combined=0.0714
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Industri'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finansial'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makro'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Keuangan'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bursa'>                  ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.2679
+  ?? CAND <a type='' id='' name='' placeholder='' text='E-Commerce'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fintech'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Startup'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gadget'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sejarah Ekonomi'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Istilah Ekonomi'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi Baru'>            ? combined=0.2273
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Sirkular'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investasi Hijau'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cek Data'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katalogue'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Foto'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Podcast'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Insight Center'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Databoks'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='KatadataOto'>            ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Katadata'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertising'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karier'>                 ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimer'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           ? combined=0.1563
+  ?? CAND <input type='text' id='inputSearch' name='' placeholder='Cari' text... ? combined=0.2708
+  ?? CAND <input type='text' id='inputEmailNewsletter' name='' placeholder='E... ? combined=0.1723
+[HealingDriver] Kandidat kompatibel: 279 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=KTD-SH-004 | Skenario: katadata_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 55430 ms
+  Elemen dipilih: <a class="nav-link" href="https://katadata.co.id/berita" id="ktdBeritaRefactor" 
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=55430ms
+[HealingDriver] Elemen dipilih: <a type='' id='ktdBeritaRefactor' name='' placeholder='' text='Berita'>
+Oct 02, 2026 10:39:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:39:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ktdDataboks
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 279 kandidat elemen...
+  ?? CAND <button type='submit' id='search-button' name='' placeholder='' tex... ? combined=0.1250
+  ?? CAND <button type='button' id='slick-slide-control00' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control01' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control02' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control03' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control04' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control05' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control06' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control07' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='slick-slide-control08' name='' placeholde... ? combined=0.1310
+  ?? CAND <button type='button' id='filterEvents' name='' placeholder='' text... ? combined=0.1250
+  ?? CAND <button type='button' id='resetEvents' name='' placeholder='' text=... ? combined=0.1354
+  ?? CAND <button type='button' id='btn-langganan-newsletter' name='' placeho... ? combined=0.3125
+  ?? CAND <a type='' id='ktdDataboksRefactor' name='' placeholder='' text='Da... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Green'>         ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katadata Insights Cen... ? combined=0.1302
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='home'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finansial'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Regional'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sorot'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis Data'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Perketat Aturan I... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kesenjangan Inklusi d... ? combined=0.0487
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tips Mengelola Dana D... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks berita �'>        ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Desakan Transisi Ener... ? combined=0.0649
+  ?? CAND <a type='' id='' name='' placeholder='' text='INVESTASI HIJAU'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bangunan Lapas Cibino... ? combined=0.0514
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menko Baru Bahlil Dim... ? combined=0.0493
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI BARU'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Anwar Usman Bungkam S... ? combined=0.0496
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dari Pelayanan Publik... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='REGIONAL'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gempa Berkekuatan Sed... ? combined=0.0379
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Top Loser Saham Hari ... ? combined=0.0473
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Saham Top Gainer Ha... ? combined=0.0577
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nilai Tukar Rupiah Me... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Gerung Usai Jad... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kepala Bakom Sebut Pe... ? combined=0.0608
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Petakan 4 J... ? combined=0.0487
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sektor Utilitas & Lis... ? combined=0.0514
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuliah Gratis di PTN:... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ironi Jakarta: Langga... ? combined=0.0577
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mengukur Kelayakan Da... ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasib Hidup di Cincin... ? combined=0.0528
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berburu Kartu BRIZZI ... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Luncurkan Peta Ja... ? combined=0.0475
+  ?? CAND <a type='' id='' name='' placeholder='' text='KEUANGAN'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Strategi Pakai Pinj... ? combined=0.0528
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Selengkapnya �'>         ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Ungkap Ada Poten... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jejak Fadil Imran, Pu... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='3,5 Juta Ha Lahan Kri... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Badan Gambut Diusulka... ? combined=0.0667
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Berbalik Menguat... ? combined=0.0551
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Syahga... ? combined=0.0591
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tak Direstui Prabowo,... ? combined=0.0560
+  ?? CAND <a type='' id='' name='' placeholder='' text='MAKRO'>                  ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bertepatan dengan HUT... ? combined=0.0507
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hadirkan BRImo Junior... ? combined=0.0615
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Menguji Kekuatan 3 Me... ? combined=0.0558
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pertarungan Ambang Ba... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Utang Whoosh di Meja ... ? combined=0.0490
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='TB di Balik Batuk yan... ? combined=0.0801
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Bakal Inves... ? combined=0.0676
+  ?? CAND <a type='' id='' name='' placeholder='' text='KORPORASI'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Angkasa Pura Proyeksi... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='PBNU Umumkan Struktur... ? combined=0.0397
+  ?? CAND <a type='' id='' name='' placeholder='' text='NEWS'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESDM Targetkan DIM RU... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='ENERGI'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='YLKI Desak Pemerintah... ? combined=0.0466
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kalah Produktif dari ... ? combined=0.0440
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aksi Grup Astra Boron... ? combined=0.0500
+  ?? CAND <a type='' id='' name='' placeholder='' text='BURSA'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='INACA Dorong Pemerint... ? combined=0.0554
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDUSTRI'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LRT City Dibangun Lag... ? combined=0.0682
+  ?? CAND <a type='' id='' name='' placeholder='' text='NASIONAL'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks Berita'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Danantara Dahulukan M... ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Emiten Hashim Adik Pr... ? combined=0.0493
+  ?? CAND <a type='' id='' name='' placeholder='' text='IHSG Diramal Melemah ... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Adik Prabowo, Hashim ... ? combined=0.0487
+  ?? CAND <a type='' id='' name='' placeholder='' text='Driver Ojol Demo Tola... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Semua event �'>          ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syahganda Nainggolan ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Lantik Wantim... ? combined=0.0504
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suahasil Sambut 2 Wam... ? combined=0.0396
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='UU Reforma Agraria: S... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karhutla Berulang, Ni... ? combined=0.0512
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indonesia Membutuhkan... ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='QRIS dan Masa Depan U... ? combined=0.0872
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Waspada Super El Nino'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Proyek Karbon Meramba... ? combined=0.0551
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ibam dalam Jerat Akro... ? combined=0.0915
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat semua �'>          ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Rupiah Anjlok'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Musim Gugur Para Cham... ? combined=0.0613
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dampak Perang AS-Isra... ? combined=0.0714
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Industri'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Finansial'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Makro'>                  ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Keuangan'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bursa'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Korporasi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Digital'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='E-Commerce'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fintech'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Startup'>                ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gadget'>                 ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonopedia'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sejarah Ekonomi'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Istilah Ekonomi'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Hijau'>          ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Energi Baru'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi Sirkular'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Investasi Hijau'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jurnalisme Data'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infografik'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Analisis'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cek Data'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='In-Depth & Opini'>       ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telaah'>                 ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Opini'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Laporan Khusus'>         ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Video'>                  ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='News'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wawancara'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Katalogue'>              ? combined=0.2778
+  ?? CAND <a type='' id='' name='' placeholder='' text='Foto'>                   ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Podcast'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Info'>                   ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Indeks'>                 ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Insight Center'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Databoks'>               ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Event'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='KatadataOto'>            ? combined=0.2604
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Katadata'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Advertising'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karier'>                 ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimer'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           ? combined=0.0521
+  ?? SKIP <input type='text' id='inputSearch' name='' placeholder='Cari' text... | alasan: incompatible
+  ?? SKIP <input type='text' id='inputEmailNewsletter' name='' placeholder='E... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 277 | Kandidat dilewati: 2
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=KTD-SH-005 | Skenario: katadata_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 51089 ms
+  Elemen dipilih: <a target="_blank" class="nav-link" href="https://databoks.katadata.co.id/" id="
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=51089ms
+[HealingDriver] Elemen dipilih: <a type='' id='ktdDataboksRefactor' name='' placeholder='' text='Databoks'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 5
+  Berhasil dipulihkan         : 5
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 52301.40 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\katadata_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 473.4 s <<< FAILURE! -- in com.fulvian.tests.TestKatadataHealing
+[ERROR] com.fulvian.tests.TestKatadataHealing.ktdSh002_logo -- Time elapsed: 115.7 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <ktdLogoRefactor> but was: <>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestKatadataHealing.ktdSh002_logo(TestKatadataHealing.java:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Failures: 
+[ERROR]   TestKatadataHealing.ktdSh002_logo:100 expected: <ktdLogoRefactor> but was: <>
+[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

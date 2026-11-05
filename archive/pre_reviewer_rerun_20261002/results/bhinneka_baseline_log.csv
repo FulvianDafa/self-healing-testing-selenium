@@ -1,0 +1,3 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:35:47.701160900","BHK-BL-001","bhinneka","By.id: bhkSearchInput","id=bhkSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:36:56.855023100","BHK-BL-005","bhinneka","By.id: bhkLogin","id=bhkLoginRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

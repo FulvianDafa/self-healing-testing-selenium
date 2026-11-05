@@ -1,0 +1,2 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-09-30 11:18:25.913","EBY-SH-001","ebay_id_change","By.id: ebySearchInput","SUCCESS",1.0000,0.6400,0.0000,1.0000,"<input data-marko='{&quot;oninput&quot;:&quot;handleTextUpdate s0-1-4-10-4 false&quot;,&quot;onfocusin&quot;:&quot;handleMarkTimer s0-1-4-10-4 false&q",17214,false

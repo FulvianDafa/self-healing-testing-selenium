@@ -41,8 +41,24 @@ public class HealingLogger {
     }
 
     private static String candidateLogFile() {
-        return System.getProperty("healing.candidateLog.file",
-                System.getProperty("healing.candidateLogPath", DEFAULT_CANDIDATE_LOG_FILE));
+        String explicit = System.getProperty("healing.candidateLog.file",
+                System.getProperty("healing.candidateLogPath"));
+        if (explicit != null && !explicit.isBlank()) {
+            return explicit;
+        }
+
+        String healingFile = logFile();
+        if (DEFAULT_LOG_FILE.equals(healingFile)) {
+            return DEFAULT_CANDIDATE_LOG_FILE;
+        }
+        if (healingFile.endsWith("_healing_log.csv")) {
+            return healingFile.substring(0, healingFile.length() - "_healing_log.csv".length())
+                    + "_candidates_log.csv";
+        }
+        if (healingFile.endsWith(".csv")) {
+            return healingFile.substring(0, healingFile.length() - 4) + "_candidates.csv";
+        }
+        return healingFile + "_candidates.csv";
     }
 
     // -------------------------------------------------------
@@ -117,19 +133,28 @@ public class HealingLogger {
 
         try {
             java.util.List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8);
+            if (lines.isEmpty()) return new HealingMetrics(0, 0, 0, 0, 0);
+
+            String[] header = parseCSVLine(lines.get(0));
+            int statusIndex = findColumn(header, "status");
+            int timeIndex = findColumn(header, "healing_time_ms");
+            int falsePositiveIndex = findColumn(header, "is_false_positive");
+            if (statusIndex < 0 || timeIndex < 0 || falsePositiveIndex < 0) {
+                return new HealingMetrics(0, 0, 0, 0, 0);
+            }
             for (int i = 1; i < lines.size(); i++) { // skip header (baris 0)
                 String line = lines.get(i).trim();
                 if (line.isEmpty()) continue;
 
                 String[] cols = parseCSVLine(line);
-                if (cols.length < 12) continue;
+                if (cols.length <= Math.max(statusIndex, Math.max(timeIndex, falsePositiveIndex))) continue;
 
                 total++;
-                if ("\"SUCCESS\"".equals(cols[4])) success++;
-                if ("true".equals(cols[11].trim()))  falsePositive++;
+                if ("SUCCESS".equals(unquote(cols[statusIndex]))) success++;
+                if ("true".equalsIgnoreCase(unquote(cols[falsePositiveIndex]))) falsePositive++;
 
                 try {
-                    totalHealingTime += Long.parseLong(cols[10].trim());
+                    totalHealingTime += Long.parseLong(unquote(cols[timeIndex]));
                 } catch (NumberFormatException ignored) {}
             }
         } catch (IOException e) {
@@ -177,10 +202,15 @@ public class HealingLogger {
 
     private static void writeToSpecificFile(String filePath, String content, boolean append) {
         try {
+            Path path = Paths.get(filePath);
+            Path parent = path.getParent();
+            if (parent != null) {
+                Files.createDirectories(parent);
+            }
             StandardOpenOption mode = append
                     ? StandardOpenOption.APPEND
                     : StandardOpenOption.TRUNCATE_EXISTING;
-            Files.write(Paths.get(filePath), content.getBytes(StandardCharsets.UTF_8),
+            Files.write(path, content.getBytes(StandardCharsets.UTF_8),
                     StandardOpenOption.CREATE, mode);
         } catch (IOException e) {
             System.err.println("[HealingLogger] Gagal menulis ke " + filePath + ": " + e.getMessage());
@@ -207,6 +237,21 @@ public class HealingLogger {
     /** Parse satu baris CSV yang nilainya mungkin terbungkus tanda kutip. */
     private static String[] parseCSVLine(String line) {
         return line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+    }
+
+    private static int findColumn(String[] header, String name) {
+        for (int i = 0; i < header.length; i++) {
+            if (name.equals(unquote(header[i]))) return i;
+        }
+        return -1;
+    }
+
+    private static String unquote(String value) {
+        String result = value == null ? "" : value.trim();
+        if (result.length() >= 2 && result.startsWith("\"") && result.endsWith("\"")) {
+            result = result.substring(1, result.length() - 1);
+        }
+        return result.replace("''", "'");
     }
 
     // -------------------------------------------------------

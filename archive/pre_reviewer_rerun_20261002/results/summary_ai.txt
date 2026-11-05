@@ -1,0 +1,17 @@
+=== SUMMARY AI ===
+Total Scenarios Evaluated: 9
+Correctly Selected (Top-1): 7
+Top-1 Accuracy: 77.78%
+False Positive Rate: 22.22%
+Average Inference Time per Candidate: 0.1474 ms
+
+Label Distribution per Test Case:
+ - AUTO-002: 1 Positive, 0 Negative
+ - AUTO-003: 1 Positive, 11 Negative
+ - AUTO-004: 1 Positive, 0 Negative
+ - AUTO-005: 1 Positive, 8 Negative
+ - AUTO-006: 1 Positive, 0 Negative
+ - AUTO-007: 1 Positive, 9 Negative
+ - AUTO-008: 1 Positive, 0 Negative
+ - AUTO-009: 1 Positive, 0 Negative
+ - AUTO-010: 1 Positive, 6 Negative

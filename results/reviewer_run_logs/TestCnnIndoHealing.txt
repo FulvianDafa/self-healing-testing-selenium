@@ -1,0 +1,541 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:20:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:20:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:22:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:22:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:23:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:23:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: cnnLogo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 109 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='cnnLogoRefactor' name='' placeholder='' text='link d... ? combined=0.6875
+  ?? CAND <a type='' id='' name='' placeholder='' text='For You'>                ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi'>                ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olahraga'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hiburan'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaya Hidup'>             ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN TV'>                 ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='RAGAM'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Timnas Indonesia'>       ? combined=0.4297
+  ?? CAND <a type='' id='' name='' placeholder='' text='Watimpres'>              ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA ASEAN Cup'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asian Games'>            ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='What The Fact!'>         ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIVE TV'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelatih Bangladesh: S... ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kevin Diks Soal Kebob... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA ASEAN CUP 2026
+P... ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='01
+Pelatih Vietnam Se... ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='02
+Rocky Mau Olah Per... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='03
+Hasil FIFA ASEAN C... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='04
+Pelatih Singapura ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='05
+Gavin Lee Beberkan... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='06
+Final FIFA ASEAN C... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar Top Skor FIFA ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Resmi Lantik ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Update Ranking FIFA: ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:48
+Kebakaran TPA J... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:46
+Momen Prabowo L... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:56
+Peluk Hangat Ag... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:48
+Penampakan Heli... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:26
+Lolos Final FIF... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:31
+John Herdman Be... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Update Ranking FIFA: ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hasil FIFA ASEAN Cup:... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Horor Roller Coaster ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Mau Olah Persep... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kasus SMS Blast Bobol... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jadwal Final FIFA ASE... ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Polri Respons Rencana... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Final FIFA ASEAN Chal... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Rekomendasi Drama K... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='BGN Temukan Dapur MBG... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='03:12
+VIDEO: Tutup Pe... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='4 Atlet Lead Indonesi... ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coast Guard Taiwan Us... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gavin Lee Beberkan Al... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Klasemen Asian Games ... ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA Klarifikasi Isu ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='BGN Respons soal Vira... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil Syahganda Nain... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='MA Kabulkan Pemakzula... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT LEBIH BANYAK'>     ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Guru ICM Tersangka Ka... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bukan Ijazah, Gibran ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='14:25
+VIDEO: Bisakah ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Catat Pasar Modal... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Insentif Dapur MBG Di... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sinopsis Forgotten Is... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kevin Diks Soal Kebob... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deputi II Bakom RI Ti... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='04:01
+VIDEO:Reshuffle... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infeksi HIV Belum Ten... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pengakuan Almas Kini ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDEKS BERITA'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='DOWNLOAD SEKARANG'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.1923
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi'>                ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olahraga'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hiburan'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaya Hidup'>             ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='berbuatbaik.id'>         ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN TV'>                 ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Redaksi'>                ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    ? combined=0.1645
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimer'>             ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN U.S.'>               ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN International'>      ? combined=0.3309
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN en ESPA�OL'>         ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN Chile'>              ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN M�xico'>             ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='???????'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='???'>                    ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='T�rk�e'>                 ? combined=0.1172
+[HealingDriver] Kandidat kompatibel: 109 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=CNN-SH-003 | Skenario: cnnindo_id_change
+  Status       : SUCCESS
+  Skor teks    : 0.5000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.6875
+  Waktu healing: 22910 ms
+  Elemen dipilih: <a aria-label="link description" class="w-[60px] absolute top-0 left-0 z-50" hre
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.6875 | time=22910ms
+[HealingDriver] Elemen dipilih: <a type='' id='cnnLogoRefactor' name='' placeholder='' text='link description'>
+Oct 02, 2026 10:24:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:24:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: cnnNasional
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 109 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='For You'>                ? combined=0.0000
+  ?? CAND <a type='' id='cnnNasionalRefactor' name='' placeholder='' text='Na... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olahraga'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hiburan'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaya Hidup'>             ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN TV'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='RAGAM'>                  ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Timnas Indonesia'>       ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Watimpres'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA ASEAN Cup'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asian Games'>            ? combined=0.2273
+  ?? CAND <a type='' id='' name='' placeholder='' text='What The Fact!'>         ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIVE TV'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelatih Bangladesh: S... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kevin Diks Soal Kebob... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA ASEAN CUP 2026
+P... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='01
+Pelatih Vietnam Se... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='02
+Rocky Mau Olah Per... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='03
+Hasil FIFA ASEAN C... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='04
+Pelatih Singapura ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='05
+Gavin Lee Beberkan... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='06
+Final FIFA ASEAN C... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar Top Skor FIFA ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Resmi Lantik ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Update Ranking FIFA: ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:48
+Kebakaran TPA J... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:46
+Momen Prabowo L... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:56
+Peluk Hangat Ag... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:48
+Penampakan Heli... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:26
+Lolos Final FIF... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:31
+John Herdman Be... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Update Ranking FIFA: ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hasil FIFA ASEAN Cup:... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Horor Roller Coaster ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Mau Olah Persep... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kasus SMS Blast Bobol... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jadwal Final FIFA ASE... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Polri Respons Rencana... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Final FIFA ASEAN Chal... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Rekomendasi Drama K... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='BGN Temukan Dapur MBG... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='03:12
+VIDEO: Tutup Pe... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='4 Atlet Lead Indonesi... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coast Guard Taiwan Us... ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gavin Lee Beberkan Al... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Klasemen Asian Games ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='50 Hotel Terbaik di D... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='BGN Respons soal Vira... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil Syahganda Nain... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='MA Kabulkan Pemakzula... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT LEBIH BANYAK'>     ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Guru ICM Tersangka Ka... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bukan Ijazah, Gibran ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='14:25
+VIDEO: Bisakah ... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Catat Pasar Modal... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Insentif Dapur MBG Di... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sinopsis Forgotten Is... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kevin Diks Soal Kebob... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deputi II Bakom RI Ti... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='04:01
+VIDEO:Reshuffle... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infeksi HIV Belum Ten... ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pengakuan Almas Kini ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDEKS BERITA'>          ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='DOWNLOAD SEKARANG'>      ? combined=0.1471
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.5313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olahraga'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hiburan'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaya Hidup'>             ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='berbuatbaik.id'>         ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN TV'>                 ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Redaksi'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimer'>             ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN U.S.'>               ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN International'>      ? combined=0.2574
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN en ESPA�OL'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN Chile'>              ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN M�xico'>             ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='???????'>                ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='???'>                    ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='T�rk�e'>                 ? combined=0.1172
+[HealingDriver] Kandidat kompatibel: 109 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=CNN-SH-004 | Skenario: cnnindo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 24482 ms
+  Elemen dipilih: <a aria-label="link description" class="navbar__item" href="https://www.cnnindon
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=24482ms
+[HealingDriver] Elemen dipilih: <a type='' id='cnnNasionalRefactor' name='' placeholder='' text='Nasional'>
+Oct 02, 2026 10:26:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:26:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: cnnEkonomi
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 109 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='For You'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.0962
+  ?? CAND <a type='' id='cnnEkonomiRefactor' name='' placeholder='' text='Eko... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olahraga'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.3472
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hiburan'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaya Hidup'>             ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN TV'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='RAGAM'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Timnas Indonesia'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Watimpres'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA ASEAN Cup'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asian Games'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='What The Fact!'>         ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIVE TV'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pelatih Bangladesh: S... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kevin Diks Soal Kebob... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA ASEAN CUP 2026
+P... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='01
+Pelatih Vietnam Se... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='02
+Rocky Mau Olah Per... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='03
+Hasil FIFA ASEAN C... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='04
+Pelatih Singapura ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='05
+Gavin Lee Beberkan... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='06
+Final FIFA ASEAN C... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Daftar Top Skor FIFA ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prabowo Resmi Lantik ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Update Ranking FIFA: ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:48
+Kebakaran TPA J... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:46
+Momen Prabowo L... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:56
+Peluk Hangat Ag... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:48
+Penampakan Heli... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:26
+Lolos Final FIF... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='00:31
+John Herdman Be... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Update Ranking FIFA: ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hasil FIFA ASEAN Cup:... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Horor Roller Coaster ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rocky Mau Olah Persep... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kasus SMS Blast Bobol... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jadwal Final FIFA ASE... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Polri Respons Rencana... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Final FIFA ASEAN Chal... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Rekomendasi Drama K... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='BGN Temukan Dapur MBG... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='03:12
+VIDEO: Tutup Pe... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='4 Atlet Lead Indonesi... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Coast Guard Taiwan Us... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gavin Lee Beberkan Al... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Klasemen Asian Games ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='FIFA Klarifikasi Isu ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='BGN Respons soal Vira... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Profil Syahganda Nain... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='MA Kabulkan Pemakzula... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT LEBIH BANYAK'>     ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Guru ICM Tersangka Ka... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bukan Ijazah, Gibran ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='14:25
+VIDEO: Bisakah ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='OJK Catat Pasar Modal... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Insentif Dapur MBG Di... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sinopsis Forgotten Is... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kevin Diks Soal Kebob... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deputi II Bakom RI Ti... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='04:01
+VIDEO:Reshuffle... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Infeksi HIV Belum Ten... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pengakuan Almas Kini ... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='INDEKS BERITA'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LIHAT SEMUA'>            ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='DOWNLOAD SEKARANG'>      ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nasional'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Internasional'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ekonomi'>                ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Olahraga'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teknologi'>              ? combined=0.3472
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otomotif'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hiburan'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaya Hidup'>             ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='berbuatbaik.id'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN TV'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='link description'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Redaksi'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pedoman Media Siber'>    ? combined=0.1645
+  ?? CAND <a type='' id='' name='' placeholder='' text='Karir'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimer'>             ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN U.S.'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN International'>      ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN en ESPA�OL'>         ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN Chile'>              ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='CNN M�xico'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='???????'>                ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='???'>                    ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='T�rk�e'>                 ? combined=0.0781
+[HealingDriver] Kandidat kompatibel: 109 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=CNN-SH-005 | Skenario: cnnindo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 25122 ms
+  Elemen dipilih: <a aria-label="link description" class="navbar__item" href="https://www.cnnindon
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=25122ms
+[HealingDriver] Elemen dipilih: <a type='' id='cnnEkonomiRefactor' name='' placeholder='' text='Ekonomi'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 3
+  Berhasil dipulihkan         : 3
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 24171.33 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\cnnindo_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 415.3 s <<< FAILURE! -- in com.fulvian.tests.TestCnnIndoHealing
+[ERROR] com.fulvian.tests.TestCnnIndoHealing.cnnSh001_searchIcon -- Time elapsed: 95.87 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@class,'search-btn') or contains(@class,'btn-search')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49166}, goog:processID: 12392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49166/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e59dc259a1ae8a1d51b7a911a0ad40d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestCnnIndoHealing.waitVisible(TestCnnIndoHealing.java:171)
+	at com.fulvian.tests.TestCnnIndoHealing.cnnSh001_searchIcon(TestCnnIndoHealing.java:79)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestCnnIndoHealing.cnnSh002_searchInput -- Time elapsed: 72.05 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: searchinput (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60927}, goog:processID: 9572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60927/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4b68aa55ed200cf1626e45e398a4b81
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestCnnIndoHealing.waitVisible(TestCnnIndoHealing.java:171)
+	at com.fulvian.tests.TestCnnIndoHealing.cnnSh002_searchInput(TestCnnIndoHealing.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestCnnIndoHealing.cnnSh001_searchIcon:79->waitVisible:171 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@class,'search-btn') or contains(@class,'btn-search')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49166}, goog:processID: 12392, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49166/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e59dc259a1ae8a1d51b7a911a0ad40d
+[ERROR]   TestCnnIndoHealing.cnnSh002_searchInput:95->waitVisible:171 � Timeout Expected condition failed: waiting for visibility of element located by By.id: searchinput (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60927}, goog:processID: 9572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60927/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e4b68aa55ed200cf1626e45e398a4b81
+[ERROR] Tests run: 5, Failures: 0, Errors: 2, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,11 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-09-30 10:42:59.668","BING-SH-001","bing_id_change","By.id: bingSearchInput","SUCCESS",0.2308,0.2353,0.0000,0.7132,"<input id='sb_imgpst' class='imgpst' type='text' placeholder='paste image link to search'>",8575,false
+"2026-09-30 10:43:14.610","BING-SH-002","bing_id_change","By.id: bingSearchButton","FAIL",0.4286,0.2778,0.0000,0.3720,"-",8501,false
+"2026-09-30 10:43:27.832","BING-SH-003","bing_id_change","By.id: bingImagesLink","FAIL",0.0833,0.1250,0.0000,0.0990,"-",7005,false
+"2026-09-30 10:43:42.259","BING-SH-004","bing_id_change","By.id: bingVideosLink","SUCCESS",1.0000,0.6400,0.0000,1.0000,"<a href='/videos?FORM=Z9LH1' data-h='ID=HpApp,7808.1' target='_blank' class='' rel='noopener' id='bingVideosLinkRefactor' data-self-healing-old-id='bi",7959,false
+"2026-09-30 10:43:56.976","BING-SH-005","bing_id_change","By.id: bingMapsLink","SUCCESS",1.0000,0.6087,0.0000,1.0000,"<a href='/maps?FORM=Z9LH2' data-h='ID=HpApp,7692.1' target='_blank' class='' rel='noopener' id='bingMapsLinkRefactor' data-self-healing-old-id='bingMa",9087,false
+"2026-09-30 10:44:14.018","BING-SH-006","bing_id_change","By.id: bingNewsLink","SUCCESS",1.0000,0.6087,0.0000,1.0000,"<a href='/news/search?q=Top+stories&amp;nvaug=%5bNewsVertical+Category%3d%22rt_MaxClass%22%5d&amp;FORM=Z9LH3' data-h='ID=HpApp,6720.1' target='_blank'",9207,false
+"2026-09-30 10:44:28.305","BING-SH-007","bing_id_change","By.id: bingMicIcon","SUCCESS",0.0000,0.2308,0.0000,0.6178,"<a class='id_button tooltip  linkBtn' data-priority='2' id='id_rh_w' dir='ltr' aria-label='Microsoft Rewards' aria-expanded='false' aria-controls='rew",8547,false
+"2026-09-30 10:44:44.057","BING-SH-008","bing_id_change","By.id: bingCameraIcon","FAIL",0.3077,0.1875,0.0000,0.2626,"-",8166,false
+"2026-09-30 10:44:58.226","BING-SH-009","bing_id_change","By.id: bingSettingsMenu","SUCCESS",0.3333,0.6667,0.0000,1.0000,"<a id='bingSettingsMenuRefactor' class='idp_ham hphbtop linkBtn' aria-label='Settings and quick links' aria-expanded='false' aria-controls='id_hbfo' a",7456,false
+"2026-09-30 10:45:11.396","BING-SH-010","bing_id_change","By.id: bingLogoIcon","FAIL",0.4000,0.1429,0.0000,0.3036,"-",7535,false

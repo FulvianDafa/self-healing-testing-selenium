@@ -1,0 +1,532 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:54:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:54:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Membuka halaman SauceDemo...
+
+? STEP: [2/3] Mensimulasikan perubahan ID elemen username...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan elemen...
+[HealingDriver] ? Locator gagal: By.id: user-name
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 3 kandidat elemen...
+  ?? CAND <input type='text' id='usernameInputRefactor' name='user-name' plac... ? combined=0.7391
+  ?? SKIP <input type='password' id='password' name='password' placeholder='P... | alasan: incompatible
+  ?? SKIP <input type='submit' id='login-button' name='login-button' placehol... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 2
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-001 | Skenario: saucedemo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.3043  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.7391
+  Waktu healing: 780 ms
+  Elemen dipilih: <input class="input_error form_input" placeholder="Username" aria-label="Usernam
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.7391 | time=780ms
+[HealingDriver] Elemen dipilih: <input type='text' id='usernameInputRefactor' name='user-name' placeholder='Username' text='Username'>
+Oct 02, 2026 10:54:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:54:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Membuka halaman SauceDemo...
+
+? STEP: [2/3] Mensimulasikan perubahan ID elemen password...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan elemen...
+[HealingDriver] ? Locator gagal: By.id: password
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 3 kandidat elemen...
+  ?? SKIP <input type='text' id='user-name' name='user-name' placeholder='Use... | alasan: incompatible
+  ?? CAND <input type='password' id='passwordInputRefactor' name='password' p... ? combined=1.0000
+  ?? SKIP <input type='submit' id='login-button' name='login-button' placehol... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 2
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-002 | Skenario: saucedemo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 745 ms
+  Elemen dipilih: <input class="input_error form_input" placeholder="Password" aria-label="Passwor
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=745ms
+[HealingDriver] Elemen dipilih: <input type='password' id='passwordInputRefactor' name='password' placeholder='Password' text='Password'>
+Oct 02, 2026 10:55:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:55:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Membuka halaman login dan mengisi kredensial...
+
+? STEP: [2/3] Mensimulasikan perubahan ID tombol Login...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan tombol Login...
+[HealingDriver] ? Locator gagal: By.id: login-button
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 3 kandidat elemen...
+  ?? SKIP <input type='text' id='user-name' name='user-name' placeholder='Use... | alasan: incompatible
+  ?? SKIP <input type='password' id='password' name='password' placeholder='P... | alasan: incompatible
+  ?? CAND <input type='submit' id='loginButtonRefactor' name='login-button' p... ? combined=1.0000
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 2
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-003 | Skenario: saucedemo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 494 ms
+  Elemen dipilih: <input class="submit-button btn_action" data-test="login-button" id="loginButton
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=494ms
+[HealingDriver] Elemen dipilih: <input type='submit' id='loginButtonRefactor' name='login-button' placeholder='' text='Login'>
+Oct 02, 2026 10:55:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:55:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Login dan membuka halaman Products...
+
+? STEP: [2/3] Mensimulasikan perubahan ID judul halaman Products...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan judul halaman...
+[HealingDriver] ? Locator gagal: By.id: productsPageTitle
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] ? Tidak ada input compatible yang visible. Menambahkan semua input dari DOM (termasuk modal)...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? SKIP <button type='button' id='react-burger-menu-btn' name='' placeholde... | alasan: incompatible
+  ?? SKIP <button type='submit' id='add-to-cart-sauce-labs-backpack' name='ad... | alasan: incompatible
+  ?? SKIP <button type='submit' id='add-to-cart-sauce-labs-bike-light' name='... | alasan: incompatible
+  ?? SKIP <button type='submit' id='add-to-cart-sauce-labs-bolt-t-shirt' name... | alasan: incompatible
+  ?? SKIP <button type='submit' id='add-to-cart-sauce-labs-fleece-jacket' nam... | alasan: incompatible
+  ?? SKIP <button type='submit' id='add-to-cart-sauce-labs-onesie' name='add-... | alasan: incompatible
+  ?? SKIP <button type='submit' id='add-to-cart-test.allthethings()-t-shirt-(... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cart, empty'>            | alasan: incompatible
+  ?? SKIP <a type='' id='item_4_img_link' name='' placeholder='' text='View d... | alasan: incompatible
+  ?? SKIP <a type='' id='item_4_title_link' name='' placeholder='' text='Sauc... | alasan: incompatible
+  ?? SKIP <a type='' id='item_0_img_link' name='' placeholder='' text='View d... | alasan: incompatible
+  ?? SKIP <a type='' id='item_0_title_link' name='' placeholder='' text='Sauc... | alasan: incompatible
+  ?? SKIP <a type='' id='item_1_img_link' name='' placeholder='' text='View d... | alasan: incompatible
+  ?? SKIP <a type='' id='item_1_title_link' name='' placeholder='' text='Sauc... | alasan: incompatible
+  ?? SKIP <a type='' id='item_5_img_link' name='' placeholder='' text='View d... | alasan: incompatible
+  ?? SKIP <a type='' id='item_5_title_link' name='' placeholder='' text='Sauc... | alasan: incompatible
+  ?? SKIP <a type='' id='item_2_img_link' name='' placeholder='' text='View d... | alasan: incompatible
+  ?? SKIP <a type='' id='item_2_title_link' name='' placeholder='' text='Sauc... | alasan: incompatible
+  ?? SKIP <a type='' id='item_3_img_link' name='' placeholder='' text='View d... | alasan: incompatible
+  ?? SKIP <a type='' id='item_3_title_link' name='' placeholder='' text='Test... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='X'>                      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Facebook'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='LinkedIn'>               | alasan: incompatible
+  ?? SKIP <select type='select-one' id='' name='' placeholder='' text='Name (... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 0 | Kandidat dilewati: 24
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-004 | Skenario: saucedemo_id_change
+  Status       : FAIL
+  Skor teks    : 0.0000  (bobot 50%)
+  Skor locator : 0.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.0000
+  Waktu healing: 3074 ms
+  Elemen dipilih: -
+??????????????????????????????????????????????????????????????????????
+Oct 02, 2026 10:55:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:55:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Login dan membuka halaman Products...
+
+? STEP: [2/3] Mensimulasikan perubahan ID tombol Add to Cart item Backpack...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan tombol Add to Cart...
+[HealingDriver] ? Locator gagal: By.id: add-to-cart-sauce-labs-backpack
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? CAND <button type='button' id='react-burger-menu-btn' name='' placeholde... ? combined=0.1916
+  ?? CAND <button type='submit' id='addToCartItem1Refactor' name='add-to-cart... ? combined=0.8125
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-bike-light' name='... ? combined=0.9375
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-bolt-t-shirt' name... ? combined=0.9375
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-fleece-jacket' nam... ? combined=0.9375
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-onesie' name='add-... ? combined=0.9375
+  ?? CAND <button type='submit' id='add-to-cart-test.allthethings()-t-shirt-(... ? combined=0.8125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cart, empty'>            ? combined=0.2083
+  ?? CAND <a type='' id='item_4_img_link' name='' placeholder='' text='View d... ? combined=0.1647
+  ?? CAND <a type='' id='item_4_title_link' name='' placeholder='' text='Sauc... ? combined=0.2371
+  ?? CAND <a type='' id='item_0_img_link' name='' placeholder='' text='View d... ? combined=0.1756
+  ?? CAND <a type='' id='item_0_title_link' name='' placeholder='' text='Sauc... ? combined=0.1916
+  ?? CAND <a type='' id='item_1_img_link' name='' placeholder='' text='View d... ? combined=0.1855
+  ?? CAND <a type='' id='item_1_title_link' name='' placeholder='' text='Sauc... ? combined=0.2356
+  ?? CAND <a type='' id='item_5_img_link' name='' placeholder='' text='View d... ? combined=0.1672
+  ?? CAND <a type='' id='item_5_title_link' name='' placeholder='' text='Sauc... ? combined=0.2288
+  ?? CAND <a type='' id='item_2_img_link' name='' placeholder='' text='View d... ? combined=0.1708
+  ?? CAND <a type='' id='item_2_title_link' name='' placeholder='' text='Sauc... ? combined=0.1829
+  ?? CAND <a type='' id='item_3_img_link' name='' placeholder='' text='View d... ? combined=0.1516
+  ?? CAND <a type='' id='item_3_title_link' name='' placeholder='' text='Test... ? combined=0.1935
+  ?? CAND <a type='' id='' name='' placeholder='' text='X'>                      ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='LinkedIn'>               ? combined=0.0568
+  ?? SKIP <select type='select-one' id='' name='' placeholder='' text='Name (... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 23 | Kandidat dilewati: 1
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-005 | Skenario: saucedemo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.8333  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.9375
+  Waktu healing: 3819 ms
+  Elemen dipilih: <button class="btn btn_primary btn_small btn_inventory " data-test="add-to-cart-
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.9375 | time=3819ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='add-to-cart-sauce-labs-bike-light' name='add-to-cart-sauce-labs-bike-light' placeholder='' ...
+Oct 02, 2026 10:55:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:55:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Login dan membuka halaman Products...
+
+? STEP: [2/3] Mensimulasikan perubahan ID tombol Add to Cart item Bike Light...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan tombol Add to Cart...
+[HealingDriver] ? Locator gagal: By.id: add-to-cart-sauce-labs-bike-light
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? CAND <button type='button' id='react-burger-menu-btn' name='' placeholde... ? combined=0.1872
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-backpack' name='ad... ? combined=0.8977
+  ?? CAND <button type='submit' id='addToCartItem2Refactor' name='add-to-cart... ? combined=0.7857
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-bolt-t-shirt' name... ? combined=0.9143
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-fleece-jacket' nam... ? combined=0.8958
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-onesie' name='add-... ? combined=0.9091
+  ?? CAND <button type='submit' id='add-to-cart-test.allthethings()-t-shirt-(... ? combined=0.7857
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cart, empty'>            ? combined=0.2083
+  ?? CAND <a type='' id='item_4_img_link' name='' placeholder='' text='View d... ? combined=0.1837
+  ?? CAND <a type='' id='item_4_title_link' name='' placeholder='' text='Sauc... ? combined=0.2440
+  ?? CAND <a type='' id='item_0_img_link' name='' placeholder='' text='View d... ? combined=0.1947
+  ?? CAND <a type='' id='item_0_title_link' name='' placeholder='' text='Sauc... ? combined=0.1986
+  ?? CAND <a type='' id='item_1_img_link' name='' placeholder='' text='View d... ? combined=0.2045
+  ?? CAND <a type='' id='item_1_title_link' name='' placeholder='' text='Sauc... ? combined=0.2426
+  ?? CAND <a type='' id='item_5_img_link' name='' placeholder='' text='View d... ? combined=0.1863
+  ?? CAND <a type='' id='item_5_title_link' name='' placeholder='' text='Sauc... ? combined=0.2358
+  ?? CAND <a type='' id='item_2_img_link' name='' placeholder='' text='View d... ? combined=0.1898
+  ?? CAND <a type='' id='item_2_title_link' name='' placeholder='' text='Sauc... ? combined=0.1898
+  ?? CAND <a type='' id='item_3_img_link' name='' placeholder='' text='View d... ? combined=0.1707
+  ?? CAND <a type='' id='item_3_title_link' name='' placeholder='' text='Test... ? combined=0.2005
+  ?? CAND <a type='' id='' name='' placeholder='' text='X'>                      ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='LinkedIn'>               ? combined=0.0568
+  ?? SKIP <select type='select-one' id='' name='' placeholder='' text='Name (... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 23 | Kandidat dilewati: 1
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-006 | Skenario: saucedemo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.7714  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.9143
+  Waktu healing: 3561 ms
+  Elemen dipilih: <button class="btn btn_primary btn_small btn_inventory " data-test="add-to-cart-
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.9143 | time=3561ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='add-to-cart-sauce-labs-bolt-t-shirt' name='add-to-cart-sauce-labs-bolt-t-shirt' placeholder...
+Oct 02, 2026 10:55:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:55:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Login dan membuka halaman Products...
+
+? STEP: [2/3] Mensimulasikan perubahan ID icon keranjang belanja...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan icon keranjang...
+[HealingDriver] ? Locator gagal: By.id: shopping_cart_container
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? CAND <button type='button' id='react-burger-menu-btn' name='' placeholde... ? combined=0.1382
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-backpack' name='ad... ? combined=0.7500
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-bike-light' name='... ? combined=0.7500
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-bolt-t-shirt' name... ? combined=0.7500
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-fleece-jacket' nam... ? combined=0.7500
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-onesie' name='add-... ? combined=0.7500
+  ?? CAND <button type='submit' id='add-to-cart-test.allthethings()-t-shirt-(... ? combined=0.7500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cart, empty'>            ? combined=0.6250
+  ?? CAND <a type='' id='item_4_img_link' name='' placeholder='' text='View d... ? combined=0.0999
+  ?? CAND <a type='' id='item_4_title_link' name='' placeholder='' text='Sauc... ? combined=0.1310
+  ?? CAND <a type='' id='item_0_img_link' name='' placeholder='' text='View d... ? combined=0.1146
+  ?? CAND <a type='' id='item_0_title_link' name='' placeholder='' text='Sauc... ? combined=0.1545
+  ?? CAND <a type='' id='item_1_img_link' name='' placeholder='' text='View d... ? combined=0.1277
+  ?? CAND <a type='' id='item_1_title_link' name='' placeholder='' text='Sauc... ? combined=0.1739
+  ?? CAND <a type='' id='item_5_img_link' name='' placeholder='' text='View d... ? combined=0.1109
+  ?? CAND <a type='' id='item_5_title_link' name='' placeholder='' text='Sauc... ? combined=0.1433
+  ?? CAND <a type='' id='item_2_img_link' name='' placeholder='' text='View d... ? combined=0.1020
+  ?? CAND <a type='' id='item_2_title_link' name='' placeholder='' text='Sauc... ? combined=0.1387
+  ?? CAND <a type='' id='item_3_img_link' name='' placeholder='' text='View d... ? combined=0.1043
+  ?? CAND <a type='' id='item_3_title_link' name='' placeholder='' text='Test... ? combined=0.1257
+  ?? CAND <a type='' id='' name='' placeholder='' text='X'>                      ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LinkedIn'>               ? combined=0.0000
+  ?? CAND <select type='select-one' id='' name='' placeholder='' text='Name (... ? combined=0.1563
+[HealingDriver] Kandidat kompatibel: 24 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-007 | Skenario: saucedemo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.3333  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.7500
+  Waktu healing: 3763 ms
+  Elemen dipilih: <button class="btn btn_primary btn_small btn_inventory " data-test="add-to-cart-
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.7500 | time=3763ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='add-to-cart-sauce-labs-backpack' name='add-to-cart-sauce-labs-backpack' placeholder='' text...
+Oct 02, 2026 10:56:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:56:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/3] Login dan membuka halaman Products...
+
+? STEP: [2/3] Mensimulasikan perubahan ID tombol menu hamburger...
+
+? STEP: [3/3] Menjalankan Self-Healing untuk memulihkan tombol menu...
+[HealingDriver] ? Locator gagal: By.id: react-burger-menu-btn
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? CAND <button type='button' id='burgerMenuRefactor' name='' placeholder='... ? combined=0.8125
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-backpack' name='ad... ? combined=0.0927
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-bike-light' name='... ? combined=0.0871
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-bolt-t-shirt' name... ? combined=0.0929
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-fleece-jacket' nam... ? combined=0.0903
+  ?? CAND <button type='submit' id='add-to-cart-sauce-labs-onesie' name='add-... ? combined=0.1207
+  ?? CAND <button type='submit' id='add-to-cart-test.allthethings()-t-shirt-(... ? combined=0.1128
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cart, empty'>            ? combined=0.0625
+  ?? CAND <a type='' id='item_4_img_link' name='' placeholder='' text='View d... ? combined=0.1548
+  ?? CAND <a type='' id='item_4_title_link' name='' placeholder='' text='Sauc... ? combined=0.1817
+  ?? CAND <a type='' id='item_0_img_link' name='' placeholder='' text='View d... ? combined=0.1548
+  ?? CAND <a type='' id='item_0_title_link' name='' placeholder='' text='Sauc... ? combined=0.1817
+  ?? CAND <a type='' id='item_1_img_link' name='' placeholder='' text='View d... ? combined=0.1548
+  ?? CAND <a type='' id='item_1_title_link' name='' placeholder='' text='Sauc... ? combined=0.1817
+  ?? CAND <a type='' id='item_5_img_link' name='' placeholder='' text='View d... ? combined=0.1548
+  ?? CAND <a type='' id='item_5_title_link' name='' placeholder='' text='Sauc... ? combined=0.1817
+  ?? CAND <a type='' id='item_2_img_link' name='' placeholder='' text='View d... ? combined=0.1548
+  ?? CAND <a type='' id='item_2_title_link' name='' placeholder='' text='Sauc... ? combined=0.1817
+  ?? CAND <a type='' id='item_3_img_link' name='' placeholder='' text='View d... ? combined=0.1548
+  ?? CAND <a type='' id='item_3_title_link' name='' placeholder='' text='Test... ? combined=0.1817
+  ?? CAND <a type='' id='' name='' placeholder='' text='X'>                      ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='LinkedIn'>               ? combined=0.0694
+  ?? SKIP <select type='select-one' id='' name='' placeholder='' text='Name (... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 23 | Kandidat dilewati: 1
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=SCD-SH-008 | Skenario: saucedemo_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.5000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.8125
+  Waktu healing: 3530 ms
+  Elemen dipilih: <button type="button" id="burgerMenuRefactor" data-self-healing-old-id="react-bu
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.8125 | time=3530ms
+[HealingDriver] Elemen dipilih: <button type='button' id='burgerMenuRefactor' name='' placeholder='' text='Open Menu'>
+Oct 02, 2026 10:56:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:56:25 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/4] Login dan menambahkan item ke keranjang...
+
+? STEP: [2/4] Membuka halaman keranjang belanja...
+Oct 02, 2026 10:56:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:56:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+? STEP: [1/4] Login dan menambahkan item ke keranjang...
+
+? STEP: [2/4] Navigasi ke halaman Checkout Step 1...
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 8
+  Berhasil dipulihkan         : 7
+  Healing Success Rate        : 87.50%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 2470.75 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\saucedemo_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 10, Failures: 3, Errors: 3, Skipped: 0, Time elapsed: 139.1 s <<< FAILURE! -- in com.fulvian.tests.TestSauceDemoHealing
+[ERROR] com.fulvian.tests.TestSauceDemoHealing.scdSh004_pageTitle -- Time elapsed: 10.76 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+[HealingDriver] Healing GAGAL. Skor terbaik -1.0000 di bawah threshold 0.5000. Locator: By.id: productsPageTitle
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: HealingDriver
+	at com.fulvian.healing.HealingDriver.findElement(HealingDriver.java:237)
+	at com.fulvian.tests.TestSauceDemoHealing.heal(TestSauceDemoHealing.java:274)
+	at com.fulvian.tests.TestSauceDemoHealing.scdSh004_pageTitle(TestSauceDemoHealing.java:143)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestSauceDemoHealing.scdSh005_addToCartItem1 -- Time elapsed: 13.62 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <addToCartItem1Refactor> but was: <add-to-cart-sauce-labs-bike-light>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestSauceDemoHealing.scdSh005_addToCartItem1(TestSauceDemoHealing.java:163)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestSauceDemoHealing.scdSh006_addToCartItem2 -- Time elapsed: 13.32 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <addToCartItem2Refactor> but was: <add-to-cart-sauce-labs-bolt-t-shirt>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestSauceDemoHealing.scdSh006_addToCartItem2(TestSauceDemoHealing.java:180)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestSauceDemoHealing.scdSh007_cartIcon -- Time elapsed: 15.15 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <cartIconRefactor> but was: <add-to-cart-sauce-labs-backpack>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestSauceDemoHealing.scdSh007_cartIcon(TestSauceDemoHealing.java:197)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestSauceDemoHealing.scdSh009_checkoutButton -- Time elapsed: 20.25 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: checkout (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61364}, goog:processID: 29216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61364/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dd696166cbfebcd5fbeb70de486e0ee
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestSauceDemoHealing.waitVisible(TestSauceDemoHealing.java:311)
+	at com.fulvian.tests.TestSauceDemoHealing.scdSh009_checkoutButton(TestSauceDemoHealing.java:229)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestSauceDemoHealing.scdSh010_firstNameInput -- Time elapsed: 20.30 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: checkout (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53613}, goog:processID: 23144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53613/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28ba416e0667508e8c6933541c713c91
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestSauceDemoHealing.waitVisible(TestSauceDemoHealing.java:311)
+	at com.fulvian.tests.TestSauceDemoHealing.scdSh010_firstNameInput(TestSauceDemoHealing.java:252)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Failures: 
+[ERROR]   TestSauceDemoHealing.scdSh005_addToCartItem1:163 expected: <addToCartItem1Refactor> but was: <add-to-cart-sauce-labs-bike-light>
+[ERROR]   TestSauceDemoHealing.scdSh006_addToCartItem2:180 expected: <addToCartItem2Refactor> but was: <add-to-cart-sauce-labs-bolt-t-shirt>
+[ERROR]   TestSauceDemoHealing.scdSh007_cartIcon:197 expected: <cartIconRefactor> but was: <add-to-cart-sauce-labs-backpack>
+[ERROR] Errors: 
+[ERROR]   TestSauceDemoHealing.scdSh004_pageTitle:143->heal:274 � NoSuchElement [HealingDriver] Healing GAGAL. Skor terbaik -1.0000 di bawah threshold 0.5000. Locator: By.id: productsPageTitle
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: HealingDriver
+[ERROR]   TestSauceDemoHealing.scdSh009_checkoutButton:229->waitVisible:311 � Timeout Expected condition failed: waiting for visibility of element located by By.id: checkout (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61364}, goog:processID: 29216, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61364/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4dd696166cbfebcd5fbeb70de486e0ee
+[ERROR]   TestSauceDemoHealing.scdSh010_firstNameInput:252->waitVisible:311 � Timeout Expected condition failed: waiting for visibility of element located by By.id: checkout (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53613}, goog:processID: 23144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53613/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28ba416e0667508e8c6933541c713c91
+[ERROR] Tests run: 10, Failures: 3, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

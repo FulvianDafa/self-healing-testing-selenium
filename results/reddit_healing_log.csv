@@ -1,3 +1,0 @@
-timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
-"2026-07-29 12:18:26.439","RDT-SH-004","reddit_id_change","By.id: rdtLogo","SUCCESS",1.0000,0.4706,0.0000,1.0000,"<a id='rdtLogoRefactor' class='no-underline flex items-center' href='https://www.reddit.com/' aria-label='Home' data-self-healing-old-id='rdtLogo' dat",6128,false
-"2026-07-29 12:18:36.099","RDT-SH-005","reddit_id_change","By.id: rdtLogin","SUCCESS",1.0000,0.5000,0.0000,1.0000,"<a rpl='' class='px-sm hover:no-underline button-medium px-[calc(var(--rem12)-var(--button-border-width,0px))] button-brand items-center justify-cente",5908,false

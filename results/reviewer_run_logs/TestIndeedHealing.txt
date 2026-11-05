@@ -1,0 +1,276 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:31:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:31:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: indWhatInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Skip to ma... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Find jobs'>   | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Get Started'> | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='What's tre... | alasan: incompatible
+  ?? SKIP <a type='' id='indeed-globalnav-logo' name='' placeholder='' text='... | alasan: incompatible
+  ?? SKIP <a type='' id='FindJobs' name='' placeholder='' text='Home'>           | alasan: incompatible
+  ?? SKIP <a type='' id='CompanyReviews' name='' placeholder='' text='Company... | alasan: incompatible
+  ?? SKIP <a type='' id='FindSalaries' name='' placeholder='' text='Find sala... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sign in'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??
+En'>                | alasan: incompatible
+  ?? SKIP <a type='' id='EmployersPostJob' name='' placeholder='' text='Emplo... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='www.indeed.com'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Browse jobs'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Browse companies'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Salaries'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Countries'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='About'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Help'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ESG at Indeed'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Accessibility at Inde... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Privacy Center and Ad... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Terms'>                  | alasan: incompatible
+  ?? SKIP <input type='text' id='indWhatInputRefactor' name='q' placeholder='... | alasan: incompatible
+  ?? CAND <input type='text' id='text-input-where' name='l' placeholder='City... ? combined=0.6563
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 23
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=IND-SH-001 | Skenario: indeed_id_change
+  Status       : SUCCESS
+  Skor teks    : 0.8500  (bobot 50%)
+  Skor locator : 0.3333  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.6563
+  Waktu healing: 5525 ms
+  Elemen dipilih: <input aria-invalid="false" id="text-input-where" aria-haspopup="listbox" enterk
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.6563 | time=5525ms
+[HealingDriver] Elemen dipilih: <input type='text' id='text-input-where' name='l' placeholder='City, state, zip code, or "remote"' text='City, state,...
+Oct 02, 2026 10:31:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:31:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: indWhereInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Skip to ma... | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Find jobs'>   | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Get Started'> | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='What's tre... | alasan: incompatible
+  ?? SKIP <a type='' id='indeed-globalnav-logo' name='' placeholder='' text='... | alasan: incompatible
+  ?? SKIP <a type='' id='FindJobs' name='' placeholder='' text='Home'>           | alasan: incompatible
+  ?? SKIP <a type='' id='CompanyReviews' name='' placeholder='' text='Company... | alasan: incompatible
+  ?? SKIP <a type='' id='FindSalaries' name='' placeholder='' text='Find sala... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sign in'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??
+En'>                | alasan: incompatible
+  ?? SKIP <a type='' id='EmployersPostJob' name='' placeholder='' text='Emplo... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='www.indeed.com'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Browse jobs'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Browse companies'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Salaries'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Countries'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='About'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Help'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ESG at Indeed'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Accessibility at Inde... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Privacy Center and Ad... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Terms'>                  | alasan: incompatible
+  ?? SKIP <input type='text' id='text-input-what' name='q' placeholder='Job t... | alasan: incompatible
+  ?? CAND <input type='text' id='indWhereInputRefactor' name='l' placeholder=... ? combined=0.9107
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 23
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=IND-SH-002 | Skenario: indeed_id_change
+  Status       : SUCCESS
+  Skor teks    : 0.8571  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.9107
+  Waktu healing: 5135 ms
+  Elemen dipilih: <input aria-invalid="false" id="indWhereInputRefactor" aria-haspopup="listbox" e
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.9107 | time=5135ms
+[HealingDriver] Elemen dipilih: <input type='text' id='indWhereInputRefactor' name='l' placeholder='City, state, zip code, or "remote"' text='City, s...
+Oct 02, 2026 10:31:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:31:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: indSearchButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Skip to ma... ? combined=0.0938
+  ?? CAND <button type='submit' id='indSearchButtonRefactor' name='' placehol... ? combined=1.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Get Started'> ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='What's tre... ? combined=0.0750
+  ?? CAND <a type='' id='indeed-globalnav-logo' name='' placeholder='' text='... ? combined=0.3166
+  ?? CAND <a type='' id='FindJobs' name='' placeholder='' text='Home'>           ? combined=0.7132
+  ?? CAND <a type='' id='CompanyReviews' name='' placeholder='' text='Company... ? combined=0.1471
+  ?? CAND <a type='' id='FindSalaries' name='' placeholder='' text='Find sala... ? combined=0.4228
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sign in'>                ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='??
+En'>                ? combined=0.1471
+  ?? CAND <a type='' id='EmployersPostJob' name='' placeholder='' text='Emplo... ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='www.indeed.com'>         ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Browse jobs'>            ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Browse companies'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salaries'>               ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Countries'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='About'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESG at Indeed'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Accessibility at Inde... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Center and Ad... ? combined=0.1293
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms'>                  ? combined=0.0694
+  ?? SKIP <input type='text' id='text-input-what' name='q' placeholder='Job t... | alasan: incompatible
+  ?? SKIP <input type='text' id='text-input-where' name='l' placeholder='City... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 22 | Kandidat dilewati: 2
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=IND-SH-003 | Skenario: indeed_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 5526 ms
+  Elemen dipilih: <button class="yosegi-InlineWhatWhere-primaryButton css-17qy6hn e8ju0x50" type="
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=5526ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='indSearchButtonRefactor' name='' placeholder='' text='Find jobs'>
+Oct 02, 2026 10:31:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:31:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: indCompanyReviews
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 24 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Skip to ma... ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Find jobs'>   ? combined=0.1250
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Get Started'> ? combined=0.0833
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='What's tre... ? combined=0.1000
+  ?? CAND <a type='' id='indeed-globalnav-logo' name='' placeholder='' text='... ? combined=0.1548
+  ?? CAND <a type='' id='FindJobs' name='' placeholder='' text='Home'>           ? combined=0.2237
+  ?? CAND <a type='' id='indCompanyReviewsRefactor' name='' placeholder='' te... ? combined=1.0000
+  ?? CAND <a type='' id='FindSalaries' name='' placeholder='' text='Find sala... ? combined=0.2829
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sign in'>                ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='??
+En'>                ? combined=0.1103
+  ?? CAND <a type='' id='EmployersPostJob' name='' placeholder='' text='Emplo... ? combined=0.1239
+  ?? CAND <a type='' id='' name='' placeholder='' text='www.indeed.com'>         ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Browse jobs'>            ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Browse companies'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Salaries'>               ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Countries'>              ? combined=0.2917
+  ?? CAND <a type='' id='' name='' placeholder='' text='About'>                  ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help'>                   ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='ESG at Indeed'>          ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Accessibility at Inde... ? combined=0.1359
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Center and Ad... ? combined=0.1293
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms'>                  ? combined=0.0833
+  ?? CAND <input type='text' id='text-input-what' name='q' placeholder='Job t... ? combined=0.3520
+  ?? CAND <input type='text' id='text-input-where' name='l' placeholder='City... ? combined=0.1670
+[HealingDriver] Kandidat kompatibel: 24 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=IND-SH-004 | Skenario: indeed_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 5413 ms
+  Elemen dipilih: <a id="indCompanyReviewsRefactor" aria-label="Company reviews" aria-current="fal
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=5413ms
+[HealingDriver] Elemen dipilih: <a type='' id='indCompanyReviewsRefactor' name='' placeholder='' text='Company reviews'>
+Oct 02, 2026 10:32:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:32:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 4
+  Berhasil dipulihkan         : 4
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 5399.75 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\indeed_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 60.09 s <<< FAILURE! -- in com.fulvian.tests.TestIndeedHealing
+[ERROR] com.fulvian.tests.TestIndeedHealing.indSh001_whatInput -- Time elapsed: 10.16 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <indWhatInputRefactor> but was: <text-input-where>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestIndeedHealing.indSh001_whatInput(TestIndeedHealing.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestIndeedHealing.indSh005_salaryGuide -- Time elapsed: 23.48 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'salary') or normalize-space()='Salary guide'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64165}, goog:processID: 37208, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64165/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 415035b6d80a151ad3bff89a4d84b4fc
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestIndeedHealing.waitVisible(TestIndeedHealing.java:154)
+	at com.fulvian.tests.TestIndeedHealing.indSh005_salaryGuide(TestIndeedHealing.java:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Failures: 
+[ERROR]   TestIndeedHealing.indSh001_whatInput:73 expected: <indWhatInputRefactor> but was: <text-input-where>
+[ERROR] Errors: 
+[ERROR]   TestIndeedHealing.indSh005_salaryGuide:123->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'salary') or normalize-space()='Salary guide'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64165}, goog:processID: 37208, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64165/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 415035b6d80a151ad3bff89a4d84b4fc
+[ERROR] Tests run: 5, Failures: 1, Errors: 1, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

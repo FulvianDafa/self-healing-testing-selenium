@@ -1,0 +1,4 @@
+timestamp,test_case_id,scenario_type,original_locator,status,text_score,locator_score,position_score,combined_score,selected_element,healing_time_ms,is_false_positive
+"2026-09-30 10:47:01.307","BSN-SH-001","bisnis_id_change","By.id: bsnSearchIcon","FAIL",0.0000,0.0000,0.0000,0.0000,"-",66151,false
+"2026-09-30 10:49:26.739","BSN-SH-002","bisnis_id_change","By.id: bsnLogo","SUCCESS",0.3158,0.4706,0.0000,1.0000,"<a href='https://www.bisnis.com' aria-label='homepage Bisnis.com' id='bsnLogoRefactor' data-self-healing-old-id='bsnLogo' data-self-healing-mutated-fr",108707,false
+"2026-09-30 10:51:45.258","BSN-SH-003","bisnis_id_change","By.id: bsnMarket","SUCCESS",0.3158,0.5263,0.0000,1.0000,"<a href='https://market.bisnis.com/read/20260929/192/2008062/pertamina-smexpo-2026-libatkan-lebih-dari-150-umkm-binaan' class='flashnewsLink' id='bsnM",107007,false

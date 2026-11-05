@@ -18,13 +18,16 @@ public class HealingResult {
     // Field — urutan ini sama dengan kolom di CSV
     // -------------------------------------------------------
     public final String  timestamp;
+    public final String  attemptId;
     public final String  testCaseId;        // misal: "TC-01"
+    public final String  sut;
     public final String  scenarioType;      // "id_change", "class_change", "xpath_change", "css_change"
     public final String  originalLocator;   // misal: "By.id('inputProductBtn')"
     public final String  status;            // "SUCCESS" atau "FAIL"
     public final double  textScore;         // skor komponen teks saja
     public final double  locatorScore;      // skor komponen locator saja
     public final double  positionScore;     // skor komponen posisi saja
+    public final boolean positionAvailable;
     public final double  combinedScore;     // skor gabungan tertimbang
     public final String  selectedElement;   // outerHTML elemen yang dipilih (dipotong 100 char)
     public final long    healingTimeMs;     // durasi proses healing dalam milidetik
@@ -33,26 +36,32 @@ public class HealingResult {
     // -------------------------------------------------------
     // Constructor
     // -------------------------------------------------------
-    public HealingResult(String  testCaseId,
+    public HealingResult(String  attemptId,
+                         String  testCaseId,
+                         String  sut,
                          String  scenarioType,
                          String  originalLocator,
                          String  status,
                          double  textScore,
                          double  locatorScore,
                          double  positionScore,
+                         boolean positionAvailable,
                          double  combinedScore,
                          String  selectedElement,
                          long    healingTimeMs,
                          boolean isFalsePositive) {
 
         this.timestamp       = LocalDateTime.now().format(FMT);
+        this.attemptId       = attemptId;
         this.testCaseId      = testCaseId;
+        this.sut             = sut;
         this.scenarioType    = scenarioType;
         this.originalLocator = originalLocator;
         this.status          = status;
         this.textScore       = textScore;
         this.locatorScore    = locatorScore;
         this.positionScore   = positionScore;
+        this.positionAvailable = positionAvailable;
         this.combinedScore   = combinedScore;
         // Potong outerHTML agar tidak terlalu panjang di CSV
         this.selectedElement = selectedElement == null ? "-"
@@ -64,8 +73,8 @@ public class HealingResult {
 
     /** Header kolom CSV — urutan sama dengan toCsvRow(). */
     public static String csvHeader() {
-        return "timestamp,test_case_id,scenario_type,original_locator," +
-               "status,text_score,locator_score,position_score,combined_score," +
+        return "timestamp,attempt_id,test_case_id,sut,scenario_type,original_locator," +
+               "status,text_score,locator_score,position_score,position_available,combined_score," +
                "selected_element,healing_time_ms,is_false_positive";
     }
 
@@ -73,13 +82,16 @@ public class HealingResult {
     public String toCsvRow() {
         return String.join(",",
                 wrap(timestamp),
+                wrap(attemptId),
                 wrap(testCaseId),
+                wrap(sut),
                 wrap(scenarioType),
                 wrap(originalLocator),
                 wrap(status),
                 String.format("%.4f", textScore),
                 String.format("%.4f", locatorScore),
                 String.format("%.4f", positionScore),
+                String.valueOf(positionAvailable),
                 String.format("%.4f", combinedScore),
                 wrap(selectedElement),
                 String.valueOf(healingTimeMs),

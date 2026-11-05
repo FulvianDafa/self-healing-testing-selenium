@@ -1,0 +1,4 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:46:54.390647500","TKT-BL-001","tiket","By.id: tktSearchInput","id=tktSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:47:54.775193200","TKT-BL-004","tiket","By.id: tktHotel","id=tktHotelRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T16:48:01.276337500","TKT-BL-005","tiket","By.id: tktEvent","id=tktEventRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

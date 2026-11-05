@@ -1,0 +1,658 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 11:11:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:11:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: wikiSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 258 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Search'>      | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='hide'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jump to content'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Donate'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Create account'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Log in'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Main Page'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Talk'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Read'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='View source'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='View history'>           | alasan: incompatible
+  ?? SKIP <a type='' id='mwBg' name='' placeholder='' text='Wikipedia'>          | alasan: incompatible
+  ?? SKIP <a type='' id='mwBw' name='' placeholder='' text='free'>               | alasan: incompatible
+  ?? SKIP <a type='' id='mwCA' name='' placeholder='' text='anyone can edit'>    | alasan: incompatible
+  ?? SKIP <a type='' id='mwCw' name='' placeholder='' text='269,371'>            | alasan: incompatible
+  ?? SKIP <a type='' id='mwDg' name='' placeholder='' text='7,246,998'>          | alasan: incompatible
+  ?? SKIP <a type='' id='mwEA' name='' placeholder='' text='English'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kaiser class'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='class of ships'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kaiserliche Marine'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='dreadnoughts'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='superfiring'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kaiser'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Friedrich der Grosse'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kaiserin'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Prinzregent Luitpold'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='K�nig Albert'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='North Sea'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='III Battle Squadron'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Battle of Jutland'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Operation Albion'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wilhelm Souchon'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Scapa Flow'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='they were scuttled'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Royal Navy'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='This article'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='featured topic'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Battleships of Germany'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Independence Day (Nig... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dam'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Long and Winding ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Archive'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='By email'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='More featured articles'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='About'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wendy Barnes'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Princess Margaret'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Tree of Ecstasy a... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='its author'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Trendon Watford'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Boston Korea'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Otto Djaya'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Treaty of Lausanne'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surname Law'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Alex Sanders'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Television'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jaha Koo'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Archive'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Start a new article'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nominate an article'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Flydubai Flight 1073'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Flooding in Bangkok'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Fatima Ezzahra El Man... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='prime minister of Mor... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='general election'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='The Chess Olympiad'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Open event'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Women's event'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Iran war'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Russo-Ukrainian war'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='timeline'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Recent deaths'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ricardo Centellas'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Carmen Aldunate'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Maureen Jones'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Siti Hasmah Mohamad A... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lawrence Tanter'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bryan Kelly'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='More current events'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nominate an article'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='October 2'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='International Day of ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gandhi Jayanti'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1766'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='wider food riots'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='looted large quantiti... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1879'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Qing China'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Treaty of Livadia'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Russian Empire'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1913'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shubert Theatre'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hamlet'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='1971'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nguy?n V?n Thi?u'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='re-elected unopposed'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='South Vietnam'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='2006'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='A gunman killed'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Amish'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='one-room schoolhouse'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nickel Mines, Pennsyl... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Augustus Keppel'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Michael Bambang Harto... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sting'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sacheen Littlefeather'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='October 1'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='October 2'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='October 3'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Archive'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='By email'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='List of days of the y... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='About'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Emperor Yingzong of M... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Battle of Tumu'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Chinese history'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ming dynasty'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Oirat Mongols'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Esen Taishi'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Emperor Yingzong of M... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wang Zhen'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tumu post station'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Full list...'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Historic places in Ka... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hornbills'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kittie discography'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Archive'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='More featured lists'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='City of Workers'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hans Baluschek'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Berlin'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Berlin Secession'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Milwaukee Art Museum'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hans Baluschek'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Grey-cheeked fulvetta'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Stongdey'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Enrico Fermi'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Archive'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='More featured pictures'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Community portal'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Village pump'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Site news'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Teahouse'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Help desk'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Reference desk'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Content portals'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikimedia Foundation'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='projects'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Commons'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='MediaWiki'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Meta-Wiki'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikibooks'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikidata'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikifunctions'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikiquote'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikisource'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikispecies'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikiversity'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikivoyage'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wiktionary'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='English'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='other Wikipedias are ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='???????'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Deutsch'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Espa�ol'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='?????'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Fran�ais'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Italiano'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Nederlands'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='???'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Polski'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Portugu�s'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='???????'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Svenska'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??????????'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ti?ng Vi?t'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??'>                     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bahasa Indonesia'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bahasa Melayu'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='B�n-l�m-g�'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='?????????'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Catal�'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='?e�tina'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dansk'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Eesti'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='????????'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Esperanto'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Euskara'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='?????'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='???????'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='???'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Magyar'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Norsk bokm�l'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Rom�n?'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Simple English'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sloven?ina'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Srpski'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Srpskohrvatski'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Suomi'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='T�rk�e'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='O?zbekcha'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Asturianu'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Az?rbaycanca'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='?????'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bosanski'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='?????'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Frysk'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Gaeilge'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Galego'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hrvatski'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='???????'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kurd�'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Latvie�u'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lietuvi?'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??????'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??????????'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??????????'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Norsk nynorsk'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??????'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Shqip'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Sloven�?ina'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='???'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='??????'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='????'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Parsoid'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Creative Commons Attr... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Terms of Use'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Privacy Policy'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Wikimedia Foundation,... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Privacy policy'>         | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='About Wikipedia'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Disclaimers'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Contact Wikipedia'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Legal & safety contac... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Code of Conduct'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Developers'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Statistics'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cookie statement'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Mobile view'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? CAND <input type='search' id='wikiSearchInputRefactor' name='search' pla... ? combined=1.0000
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 257
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=WIKI-SH-001 | Skenario: wikipedia_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 31504 ms
+  Elemen dipilih: <input class="cdx-text-input__input mw-searchInput" autocomplete="off" type="sea
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=31504ms
+[HealingDriver] Elemen dipilih: <input type='search' id='wikiSearchInputRefactor' name='search' placeholder='Search Wikipedia' text='Search Wikipedia'>
+Oct 02, 2026 11:11:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:11:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: wikiSearchButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 258 kandidat elemen...
+  ?? CAND <button type='submit' id='wikiSearchButtonRefactor' name='' placeho... ? combined=1.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='hide'>        ? combined=0.1667
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jump to content'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Donate'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Create account'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Log in'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Main Page'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Talk'>                   ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Read'>                   ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='View source'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='View history'>           ? combined=0.0521
+  ?? CAND <a type='' id='mwBg' name='' placeholder='' text='Wikipedia'>          ? combined=0.0417
+  ?? CAND <a type='' id='mwBw' name='' placeholder='' text='free'>               ? combined=0.1458
+  ?? CAND <a type='' id='mwCA' name='' placeholder='' text='anyone can edit'>    ? combined=0.1458
+  ?? CAND <a type='' id='mwCw' name='' placeholder='' text='269,371'>            ? combined=0.1458
+  ?? CAND <a type='' id='mwDg' name='' placeholder='' text='7,246,998'>          ? combined=0.0208
+  ?? CAND <a type='' id='mwEA' name='' placeholder='' text='English'>            ? combined=0.1518
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kaiser class'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='class of ships'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kaiserliche Marine'>     ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='dreadnoughts'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='superfiring'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kaiser'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Friedrich der Grosse'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kaiserin'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Prinzregent Luitpold'>   ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='K�nig Albert'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='North Sea'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='III Battle Squadron'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Battle of Jutland'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Operation Albion'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wilhelm Souchon'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Scapa Flow'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='they were scuttled'>     ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Royal Navy'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='This article'>           ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='featured topic'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Battleships of Germany'> ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Independence Day (Nig... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dam'>                    ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Long and Winding ... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Archive'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='By email'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='More featured articles'> ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='About'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wendy Barnes'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Princess Margaret'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Tree of Ecstasy a... ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='its author'>             ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trendon Watford'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Boston Korea'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Otto Djaya'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Treaty of Lausanne'>     ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surname Law'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Alex Sanders'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Television'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jaha Koo'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Archive'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Start a new article'>    ? combined=0.1645
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nominate an article'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flydubai Flight 1073'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flooding in Bangkok'>    ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fatima Ezzahra El Man... ? combined=0.0721
+  ?? CAND <a type='' id='' name='' placeholder='' text='prime minister of Mor... ? combined=0.1000
+  ?? CAND <a type='' id='' name='' placeholder='' text='general election'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='The Chess Olympiad'>     ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Open event'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Women's event'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Iran war'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Russo-Ukrainian war'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='timeline'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Recent deaths'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ricardo Centellas'>      ? combined=0.1103
+  ?? CAND <a type='' id='' name='' placeholder='' text='Carmen Aldunate'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maureen Jones'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Siti Hasmah Mohamad A... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lawrence Tanter'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bryan Kelly'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='More current events'>    ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nominate an article'>    ? combined=0.1316
+  ?? CAND <a type='' id='' name='' placeholder='' text='October 2'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='International Day of ... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gandhi Jayanti'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='1766'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='wider food riots'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='looted large quantiti... ? combined=0.0947
+  ?? CAND <a type='' id='' name='' placeholder='' text='1879'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Qing China'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Treaty of Livadia'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Russian Empire'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='1913'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shubert Theatre'>        ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hamlet'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='1971'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nguy?n V?n Thi?u'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='re-elected unopposed'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='South Vietnam'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='2006'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='A gunman killed'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Amish'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='one-room schoolhouse'>   ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nickel Mines, Pennsyl... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Augustus Keppel'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Michael Bambang Harto... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sting'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sacheen Littlefeather'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='October 1'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='October 2'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='October 3'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Archive'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='By email'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='List of days of the y... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='About'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Emperor Yingzong of M... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Battle of Tumu'>         ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Chinese history'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ming dynasty'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Oirat Mongols'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Esen Taishi'>            ? combined=0.2273
+  ?? CAND <a type='' id='' name='' placeholder='' text='Emperor Yingzong of M... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wang Zhen'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tumu post station'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Full list...'>           ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Historic places in Ka... ? combined=0.0868
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hornbills'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kittie discography'>     ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Archive'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='More featured lists'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='City of Workers'>        ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hans Baluschek'>         ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berlin'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berlin Secession'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Milwaukee Art Museum'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hans Baluschek'>         ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Grey-cheeked fulvetta'>  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Stongdey'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Enrico Fermi'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Archive'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='More featured pictures'> ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Community portal'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Village pump'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Site news'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Teahouse'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help desk'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reference desk'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Content portals'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikimedia Foundation'>   ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='projects'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Commons'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='MediaWiki'>              ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Meta-Wiki'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikibooks'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikidata'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikifunctions'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikiquote'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikisource'>             ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikispecies'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikiversity'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikivoyage'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wiktionary'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='English'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='other Wikipedias are ... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='???????'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deutsch'>                ? combined=0.2679
+  ?? CAND <a type='' id='' name='' placeholder='' text='Espa�ol'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='?????'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Fran�ais'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Italiano'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Nederlands'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='???'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Polski'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Portugu�s'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='???????'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Svenska'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='??????????'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ti?ng Vi?t'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='??'>                     ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahasa Indonesia'>       ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bahasa Melayu'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='B�n-l�m-g�'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='?????????'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Catal�'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='?e�tina'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dansk'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Eesti'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='????????'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Esperanto'>              ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Euskara'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='?????'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='???????'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='???'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Magyar'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Norsk bokm�l'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Rom�n?'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Simple English'>         ? combined=0.1339
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sloven?ina'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Srpski'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Srpskohrvatski'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Suomi'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='T�rk�e'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='O?zbekcha'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Asturianu'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Az?rbaycanca'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='?????'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bosanski'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='?????'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Frysk'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Gaeilge'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Galego'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hrvatski'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='???????'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kurd�'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Latvie�u'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lietuvi?'>               ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='??????'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='??????????'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='??????????'>             ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Norsk nynorsk'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='??????'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Shqip'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Sloven�?ina'>            ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='???'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='??????'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='????'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Parsoid'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Creative Commons Attr... ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Terms of Use'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy Policy'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Wikimedia Foundation,... ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Privacy policy'>         ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Wikipedia'>        ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Disclaimers'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Contact Wikipedia'>      ? combined=0.0368
+  ?? CAND <a type='' id='' name='' placeholder='' text='Legal & safety contac... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Code of Conduct'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Developers'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Statistics'>             ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cookie statement'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mobile view'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? SKIP <input type='search' id='searchInput' name='search' placeholder='Se... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 257 | Kandidat dilewati: 1
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=WIKI-SH-002 | Skenario: wikipedia_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 39591 ms
+  Elemen dipilih: <button class="cdx-button cdx-search-input__end-button" id="wikiSearchButtonRefa
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=39591ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='wikiSearchButtonRefactor' name='' placeholder='' text='Search'>
+Oct 02, 2026 11:12:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:12:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:12:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:12:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 2
+  Berhasil dipulihkan         : 2
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 35547.50 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\wikipedia_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 110.9 s <<< FAILURE! -- in com.fulvian.tests.TestWikipediaHealing
+[ERROR] com.fulvian.tests.TestWikipediaHealing.wikiSh003_randomArticle -- Time elapsed: 16.96 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='Random article']/parent::a | //a[normalize-space()='Random article'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60127}, goog:processID: 26756, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60127/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 894552ae179bb24a512844013ab531b0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestWikipediaHealing.waitVisible(TestWikipediaHealing.java:144)
+	at com.fulvian.tests.TestWikipediaHealing.wikiSh003_randomArticle(TestWikipediaHealing.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestWikipediaHealing.wikiSh004_about -- Time elapsed: 17.11 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='About Wikipedia']/parent::a | //a[normalize-space()='About Wikipedia'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64154}, goog:processID: 7396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64154/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b07e05d1451aefde0668ea6c5df5113
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestWikipediaHealing.waitVisible(TestWikipediaHealing.java:144)
+	at com.fulvian.tests.TestWikipediaHealing.wikiSh004_about(TestWikipediaHealing.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestWikipediaHealing.wikiSh003_randomArticle:93->waitVisible:144 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='Random article']/parent::a | //a[normalize-space()='Random article'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60127}, goog:processID: 26756, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60127/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 894552ae179bb24a512844013ab531b0
+[ERROR]   TestWikipediaHealing.wikiSh004_about:108->waitVisible:144 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='About Wikipedia']/parent::a | //a[normalize-space()='About Wikipedia'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64154}, goog:processID: 7396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64154/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b07e05d1451aefde0668ea6c5df5113
+[ERROR] Tests run: 4, Failures: 0, Errors: 2, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

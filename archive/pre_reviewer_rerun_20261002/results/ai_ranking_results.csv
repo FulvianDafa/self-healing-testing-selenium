@@ -1,0 +1,10 @@
+test_case_id,ai_selected_desc,ai_prob,is_correct
+AUTO-002,<input type='text' id='transactionSearchInputRefactor' name='' placeholder='Cari nama barang untuk ditambahkan ke keranjang...' text='Cari nama barang untuk ditambahkan ke...'>,0.5356947355879325,True
+AUTO-003,<button type='submit' id='saveTransactionButtonRefactor' name='' placeholder='' text='Simpan Transaksi'>,0.6262666036250356,True
+AUTO-004,<input type='number' id='paidInputRefactor' name='' placeholder='' text='15000'>,0.6287667809877122,True
+AUTO-005,<button type='submit' id='addDebtorButtonRefactor' name='' placeholder='' text='Tambah Pengutang Baru'>,0.6445045291771745,True
+AUTO-006,<input type='text' id='inputDebtorNameRefactor' name='' placeholder='Masukkan nama pengutang' text='Masukkan nama pengutang'>,0.7382833163250822,True
+AUTO-007,<button type='submit' id='tab-product' name='' placeholder='' text='Tracking Produk'>,0.6509705129962434,False
+AUTO-008,<input type='text' id='productSearchDashboardRefactor' name='' placeholder='Cari nama produk...' text='Cari nama produk...'>,0.6280935960884053,True
+AUTO-009,<input type='text' id='printSearchInputRefactor' name='' placeholder='Ketik nama produk...' text='Ketik nama produk...'>,0.6110773081175702,True
+AUTO-010,<button type='submit' id='btnLayoutVertical' name='' placeholder='' text='KEBAWAH'>,0.7185865195820035,False

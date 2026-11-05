@@ -1,0 +1,586 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 11:06:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:06:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tvlSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 105 kandidat elemen...
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Deals'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Get App'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bookings'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hotels'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Flights'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Trains'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Whoosh'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bus & Travel'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Airport Transfer'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Car Rental'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Things to Do'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Cruises'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Yog... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Sur... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Lom... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Bal... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kuta
+Stark Boutique H... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='South Denpasar
+Ramada... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kuta
+BEST WESTERN Kut... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tangerang
+Save 22%
+Ce... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pecatu
+Ticket for Kec... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kuta
+Waterbom Bali Ti... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ubud
+Bali Zoo Tickets... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='South Denpasar
+Save 5... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ferries from Bali to ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='10 Best Things to Do ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Bali 7-Day Honeymoon ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='5 Historical Culinary... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Makassar F... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Bandar Lam... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Pontianak ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Bandung Fl... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Surabaya F... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Padang Fli... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Banda Aceh... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Bali Fligh... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Batam Flig... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Pekanbaru ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Malang Fli... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Medan Flig... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Semarang F... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Labuan Baj... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Palembang ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Lombok Fli... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Jakarta to Yogyakarta... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya to Jakarta F... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya to Makassar ... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya to Balikpapa... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya to Bali Flig... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Surabaya to Banjarmas... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Partner with Traveloka'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='How to Book'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Contact Us'>             | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Help Center'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Careers'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Installment'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='About Us'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='New Release Features'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Facebook'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Instagram'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='TikTok'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Youtube'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Twitter'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Telegram'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='WhatsApp'>               | alasan: incompatible
+  ?? SKIP <a type='' id='hotel-search' name='' placeholder='' text='Hotels'>     | alasan: incompatible
+  ?? SKIP <a type='' id='flight-search' name='' placeholder='' text='Flights'>   | alasan: incompatible
+  ?? SKIP <a type='' id='train-search' name='' placeholder='' text='Trains'>     | alasan: incompatible
+  ?? SKIP <a type='' id='bus-search' name='' placeholder='' text='Bus & Travel'> | alasan: incompatible
+  ?? SKIP <a type='' id='airport-transport' name='' placeholder='' text='Airp... | alasan: incompatible
+  ?? SKIP <a type='' id='vehicle-rental-search' name='' placeholder='' text='... | alasan: incompatible
+  ?? SKIP <a type='' id='train-global-search' name='' placeholder='' text='JR... | alasan: incompatible
+  ?? SKIP <a type='' id='activity-search' name='' placeholder='' text='Things... | alasan: incompatible
+  ?? SKIP <a type='' id='cruises-search' name='' placeholder='' text='Cruises'>  | alasan: incompatible
+  ?? SKIP <a type='' id='alternative-villa' name='' placeholder='' text='Vill... | alasan: incompatible
+  ?? SKIP <a type='' id='alternative-apartment' name='' placeholder='' text='... | alasan: incompatible
+  ?? SKIP <a type='' id='insurance' name='' placeholder='' text='Insurance'>     | alasan: incompatible
+  ?? SKIP <a type='' id='paylater' name='' placeholder='' text='TPayLater'>      | alasan: incompatible
+  ?? SKIP <a type='' id='gift-voucher-search' name='' placeholder='' text='Gi... | alasan: incompatible
+  ?? SKIP <a type='' id='corporates' name='' placeholder='' text='Traveloka f... | alasan: incompatible
+  ?? SKIP <a type='' id='affiliate' name='' placeholder='' text='Traveloka Af... | alasan: incompatible
+  ?? SKIP <a type='' id='referral' name='' placeholder='' text='Refer a Friend'> | alasan: incompatible
+  ?? SKIP <a type='' id='flash-sale' name='' placeholder='' text='Flash Sale'>   | alasan: incompatible
+  ?? SKIP <a type='' id='blog' name='' placeholder='' text='Blog'>               | alasan: incompatible
+  ?? SKIP <a type='' id='privacy-policy' name='' placeholder='' text='Privacy... | alasan: incompatible
+  ?? SKIP <a type='' id='tnc' name='' placeholder='' text='Terms & Conditions'>  | alasan: incompatible
+  ?? SKIP <a type='' id='tera-landing' name='' placeholder='' text='Register ... | alasan: incompatible
+  ?? SKIP <a type='' id='axes-landing' name='' placeholder='' text='Register ... | alasan: incompatible
+  ?? SKIP <a type='' id='press' name='' placeholder='' text='Traveloka Press ... | alasan: incompatible
+  ?? SKIP <a type='' id='ads' name='' placeholder='' text='Traveloka Ads'>       | alasan: incompatible
+  ?? SKIP <a type='' id='vulnerability-disclosure-program' name='' placeholde... | alasan: incompatible
+  ?? SKIP <a type='' id='TnC' name='' placeholder='' text='Terms & Conditions'>  | alasan: incompatible
+  ?? SKIP <a type='' id='PP' name='' placeholder='' text='Privacy Notice'>       | alasan: incompatible
+  ?? CAND <input type='text' id='tvlSearchInputRefactor' name='' placeholder=... ? combined=1.0000
+  ?? SKIP <input type='text' id='' name='' placeholder='' text='Fri, 02 Oct -... | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='' text='2 adults, 0 c... | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='Your Email Address' t... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 104
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TVL-SH-001 | Skenario: traveloka_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 17000 ms
+  Elemen dipilih: <input placeholder="City, hotel, place to go" aria-invalid="false" autocapitaliz
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=17000ms
+[HealingDriver] Elemen dipilih: <input type='text' id='tvlSearchInputRefactor' name='' placeholder='City, hotel, place to go' text='City, hotel, plac...
+Oct 02, 2026 11:07:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:07:00 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:07:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:07:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 11:07:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:07:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tvlFlights
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 105 kandidat elemen...
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deals'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Get App'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bookings'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotels'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flights'>                ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trains'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Whoosh'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bus & Travel'>           ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Airport Transfer'>       ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Car Rental'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things to Do'>           ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cruises'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Yog... ? combined=0.0255
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Sur... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Lom... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Bal... ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuta
+Stark Boutique H... ? combined=0.0362
+  ?? CAND <a type='' id='' name='' placeholder='' text='South Denpasar
+Ramada... ? combined=0.0260
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuta
+BEST WESTERN Kut... ? combined=0.0212
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tangerang
+Save 22%
+Ce... ? combined=0.0298
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pecatu
+Ticket for Kec... ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuta
+Waterbom Bali Ti... ? combined=0.0362
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ubud
+Bali Zoo Tickets... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='South Denpasar
+Save 5... ? combined=0.0226
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ferries from Bali to ... ? combined=0.0411
+  ?? CAND <a type='' id='' name='' placeholder='' text='10 Best Things to Do ... ? combined=0.0379
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bali 7-Day Honeymoon ... ? combined=0.0342
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Historical Culinary... ? combined=0.0333
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Makassar F... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Bandar Lam... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Pontianak ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Bandung Fl... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Surabaya F... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Padang Fli... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Banda Aceh... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Bali Fligh... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Batam Flig... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Pekanbaru ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Malang Fli... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Medan Flig... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Semarang F... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Labuan Baj... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Palembang ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Lombok Fli... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Yogyakarta... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Jakarta F... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Makassar ... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Balikpapa... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Bali Flig... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Banjarmas... ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Partner with Traveloka'> ? combined=0.0852
+  ?? CAND <a type='' id='' name='' placeholder='' text='How to Book'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Contact Us'>             ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help Center'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Installment'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Us'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='New Release Features'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='TikTok'>                 ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Youtube'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telegram'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='WhatsApp'>               ? combined=0.0000
+  ?? CAND <a type='' id='hotel-search' name='' placeholder='' text='Hotels'>     ? combined=0.1518
+  ?? CAND <a type='' id='flight-search' name='' placeholder='' text='Flights'>   ? combined=0.7115
+  ?? CAND <a type='' id='train-search' name='' placeholder='' text='Trains'>     ? combined=0.1205
+  ?? CAND <a type='' id='bus-search' name='' placeholder='' text='Bus & Travel'> ? combined=0.0341
+  ?? CAND <a type='' id='airport-transport' name='' placeholder='' text='Airp... ? combined=0.1002
+  ?? CAND <a type='' id='vehicle-rental-search' name='' placeholder='' text='... ? combined=0.1429
+  ?? CAND <a type='' id='train-global-search' name='' placeholder='' text='JR... ? combined=0.1776
+  ?? CAND <a type='' id='activity-search' name='' placeholder='' text='Things... ? combined=0.2063
+  ?? CAND <a type='' id='cruises-search' name='' placeholder='' text='Cruises'>  ? combined=0.0893
+  ?? CAND <a type='' id='alternative-villa' name='' placeholder='' text='Vill... ? combined=0.2227
+  ?? CAND <a type='' id='alternative-apartment' name='' placeholder='' text='... ? combined=0.1786
+  ?? CAND <a type='' id='insurance' name='' placeholder='' text='Insurance'>     ? combined=0.0000
+  ?? CAND <a type='' id='paylater' name='' placeholder='' text='TPayLater'>      ? combined=0.1122
+  ?? CAND <a type='' id='gift-voucher-search' name='' placeholder='' text='Gi... ? combined=0.1634
+  ?? CAND <a type='' id='corporates' name='' placeholder='' text='Traveloka f... ? combined=0.1591
+  ?? CAND <a type='' id='affiliate' name='' placeholder='' text='Traveloka Af... ? combined=0.3106
+  ?? CAND <a type='' id='referral' name='' placeholder='' text='Refer a Friend'> ? combined=0.0787
+  ?? CAND <a type='' id='flash-sale' name='' placeholder='' text='Flash Sale'>   ? combined=0.2841
+  ?? CAND <a type='' id='blog' name='' placeholder='' text='Blog'>               ? combined=0.2468
+  ?? CAND <a type='' id='privacy-policy' name='' placeholder='' text='Privacy... ? combined=0.1429
+  ?? CAND <a type='' id='tnc' name='' placeholder='' text='Terms & Conditions'>  ? combined=0.1122
+  ?? CAND <a type='' id='tera-landing' name='' placeholder='' text='Register ... ? combined=0.1146
+  ?? CAND <a type='' id='axes-landing' name='' placeholder='' text='Register ... ? combined=0.0833
+  ?? CAND <a type='' id='press' name='' placeholder='' text='Traveloka Press ... ? combined=0.1234
+  ?? CAND <a type='' id='ads' name='' placeholder='' text='Traveloka Ads'>       ? combined=0.1302
+  ?? CAND <a type='' id='vulnerability-disclosure-program' name='' placeholde... ? combined=0.1250
+  ?? CAND <a type='' id='TnC' name='' placeholder='' text='Terms & Conditions'>  ? combined=0.1463
+  ?? CAND <a type='' id='PP' name='' placeholder='' text='Privacy Notice'>       ? combined=0.0893
+  ?? CAND <input type='text' id='' name='' placeholder='City, hotel, place to... ? combined=0.0568
+  ?? CAND <input type='text' id='' name='' placeholder='' text='Fri, 02 Oct -... ? combined=0.0862
+  ?? CAND <input type='text' id='' name='' placeholder='' text='2 adults, 0 c... ? combined=0.0481
+  ?? CAND <input type='text' id='' name='' placeholder='Your Email Address' t... ? combined=0.0694
+[HealingDriver] Kandidat kompatibel: 105 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TVL-SH-004 | Skenario: traveloka_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.2308  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.7115
+  Waktu healing: 19722 ms
+  Elemen dipilih: <a id="flight-search" href="/en-id/flight" class="css-4rbku5 r-1awozwy r-jwli3a 
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.7115 | time=19722ms
+[HealingDriver] Elemen dipilih: <a type='' id='flight-search' name='' placeholder='' text='Flights'>
+Oct 02, 2026 11:08:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 11:08:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: tvlHotels
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 105 kandidat elemen...
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Deals'>                  ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Get App'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bookings'>               ? combined=0.1563
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hotels'>                 ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Flights'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Trains'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Whoosh'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bus & Travel'>           ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Airport Transfer'>       ? combined=0.1172
+  ?? CAND <a type='' id='' name='' placeholder='' text='Car Rental'>             ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Things to Do'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Cruises'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Yog... ? combined=0.0255
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Sur... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Lom... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='ONE-WAY
+Jakarta - Bal... ? combined=0.0284
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuta
+Stark Boutique H... ? combined=0.0543
+  ?? CAND <a type='' id='' name='' placeholder='' text='South Denpasar
+Ramada... ? combined=0.0326
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuta
+BEST WESTERN Kut... ? combined=0.0424
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tangerang
+Save 22%
+Ce... ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pecatu
+Ticket for Kec... ? combined=0.0341
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kuta
+Waterbom Bali Ti... ? combined=0.0362
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ubud
+Bali Zoo Tickets... ? combined=0.0391
+  ?? CAND <a type='' id='' name='' placeholder='' text='South Denpasar
+Save 5... ? combined=0.0301
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ferries from Bali to ... ? combined=0.0329
+  ?? CAND <a type='' id='' name='' placeholder='' text='10 Best Things to Do ... ? combined=0.0473
+  ?? CAND <a type='' id='' name='' placeholder='' text='Bali 7-Day Honeymoon ... ? combined=0.0428
+  ?? CAND <a type='' id='' name='' placeholder='' text='5 Historical Culinary... ? combined=0.0417
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Makassar F... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Bandar Lam... ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Pontianak ... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Bandung Fl... ? combined=0.0721
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Surabaya F... ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Padang Fli... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Banda Aceh... ? combined=0.0862
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Bali Fligh... ? combined=0.0815
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Batam Flig... ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Pekanbaru ... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Malang Fli... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Medan Flig... ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Semarang F... ? combined=0.0926
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Labuan Baj... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Palembang ... ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Lombok Fli... ? combined=0.0750
+  ?? CAND <a type='' id='' name='' placeholder='' text='Jakarta to Yogyakarta... ? combined=0.0862
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Jakarta F... ? combined=0.0926
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Makassar ... ? combined=0.0670
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Balikpapa... ? combined=0.0625
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Bali Flig... ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Surabaya to Banjarmas... ? combined=0.0605
+  ?? CAND <a type='' id='' name='' placeholder='' text='Partner with Traveloka'> ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='How to Book'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Contact Us'>             ? combined=0.1875
+  ?? CAND <a type='' id='' name='' placeholder='' text='Help Center'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Careers'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Installment'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='About Us'>               ? combined=0.2344
+  ?? CAND <a type='' id='' name='' placeholder='' text='New Release Features'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='TikTok'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Youtube'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Telegram'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='WhatsApp'>               ? combined=0.1389
+  ?? CAND <a type='' id='hotel-search' name='' placeholder='' text='Hotels'>     ? combined=0.7188
+  ?? CAND <a type='' id='flight-search' name='' placeholder='' text='Flights'>   ? combined=0.1538
+  ?? CAND <a type='' id='train-search' name='' placeholder='' text='Trains'>     ? combined=0.1667
+  ?? CAND <a type='' id='bus-search' name='' placeholder='' text='Bus & Travel'> ? combined=0.1625
+  ?? CAND <a type='' id='airport-transport' name='' placeholder='' text='Airp... ? combined=0.1613
+  ?? CAND <a type='' id='vehicle-rental-search' name='' placeholder='' text='... ? combined=0.2083
+  ?? CAND <a type='' id='train-global-search' name='' placeholder='' text='JR... ? combined=0.1974
+  ?? CAND <a type='' id='activity-search' name='' placeholder='' text='Things... ? combined=0.1792
+  ?? CAND <a type='' id='cruises-search' name='' placeholder='' text='Cruises'>  ? combined=0.1161
+  ?? CAND <a type='' id='alternative-villa' name='' placeholder='' text='Vill... ? combined=0.1765
+  ?? CAND <a type='' id='alternative-apartment' name='' placeholder='' text='... ? combined=0.2768
+  ?? CAND <a type='' id='insurance' name='' placeholder='' text='Insurance'>     ? combined=0.0000
+  ?? CAND <a type='' id='paylater' name='' placeholder='' text='TPayLater'>      ? combined=0.1531
+  ?? CAND <a type='' id='gift-voucher-search' name='' placeholder='' text='Gi... ? combined=0.1776
+  ?? CAND <a type='' id='corporates' name='' placeholder='' text='Traveloka f... ? combined=0.2625
+  ?? CAND <a type='' id='affiliate' name='' placeholder='' text='Traveloka Af... ? combined=0.1069
+  ?? CAND <a type='' id='referral' name='' placeholder='' text='Refer a Friend'> ? combined=0.1156
+  ?? CAND <a type='' id='flash-sale' name='' placeholder='' text='Flash Sale'>   ? combined=0.2000
+  ?? CAND <a type='' id='blog' name='' placeholder='' text='Blog'>               ? combined=0.0750
+  ?? CAND <a type='' id='privacy-policy' name='' placeholder='' text='Privacy... ? combined=0.1696
+  ?? CAND <a type='' id='tnc' name='' placeholder='' text='Terms & Conditions'>  ? combined=0.1547
+  ?? CAND <a type='' id='tera-landing' name='' placeholder='' text='Register ... ? combined=0.1146
+  ?? CAND <a type='' id='axes-landing' name='' placeholder='' text='Register ... ? combined=0.0881
+  ?? CAND <a type='' id='press' name='' placeholder='' text='Traveloka Press ... ? combined=0.2833
+  ?? CAND <a type='' id='ads' name='' placeholder='' text='Traveloka Ads'>       ? combined=0.1817
+  ?? CAND <a type='' id='vulnerability-disclosure-program' name='' placeholde... ? combined=0.1055
+  ?? CAND <a type='' id='TnC' name='' placeholder='' text='Terms & Conditions'>  ? combined=0.1922
+  ?? CAND <a type='' id='PP' name='' placeholder='' text='Privacy Notice'>       ? combined=0.0893
+  ?? CAND <input type='text' id='' name='' placeholder='City, hotel, place to... ? combined=0.1420
+  ?? CAND <input type='text' id='' name='' placeholder='' text='Fri, 02 Oct -... ? combined=0.0431
+  ?? CAND <input type='text' id='' name='' placeholder='' text='2 adults, 0 c... ? combined=0.0481
+  ?? CAND <input type='text' id='' name='' placeholder='Your Email Address' t... ? combined=0.1389
+[HealingDriver] Kandidat kompatibel: 105 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=TVL-SH-005 | Skenario: traveloka_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.2500  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.7188
+  Waktu healing: 19902 ms
+  Elemen dipilih: <a id="hotel-search" href="/en-id/hotel" class="css-4rbku5 r-1awozwy r-jwli3a r-
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.7188 | time=19902ms
+[HealingDriver] Elemen dipilih: <a type='' id='hotel-search' name='' placeholder='' text='Hotels'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 3
+  Berhasil dipulihkan         : 3
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 18874.67 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\traveloka_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 128.3 s <<< FAILURE! -- in com.fulvian.tests.TestTravelokaHealing
+[ERROR] com.fulvian.tests.TestTravelokaHealing.tvlSh001_searchInput -- Time elapsed: 24.08 s <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=154.0.8037.93)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9499bcf02f28a6e0ec24671e2d1d6c9, sendKeysToElement {id=f.F6E96FC108B58EE6B4FEAC553B5C7BC4.d.809CCC7B17ADA9C2E9588CEA1EE567A9.e.135, value=[Ljava.lang.CharSequence;@18b88f7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49830}, goog:processID: 28412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49830/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b9499bcf02f28a6e0ec24671e2d1d6c9)] -> tag name: input]
+Session ID: b9499bcf02f28a6e0ec24671e2d1d6c9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.fulvian.tests.TestTravelokaHealing.tvlSh001_searchInput(TestTravelokaHealing.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTravelokaHealing.tvlSh002_searchButton -- Time elapsed: 26.31 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='search-submit-button' or contains(normalize-space(),'Search Hotels')]/parent::div[@role='button'] | //div[text()='Search Hotels']/ancestor::div[@role='button'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62784}, goog:processID: 21736, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62784/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbf547d830a7e64d7c7cc19dd01f35fd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestTravelokaHealing.waitVisible(TestTravelokaHealing.java:170)
+	at com.fulvian.tests.TestTravelokaHealing.tvlSh002_searchButton(TestTravelokaHealing.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTravelokaHealing.tvlSh003_logo -- Time elapsed: 26.07 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //img[contains(@alt,'Traveloka')]/parent::a | //a[@data-testid='header-logo'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53869}, goog:processID: 18700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53869/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c5314ff17bde6d80675e780445bb98d1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestTravelokaHealing.waitVisible(TestTravelokaHealing.java:170)
+	at com.fulvian.tests.TestTravelokaHealing.tvlSh003_logo(TestTravelokaHealing.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTravelokaHealing.tvlSh004_flightsMenu -- Time elapsed: 25.76 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <tvlFlightsRefactor> but was: <flight-search>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestTravelokaHealing.tvlSh004_flightsMenu(TestTravelokaHealing.java:130)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestTravelokaHealing.tvlSh005_hotelsMenu -- Time elapsed: 26.03 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <tvlHotelsRefactor> but was: <hotel-search>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at com.fulvian.tests.TestTravelokaHealing.tvlSh005_hotelsMenu(TestTravelokaHealing.java:145)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Failures: 
+[ERROR]   TestTravelokaHealing.tvlSh004_flightsMenu:130 expected: <tvlFlightsRefactor> but was: <flight-search>
+[ERROR]   TestTravelokaHealing.tvlSh005_hotelsMenu:145 expected: <tvlHotelsRefactor> but was: <hotel-search>
+[ERROR] Errors: 
+[ERROR]   TestTravelokaHealing.tvlSh001_searchInput:86 � ElementNotInteractable element not interactable
+  (Session info: chrome=154.0.8037.93)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b9499bcf02f28a6e0ec24671e2d1d6c9, sendKeysToElement {id=f.F6E96FC108B58EE6B4FEAC553B5C7BC4.d.809CCC7B17ADA9C2E9588CEA1EE567A9.e.135, value=[Ljava.lang.CharSequence;@18b88f7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49830}, goog:processID: 28412, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49830/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b9499bcf02f28a6e0ec24671e2d1d6c9)] -> tag name: input]
+Session ID: b9499bcf02f28a6e0ec24671e2d1d6c9
+[ERROR]   TestTravelokaHealing.tvlSh002_searchButton:94->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //div[@data-testid='search-submit-button' or contains(normalize-space(),'Search Hotels')]/parent::div[@role='button'] | //div[text()='Search Hotels']/ancestor::div[@role='button'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62784}, goog:processID: 21736, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62784/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbf547d830a7e64d7c7cc19dd01f35fd
+[ERROR]   TestTravelokaHealing.tvlSh003_logo:109->waitVisible:170 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //img[contains(@alt,'Traveloka')]/parent::a | //a[@data-testid='header-logo'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53869}, goog:processID: 18700, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53869/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c5314ff17bde6d80675e780445bb98d1
+[ERROR] Tests run: 5, Failures: 2, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

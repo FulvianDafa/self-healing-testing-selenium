@@ -1,0 +1,2 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T16:43:43.712998800","NGH-BL-005","niagahoster","By.id: nghLogin","id=nghLoginRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

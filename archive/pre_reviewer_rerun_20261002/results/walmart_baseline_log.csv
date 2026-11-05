@@ -1,0 +1,3 @@
+"timestamp","test_case_id","sut","original_locator","mutated_locator","status","message"
+"2026-07-29T11:56:47.111759900","WMT-BL-001","walmart","By.id: wmtSearchInput","id=wmtSearchInputRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"
+"2026-07-29T11:58:00.327255400","WMT-BL-005","walmart","By.id: wmtLogo","id=wmtLogoRefactor","LOCATOR_FAILED_EXPECTED","NoSuchElementException"

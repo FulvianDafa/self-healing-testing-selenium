@@ -1,0 +1,793 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:48:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:48:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrUsernameInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 8 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Login'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         | alasan: incompatible
+  ?? CAND <input type='text' id='ohrUsernameInputRefactor' name='username' pl... ? combined=1.0000
+  ?? SKIP <input type='password' id='' name='password' placeholder='Password'... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 7
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-001 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 1697 ms
+  Elemen dipilih: <input data-v-1f99f73c="" class="oxd-input oxd-input--focus" name="username" pla
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=1697ms
+[HealingDriver] Elemen dipilih: <input type='text' id='ohrUsernameInputRefactor' name='username' placeholder='Username' text='Username'>
+Oct 02, 2026 10:48:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:48:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrPasswordInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 8 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Login'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='username' placeholder='Username' tex... | alasan: incompatible
+  ?? CAND <input type='password' id='ohrPasswordInputRefactor' name='password... ? combined=1.0000
+[HealingDriver] Kandidat kompatibel: 1 | Kandidat dilewati: 7
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-002 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 1603 ms
+  Elemen dipilih: <input data-v-1f99f73c="" class="oxd-input oxd-input--active" type="password" na
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=1603ms
+[HealingDriver] Elemen dipilih: <input type='password' id='ohrPasswordInputRefactor' name='password' placeholder='Password' text='Password'>
+Oct 02, 2026 10:48:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:48:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrLoginButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 8 kandidat elemen...
+  ?? CAND <button type='submit' id='ohrLoginButtonRefactor' name='' placehold... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         ? combined=0.1339
+  ?? SKIP <input type='text' id='' name='username' placeholder='Username' tex... | alasan: incompatible
+  ?? SKIP <input type='password' id='' name='password' placeholder='Password'... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 6 | Kandidat dilewati: 2
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-003 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 1381 ms
+  Elemen dipilih: <button data-v-10d463b7="" data-v-0af708be="" type="submit" class="oxd-button ox
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=1381ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='ohrLoginButtonRefactor' name='' placeholder='' text='Login'>
+Oct 02, 2026 10:49:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:49:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrDashboardTitle
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 19 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Upgrade'>     ? combined=0.0694
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Admin'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='PIM'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Leave'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Time'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Recruitment'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='My Info'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Performance'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dashboard'>              ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Directory'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maintenance'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Claim'>                  ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buzz'>                   ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Upgrade'>                ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         ? combined=0.0893
+  ?? CAND <input type='text' id='' name='' placeholder='Search' text='Search'>   ? combined=0.1389
+[HealingDriver] Kandidat kompatibel: 19 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-004 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 0.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.6250
+  Waktu healing: 3618 ms
+  Elemen dipilih: <a data-v-6475d26d="" class="oxd-main-menu-item active" href="/web/index.php/das
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.6250 | time=3618ms
+[HealingDriver] Elemen dipilih: <a type='' id='' name='' placeholder='' text='Dashboard'>
+[OHR-SH-004] Elemen dashboard title berhasil dipulihkan: a
+Oct 02, 2026 10:49:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:49:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrSidebarMyInfo
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 28 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Upgrade'>     ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Admin'>                  ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='PIM'>                    ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Leave'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Time'>                   ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Recruitment'>            ? combined=0.0568
+  ?? CAND <a type='' id='ohrSidebarMyInfoRefactor' name='' placeholder='' tex... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Performance'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dashboard'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Directory'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maintenance'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Claim'>                  ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buzz'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Upgrade'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         ? combined=0.0893
+  ?? CAND <input type='text' id='' name='' placeholder='Search' text='Search'>   ? combined=0.0000
+[HealingDriver] Kandidat kompatibel: 28 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-005 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 4877 ms
+  Elemen dipilih: <a data-v-6475d26d="" class="oxd-main-menu-item" href="/web/index.php/pim/viewMy
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=4877ms
+[HealingDriver] Elemen dipilih: <a type='' id='ohrSidebarMyInfoRefactor' name='' placeholder='' text='My Info'>
+Oct 02, 2026 10:49:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:49:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrSidebarPim
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 28 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Upgrade'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Admin'>                  ? combined=0.1250
+  ?? CAND <a type='' id='ohrSidebarPimRefactor' name='' placeholder='' text='... ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Leave'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Time'>                   ? combined=0.3125
+  ?? CAND <a type='' id='' name='' placeholder='' text='Recruitment'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='My Info'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Performance'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dashboard'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Directory'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maintenance'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Claim'>                  ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buzz'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Upgrade'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         ? combined=0.0446
+  ?? CAND <input type='text' id='' name='' placeholder='Search' text='Search'>   ? combined=0.0000
+[HealingDriver] Kandidat kompatibel: 28 | Kandidat dilewati: 0
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-006 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 4686 ms
+  Elemen dipilih: <a data-v-6475d26d="" class="oxd-main-menu-item" href="/web/index.php/pim/viewPi
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=4686ms
+[HealingDriver] Elemen dipilih: <a type='' id='ohrSidebarPimRefactor' name='' placeholder='' text='PIM'>
+Oct 02, 2026 10:49:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:49:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrSearchNameInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 134 kandidat elemen...
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Upgrade'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='reset' id='' name='' placeholder='' text='Reset'>        | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Search'>      | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Add'>         | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='1'>           | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='2'>           | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='3'>           | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='4'>           | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Admin'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='PIM'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Leave'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Time'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Recruitment'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='My Info'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Performance'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dashboard'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Directory'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Maintenance'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Claim'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Buzz'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Upgrade'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Employee List'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Add Employee'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Reports'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         | alasan: incompatible
+  ?? CAND <input type='text' id='' name='' placeholder='Search' text='Search'>   ? combined=0.0481
+  ?? CAND <input type='text' id='ohrSearchNameInputRefactor' name='' placehol... ? combined=0.6875
+  ?? SKIP <input type='text' id='' name='' placeholder='' text=''>               | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='Type for hints...' te... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 2 | Kandidat dilewati: 132
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-007 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 0.5000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 0.6875
+  Waktu healing: 17510 ms
+  Elemen dipilih: <input data-v-75e744cd="" placeholder="Type for hints..." id="ohrSearchNameInput
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=0.6875 | time=17510ms
+[HealingDriver] Elemen dipilih: <input type='text' id='ohrSearchNameInputRefactor' name='' placeholder='Type for hints...' text='Type for hints...'>
+Oct 02, 2026 10:50:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:50:25 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrSearchButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 134 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Upgrade'>     ? combined=0.0893
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='reset' id='' name='' placeholder='' text='Reset'>        ? combined=0.1042
+  ?? CAND <button type='submit' id='ohrSearchButtonRefactor' name='' placehol... ? combined=1.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Add'>         ? combined=0.1042
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='1'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='2'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='3'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='4'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Admin'>                  ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='PIM'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Leave'>                  ? combined=0.2083
+  ?? CAND <a type='' id='' name='' placeholder='' text='Time'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Recruitment'>            ? combined=0.1136
+  ?? CAND <a type='' id='' name='' placeholder='' text='My Info'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Performance'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dashboard'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Directory'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maintenance'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Claim'>                  ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buzz'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Upgrade'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Employee List'>          ? combined=0.0481
+  ?? CAND <a type='' id='' name='' placeholder='' text='Add Employee'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reports'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         ? combined=0.0893
+  ?? SKIP <input type='text' id='' name='' placeholder='Search' text='Search'>   | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='Type for hints...' te... | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='' text=''>               | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='Type for hints...' te... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 130 | Kandidat dilewati: 4
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-008 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 22823 ms
+  Elemen dipilih: <button data-v-10d463b7="" data-v-7044e35a="" type="submit" class="oxd-button ox
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=22823ms
+[HealingDriver] Elemen dipilih: <button type='submit' id='ohrSearchButtonRefactor' name='' placeholder='' text='Search'>
+Oct 02, 2026 10:51:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:51:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrAddEmployeeButton
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 134 kandidat elemen...
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='Upgrade'>     ? combined=0.1786
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='reset' id='' name='' placeholder='' text='Reset'>        ? combined=0.0000
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Search'>      ? combined=0.1042
+  ?? CAND <button type='button' id='ohrAddEmployeeButtonRefactor' name='' pla... ? combined=1.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='1'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='2'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='3'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text='4'>           ? combined=0.0000
+  ?? CAND <button type='button' id='' name='' placeholder='' text=''>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Admin'>                  ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='PIM'>                    ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Leave'>                  ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Time'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Recruitment'>            ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='My Info'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Performance'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Dashboard'>              ? combined=0.1389
+  ?? CAND <a type='' id='' name='' placeholder='' text='Directory'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Maintenance'>            ? combined=0.0568
+  ?? CAND <a type='' id='' name='' placeholder='' text='Claim'>                  ? combined=0.1250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Buzz'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Upgrade'>                ? combined=0.1786
+  ?? CAND <a type='' id='' name='' placeholder='' text='Employee List'>          ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Add Employee'>           ? combined=0.6250
+  ?? CAND <a type='' id='' name='' placeholder='' text='Reports'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         ? combined=0.0446
+  ?? SKIP <input type='text' id='' name='' placeholder='Search' text='Search'>   | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='Type for hints...' te... | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='' text=''>               | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='Type for hints...' te... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 130 | Kandidat dilewati: 4
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-009 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 20770 ms
+  Elemen dipilih: <button data-v-10d463b7="" data-v-7044e35a="" type="button" class="oxd-button ox
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=20770ms
+[HealingDriver] Elemen dipilih: <button type='button' id='ohrAddEmployeeButtonRefactor' name='' placeholder='' text='Add'>
+Oct 02, 2026 10:51:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:51:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: ohrFirstNameInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 29 kandidat elemen...
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Upgrade'>     | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text=''>            | alasan: incompatible
+  ?? SKIP <button type='button' id='' name='' placeholder='' text='Cancel'>      | alasan: incompatible
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Save'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Admin'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='PIM'>                    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Leave'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Time'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Recruitment'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='My Info'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Performance'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Dashboard'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Directory'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Maintenance'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Claim'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Buzz'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Upgrade'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Employee List'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Add Employee'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Reports'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='OrangeHRM, Inc'>         | alasan: incompatible
+  ?? SKIP <input type='text' id='' name='' placeholder='Search' text='Search'>   | alasan: incompatible
+  ?? CAND <input type='text' id='ohrFirstNameInputRefactor' name='firstName' ... ? combined=1.0000
+  ?? CAND <input type='text' id='' name='middleName' placeholder='Middle Name... ? combined=0.3409
+  ?? CAND <input type='text' id='' name='lastName' placeholder='Last Name' te... ? combined=0.4375
+  ?? SKIP <input type='text' id='' name='' placeholder='' text='0502'>           | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 3 | Kandidat dilewati: 26
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=OHR-SH-010 | Skenario: orangehrm_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 3546 ms
+  Elemen dipilih: <input data-v-1f99f73c="" class="oxd-input oxd-input--active orangehrm-firstname
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=3546ms
+[HealingDriver] Elemen dipilih: <input type='text' id='ohrFirstNameInputRefactor' name='firstName' placeholder='First Name' text='First Name'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 10
+  Berhasil dipulihkan         : 10
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 8251.10 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\orangehrm_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+

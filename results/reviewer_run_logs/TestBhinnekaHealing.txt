@@ -1,0 +1,297 @@
+﻿mvn.cmd : SLF4J(W): No SLF4J providers were found.
+At D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\run_reviewer_analysis.ps1:68 char:5
++     & mvn -q test "-Dtest=$class" "-Dheadless=true" 2>&1 | Out-File - ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (SLF4J(W): No SLF4J providers were found.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 02, 2026 10:11:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:11:16 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: bhkSearchInput
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 57 kandidat elemen...
+  ?? SKIP <button type='submit' id='' name='' placeholder='' text='Pencarian'>   | alasan: incompatible
+  ?? SKIP <button type='button' id='defaultSeoFooterButton' name='' placehold... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Login'>                  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Produk Terlaris'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Aneka Printer & Tinta'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Solusi Bisnis'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Previous'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Next'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Computer, Communicati... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='IT Infrastructure
+Ser... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Software
+Business App... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Office & Equipment
+Pr... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kerja di Mana Saja'>     | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ruang Meeting'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kantor'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Mengapa Bisnis Memili... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Ingin Kerja Lebih Din... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Mengapa Kolaborasi Ke... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Previous'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Next'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Previous'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Next'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Previous'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Next'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lihat artikel lainnya.'> | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INFO BISNIS
+6 Manfaat... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INFO BISNIS
+Perbandin... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='INFO BISNIS
+Butuh Pen... | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Chat Kami'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text=''>                       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Facebook'>               | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Twitter'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Instagram'>              | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Youtube'>                | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Blog'>                   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Tentang Kami'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Berita'>                 | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Akun Bhinneka'>          | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pengembalian Barang'>    | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Servis dan Purna Jual'>  | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Syarat dan Ketentuan'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Lokasi Toko'>            | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Klaim KJP & KJMU'>       | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='Pengadaan Pemerintah'>   | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='(021) 2929-2828'>        | alasan: incompatible
+  ?? SKIP <a type='' id='' name='' placeholder='' text='0851-1738-6306'>         | alasan: incompatible
+  ?? CAND <input type='search' id='bhkSearchInputRefactor' name='cari' placeh... ? combined=1.0000
+  ?? CAND <input type='text' id='contact_name-308260' name='contact_name' pla... ? combined=0.1184
+  ?? SKIP <input type='email' id='contact_email-308260' name='contact_email' ... | alasan: incompatible
+  ?? SKIP <input type='tel' id='contact_phone-308260' name='contact_phone' pl... | alasan: incompatible
+  ?? SKIP <select type='select-one' id='contact_email_to-308260' name='contac... | alasan: incompatible
+  ?? SKIP <textarea type='textarea' id='contact_message-308260' name='contact... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 2 | Kandidat dilewati: 55
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=BHK-SH-001 | Skenario: bhinneka_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 11178 ms
+  Elemen dipilih: <input type="search" name="cari" class="search-query form-control oe_search_box 
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=11178ms
+[HealingDriver] Elemen dipilih: <input type='search' id='bhkSearchInputRefactor' name='cari' placeholder='Cari produk untuk bisnis Anda...' text='Car...
+Oct 02, 2026 10:11:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:11:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:11:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:11:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:12:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:12:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+Oct 02, 2026 10:12:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 154
+Oct 02, 2026 10:12:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 154.0.8037.93. You may need to include a dependency on a specific 
+version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version 
+("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the 
+same as Selenium's.
+[HealingDriver] ? Locator gagal: By.id: bhkLogin
+[HealingDriver] ? Mengaktifkan mekanisme self-healing...
+[HealingDriver] Mengevaluasi 57 kandidat elemen...
+  ?? CAND <button type='submit' id='' name='' placeholder='' text='Pencarian'>   ? combined=0.1389
+  ?? CAND <button type='button' id='defaultSeoFooterButton' name='' placehold... ? combined=0.1200
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='bhkLoginRefactor' name='' placeholder='' text='Login'>  ? combined=1.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Produk Terlaris'>        ? combined=0.0833
+  ?? CAND <a type='' id='' name='' placeholder='' text='Aneka Printer & Tinta'>  ? combined=0.0658
+  ?? CAND <a type='' id='' name='' placeholder='' text='Solusi Bisnis'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Previous'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Next'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Computer, Communicati... ? combined=0.0336
+  ?? CAND <a type='' id='' name='' placeholder='' text='IT Infrastructure
+Ser... ? combined=0.0266
+  ?? CAND <a type='' id='' name='' placeholder='' text='Software
+Business App... ? combined=0.0309
+  ?? CAND <a type='' id='' name='' placeholder='' text='Office & Equipment
+Pr... ? combined=0.0281
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kerja di Mana Saja'>     ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ruang Meeting'>          ? combined=0.1442
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kantor'>                 ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mengapa Bisnis Memili... ? combined=0.0155
+  ?? CAND <a type='' id='' name='' placeholder='' text='Ingin Kerja Lebih Din... ? combined=0.0153
+  ?? CAND <a type='' id='' name='' placeholder='' text='Mengapa Kolaborasi Ke... ? combined=0.0173
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Previous'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Next'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Previous'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Next'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Previous'>               ? combined=0.0781
+  ?? CAND <a type='' id='' name='' placeholder='' text='Next'>                   ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lihat artikel lainnya.'> ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO BISNIS
+6 Manfaat... ? combined=0.0080
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO BISNIS
+Perbandin... ? combined=0.0085
+  ?? CAND <a type='' id='' name='' placeholder='' text='INFO BISNIS
+Butuh Pen... ? combined=0.0079
+  ?? CAND <a type='' id='' name='' placeholder='' text='Chat Kami'>              ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text=''>                       ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Facebook'>               ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Twitter'>                ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='Instagram'>              ? combined=0.0694
+  ?? CAND <a type='' id='' name='' placeholder='' text='Youtube'>                ? combined=0.0893
+  ?? CAND <a type='' id='' name='' placeholder='' text='Blog'>                   ? combined=0.2500
+  ?? CAND <a type='' id='' name='' placeholder='' text='Tentang Kami'>           ? combined=0.0521
+  ?? CAND <a type='' id='' name='' placeholder='' text='Berita'>                 ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Akun Bhinneka'>          ? combined=0.0962
+  ?? CAND <a type='' id='' name='' placeholder='' text='Hubungi Kami'>           ? combined=0.1042
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pengembalian Barang'>    ? combined=0.0987
+  ?? CAND <a type='' id='' name='' placeholder='' text='Servis dan Purna Jual'>  ? combined=0.0595
+  ?? CAND <a type='' id='' name='' placeholder='' text='Syarat dan Ketentuan'>   ? combined=0.0313
+  ?? CAND <a type='' id='' name='' placeholder='' text='Kebijakan Privasi'>      ? combined=0.0735
+  ?? CAND <a type='' id='' name='' placeholder='' text='Lokasi Toko'>            ? combined=0.1705
+  ?? CAND <a type='' id='' name='' placeholder='' text='Klaim KJP & KJMU'>       ? combined=0.0446
+  ?? CAND <a type='' id='' name='' placeholder='' text='Pengadaan Pemerintah'>   ? combined=0.0938
+  ?? CAND <a type='' id='' name='' placeholder='' text='(021) 2929-2828'>        ? combined=0.0000
+  ?? CAND <a type='' id='' name='' placeholder='' text='0851-1738-6306'>         ? combined=0.0000
+  ?? SKIP <input type='search' id='' name='cari' placeholder='Cari produk unt... | alasan: incompatible
+  ?? SKIP <input type='text' id='contact_name-308260' name='contact_name' pla... | alasan: incompatible
+  ?? SKIP <input type='email' id='contact_email-308260' name='contact_email' ... | alasan: incompatible
+  ?? SKIP <input type='tel' id='contact_phone-308260' name='contact_phone' pl... | alasan: incompatible
+  ?? SKIP <select type='select-one' id='contact_email_to-308260' name='contac... | alasan: incompatible
+  ?? SKIP <textarea type='textarea' id='contact_message-308260' name='contact... | alasan: incompatible
+[HealingDriver] Kandidat kompatibel: 51 | Kandidat dilewati: 6
+
+??????????????????????????????????????????????????????????????????????
+  [HEALING] TC=BHK-SH-005 | Skenario: bhinneka_id_change
+  Status       : SUCCESS
+  Skor teks    : 1.0000  (bobot 50%)
+  Skor locator : 1.0000  (bobot 30%)
+  Skor posisi  : 0.0000  (bobot 20%)
+  Skor gabungan: 1.0000
+  Waktu healing: 11875 ms
+  Elemen dipilih: <a href="/kejutan-spesial" class="bmd-login-button" id="bhkLoginRefactor" data-s
+??????????????????????????????????????????????????????????????????????
+[HealingDriver] ? Healing BERHASIL | score=1.0000 | time=11875ms
+[HealingDriver] Elemen dipilih: <a type='' id='bhkLoginRefactor' name='' placeholder='' text='Login'>
+
+??????????????????????????????????????????????????????????????????????
+  RINGKASAN METRIK SELF-HEALING
+??????????????????????????????????????????????????????????????????????
+  Total skenario yang di-heal : 2
+  Berhasil dipulihkan         : 2
+  Healing Success Rate        : 100.00%
+  False Positive Rate         : 0.00%
+  Rata-rata waktu healing     : 11526.50 ms
+??????????????????????????????????????????????????????????????????????
+  Data lengkap: D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\results\bhinneka_healing_log.csv
+??????????????????????????????????????????????????????????????????????
+
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 95.46 s <<< FAILURE! -- in com.fulvian.tests.TestBhinnekaHealing
+[ERROR] com.fulvian.tests.TestBhinnekaHealing.bhkSh002_logo -- Time elapsed: 22.27 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'bhinneka.com') and .//img[contains(@alt,'Bhinneka')]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51071}, goog:processID: 34864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51071/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f70e59ab7c84f4b98fd1092228fbd334
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestBhinnekaHealing.waitVisible(TestBhinnekaHealing.java:154)
+	at com.fulvian.tests.TestBhinnekaHealing.bhkSh002_logo(TestBhinnekaHealing.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestBhinnekaHealing.bhkSh003_cart -- Time elapsed: 22.11 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'/cart') or contains(@class,'my_cart_quantity')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50603}, goog:processID: 25972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50603/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16663dcdd170e8b068d131a60f1b9d8c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestBhinnekaHealing.waitVisible(TestBhinnekaHealing.java:154)
+	at com.fulvian.tests.TestBhinnekaHealing.bhkSh003_cart(TestBhinnekaHealing.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] com.fulvian.tests.TestBhinnekaHealing.bhkSh004_kategori -- Time elapsed: 21.97 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='Kategori' or contains(@class,'Kategori')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51607}, goog:processID: 8052, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51607/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a63448986606fb23c2e5287259b31abb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.fulvian.tests.TestBhinnekaHealing.waitVisible(TestBhinnekaHealing.java:154)
+	at com.fulvian.tests.TestBhinnekaHealing.bhkSh004_kategori(TestBhinnekaHealing.java:109)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+[ERROR] Errors: 
+[ERROR]   TestBhinnekaHealing.bhkSh002_logo:81->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'bhinneka.com') and .//img[contains(@alt,'Bhinneka')]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51071}, goog:processID: 34864, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51071/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f70e59ab7c84f4b98fd1092228fbd334
+[ERROR]   TestBhinnekaHealing.bhkSh003_cart:95->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //a[contains(@href,'/cart') or contains(@class,'my_cart_quantity')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50603}, goog:processID: 25972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50603/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16663dcdd170e8b068d131a60f1b9d8c
+[ERROR]   TestBhinnekaHealing.bhkSh004_kategori:109->waitVisible:154 � Timeout Expected condition failed: waiting for visibility of element located by By.xpath: //span[normalize-space()='Kategori' or contains(@class,'Kategori')] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.93, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51607}, goog:processID: 8052, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51607/devtoo..., se:cdpVersion: 154.0.8037.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a63448986606fb23c2e5287259b31abb
+[ERROR] Tests run: 5, Failures: 0, Errors: 3, Skipped: 0
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.1.2:test (default-test) on project self-healing-selenium: 
+[ERROR] 
+[ERROR] Please refer to D:\PERKULIAHAN\SKRIPSI\Project\self-healing-selenium\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

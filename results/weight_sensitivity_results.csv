@@ -1,0 +1,7 @@
+configuration,weight_text,weight_locator,weight_position,threshold,labeled_attempts,excluded_unlabeled_attempts,accepted_healing,rejected_healing,correct_healing,false_positive,hsr_percent,correct_healing_rate_percent,fpr_percent
+default,0.500000,0.300000,0.200000,0.50,76,12,74,2,66,8,97.37,86.84,10.81
+text_emphasis,0.600000,0.250000,0.150000,0.50,76,12,74,2,66,8,97.37,86.84,10.81
+locator_emphasis,0.400000,0.400000,0.200000,0.50,76,12,74,2,70,4,97.37,92.11,5.41
+position_emphasis,0.400000,0.200000,0.400000,0.50,76,12,74,2,66,8,97.37,86.84,10.81
+equal,0.333333,0.333333,0.333333,0.50,76,12,74,2,70,4,97.37,92.11,5.41
+text_locator_balanced,0.450000,0.450000,0.100000,0.50,76,12,74,2,70,4,97.37,92.11,5.41
