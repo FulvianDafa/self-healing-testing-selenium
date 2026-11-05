@@ -73,10 +73,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <!-- Default: jalankan suite ANUGRAH_JAYA yang sudah disesuaikan dengan DOM project -->
+                    <!-- Default CI/local run: offline unit tests only. Select browser suites with -Dtest=ClassName. -->
                     <includes>
-                        <include>**/TestAnugrahJayaHealing.java</include>
-                        <include>**/TestAnugrahJayaBaseline.java</include>
+                        <include>**/SimilarityEngineTest.java</include>
                     </includes>
                 </configuration>
             </plugin>

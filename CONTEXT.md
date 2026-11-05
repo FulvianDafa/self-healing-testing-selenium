@@ -1,3 +1,5 @@
+> **Historical development notes:** dokumen ini merekam konteks kerja skripsi pada tahap pengembangan. Beberapa milestone dan status Bab IV/V sudah tidak mutakhir. Untuk kondisi repository publik, cara menjalankan proyek, dan metrik rerun Oktober 2026, gunakan [README.md](README.md) dan [results/reviewer-analysis-report.md](results/reviewer-analysis-report.md). Jangan menganggap catatan ini sebagai sumber status terbaru.
+
 # CONTEXT.MD - SINGLE SOURCE OF TRUTH PROYEK
 
 Dokumen ini adalah **Single Source of Truth** untuk proyek penelitian dan pengembangan *Self-Healing Selenium WebDriver*. Dokumen ini sangat esensial digunakan untuk memahami keseluruhan proyek secara mendalam, riwayat pengembangan, arsitektur, hingga status penulisan skripsi.

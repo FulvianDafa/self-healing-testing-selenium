@@ -25,3 +25,12 @@ Thumbs.db
 chromedriver.exe
 geckodriver.exe
 msedgedriver.exe
+
+# Local-only secrets and runtime artifacts
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.tmp

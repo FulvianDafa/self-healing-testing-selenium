@@ -74,8 +74,8 @@ Selenium akan mengendalikan browser Chrome secara otomatis selama pengujian. Chr
 
    **Atau**, jika menggunakan Git, buka Command Prompt dan jalankan:
    ```bash
-   git clone <LINK_GITHUB_DARI_PENELITI>
-   cd self-healing-selenium
+   git clone https://github.com/FulvianDafa/self-healing-testing-selenium.git
+   cd self-healing-testing-selenium
    ```
 
 ---
