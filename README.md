@@ -60,17 +60,16 @@ Kandidat dengan skor tertinggi diterima jika skornya mencapai threshold. Elemen 
 ```powershell
 git clone https://github.com/fulviandafa/self-healing-testing-selenium.git
 cd self-healing-testing-selenium
-git switch experiment/ai-comparison
 java -version
 mvn -version
-mvn -B -DskipTests test
+mvn -B -ntp clean test
 ```
 
-Perintah terakhir mengompilasi kode utama dan kode test tanpa menjalankan browser. Untuk memeriksa hasil kompilasi dari awal, gunakan `mvn clean -DskipTests test`.
+Perintah terakhir menjalankan **unit test offline** tanpa memerlukan Chrome atau website eksternal. Suite berbasis browser dijalankan secara eksplisit dengan `-Dtest=NamaKelas`. Jika hanya ingin kompilasi, gunakan `mvn -B -ntp -DskipTests test`.
 
 ## Menjalankan pengujian
 
-Jalankan perintah dari direktori yang berisi `pom.xml`. Konfigurasi Surefire default hanya memilih `TestAnugrahJayaBaseline` dan `TestAnugrahJayaHealing`; `mvn test` tidak otomatis menjalankan seluruh SUT.
+Jalankan perintah dari direktori yang berisi `pom.xml`. Konfigurasi Surefire default hanya memilih `SimilarityEngineTest` agar `mvn test` bisa dijalankan tanpa aplikasi lokal atau website eksternal. **Tidak menjalankan seluruh 23 SUT secara otomatis.** Jalankan suite tertentu dengan opsi `-Dtest` seperti contoh berikut.
 
 ### SUT lokal ANUGRAH_JAYA
 
@@ -88,6 +87,14 @@ mvn test "-Dtest=TestAnugrahJayaBaseline" "-DselfHealing.enabled=true" "-Dhealin
 ```
 
 Mode baseline dapat menghasilkan kegagalan yang memang dirancang untuk menunjukkan locator yang rusak. Periksa assertion dan laporan test sebelum menyimpulkan keberhasilan eksperimen.
+
+### Demo lokal tanpa server (opsional, memerlukan Chrome)
+
+```powershell
+mvn test "-Dtest=TestLocalDemoHealing"
+```
+
+Demo membuka fixture HTML di `src/test/resources/demo/self-healing.html`, mengubah ID tombol hanya di browser, lalu memverifikasi bahwa `HealingDriver` menemukan target baru dan aksi klik berhasil. Tes ini tidak mengakses sistem produksi maupun data klien. Jika Chrome/driver tidak tersedia, gunakan unit test offline di atas.
 
 ### Memilih SUT publik
 
@@ -154,6 +161,8 @@ java -cp $guiClasspath com.fulvian.gui.SelfHealingGui
 
 GUI menyediakan pemilihan direktori proyek dan script, pengaturan eksekusi dan threshold, output console, serta tabel hasil CSV. Maven harus tersedia pada `PATH` karena GUI menjalankan test melalui proses Maven.
 
+**Keamanan kredensial:** GUI meneruskan input email/password sebagai environment variable `ADMIN_EMAIL` dan `ADMIN_PASSWORD` ke proses Maven, **bukan** sebagai argumen `-D` yang dapat tercetak di console atau daftar proses. Test script yang memerlukan kredensial perlu membaca `System.getenv("ADMIN_EMAIL")` / `System.getenv("ADMIN_PASSWORD")`. Jangan mencetak environment, password, token atau screenshot berisi data pribadi. Skema argumen `-DadminEmail`/`-DadminPassword` lama tidak lagi dikirim oleh GUI. Lihat [panduan keamanan](docs/security.md).
+
 ## Dataset dan analisis
 
 Data aktif ada di [`results/`](results), sedangkan snapshot sebelum rerun reviewer disimpan di [`archive/pre_reviewer_rerun_20261002/`](archive/pre_reviewer_rerun_20261002/README.md).
@@ -191,6 +200,15 @@ python train_ai.py
 ```
 
 Skrip AI memakai `results/candidates_log.csv` dan pemetaan label khusus skenario ANUGRAH_JAYA. Dataset harus memiliki label target yang valid; skrip ini bukan trainer umum untuk seluruh CSV multi-SUT.
+
+### Perbedaan dataset penelitian awal dan rerun reviewer
+
+| Dataset | Healing attempts | Diterima oleh engine | HSR | Catatan |
+| --- | ---: | ---: | ---: | --- |
+| Eksperimen skripsi awal | 104 | 96 | 92,31% | Nilai historis yang digunakan di artikel/skripsi; **bukan hasil rerun baru** |
+| Rerun reviewer 2 Okt 2026 | 88 | 81 | 92,05% | 129 skenario dirancang; 41 tidak mencapai tahap healing karena prasyarat/akses |
+
+Kedua hasil menggunakan cakupan yang berbeda dan tidak boleh digabung. Angka diterima oleh engine belum otomatis berarti target benar: periksa false positive berlabel. Arsip lama dan laporan rerun dipertahankan agar audit dapat dilakukan.
 
 ### Hasil yang tersimpan
 
@@ -235,5 +253,8 @@ pom.xml
 - [Desain eksperimen](docs/experimental-design.md)
 - [Matriks test case](docs/test-case-matrix.md)
 - [Panduan script ANUGRAH_JAYA](docs/anugrah-jaya-test-script-guide.md)
+- [Prinsip keamanan untuk penggunaan publik](docs/security.md)
+
+**Lisensi:** repository belum memiliki lisensi open-source. Publikasi kode di GitHub tidak otomatis memberikan izin penggunaan, modifikasi, dan distribusi. Pemilik proyek perlu memilih lisensi yang sesuai sebelum mengizinkan reuse oleh pihak ketiga.
 
 Untuk konfigurasi dan skema CSV terkini, gunakan kode sumber serta laporan reviewer sebagai acuan; sebagian dokumentasi desain menjelaskan tahapan penelitian sebelumnya.

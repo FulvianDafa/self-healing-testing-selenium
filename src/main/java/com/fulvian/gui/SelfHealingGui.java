@@ -11,6 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -262,13 +263,14 @@ public class SelfHealingGui extends JFrame {
         String testClass = testClassField.getText().trim();
         String url = urlField.getText().trim();
         String email = emailField.getText().trim();
-        String password = new String(passwordField.getPassword());
+        char[] password = passwordField.getPassword();
         String threshold = thresholdField.getText().trim();
         String sut = String.valueOf(sutComboBox.getSelectedItem());
         String logPath = logPathField.getText().trim();
 
         // Fix #9: Validasi ringan sebelum Maven dijalankan (tambahkan validasi Base URL)
         if (!validateInputs(projectRoot, scriptPath, testClass, threshold, url)) {
+            Arrays.fill(password, '\0');
             activateHealingButton.setEnabled(true);
             return;
         }
@@ -282,7 +284,7 @@ public class SelfHealingGui extends JFrame {
                 appendOutput("Script disalin ke project Maven: " + copiedScript + "\n");
             }
 
-            List<String> command = buildMavenCommand(testClass, sut, url, email, password, threshold, scriptPath, logPath);
+            List<String> command = buildMavenCommand(testClass, sut, url, threshold, scriptPath, logPath);
 
             // Fix #10: Output area menampilkan ringkasan lengkap sebelum Maven dijalankan
             appendOutput("\n====================================\n");
@@ -297,9 +299,10 @@ public class SelfHealingGui extends JFrame {
             appendOutput("Command      : " + String.join(" ", command) + "\n");
             appendOutput("====================================\n\n");
 
-            new Thread(() -> executeCommand(command, new File(projectRoot))).start();
+            new Thread(() -> executeCommand(command, new File(projectRoot), email, password)).start();
 
         } catch (Exception e) {
+            Arrays.fill(password, '\0');
             appendOutput("Gagal menyiapkan proses self-healing:\n");
             appendOutput(e.getMessage() + "\n");
             activateHealingButton.setEnabled(true);
@@ -359,8 +362,6 @@ public class SelfHealingGui extends JFrame {
             String testClass,
             String sut,
             String url,
-            String email,
-            String password,
             String threshold,
             String scriptPath,
             String logPath
@@ -383,17 +384,17 @@ public class SelfHealingGui extends JFrame {
             command.add("-DbaseUrl=" + url);
         }
 
-        command.add("-DadminEmail=" + email);
-        command.add("-DadminPassword=" + password);
-
         return command;
     }
 
-    private void executeCommand(List<String> command, File workingDirectory) {
+    private void executeCommand(List<String> command, File workingDirectory, String email, char[] password) {
         try {
             ProcessBuilder builder = new ProcessBuilder(command);
             builder.directory(workingDirectory);
             builder.redirectErrorStream(true);
+            // Avoid -DadminPassword: process arguments and the GUI console are observable.
+            if (!email.isBlank()) builder.environment().put("ADMIN_EMAIL", email);
+            if (password.length > 0) builder.environment().put("ADMIN_PASSWORD", new String(password));
 
             Process process = builder.start();
 
@@ -423,6 +424,7 @@ public class SelfHealingGui extends JFrame {
             appendOutput("Terjadi error saat menjalankan Maven test:\n");
             appendOutput(e.getMessage() + "\n");
         } finally {
+            Arrays.fill(password, '\0');
             SwingUtilities.invokeLater(() -> activateHealingButton.setEnabled(true));
         }
     }
